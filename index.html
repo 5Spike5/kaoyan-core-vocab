@@ -93,10 +93,10 @@ body{
 
 .btn-tertiary{
   display:block;width:calc(100% - 48px);margin:8px 24px;padding:14px;
-  border-radius:16px;border:2px solid #7B61FF;background:var(--surface);
-  color:#7B61FF;font-size:16px;font-weight:600;cursor:pointer;transition:all .2s;
+  border-radius:16px;border:2px solid #00897B;background:var(--surface);
+  color:#00897B;font-size:16px;font-weight:600;cursor:pointer;transition:all .2s;
 }
-.btn-tertiary:hover{background:#F0EBFF}
+.btn-tertiary:hover{background:#E0F2F1}
 .btn-tertiary:active{transform:scale(.98)}
 .btn-tertiary:disabled{border-color:var(--outline);color:var(--outline);cursor:not-allowed}
 
@@ -995,7 +995,7 @@ function getAutoReviewWords(){
       if(Math.abs(rDiff)>0.01) return rDiff;
       return (progress.words[b.word]?.wrong||0)-(progress.words[a.word]?.wrong||0);
     });
-    const shuffled = shuffle(remaining);
+    const shuffled = remaining;
     for(const w of shuffled){
       if(result.length>=takeCount) break;
       selectedSet.add(w.word); result.push(w);
@@ -1541,7 +1541,7 @@ function startWrongWordPractice(){
     const isCn2En=Math.random()<0.5;
     return {...w, passType:isCn2En?'cn2en':'en2cn', passLabel:isCn2En?'汉选英':'英选汉', passNum:0, isWrongPractice:true};
   });
-  session={type:'wrong', cards, currentIndex:0, correctCount:0, wrongCount:0, answeredWords:new Set(), retestQueue:[], retestInserted:new Set(), startTime:Date.now()};
+  session={type:'wrong', cards, currentIndex:0, correctCount:0, wrongCount:0, answeredWords:new Set(), reviewResults:{}, wrongWords:new Set(), retestQueue:[], retestInserted:new Set(), startTime:Date.now()};
   showView('study');
   startStudyTimer();
   renderCard();
