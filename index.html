@@ -425,11 +425,12 @@ function fsrsUpdate(word, isCorrect){
   // 更新稳定性S
   if(isCorrect){
     // 答对：稳定性增长，增长幅度取决于当前回忆难度和单词难度
-    const factor = 1 + FSRS.stabilityFactor * (1 - R) * (10 - word.difficulty) / 10;
+    // Math.max(0.1, ...) 确保高难度词答对后也能增长（最低10%增长率）
+    const factor = 1 + FSRS.stabilityFactor * (1 - R) * Math.max(0.1, (10 - word.difficulty) / 10);
     word.stability *= factor;
   } else {
-    // 答错：稳定性衰减，衰减幅度取决于单词难度
-    const penalty = FSRS.stabilityPenalty + 0.1 * (word.difficulty / 10);
+    // 答错：稳定性衰减，难度越高惩罚越重（10-D 确保难词丢失更多稳定性）
+    const penalty = FSRS.stabilityPenalty + 0.1 * ((10 - word.difficulty) / 10);
     word.stability *= penalty;
   }
   word.stability = Math.max(FSRS.minStability, Math.min(FSRS.maxStability, word.stability));
