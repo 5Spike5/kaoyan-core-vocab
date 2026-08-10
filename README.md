@@ -1,6 +1,6 @@
 # 考研英语核心词 V1
 
-基于 FSRS 间隔重复算法的考研英语词汇学习系统，内置 2010-2026 年真题阅读例句，支持 Excel 批量导入生词。
+基于 FSRS 间隔重复算法的考研英语二词汇学习系统，内置 2010-2026 年真题阅读例句，支持 Excel 批量导入生词。
 
 ## 在线使用
 
@@ -85,15 +85,26 @@ https://sogood-one.github.io/kaoyan-core-vocab/
 ## 项目结构
 
 ```
-kaoyan-core-vocab/
-├── index.html        # 主应用（HTML + CSS + JavaScript）
-├── data.js           # 系统词库数据
-├── sentences.js      # 真题例句 + 中文翻译
-└── README.md         # 项目说明
+kaoyan-core-vocab/          # 公开仓库（代码 + 示例词库）
+├── index.html              # 主应用（HTML + CSS + JavaScript）
+├── data.js                 # 示例词库（50词，完整词库在私有仓库）
+├── sentences.js            # 真题例句 + 中文翻译
+└── README.md               # 项目说明
+
+kaoyan-vocab-data/          # 私有仓库（完整词库数据）
+├── data.js                 # 完整词库（1521+ 词）
+└── sentences.js            # 真题例句备份
 ```
+
+> 完整词库存储在私有仓库中，应用启动时通过 GitHub API 加载，保护整理者的劳动成果。
 
 ## 版本
 
 **V1-20260810**
 
-
+- 修复强制复习只包含前一天新学单词
+- 修复自主复习功能（函数名拼写错误）
+- 修复错题本答题崩溃问题
+- 移除首页装饰图标
+- Excel 导入自动同步到系统词库
+- 自主复习按钮配色优化
