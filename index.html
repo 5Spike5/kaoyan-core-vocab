@@ -344,7 +344,7 @@ const REVIEW_INTERVALS = [1, 2, 4, 7, 15, 30]; // Legacy, kept for migration
 
 // ===== FSRS Algorithm (Free Spaced Repetition Scheduler) =====
 const FSRS = {
-  targetRetention: 0.9,    // 目标回忆率 90%
+  targetRetention: 0.85,   // 目标回忆率 85%（考研词汇适当降低，减少复习量）
   maxInterval: 365,        // 最大间隔 365 天
   minStability: 0.1,       // 最小稳定性 0.1 天
   maxStability: 365,       // 最大稳定性 365 天
@@ -354,7 +354,7 @@ const FSRS = {
   initDifficulty: 5.5,     // 初始难度（中性）
   difficultyStep: 0.7,     // 难度调节步长
   meanReversion: 0.2,      // 均值回归权重
-  stabilityFactor: 1.5,    // 稳定性增长因子
+  stabilityFactor: 2.5,    // 稳定性增长因子（考研词汇需更快增长）
   stabilityPenalty: 0.4,   // 答错时稳定性惩罚
   masteredThreshold: 30    // 稳定性超过30天视为掌握
 };
