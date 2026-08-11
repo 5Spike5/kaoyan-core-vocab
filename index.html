@@ -788,7 +788,7 @@ function loadProgress(){
   }
   // V5 defaults
   if(progress.studyGoal===undefined || progress.studyGoal<80) progress.studyGoal=80;
-  if(progress.reviewGoal===undefined || progress.reviewGoal<80) progress.reviewGoal=80;
+  if(progress.reviewGoal===undefined) progress.reviewGoal=0; // 0=今日待复习量
   if(progress.todayDate!==getToday()){ progress.todayDate=getToday(); progress.todayNewCount=0; }
   if(!progress.stats) progress.stats={};
   if(progress.stats.todayStudyMinutes===undefined) progress.stats.todayStudyMinutes=0;
@@ -833,7 +833,7 @@ async function loadProgressFromDB(){
   if(data){
     progress = typeof data === 'string' ? JSON.parse(data) : data;
     if(progress.studyGoal===undefined || progress.studyGoal<80) progress.studyGoal=80;
-    if(progress.reviewGoal===undefined || progress.reviewGoal<80) progress.reviewGoal=80;
+    if(progress.reviewGoal===undefined) progress.reviewGoal=0;
     if(progress.todayDate!==getToday()){ progress.todayDate=getToday(); progress.todayNewCount=0; }
     if(!progress.stats) progress.stats={};
     if(progress.stats.todayStudyMinutes===undefined) progress.stats.todayStudyMinutes=0;
@@ -1029,7 +1029,8 @@ function getAutoReviewWords(){
 
   if(learnedWords.length===0) return [];
 
-  const takeCount = Math.min(progress.reviewGoal, learnedWords.length);
+  const targetCount = progress.reviewGoal===0 ? getDueCount() : progress.reviewGoal;
+  const takeCount = Math.min(targetCount, learnedWords.length);
   const selectedSet = new Set();
   const result = [];
 
@@ -1424,7 +1425,7 @@ function renderHome(){
   const totalMin=progress.stats.totalStudyMinutes||0;
   // V5: word count options
   const studyOptions=[80,100,150,200];
-  const reviewOptions=[80,200,300];
+  const reviewOptions=[{v:0,l:'今日'},{v:80,l:'80'},{v:200,l:'200'},{v:300,l:'300'}];
   const learnedTotal=getLearnedCount();
 
   const pendingSession=loadSession()||_cachedPendingSession;
@@ -1511,11 +1512,11 @@ function renderHome(){
 
     <div class="section-label">自主复习词数</div>
     <div class="goal-row">
-      ${reviewOptions.map(n=>`<button class="goal-btn ${progress.reviewGoal===n?'active':''}" onclick="setReviewGoal(${n})">${n}</button>`).join('')}
+      ${reviewOptions.map(o=>`<button class="goal-btn ${progress.reviewGoal===o.v?'active':''}" onclick="setReviewGoal(${o.v})">${o.l}</button>`).join('')}
     </div>
 
     <button class="btn-tertiary" onclick="startAutoReview()" ${learnedTotal===0?'disabled':''}>
-      ${learnedTotal>0?'自主复习 ('+Math.min(progress.reviewGoal,learnedTotal)+'词)':'暂无可复习的单词'}
+      ${learnedTotal>0?'自主复习 ('+Math.min(progress.reviewGoal===0?dueCount:progress.reviewGoal,learnedTotal)+'词)':'暂无可复习的单词'}
     </button>
 
     <button class="btn-secondary" onclick="startWrongWordPractice()" ${wrongCount===0?'disabled':''} style="margin-top:8px;border-color:${wrongCount>0?'#E53E3E':'var(--outline)'};color:${wrongCount>0?'#E53E3E':'var(--outline)'}">
@@ -1653,7 +1654,7 @@ function importData(){
           delete data._user; delete data._exportDate; delete data._customVocab;
           progress=data;
           if(progress.studyGoal===undefined || progress.studyGoal<80) progress.studyGoal=80;
-          if(progress.reviewGoal===undefined || progress.reviewGoal<80) progress.reviewGoal=80;
+          if(progress.reviewGoal===undefined) progress.reviewGoal=0;
           if(importedCustomVocab.length>0){
             customVocab=importedCustomVocab;
             saveCustomVocab();
