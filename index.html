@@ -798,6 +798,20 @@ function loadProgress(){
         wp.firstLearned = wp.lastStudy || wp.lastReview || Date.now();
       }
     }
+    // V5-EX6: Fix contaminated firstLearned from pre-V5-EX5 data
+    // Old code updated lastStudy during reviews, so firstLearned was set to review dates
+    // Words with correct+wrong > 4 have been reviewed beyond initial study (study=4 attempts)
+    // These were NOT learned yesterday — reset firstLearned to 3 days ago
+    if(!progress.firstLearnedFixV2){
+      for(const w in progress.words){
+        const wp=progress.words[w];
+        const total=(wp.correct||0)+(wp.wrong||0);
+        if(total>4 && wp.firstLearned){
+          wp.firstLearned=Date.now()-3*86400000;
+        }
+      }
+      progress.firstLearnedFixV2=true;
+    }
   }
 }
 
@@ -823,6 +837,17 @@ async function loadProgressFromDB(){
         if(wp.firstLearned===undefined){
           wp.firstLearned = wp.lastStudy || wp.lastReview || Date.now();
         }
+      }
+      // V5-EX6: Fix contaminated firstLearned from pre-V5-EX5 data
+      if(!progress.firstLearnedFixV2){
+        for(const w in progress.words){
+          const wp=progress.words[w];
+          const total=(wp.correct||0)+(wp.wrong||0);
+          if(total>4 && wp.firstLearned){
+            wp.firstLearned=Date.now()-3*86400000;
+          }
+        }
+        progress.firstLearnedFixV2=true;
       }
     }
   }
