@@ -478,6 +478,12 @@ function getYesterday(){
   else beijing.setUTCDate(beijing.getUTCDate()-1);
   return beijing.toISOString().split('T')[0];
 }
+// Calendar date in Beijing time (midnight cutoff, for study time tracking)
+function getCalendarDate(){
+  const d=new Date();
+  const beijing=new Date(d.getTime()+8*3600000);
+  return beijing.toISOString().split('T')[0];
+}
 
 function shuffle(arr){
   const a=[...arr];
@@ -788,6 +794,11 @@ function loadProgress(){
   if(progress.stats.todayStudyMinutes===undefined) progress.stats.todayStudyMinutes=0;
   if(progress.stats.totalStudyMinutes===undefined) progress.stats.totalStudyMinutes=0;
   if(progress.stats.todayStudyDate===undefined) progress.stats.todayStudyDate='';
+  // Reset daily study time at midnight (calendar date, not 5AM study day)
+  if(progress.stats.todayStudyDate!==getCalendarDate()){
+    progress.stats.todayStudyDate=getCalendarDate();
+    progress.stats.todayStudyMinutes=0;
+  }
   // FSRS migration: migrate all existing words
   if(progress.words){
     for(const w in progress.words){ migrateToFSRS(progress.words[w]); }
@@ -828,6 +839,11 @@ async function loadProgressFromDB(){
     if(progress.stats.todayStudyMinutes===undefined) progress.stats.todayStudyMinutes=0;
     if(progress.stats.totalStudyMinutes===undefined) progress.stats.totalStudyMinutes=0;
     if(progress.stats.todayStudyDate===undefined) progress.stats.todayStudyDate='';
+    // Reset daily study time at midnight (calendar date, not 5AM study day)
+    if(progress.stats.todayStudyDate!==getCalendarDate()){
+      progress.stats.todayStudyDate=getCalendarDate();
+      progress.stats.todayStudyMinutes=0;
+    }
     // FSRS migration: migrate all existing words
     if(progress.words){
       for(const w in progress.words){ migrateToFSRS(progress.words[w]); }
@@ -2080,7 +2096,7 @@ function resumeSession(){
     const interruptedDuration=lastActive-(s.startTime||lastActive);
     if(interruptedDuration>0){
       const minutes=Math.max(1,Math.round(interruptedDuration/60000));
-      const today=getToday();
+      const today=getCalendarDate();
       if(!progress.stats.todayStudyDate || progress.stats.todayStudyDate!==today){
         progress.stats.todayStudyDate=today;
         progress.stats.todayStudyMinutes=0;
@@ -2141,7 +2157,7 @@ function getSessionMinutes(){
 
 function saveStudyTime(){
   const minutes=getSessionMinutes();
-  const today=getToday();
+  const today=getCalendarDate();
   if(!progress.stats.todayStudyDate || progress.stats.todayStudyDate!==today){
     progress.stats.todayStudyDate=today;
     progress.stats.todayStudyMinutes=0;
