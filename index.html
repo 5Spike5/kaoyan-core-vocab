@@ -967,6 +967,11 @@ function getTodayEnd(){
   return bjDate.getTime()-8*3600000;
 }
 
+function getTodayStart(){
+  // 今日0点（北京时间）= 今日开始时间戳
+  return getTodayEnd()-86400000;
+}
+
 function getDueWords(){
   const now=Date.now();
   const all=getAllVocab();
@@ -977,12 +982,17 @@ function getDueWords(){
 }
 
 function getDueCount(){
-  // 统计今日内到期的词（含已到期+今天晚些时候会到期的），数字一天内稳定
+  // 统计今日待复习的不同单词数：今天内到期 且 今天还没复习过
+  // 同一个词一天内反复到期的只算一次，避免用户感觉"怎么刷都刷不完"
   const todayEnd=getTodayEnd();
+  const todayStart=getTodayStart();
   const all=getAllVocab();
   return all.filter(w=>{
     const wp=progress.words[w.word];
-    return wp && wp.status==='review' && wp.nextReview<=todayEnd;
+    if(!wp || wp.status!=='review') return false;
+    if(wp.nextReview>todayEnd) return false; // 今天不到期
+    if(wp.lastReview && wp.lastReview>=todayStart) return false; // 今天已经复习过了
+    return true;
   }).length;
 }
 
