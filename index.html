@@ -1044,10 +1044,12 @@ function getAutoReviewWords(){
   const selectedSet = new Set();
   const result = [];
 
-  // 1. Include ALL due words first (FSRS nextReview <= now)
+  // 1. Include ALL due words first (FSRS nextReview <= todayEnd = 今日内到期的全部)
+  // 用今日结束时间而不是now，确保"今日"模式下能把今天所有到期的词都复习完
+  const dueCutoff = progress.reviewGoal===0 ? getTodayEnd() : Date.now();
   const dueWords = learnedWords.filter(w=>{
     const wp=progress.words[w.word];
-    return wp.nextReview && wp.nextReview<=Date.now();
+    return wp.nextReview && wp.nextReview<=dueCutoff;
   });
   // Sort due words by retrievability (lowest R = most forgotten first)
   dueWords.sort((a,b)=>{
@@ -1061,7 +1063,8 @@ function getAutoReviewWords(){
   }
 
   // 2. Fill remaining with non-due learned words, sorted by retrievability
-  if(result.length<takeCount){
+  // 仅当固定数量模式且今日到期词不够时才补充
+  if(progress.reviewGoal!==0 && result.length<takeCount){
     const remaining = learnedWords.filter(w=>!selectedSet.has(w.word));
     remaining.sort((a,b)=>{
       const rDiff = fsrsRetrievability(progress.words[a.word]||{}) - fsrsRetrievability(progress.words[b.word]||{});
