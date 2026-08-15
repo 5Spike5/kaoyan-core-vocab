@@ -964,19 +964,19 @@ function getNewWords(count){
 }
 
 function getTodayEnd(){
-  // 今日24点（北京时间）= 今日结束时间戳
-  const d=new Date();
-  // 转为北京时间
-  const bjMs=d.getTime()+8*3600000;
-  const bjDate=new Date(bjMs);
-  // 设为北京时间当天24点（即次日0点）
-  bjDate.setUTCHours(24,0,0,0);
-  // 转回UTC
-  return bjDate.getTime()-8*3600000;
+  // 今日24点（北京时间）的时间戳 = 次日0点
+  // 北京时间0点 = UTC前一天16点，北京时间24点 = UTC当天16点
+  const now=new Date();
+  const utcDate=new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 16, 0, 0, 0));
+  // 如果UTC现在已经过了16点，说明北京时间已经是第二天了，取明天的16点UTC
+  if(now.getTime() >= utcDate.getTime()){
+    utcDate.setUTCDate(utcDate.getUTCDate()+1);
+  }
+  return utcDate.getTime();
 }
 
 function getTodayStart(){
-  // 今日0点（北京时间）= 今日开始时间戳
+  // 今日0点（北京时间）的时间戳 = 昨日16点UTC
   return getTodayEnd()-86400000;
 }
 
@@ -1053,12 +1053,15 @@ function getAutoReviewWords(){
   const selectedSet = new Set();
   const result = [];
 
-  // 1. Include ALL due words first (FSRS nextReview <= todayEnd = 今日内到期的全部)
-  // 用今日结束时间而不是now，确保"今日"模式下能把今天所有到期的词都复习完
+  // 1. Include ALL due words first
+  // 今日模式：只选 status==='review' 的到期词，和 getDueCount() 保持一致，数量精确对应"今日待复习"
+  // 固定数量模式：包含所有已学词的到期词（含mastered）
   const dueCutoff = progress.reviewGoal===0 ? getTodayEnd() : Date.now();
   const dueWords = learnedWords.filter(w=>{
     const wp=progress.words[w.word];
-    return wp.nextReview && wp.nextReview<=dueCutoff;
+    if(!wp.nextReview || wp.nextReview>dueCutoff) return false;
+    if(progress.reviewGoal===0 && wp.status!=='review') return false; // 今日模式：只含review状态
+    return true;
   });
   // Sort due words by retrievability (lowest R = most forgotten first)
   dueWords.sort((a,b)=>{
