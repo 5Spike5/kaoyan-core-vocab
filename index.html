@@ -243,6 +243,33 @@ body{
 .complete-stat-num{font-size:32px;font-weight:700;color:var(--primary)}
 .complete-stat-num.green{color:var(--success)}
 .complete-stat-num.red{color:var(--error)}
+
+/* Vocab list page */
+.vocab-header{position:sticky;top:0;z-index:10;background:var(--background);padding:12px 16px;border-bottom:1px solid var(--outline)}
+.vocab-header-row{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.vocab-back-btn{padding:6px 12px;border-radius:8px;border:1px solid var(--outline);background:var(--surface);cursor:pointer;font-size:14px}
+.vocab-title{flex:1;font-size:18px;font-weight:700}
+.vocab-count{font-size:13px;color:var(--on-surface-variant)}
+.vocab-search{width:100%;padding:10px 14px;border-radius:10px;border:1px solid var(--outline);
+  background:var(--surface);font-size:14px;outline:none;box-sizing:border-box}
+.vocab-search:focus{border-color:var(--primary)}
+.vocab-filter-row{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.vocab-filter-btn{padding:6px 12px;border-radius:16px;border:1px solid var(--outline);
+  background:var(--surface);font-size:12px;cursor:pointer;color:var(--on-surface-variant)}
+.vocab-filter-btn.active{border-color:var(--primary);background:var(--primary-container);color:var(--primary)}
+.vocab-export-btn{padding:8px 16px;border-radius:10px;border:1px solid var(--success);
+  background:transparent;color:var(--success);font-size:13px;font-weight:500;cursor:pointer}
+.vocab-list{padding:8px 0}
+.vocab-item{display:flex;align-items:center;padding:12px 16px;border-bottom:1px solid var(--surface-variant);gap:12px}
+.vocab-item:hover{background:var(--surface)}
+.vocab-word{font-size:16px;font-weight:600;min-width:120px}
+.vocab-type{font-size:12px;color:var(--on-surface-variant);min-width:50px}
+.vocab-meaning{flex:1;font-size:14px;color:var(--on-surface);line-height:1.4}
+.vocab-status{font-size:11px;padding:2px 8px;border-radius:10px;white-space:nowrap}
+.vocab-status.new{background:#FEF3C7;color:#92400E}
+.vocab-status.review{background:#DBEAFE;color:#1E40AF}
+.vocab-status.mastered{background:#D1FAE5;color:#065F46}
+.vocab-status.ignored{background:#E5E7EB;color:#4B5563}
 .complete-stat-label{font-size:12px;color:var(--on-surface-variant);margin-top:4px}
 .complete-accuracy{font-size:16px;color:var(--on-surface-variant);margin-bottom:24px}
 .complete-accuracy span{font-weight:700;color:var(--on-surface);font-size:20px}
@@ -341,6 +368,7 @@ body{
   <div id="view-home" class="view"></div>
   <div id="view-study" class="view"></div>
   <div id="view-complete" class="view"></div>
+  <div id="view-vocab" class="view"></div>
 </div>
 <div id="toast" style="display:none"></div>
 <div id="import-modal" style="display:none"></div>
@@ -729,6 +757,108 @@ async function exportReviewLogs(){
   a.click();
   URL.revokeObjectURL(url);
   showToast('已导出 '+logs.length+' 条复习日志');
+}
+
+// ===== Vocabulary List =====
+let vocabFilter='all';
+let vocabSearch='';
+
+function showVocabList(){
+  vocabFilter='all';
+  vocabSearch='';
+  renderVocabList();
+  showView('vocab');
+}
+
+function getVocabStatusLabel(wp){
+  if(!wp) return {text:'未学', cls:'new'};
+  if(wp.status==='new') return {text:'未学', cls:'new'};
+  if(wp.status==='review') return {text:'学习中', cls:'review'};
+  if(wp.status==='mastered') return {text:'已掌握', cls:'mastered'};
+  if(wp.status==='ignored') return {text:'已斩', cls:'ignored'};
+  return {text:'未知', cls:'new'};
+}
+
+function renderVocabList(){
+  const all=getAllVocab();
+  let filtered=all;
+  // Filter by status
+  if(vocabFilter!=='all'){
+    filtered=filtered.filter(w=>{
+      const wp=progress.words[w.word];
+      if(vocabFilter==='new') return !wp || wp.status==='new';
+      return wp && wp.status===vocabFilter;
+    });
+  }
+  // Filter by search
+  if(vocabSearch.trim()){
+    const q=vocabSearch.trim().toLowerCase();
+    filtered=filtered.filter(w=>
+      w.word.toLowerCase().includes(q) ||
+      (w.meaning||'').toLowerCase().includes(q)
+    );
+  }
+  const total=all.length;
+  const filters=[
+    {v:'all', l:'全部'},
+    {v:'new', l:'未学'},
+    {v:'review', l:'学习中'},
+    {v:'mastered', l:'已掌握'},
+    {v:'ignored', l:'已斩'},
+  ];
+  const html=`
+    <div class="vocab-header">
+      <div class="vocab-header-row">
+        <button class="vocab-back-btn" onclick="renderHome();showView('home')">← 返回</button>
+        <div class="vocab-title">单词表</div>
+        <button class="vocab-export-btn" onclick="exportVocabExcel()">下载Excel</button>
+      </div>
+      <input class="vocab-search" type="text" placeholder="搜索单词或释义..." value="${vocabSearch}" oninput="vocabSearch=this.value;renderVocabList()">
+      <div class="vocab-filter-row">
+        ${filters.map(f=>`<button class="vocab-filter-btn ${vocabFilter===f.v?'active':''}" onclick="vocabFilter='${f.v}';renderVocabList()">${f.l}</button>`).join('')}
+        <span class="vocab-count" style="margin-left:auto;align-self:center">${filtered.length} / ${total} 词</span>
+      </div>
+    </div>
+    <div class="vocab-list">
+      ${filtered.map(w=>{
+        const wp=progress.words[w.word];
+        const st=getVocabStatusLabel(wp);
+        return `<div class="vocab-item">
+          <div class="vocab-word">${w.word}</div>
+          <div class="vocab-type">${w.type||''}</div>
+          <div class="vocab-meaning">${w.meaning||''}</div>
+          <div class="vocab-status ${st.cls}">${st.text}</div>
+        </div>`;
+      }).join('')}
+    </div>`;
+  document.getElementById('view-vocab').innerHTML=html;
+}
+
+function exportVocabExcel(){
+  const all=getAllVocab();
+  if(all.length===0){ showToast('词库为空'); return; }
+  const data=[['单词','词性','释义','分类','学习状态','稳定性','难度','正确次数','错误次数']];
+  for(const w of all){
+    const wp=progress.words[w.word];
+    const st=getVocabStatusLabel(wp);
+    data.push([
+      w.word,
+      w.type||'',
+      w.meaning||'',
+      w.category||'',
+      st.text,
+      wp?(wp.stability?wp.stability.toFixed(1)+'天':'-'):'-',
+      wp?(wp.difficulty?wp.difficulty.toFixed(1):'-'):'-',
+      wp?(wp.correct||0):0,
+      wp?(wp.wrong||0):0
+    ]);
+  }
+  const ws=XLSX.utils.aoa_to_sheet(data);
+  ws['!cols']=[{wch:18},{wch:8},{wch:40},{wch:12},{wch:10},{wch:10},{wch:8},{wch:10},{wch:10}];
+  const wb=XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, '单词表');
+  XLSX.writeFile(wb, '考研英语核心词_单词表_'+getToday()+'.xlsx');
+  showToast('已导出 '+all.length+' 个单词');
 }
 
 // ===== User Management =====
@@ -1566,6 +1696,7 @@ function renderHome(){
     <div class="section-label">词库管理</div>
     <div class="data-row">
       <button class="data-btn import-btn" onclick="showImportModal()">导入Excel词汇</button>
+      <button class="data-btn" onclick="showVocabList()">单词表</button>
       <button class="data-btn" onclick="exportData()">导出进度</button>
       <button class="data-btn" onclick="importData()">导入进度</button>
       <button class="data-btn" onclick="exportReviewLogs()" id="btn-export-logs">导出复习日志</button>
