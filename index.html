@@ -166,6 +166,14 @@ body{
 .reveal-btn:hover{background:#D0E4F7}
 .reveal-btn.revealed{border-style:solid;background:var(--surface);color:var(--on-surface-variant)}
 
+.ignore-row{margin-top:12px;text-align:center}
+.ignore-btn{
+  padding:8px 20px;border-radius:20px;border:1px solid #E53E3E;
+  background:transparent;color:#E53E3E;font-size:13px;font-weight:500;
+  cursor:pointer;transition:all .2s;
+}
+.ignore-btn:hover{background:#FFF5F5}
+
 .result-card{margin-top:20px;padding:20px;border-radius:16px;background:var(--surface-variant);
   animation:fadeIn .3s ease;position:relative}
 .result-word{font-size:22px;font-weight:700;color:var(--primary)}
@@ -1002,13 +1010,14 @@ function getNewCount(){
 }
 
 function getMasteredCount(){ return Object.values(progress.words).filter(w=>w.status==='mastered').length; }
+function getIgnoredCount(){ return Object.values(progress.words).filter(w=>w.status==='ignored').length; }
 function getLearnedCount(){ return Object.values(progress.words).filter(w=>w.status!=='new').length; }
 
 function getWrongWords(){
   const all=getAllVocab();
   return all.filter(w=>{
     const wp=progress.words[w.word];
-    return wp && (wp.wrong||0)>=3;
+    return wp && wp.status!=='ignored' && (wp.wrong||0)>=3;
   });
 }
 function getWrongCount(){ return getWrongWords().length; }
@@ -1021,7 +1030,7 @@ function getForcedReviewWords(){
   // Use firstLearned if available, fallback to lastStudy for old data
   return all.filter(w=>{
     const wp=progress.words[w.word];
-    if(!wp) return false;
+    if(!wp || wp.status==='ignored') return false;
     const learnDate = wp.firstLearned || wp.lastStudy;
     if(!learnDate) return false;
     return dateToStudyDay(learnDate)===yest;
@@ -1031,10 +1040,10 @@ function getForcedReviewWords(){
 // V5-EX4: Independent review - due words first, then fill by retrievability
 function getAutoReviewWords(){
   const all=getAllVocab();
-  // Include ALL learned words (including mastered) for independent review
+  // Include ALL learned words (including mastered) for independent review, but NOT ignored
   const learnedWords = all.filter(w=>{
     const wp=progress.words[w.word];
-    return wp && wp.status!=='new';
+    return wp && wp.status!=='new' && wp.status!=='ignored';
   });
 
   if(learnedWords.length===0) return [];
@@ -1497,6 +1506,10 @@ function renderHome(){
         <div class="stat-num ${dueCount>0?'due':''}">${dueCount}</div>
         <div class="stat-label">今日待复习</div>
       </div>
+      <div class="stat-card">
+        <div class="stat-num" style="color:#9CA3AF">${getIgnoredCount()}</div>
+        <div class="stat-label">已斩</div>
+      </div>
     </div>
 
     <div class="timer-card">
@@ -1918,6 +1931,9 @@ function renderCard(){
             </div>
           </button>`).join('')}
       </div>
+      <div class="ignore-row">
+        <button class="ignore-btn" onclick="ignoreCurrentWord()">✗ 太简单了，斩掉</button>
+      </div>
     </div>`;
   document.getElementById('view-study').innerHTML=html;
 }
@@ -1950,6 +1966,37 @@ function toggleReveal(){
       btn.classList.remove('revealed');
     });
   }
+}
+
+// 斩词：将单词标记为ignored，不再参与任何复习，但保留在词库和学习记录中
+function ignoreCurrentWord(){
+  if(!session || !currentCard) return;
+  if(!confirm('确定要斩掉这个单词吗？它将不再出现在任何复习中，但仍保留在词库中。')) return;
+  const word=currentCard.word;
+  let wp=progress.words[word];
+  if(!wp){
+    // 学习阶段的新词可能还没写入progress，先创建记录
+    wp={status:'ignored', stability:0, difficulty:0, lastReview:Date.now(), nextReview:0, correct:0, wrong:0, firstLearned:Date.now(), lastStudy:Date.now()};
+    progress.words[word]=wp;
+  } else {
+    wp.status='ignored';
+  }
+  if(!progress.stats.totalIgnored) progress.stats.totalIgnored=0;
+  progress.stats.totalIgnored++;
+  // 从当前会话的卡片列表中移除（包括重测队列中的）
+  session.cards=session.cards.filter(c=>c.word!==word);
+  session.retestQueue=session.retestQueue.filter(c=>c.word!==word);
+  if(session.retestInserted) session.retestInserted.delete(word);
+  if(session.wrongWords) session.wrongWords.delete(word);
+  if(session.studiedWords && session.studiedWords.has(word)) session.studiedWords.delete(word);
+  // 修正索引（如果当前删的是最后一个，回退一位）
+  if(session.currentIndex>=session.cards.length){
+    session.currentIndex=session.cards.length;
+  }
+  saveProgress();
+  showToast('已斩掉 '+word);
+  if(session.cards.length===0){ completeSession(); return; }
+  renderCard();
 }
 
 function selectOption(index){
