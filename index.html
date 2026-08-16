@@ -6,20 +6,36 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<meta name="version" content="V2-20260811">
-<title>考研英语核心词 V2</title>
+<meta name="version" content="V3-FSRS6-20260816">
+<title>考研英语核心词 V3 (FSRS-6)</title>
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 <script src="sentences.js"></script>
+<script type="module">
+// Official ts-fsrs (FSRS-6) browser build via ESM CDN
+import * as TSFSRS from 'https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.1/+esm';
+window.__TSFSRS = TSFSRS;
+window.__TSFSRSReady = Promise.resolve(TSFSRS);
+window.__fsrsLoaded = true;
+</script>
 <style>
 :root{
-  --primary:#0078D4;--on-primary:#FFFFFF;
-  --primary-container:#E8F1FA;--on-primary-container:#004578;
-  --surface:#FFFFFF;--surface-variant:#F5F7FA;
-  --on-surface:#1A202C;--on-surface-variant:#4A5568;
-  --outline:#CBD5E0;--outline-variant:#E2E8F0;
-  --error:#E53E3E;--error-container:#FED7D7;
-  --success:#2F855A;--success-container:#C6F6D5;
-  --background:#F5F7FA;--shadow:0 1px 3px rgba(0,0,0,.06);
+  --primary:#3B82F6;--on-primary:#FFFFFF;
+  --primary-container:#DBEAFE;--on-primary-container:#1E40AF;
+  --primary-light:#EFF6FF;
+  --surface:#FFFFFF;--surface-variant:#F8FAFC;
+  --on-surface:#0F172A;--on-surface-variant:#64748B;
+  --outline:#E2E8F0;--outline-variant:#F1F5F9;
+  --error:#EF4444;--error-container:#FEE2E2;--on-error:#991B1B;
+  --success:#10B981;--success-container:#D1FAE5;--on-success:#065F46;
+  --warning:#F59E0B;--warning-container:#FEF3C7;--on-warning:#92400E;
+  --background:#F0F4F8;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.04);
+  --shadow-md:0 4px 12px rgba(0,0,0,.06);
+  --shadow-lg:0 8px 24px rgba(0,0,0,.08);
+  --radius-sm:10px;
+  --radius-md:14px;
+  --radius-lg:18px;
+  --radius-xl:22px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{
@@ -27,114 +43,225 @@ body{
   background:var(--background);color:var(--on-surface);
   min-height:100vh;-webkit-font-smoothing:antialiased;
 }
-#app{max-width:480px;margin:0 auto;min-height:100vh;background:var(--surface);box-shadow:0 0 40px rgba(0,0,0,.06);position:relative}
+#app{max-width:480px;margin:0 auto;min-height:100vh;background:var(--background);position:relative}
 .view{display:none;min-height:100vh;animation:fadeIn .3s ease}
 .view.active{display:block}
 @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 
 /* ===== Home ===== */
-.home-header{padding:36px 24px 8px;text-align:center}
-.home-title{font-size:24px;font-weight:800;letter-spacing:.5px}
-.home-subtitle{font-size:13px;color:var(--on-surface-variant);margin-top:6px}
+.home-header{padding:32px 20px 8px;text-align:center}
+.home-title{font-size:22px;font-weight:700;letter-spacing:.3px;color:var(--on-surface)}
+.home-subtitle{font-size:13px;color:var(--on-surface-variant);margin-top:4px}
 
-.hero-card{
-  margin:20px 24px;padding:28px 24px;border-radius:24px;
-  background:linear-gradient(135deg,#0078D4,#106EBE);
-  color:#fff;box-shadow:0 8px 24px rgba(0,120,212,.2);
+/* Daily Goal Card */
+.daily-goal-card{
+  margin:16px 20px;padding:24px 20px;border-radius:var(--radius-xl);
+  background:var(--surface);box-shadow:var(--shadow-sm);
+  border:1px solid var(--outline-variant);
 }
-.hero-label{font-size:13px;opacity:.8;font-weight:500}
-.hero-number{font-size:42px;font-weight:800;margin:4px 0;letter-spacing:1px}
-.hero-number span{font-size:18px;font-weight:500;opacity:.7}
-.hero-bar{height:8px;background:rgba(255,255,255,.25);border-radius:4px;margin-top:12px;overflow:hidden}
-.hero-bar-fill{height:100%;background:#fff;border-radius:4px;transition:width .5s ease}
-.hero-stats{display:flex;justify-content:space-between;margin-top:16px;font-size:13px;opacity:.9}
-
-.stat-grid{display:flex;gap:12px;margin:0 24px}
-.stat-card{flex:1;padding:20px 16px;border-radius:16px;background:var(--surface-variant);text-align:center}
-.stat-num{font-size:28px;font-weight:700;color:var(--primary)}
-.stat-num.due{color:var(--error)}
-.stat-label{font-size:12px;color:var(--on-surface-variant);margin-top:4px}
-
-.section-label{font-size:14px;font-weight:600;color:var(--on-surface-variant);margin:24px 24px 12px}
-
-.goal-row{display:flex;gap:10px;margin:0 24px;flex-wrap:wrap}
-.goal-btn{flex:1;min-width:60px;padding:14px 0;border-radius:14px;border:2px solid var(--outline);background:var(--surface);
-  font-size:16px;font-weight:600;color:var(--on-surface-variant);cursor:pointer;transition:all .2s}
-.goal-btn.active{border-color:var(--primary);background:var(--primary-container);color:var(--on-primary-container)}
-
-.countdown-card{
-  margin:0 24px 16px;padding:16px 20px;border-radius:16px;
-  background:linear-gradient(135deg,#E8F1FA,#F5F7FA);
-  display:flex;align-items:center;justify-content:space-between;
+.daily-goal-title{font-size:16px;font-weight:700;color:var(--on-surface);margin-bottom:2px}
+.daily-goal-subtitle{font-size:12px;color:var(--on-surface-variant);margin-bottom:16px}
+.daily-goal-btns{display:flex;gap:10px}
+.daily-goal-btn{
+  flex:1;padding:12px 0;border-radius:var(--radius-md);
+  border:2px solid var(--outline);background:var(--surface);
+  font-size:16px;font-weight:700;color:var(--on-surface-variant);
+  cursor:pointer;transition:all .2s ease;
 }
-.countdown-info{flex:1}
-.countdown-label{font-size:12px;color:var(--on-surface-variant);font-weight:500}
-.countdown-value{font-size:24px;font-weight:800;color:var(--primary);margin-top:2px}
-.countdown-value span{font-size:14px;font-weight:500;color:var(--on-surface-variant)}
-.countdown-detail{font-size:12px;color:var(--on-surface-variant);margin-top:4px}
-.countdown-icon{font-size:32px;margin-left:12px}
-
-.btn-primary{
-  display:block;width:calc(100% - 48px);margin:20px 24px;padding:16px;
-  border-radius:16px;border:none;background:var(--primary);color:#fff;
-  font-size:17px;font-weight:600;cursor:pointer;transition:all .2s;
+.daily-goal-btn:hover{border-color:var(--primary);color:var(--primary);background:var(--primary-light)}
+.daily-goal-btn.active{
+  border-color:var(--primary);background:var(--primary-light);
+  color:var(--on-primary-container);
 }
-.btn-primary:hover{background:#106EBE;box-shadow:0 4px 12px rgba(0,120,212,.25)}
-.btn-primary:active{transform:scale(.98)}
-.btn-primary:disabled{background:var(--outline);color:var(--on-surface-variant);cursor:not-allowed}
-.btn-secondary{
-  display:block;width:calc(100% - 48px);margin:8px 24px;padding:16px;
-  border-radius:16px;border:2px solid var(--primary);background:var(--surface);
-  color:var(--primary);font-size:17px;font-weight:600;cursor:pointer;transition:all .2s;
-}
-.btn-secondary:hover{background:var(--primary-container)}
-.btn-secondary:active{transform:scale(.98)}
-.btn-secondary:disabled{border-color:var(--outline);color:var(--outline);cursor:not-allowed}
 
-.btn-tertiary{
-  display:block;width:calc(100% - 48px);margin:8px 24px;padding:14px;
-  border-radius:16px;border:2px solid #00897B;background:var(--surface);
-  color:#00897B;font-size:16px;font-weight:600;cursor:pointer;transition:all .2s;
+/* Mode Tabs */
+.mode-tabs{
+  margin:16px 20px;display:flex;gap:10px;
 }
-.btn-tertiary:hover{background:#E0F2F1}
-.btn-tertiary:active{transform:scale(.98)}
-.btn-tertiary:disabled{border-color:var(--outline);color:var(--outline);cursor:not-allowed}
+.mode-tab{
+  flex:1;padding:16px 12px;border-radius:var(--radius-lg);
+  background:var(--surface);border:2px solid transparent;
+  cursor:pointer;transition:all .2s ease;
+  box-shadow:var(--shadow-sm);text-align:center;
+}
+.mode-tab:hover{border-color:var(--outline);transform:translateY(-1px)}
+.mode-tab.active{
+  background:var(--primary-light);border-color:var(--primary);
+  box-shadow:0 2px 8px rgba(59,130,246,.15);
+}
+.mode-tab-icon{font-size:24px;margin-bottom:6px}
+.mode-tab-title{font-size:13px;font-weight:700;color:var(--on-surface);margin-bottom:2px}
+.mode-tab-desc{font-size:11px;color:var(--on-surface-variant);line-height:1.3}
+.mode-tab.active .mode-tab-title{color:var(--on-primary-container)}
+.mode-tab.active .mode-tab-desc{color:var(--primary)}
 
-.overall-progress{margin:24px;padding:20px;border-radius:16px;background:var(--surface-variant)}
-.op-row{display:flex;justify-content:space-between;font-size:13px;color:var(--on-surface-variant);margin-bottom:8px}
-.op-bar{height:6px;background:var(--outline-variant);border-radius:3px;overflow:hidden}
-.op-bar-fill{height:100%;background:var(--primary);border-radius:3px;transition:width .5s}
-.op-detail{display:flex;gap:16px;margin-top:12px;font-size:12px;color:var(--on-surface-variant);flex-wrap:wrap}
-.op-detail span{color:var(--on-surface)}
+/* Stats Row */
+.stats-row{
+  margin:16px 20px;padding:18px 12px;border-radius:var(--radius-lg);
+  background:var(--surface);box-shadow:var(--shadow-sm);
+  display:flex;justify-content:space-around;
+  border:1px solid var(--outline-variant);
+}
+.stat-item{text-align:center;flex:1}
+.stat-num{font-size:24px;font-weight:800;color:var(--primary);line-height:1.2}
+.stat-num.warn{color:var(--warning)}
+.stat-num.error{color:var(--error)}
+.stat-num.muted{color:var(--on-surface-variant)}
+.stat-label{font-size:11px;color:var(--on-surface-variant);margin-top:4px;font-weight:500}
+
+/* Action Buttons */
+.home-actions{margin:16px 20px;display:flex;flex-direction:column;gap:10px}
+.action-btn{
+  width:100%;padding:16px;border-radius:var(--radius-lg);
+  border:none;font-size:16px;font-weight:700;cursor:pointer;
+  transition:all .2s ease;display:flex;align-items:center;justify-content:center;gap:8px;
+}
+.action-btn.primary{
+  background:var(--primary);color:#fff;
+  box-shadow:0 4px 12px rgba(59,130,246,.25);
+}
+.action-btn.primary:hover{background:#2563EB;box-shadow:0 6px 16px rgba(59,130,246,.35)}
+.action-btn.primary:active{transform:scale(.98)}
+.action-btn.primary:disabled{background:var(--outline);color:var(--on-surface-variant);box-shadow:none;cursor:not-allowed}
+.action-btn.secondary{
+  background:var(--surface);color:var(--on-surface);
+  border:2px solid var(--outline);
+}
+.action-btn.secondary:hover{border-color:var(--primary);color:var(--primary);background:var(--primary-light)}
+.action-btn.secondary:active{transform:scale(.98)}
+.action-btn.secondary:disabled{border-color:var(--outline);color:var(--outline);cursor:not-allowed;background:var(--surface)}
+.action-btn.tertiary{
+  background:var(--surface);color:var(--success);
+  border:2px solid var(--success-container);
+}
+.action-btn.tertiary:hover{background:var(--success-container);border-color:var(--success)}
+.action-btn.tertiary:active{transform:scale(.98)}
+.action-btn.tertiary:disabled{border-color:var(--outline);color:var(--outline);cursor:not-allowed;background:var(--surface)}
+
+/* Resume Banner */
+.resume-banner{
+  margin:0 20px 16px;padding:16px 18px;border-radius:var(--radius-lg);
+  background:linear-gradient(135deg,#FEF3C7,#FDE68A);
+  border:1px solid #FCD34D;
+}
+.resume-banner-title{font-size:13px;color:#92400E;font-weight:700;margin-bottom:4px}
+.resume-banner-desc{font-size:12px;color:#78350F;margin-bottom:12px}
+.resume-banner-actions{display:flex;gap:10px}
+.resume-btn-primary{flex:1;padding:10px;border-radius:var(--radius-sm);border:none;background:#F59E0B;color:#fff;font-size:13px;font-weight:600;cursor:pointer}
+.resume-btn-secondary{padding:10px 16px;border-radius:var(--radius-sm);border:1px solid #FBBF24;background:#fff;color:#92400E;font-size:13px;font-weight:600;cursor:pointer}
+
+/* Progress Card */
+.progress-card{
+  margin:16px 20px;padding:20px;border-radius:var(--radius-lg);
+  background:var(--surface);box-shadow:var(--shadow-sm);
+  border:1px solid var(--outline-variant);
+}
+.progress-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.progress-title{font-size:14px;font-weight:700;color:var(--on-surface)}
+.progress-value{font-size:13px;font-weight:600;color:var(--on-surface-variant)}
+.progress-bar{height:6px;background:var(--outline-variant);border-radius:3px;overflow:hidden}
+.progress-bar-fill{height:100%;background:linear-gradient(90deg,var(--primary),#60A5FA);border-radius:3px;transition:width .5s ease}
+.progress-detail{display:flex;gap:16px;margin-top:14px;font-size:12px;color:var(--on-surface-variant);flex-wrap:wrap}
+.progress-detail span b{color:var(--on-surface);font-weight:700}
+
+/* Section */
+.home-section{margin:20px 20px 8px}
+.home-section-title{font-size:14px;font-weight:700;color:var(--on-surface);margin-bottom:10px}
+
+/* Data Buttons */
+.data-row{display:flex;gap:10px;margin:0 20px 12px;flex-wrap:wrap}
+.data-btn{flex:1;min-width:130px;padding:12px;border-radius:var(--radius-md);
+  border:1px solid var(--outline);background:var(--surface);
+  color:var(--on-surface-variant);font-size:13px;font-weight:600;
+  cursor:pointer;transition:all .2s;
+  display:flex;align-items:center;justify-content:center;gap:6px}
+.data-btn:hover{border-color:var(--primary);color:var(--primary);background:var(--primary-light)}
+.data-btn.import-btn{border-color:var(--success-container);color:var(--success)}
+.data-btn.import-btn:hover{background:var(--success-container)}
+
+/* Example Section */
+.example-card{
+  margin:0 20px 16px;padding:16px 18px;border-radius:var(--radius-lg);
+  background:var(--surface);box-shadow:var(--shadow-sm);
+  border:1px solid var(--outline-variant);
+}
+.example-card-title{font-size:13px;color:var(--on-surface-variant);margin-bottom:10px;font-weight:500}
+.example-stats{display:flex;gap:10px;flex-wrap:wrap}
+.example-stat{
+  flex:1;min-width:90px;padding:10px 12px;border-radius:var(--radius-sm);
+  font-size:12px;font-weight:600;
+}
+.example-stat.green{background:var(--success-container);color:var(--on-success)}
+.example-stat.blue{background:var(--primary-container);color:var(--on-primary-container)}
+.example-stat.orange{background:var(--warning-container);color:var(--on-warning)}
+.example-footnote{font-size:11px;margin-top:10px;color:var(--on-surface-variant);opacity:.7}
+
+/* Timer Card */
+.timer-card{margin:16px 20px;display:flex;gap:10px}
+.timer-item{flex:1;padding:16px;border-radius:var(--radius-lg);background:var(--surface);text-align:center;box-shadow:var(--shadow-sm);border:1px solid var(--outline-variant)}
+.timer-item.today{background:linear-gradient(135deg,var(--primary-light),var(--surface))}
+.timer-num{font-size:26px;font-weight:800;color:var(--primary);line-height:1.2}
+.timer-unit{font-size:13px;font-weight:500;color:var(--on-surface-variant)}
+.timer-label{font-size:11px;color:var(--on-surface-variant);margin-top:4px}
 
 .reset-btn{display:block;margin:16px auto 8px;padding:8px 16px;border:none;background:transparent;
   color:var(--error);font-size:13px;cursor:pointer;opacity:.6}
 .reset-btn:hover{opacity:1}
+.logout-btn{display:block;margin:8px auto 32px;padding:8px 16px;border:none;background:transparent;
+  color:var(--on-surface-variant);font-size:13px;cursor:pointer;opacity:.6}
+.logout-btn:hover{opacity:1;color:var(--error)}
 
-.data-row{display:flex;gap:12px;margin:0 24px 12px;flex-wrap:wrap}
-.data-btn{flex:1;min-width:140px;padding:12px;border-radius:12px;border:1px solid var(--outline);
-  background:var(--surface);color:var(--on-surface-variant);font-size:13px;font-weight:500;
-  cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:6px}
-.data-btn:hover{border-color:var(--primary);color:var(--primary)}
-.data-btn.import-btn{border-color:var(--success);color:var(--success)}
+.user-badge{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:20px;
+  background:var(--primary-container);color:var(--on-primary-container);font-size:13px;font-weight:600}
 
 /* ===== Study ===== */
-.study-topbar{display:flex;align-items:center;padding:16px 20px;gap:12px;position:sticky;top:0;background:var(--surface);z-index:10}
-.back-btn{width:36px;height:36px;border-radius:50%;border:none;background:var(--surface-variant);
-  color:var(--on-surface);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.study-topbar{display:flex;align-items:center;padding:14px 18px;gap:12px;position:sticky;top:0;background:var(--background);z-index:10}
+.back-btn{width:38px;height:38px;border-radius:50%;border:none;background:var(--surface);
+  color:var(--on-surface);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  box-shadow:var(--shadow-sm);border:1px solid var(--outline-variant);
+}
 .back-btn:hover{background:var(--primary-container)}
-.study-progress{flex:1;font-size:14px;font-weight:600;color:var(--on-surface)}
-.study-progress span{color:var(--on-surface-variant);font-weight:400}
-.pass-badge{padding:4px 12px;border-radius:20px;background:var(--primary-container);color:var(--on-primary-container);font-size:12px;font-weight:600;flex-shrink:0}
+.study-progress{flex:1;font-size:14px;font-weight:700;color:var(--on-surface)}
+.study-progress span{color:var(--on-surface-variant);font-weight:500}
+.pass-badge{padding:5px 14px;border-radius:20px;background:var(--primary-container);color:var(--on-primary-container);font-size:12px;font-weight:600;flex-shrink:0}
 
-.study-bar{height:4px;background:var(--outline-variant);margin:0 20px;border-radius:2px;overflow:hidden}
+.study-bar{height:3px;background:var(--outline-variant);margin:0 18px;border-radius:2px;overflow:hidden}
 .study-bar-fill{height:100%;background:var(--primary);border-radius:2px;transition:width .3s ease}
 
-.card-container{padding:24px 20px}
+.card-container{padding:20px 18px}
+
+/* Word Card - New Design */
+.word-card{
+  background:var(--surface);border-radius:var(--radius-xl);
+  padding:32px 24px;text-align:center;margin-bottom:20px;
+  box-shadow:var(--shadow-md);border:1px solid var(--outline-variant);
+  position:relative;
+}
+.word-status-badge{
+  display:inline-block;padding:5px 14px;border-radius:20px;
+  background:var(--primary-light);color:var(--primary);
+  font-size:12px;font-weight:700;margin-bottom:16px;
+  letter-spacing:.5px;
+}
+.word-status-badge.new{background:#FEF3C7;color:#D97706}
+.word-status-badge.learning{background:#DBEAFE;color:#2563EB}
+.word-status-badge.review{background:#D1FAE5;color:#059669}
+.word-status-badge.relearning{background:#FEE2E2;color:#DC2626}
+.word-main{font-size:38px;font-weight:800;color:var(--on-surface);letter-spacing:.5px;word-break:break-word;line-height:1.2}
+.word-meaning{font-size:17px;color:var(--on-surface);margin-top:12px;line-height:1.5;font-weight:500}
+.word-type{font-size:13px;color:var(--on-surface-variant);margin-top:6px}
+.word-fsrs-info{
+  display:flex;justify-content:center;gap:16px;margin-top:16px;
+  font-size:11px;color:var(--on-surface-variant);flex-wrap:wrap;
+}
+.word-fsrs-info span b{color:var(--on-surface);font-weight:600}
+.word-speak-row{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:14px}
+
 .question-card{
-  background:var(--surface-variant);border-radius:24px;padding:36px 24px;
-  text-align:center;margin-bottom:24px;min-height:160px;
+  background:var(--surface);border-radius:var(--radius-xl);padding:32px 24px;
+  text-align:center;margin-bottom:20px;min-height:160px;
   display:flex;flex-direction:column;justify-content:center;align-items:center;
+  box-shadow:var(--shadow-md);border:1px solid var(--outline-variant);
 }
 .question-hint{font-size:13px;color:var(--on-surface-variant);margin-bottom:12px}
 .question-text{font-size:28px;font-weight:700;color:var(--on-surface);line-height:1.4;word-break:break-word}
@@ -142,29 +269,30 @@ body{
 
 .options{display:flex;flex-direction:column;gap:10px}
 .option-btn{
-  display:flex;align-items:center;gap:12px;padding:16px 20px;
-  border-radius:16px;border:2px solid var(--outline);background:var(--surface);
-  font-size:16px;cursor:pointer;transition:all .2s;text-align:left;
+  display:flex;align-items:center;gap:12px;padding:14px 18px;
+  border-radius:var(--radius-md);border:2px solid var(--outline);background:var(--surface);
+  font-size:15px;cursor:pointer;transition:all .2s;text-align:left;
   color:var(--on-surface);line-height:1.4;
+  box-shadow:var(--shadow-sm);
 }
-.option-btn:hover:not(.disabled){border-color:var(--primary);background:var(--primary-container)}
+.option-btn:hover:not(.disabled){border-color:var(--primary);background:var(--primary-light)}
 .option-btn.disabled{cursor:default}
-.option-btn.correct{border-color:var(--success);background:var(--success-container);color:var(--success)}
-.option-btn.wrong{border-color:var(--error);background:var(--error-container);color:var(--error)}
+.option-btn.correct{border-color:var(--success);background:var(--success-container);color:var(--on-success)}
+.option-btn.wrong{border-color:var(--error);background:var(--error-container);color:var(--on-error)}
 .option-label{width:28px;height:28px;border-radius:50%;background:var(--surface-variant);
-  display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0}
+  display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0}
 .option-btn.correct .option-label{background:var(--success);color:#fff}
 .option-btn.wrong .option-label{background:var(--error);color:#fff}
 .option-translation{font-size:12px;color:var(--on-surface-variant);margin-top:4px;display:none}
 .option-btn.revealed .option-translation{display:block}
 
 .reveal-btn{
-  display:block;width:100%;margin-bottom:16px;padding:12px;
-  border-radius:12px;border:1px dashed var(--primary);background:var(--primary-container);
-  color:var(--primary);font-size:14px;font-weight:600;cursor:pointer;transition:all .2s;
+  display:block;width:100%;margin-bottom:14px;padding:11px;
+  border-radius:var(--radius-md);border:1px dashed var(--primary);background:var(--primary-light);
+  color:var(--primary);font-size:13px;font-weight:600;cursor:pointer;transition:all .2s;
 }
-.reveal-btn:hover{background:#D0E4F7}
-.reveal-btn.revealed{border-style:solid;background:var(--surface);color:var(--on-surface-variant)}
+.reveal-btn:hover{background:var(--primary-container)}
+.reveal-btn.revealed{border-style:solid;background:var(--surface);color:var(--on-surface-variant);border-color:var(--outline)}
 
 .ignore-row{margin-top:12px;text-align:center}
 .ignore-btn{
@@ -267,14 +395,47 @@ body{
 .vocab-meaning{flex:1;font-size:14px;color:var(--on-surface);line-height:1.4}
 .vocab-status{font-size:11px;padding:2px 8px;border-radius:10px;white-space:nowrap}
 .vocab-status.new{background:#FEF3C7;color:#92400E}
-.vocab-status.review{background:#DBEAFE;color:#1E40AF}
-.vocab-status.mastered{background:#D1FAE5;color:#065F46}
+.vocab-status.learning{background:#DBEAFE;color:#1E40AF}
+.vocab-status.review{background:#D1FAE5;color:#065F46}
+.vocab-status.relearning{background:#FEE2E2;color:#991B1B}
+.vocab-status.mastered{background:#E0E7FF;color:#3730A3}
 .vocab-status.ignored{background:#E5E7EB;color:#4B5563}
 .complete-stat-label{font-size:12px;color:var(--on-surface-variant);margin-top:4px}
 .complete-accuracy{font-size:16px;color:var(--on-surface-variant);margin-bottom:24px}
 .complete-accuracy span{font-weight:700;color:var(--on-surface);font-size:20px}
 .next-review-info{padding:16px;border-radius:12px;background:var(--primary-container);color:var(--on-primary-container);
   font-size:14px;margin-bottom:24px}
+
+/* ===== FSRS-6 Rating Panel ===== */
+/* ===== FSRS-6 Rating Panel - New Design ===== */
+.fsrs-rating-panel{margin-top:16px}
+.fsrs-rating-title{font-size:12px;color:var(--on-surface-variant);margin-bottom:10px;font-weight:600;text-align:center}
+.fsrs-rating-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.fsrs-rating-btn{
+  border:2px solid var(--outline);background:var(--surface);
+  border-radius:var(--radius-md);padding:12px 6px;cursor:pointer;
+  font-weight:700;color:var(--on-surface);transition:all .15s;
+  font-size:14px;box-shadow:var(--shadow-sm);
+}
+.fsrs-rating-btn small{
+  display:block;font-weight:500;font-size:10px;margin-top:4px;
+  color:var(--on-surface-variant);
+}
+.fsrs-rating-btn:hover{transform:translateY(-1px);box-shadow:var(--shadow-md)}
+.fsrs-rating-btn.again{color:#DC2626;border-color:#FECACA}
+.fsrs-rating-btn.again:hover{background:#FEF2F2;border-color:#FCA5A5}
+.fsrs-rating-btn.hard{color:#EA580C;border-color:#FED7AA}
+.fsrs-rating-btn.hard:hover{background:#FFF7ED;border-color:#FDBA74}
+.fsrs-rating-btn.good{color:#059669;border-color:#BBF7D0}
+.fsrs-rating-btn.good:hover{background:#F0FDF4;border-color:#86EFAC}
+.fsrs-rating-btn.easy{color:#2563EB;border-color:#BFDBFE}
+.fsrs-rating-btn.easy:hover{background:#EFF6FF;border-color:#93C5FD}
+.fsrs-rating-btn:disabled{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}
+.fsrs-state-badge{
+  margin-top:10px;padding:8px 14px;border-radius:var(--radius-sm);
+  background:var(--primary-light);color:var(--primary);
+  font-size:12px;font-weight:600;text-align:center;
+}
 
 /* ===== Toast ===== */
 .toast{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
@@ -359,6 +520,10 @@ body{
 @media(max-width:480px){
   #app{box-shadow:none}
   .question-text{font-size:24px}
+  .word-main{font-size:32px}
+  .mode-tab-title{font-size:12px}
+  .mode-tab-desc{font-size:10px}
+  .stat-num{font-size:20px}
 }
 </style>
 </head>
@@ -378,113 +543,233 @@ body{
 // ===== Config =====
 const REVIEW_INTERVALS = [1, 2, 4, 7, 15, 30]; // Legacy, kept for migration
 
-// ===== FSRS Algorithm (Free Spaced Repetition Scheduler) =====
-const FSRS = {
-  targetRetention: 0.85,   // 目标回忆率 85%（考研词汇适当降低，减少复习量）
-  maxInterval: 365,        // 最大间隔 365 天
-  minStability: 0.1,       // 最小稳定性 0.1 天
-  maxStability: 365,       // 最大稳定性 365 天
-  minDifficulty: 1.0,      // 最小难度
-  maxDifficulty: 10.0,     // 最大难度
-  initStability: 1.0,      // 初始稳定性
-  initDifficulty: 5.5,     // 初始难度（中性）
-  difficultyStep: 0.7,     // 难度调节步长
-  meanReversion: 0.2,      // 均值回归权重
-  stabilityFactor: 2.5,    // 稳定性增长因子（考研词汇需更快增长）
-  stabilityPenalty: 0.4,   // 答错时稳定性惩罚
-  masteredThreshold: 30    // 稳定性超过30天视为掌握
+// ===== Official ts-fsrs FSRS-6 Adapter =====
+// The scheduling engine is the official ts-fsrs package (FSRS-6).
+// This adapter bridges the official Card/ReviewLog objects with the APP's word structure.
+const FSRS_CONFIG = {
+  request_retention: 0.90,
+  maximum_interval: 36500,
+  enable_fuzz: true,
+  enable_short_term: true,
+  learning_steps: ['1m', '10m'],
+  relearning_steps: ['10m']
 };
+const MASTERED_STABILITY_THRESHOLD = 30; // 稳定性 >= 30天 且 state===Review 视为已掌握
 
-// 计算可提取性 R（当前能回忆起的概率）
-function fsrsRetrievability(word){
-  if(!word.lastReview || !word.stability) return 0;
-  const elapsedDays = (Date.now() - word.lastReview) / (86400000);
-  if(elapsedDays <= 0) return 1;
-  return Math.pow(1 + elapsedDays / (9 * word.stability), -1);
+let fsrsScheduler = null;
+let fsrsReady = false;
+
+async function ensureFSRS(){
+  if(fsrsScheduler) return fsrsScheduler;
+  const api = window.__TSFSRS || await window.__TSFSRSReady;
+  if(!api || typeof api.fsrs!=='function') throw new Error('官方 ts-fsrs 加载失败');
+  fsrsScheduler = api.fsrs(FSRS_CONFIG);
+  fsrsReady = true;
+  return fsrsScheduler;
 }
 
-// 根据稳定性和目标回忆率计算下次复习间隔（天）
-function fsrsNextInterval(stability){
-  const interval = 9 * stability * (1 / FSRS.targetRetention - 1);
-  return Math.max(0.1, Math.min(FSRS.maxInterval, Math.round(interval * 10) / 10));
+function fsrsApi(){
+  if(!window.__TSFSRS) throw new Error('ts-fsrs 尚未加载');
+  return window.__TSFSRS;
 }
 
-// 迁移旧数据到FSRS格式
-function migrateToFSRS(word){
-  if(word.stability !== undefined) return; // 已迁移
-  // 用旧level推算初始稳定性
-  if(word.level !== undefined && word.level >= 0){
-    word.stability = REVIEW_INTERVALS[Math.min(word.level, 5)] || 1;
-  } else {
-    word.stability = word.status === 'mastered' ? FSRS.masteredThreshold : FSRS.initStability;
+// State enum helpers
+function fsrsStateName(state){
+  const api=fsrsApi();
+  if(state===api.State.New) return 'New';
+  if(state===api.State.Learning) return 'Learning';
+  if(state===api.State.Review) return 'Review';
+  if(state===api.State.Relearning) return 'Relearning';
+  return String(state);
+}
+
+function fsrsStateNameCn(state){
+  const api=fsrsApi();
+  if(state===api.State.New) return '新词';
+  if(state===api.State.Learning) return '学习中';
+  if(state===api.State.Review) return '复习中';
+  if(state===api.State.Relearning) return '重学中';
+  return String(state);
+}
+
+// Rating enum helpers
+function fsrsRatingName(rating){
+  const api=fsrsApi();
+  if(rating===api.Rating.Again) return 'Again';
+  if(rating===api.Rating.Hard) return 'Hard';
+  if(rating===api.Rating.Good) return 'Good';
+  if(rating===api.Rating.Easy) return 'Easy';
+  return String(rating);
+}
+
+function fsrsRatingFromStudyResult(correctCount){
+  const api=fsrsApi();
+  if(correctCount>=4) return api.Rating.Easy;
+  if(correctCount===3) return api.Rating.Good;
+  if(correctCount===2) return api.Rating.Hard;
+  return api.Rating.Again;
+}
+
+// Serialize an official Card into a JSON-safe object stored under word.fsrs.
+function serializeFSRSCard(card){
+  return {
+    due: card.due instanceof Date ? card.due.getTime() : Number(card.due),
+    stability: card.stability ?? 0,
+    difficulty: card.difficulty ?? 0,
+    elapsed_days: card.elapsed_days ?? 0,
+    scheduled_days: card.scheduled_days ?? 0,
+    reps: card.reps ?? 0,
+    lapses: card.lapses ?? 0,
+    state: card.state,
+    step: card.step ?? null,
+    last_review: card.last_review instanceof Date ? card.last_review.getTime() : (card.last_review ?? null)
+  };
+}
+
+// Hydrate a saved card object back into a usable FSRS Card
+function hydrateFSRSCard(saved){
+  const api=fsrsApi();
+  const card=api.createEmptyCard();
+  if(!saved) return card;
+  return {
+    ...card,
+    due: new Date(saved.due || Date.now()),
+    stability: Number(saved.stability || 0),
+    difficulty: Number(saved.difficulty || 0),
+    elapsed_days: Number(saved.elapsed_days || 0),
+    scheduled_days: Number(saved.scheduled_days || 0),
+    reps: Number(saved.reps || 0),
+    lapses: Number(saved.lapses || 0),
+    state: saved.state ?? api.State.New,
+    step: saved.step ?? null,
+    last_review: saved.last_review ? new Date(saved.last_review) : undefined
+  };
+}
+
+// Get FSRS Card from word state (handles both new format with .fsrs and legacy format)
+function getFSRSCard(wordState){
+  if(wordState && wordState.fsrs) return hydrateFSRSCard(wordState.fsrs);
+  // Legacy records: reconstruct FSRS card from old D/S/lastReview/nextReview fields
+  const api=fsrsApi();
+  const card=api.createEmptyCard();
+  if(wordState && (wordState.stability!==undefined || wordState.difficulty!==undefined)){
+    card.due=new Date(wordState.nextReview || Date.now());
+    card.stability=Number(wordState.stability || 1);
+    card.difficulty=Number(wordState.difficulty || 5);
+    card.state=api.State.Review;
+    card.reps=Math.max(1,(wordState.correct||0)+(wordState.wrong||0));
+    card.lapses=Number(wordState.wrong||0);
+    card.last_review=wordState.lastReview ? new Date(wordState.lastReview) : undefined;
+    card.elapsed_days=card.last_review ? Math.max(0,(Date.now()-card.last_review.getTime())/86400000) : 0;
+    card.scheduled_days=Math.max(0,Math.round(card.stability));
   }
-  // 用正确率推算初始难度
-  const total = (word.correct||0) + (word.wrong||0);
-  if(total > 0){
-    const errorRate = (word.wrong||0) / total;
-    word.difficulty = 3 + errorRate * 7; // 3~10
-  } else {
-    word.difficulty = FSRS.initDifficulty;
-  }
-  word.lastReview = word.lastStudy || word.lastReview || Date.now();
-  // 设置nextReview（如果缺失，根据FSRS稳定性计算）
-  if(!word.nextReview){
-    word.nextReview = word.lastReview + fsrsNextInterval(word.stability) * 86400000;
+  return card;
+}
+
+// Sync FSRS card data back to word state (keeps legacy fields for UI compatibility)
+function syncLegacyFieldsFromCard(wordState, card, rating){
+  const api=fsrsApi();
+  wordState.fsrs=serializeFSRSCard(card);
+  wordState.stability=card.stability;
+  wordState.difficulty=card.difficulty;
+  wordState.lastReview=card.last_review ? new Date(card.last_review).getTime() : Date.now();
+  wordState.nextReview=card.due instanceof Date ? card.due.getTime() : Number(card.due);
+  wordState.fsrsState=fsrsStateName(card.state);
+
+  // Legacy level display compatibility
+  if(rating===api.Rating.Again) wordState.level=Math.max(0,(wordState.level||0)-1);
+  else if(rating===api.Rating.Hard) wordState.level=Math.min(6,(wordState.level||0));
+  else if(rating===api.Rating.Good) wordState.level=Math.min(6,(wordState.level||0)+1);
+  else if(rating===api.Rating.Easy) wordState.level=Math.min(6,(wordState.level||0)+2);
+
+  // "已掌握" = stability >= 30天 AND state === Review
+  // ignored status is preserved
+  const total=(wordState.correct||0)+(wordState.wrong||0);
+  const accuracy=total ? (wordState.correct||0)/total : 0;
+  if(card.state===api.State.Review && card.stability>=MASTERED_STABILITY_THRESHOLD && total>=5 && accuracy>=0.8){
+    wordState.status='mastered';
+  }else if(wordState.status!=='ignored'){
+    wordState.status='review';
   }
 }
 
-// FSRS核心：复习后更新单词状态
-function fsrsUpdate(word, isCorrect){
-  const now = Date.now();
+// Check if a word is in "mastered" state using FSRS criteria
+function isWordMastered(wp){
+  if(!wp || wp.status==='ignored') return false;
+  if(wp.status==='mastered') return true; // cached status
+  // Check FSRS criteria directly
+  if(wp.fsrs){
+    const api=fsrsApi();
+    return wp.fsrs.state===api.State.Review && wp.fsrs.stability>=MASTERED_STABILITY_THRESHOLD;
+  }
+  return false;
+}
 
-  // 新单词首次复习
-  if(word.stability === undefined){
-    word.stability = isCorrect ? FSRS.initStability * 2 : FSRS.initStability * 0.5;
-    word.difficulty = FSRS.initDifficulty;
-    word.lastReview = now;
-    const interval = fsrsNextInterval(word.stability);
-    word.nextReview = now + interval * 86400000;
-    word.level = isCorrect ? 1 : 0;
-    word.status = 'review';
+// Migrate old word data to FSRS-6 format
+function migrateToFSRS6(word){
+  if(word.status==='ignored') return; // ignored words don't need FSRS card
+  if(word.fsrs){
+    // Already migrated, just normalize timestamps
+    const c=hydrateFSRSCard(word.fsrs);
+    word.fsrs=serializeFSRSCard(c);
+    word.stability=c.stability;
+    word.difficulty=c.difficulty;
+    word.nextReview=c.due.getTime();
+    word.fsrsState=fsrsStateName(c.state);
     return;
   }
+  // Legacy migration: build FSRS card from old fields
+  const card=getFSRSCard(word);
+  word.fsrs=serializeFSRSCard(card);
+  word.stability=card.stability;
+  word.difficulty=card.difficulty;
+  word.nextReview=card.due.getTime();
+  word.lastReview=card.last_review ? card.last_review.getTime() : (word.lastReview||null);
+  word.fsrsState=fsrsStateName(card.state);
+  if(!word.status || word.status==='new') word.status='review';
+}
 
-  // 计算当前可提取性
-  const R = fsrsRetrievability(word);
+// Get retrievability (current recall probability)
+function fsrsRetrievability(wordState, now=Date.now()){
+  if(!wordState) return 0;
+  try{
+    if(!fsrsScheduler) return 0;
+    const card=getFSRSCard(wordState);
+    return fsrsScheduler.get_retrievability(card,new Date(now),false);
+  }catch(e){ return 0; }
+}
 
-  // 更新难度D
-  const delta = isCorrect ? -0.15 : 0.5;
-  const rawD = word.difficulty + delta;
-  word.difficulty = FSRS.meanReversion * FSRS.initDifficulty + (1 - FSRS.meanReversion) * rawD;
-  word.difficulty = Math.max(FSRS.minDifficulty, Math.min(FSRS.maxDifficulty, word.difficulty));
+// Get next interval in days
+function fsrsNextInterval(wordState){
+  try{
+    if(!fsrsScheduler) return 0;
+    const card=typeof wordState==='object' ? getFSRSCard(wordState) : null;
+    if(!card) return 0;
+    return fsrsScheduler.next_interval(card.stability,0);
+  }catch(e){ return 0; }
+}
 
-  // 更新稳定性S
-  if(isCorrect){
-    // 答对：稳定性增长，增长幅度取决于当前回忆难度和单词难度
-    // Math.max(0.1, ...) 确保高难度词答对后也能增长（最低10%增长率）
-    const factor = 1 + FSRS.stabilityFactor * (1 - R) * Math.max(0.1, (10 - word.difficulty) / 10);
-    word.stability *= factor;
-  } else {
-    // 答错：稳定性衰减，难度越高惩罚越重（10-D 确保难词丢失更多稳定性）
-    const penalty = FSRS.stabilityPenalty + 0.1 * ((10 - word.difficulty) / 10);
-    word.stability *= penalty;
-  }
-  word.stability = Math.max(FSRS.minStability, Math.min(FSRS.maxStability, word.stability));
+// Apply one official FSRS rating. Returns the scheduler result.
+function applyFSRSRating(wordState,rating,now=Date.now()){
+  const card=getFSRSCard(wordState);
+  const before=serializeFSRSCard(card);
+  const result=fsrsScheduler.next(card,new Date(now),rating);
+  const after=result.card;
+  syncLegacyFieldsFromCard(wordState,after,rating);
+  return {result,before,after:serializeFSRSCard(after)};
+}
 
-  // 更新level（兼容旧显示）
-  if(isCorrect) word.level = Math.min(6, (word.level||0) + 1);
-  else word.level = Math.max(0, (word.level||0) - 1);
+// Preview all four possible ratings
+function previewFSRS(wordState,now=Date.now()){
+  const card=getFSRSCard(wordState);
+  return fsrsScheduler.repeat(card,new Date(now));
+}
 
-  // 检查是否掌握（稳定性低于阈值时降级回review）
-  if(word.stability >= FSRS.masteredThreshold){
-    word.status = 'mastered';
-  } else {
-    word.status = 'review';
-  }
-
-  word.lastReview = now;
-  const interval = fsrsNextInterval(word.stability);
-  word.nextReview = now + interval * 86400000;
+// Check if a card is due for review
+function isCardDue(wordState, now=Date.now()){
+  if(!wordState || wordState.status==='ignored') return false;
+  if(wordState.status==='new' || !wordState.fsrs) return false;
+  return wordState.nextReview <= now;
 }
 
 // ===== State =====
@@ -709,21 +994,26 @@ function dbDelete(key){
 }
 
 // ===== Review Log (for FSRS parameter optimization) =====
-async function logReview(word, isCorrect, stabilityBefore, difficultyBefore, stabilityAfter, difficultyAfter, daysSinceLastReview, sessionType){
+// FSRS-6 version: logs rating and before/after card states
+async function logReview(word, rating, beforeCard, afterCard, sessionType){
   if(!dbInstance) return;
   try{
     const key = getStorageKey('reviewLogs');
     const existing = await dbGet(key);
     const logs = Array.isArray(existing) ? existing : [];
+    const api = fsrsApi();
     logs.push({
       w: word,
       t: Date.now(),
-      c: isCorrect ? 1 : 0,
-      sb: stabilityBefore,
-      db: difficultyBefore,
-      sa: stabilityAfter,
-      da: difficultyAfter,
-      d: daysSinceLastReview,
+      r: rating, // FSRS Rating: 1=Again, 2=Hard, 3=Good, 4=Easy
+      c: rating===api.Rating.Again ? 0 : 1, // 0=wrong, 1=correct (for compatibility)
+      sb: beforeCard ? beforeCard.stability : 0,
+      db: beforeCard ? beforeCard.difficulty : 0,
+      sa: afterCard ? afterCard.stability : 0,
+      da: afterCard ? afterCard.difficulty : 0,
+      d: beforeCard ? beforeCard.elapsed_days : 0,
+      before: beforeCard,
+      after: afterCard,
       st: sessionType
     });
     await dbSet(key, logs);
@@ -772,10 +1062,17 @@ function showVocabList(){
 
 function getVocabStatusLabel(wp){
   if(!wp) return {text:'未学', cls:'new'};
-  if(wp.status==='new') return {text:'未学', cls:'new'};
-  if(wp.status==='review') return {text:'学习中', cls:'review'};
-  if(wp.status==='mastered') return {text:'已掌握', cls:'mastered'};
   if(wp.status==='ignored') return {text:'已斩', cls:'ignored'};
+  if(wp.status==='new') return {text:'未学', cls:'new'};
+  // FSRS-6 states
+  if(wp.fsrsState==='Learning') return {text:'学习中', cls:'learning'};
+  if(wp.fsrsState==='Review'){
+    if(isWordMastered(wp)) return {text:'已掌握', cls:'mastered'};
+    return {text:'复习中', cls:'review'};
+  }
+  if(wp.fsrsState==='Relearning') return {text:'重学中', cls:'relearning'};
+  if(wp.status==='mastered') return {text:'已掌握', cls:'mastered'};
+  if(wp.status==='review') return {text:'学习中', cls:'review'};
   return {text:'未知', cls:'new'};
 }
 
@@ -786,7 +1083,9 @@ function renderVocabList(){
   const filters=[
     {v:'all', l:'全部'},
     {v:'new', l:'未学'},
-    {v:'review', l:'学习中'},
+    {v:'learning', l:'学习中'},
+    {v:'review', l:'复习中'},
+    {v:'relearning', l:'重学中'},
     {v:'mastered', l:'已掌握'},
     {v:'ignored', l:'已斩'},
   ];
@@ -825,6 +1124,11 @@ function getFilteredVocab(){
     filtered=filtered.filter(w=>{
       const wp=progress.words[w.word];
       if(vocabFilter==='new') return !wp || wp.status==='new';
+      if(vocabFilter==='ignored') return wp && wp.status==='ignored';
+      if(vocabFilter==='mastered') return wp && isWordMastered(wp);
+      if(vocabFilter==='learning') return wp && wp.fsrsState==='Learning';
+      if(vocabFilter==='relearning') return wp && wp.fsrsState==='Relearning';
+      if(vocabFilter==='review') return wp && wp.fsrsState==='Review' && !isWordMastered(wp);
       return wp && wp.status===vocabFilter;
     });
   }
@@ -977,9 +1281,9 @@ function loadProgress(){
     progress.stats.todayStudyDate=getCalendarDate();
     progress.stats.todayStudyMinutes=0;
   }
-  // FSRS migration: migrate all existing words
-  if(progress.words){
-    for(const w in progress.words){ migrateToFSRS(progress.words[w]); }
+  // FSRS-6 migration: migrate all existing words to official ts-fsrs format
+  if(progress.words && fsrsReady){
+    for(const w in progress.words){ migrateToFSRS6(progress.words[w]); }
     // V5-EX5: Migrate firstLearned field (fix forced review using lastStudy bug)
     for(const w in progress.words){
       const wp=progress.words[w];
@@ -1022,9 +1326,9 @@ async function loadProgressFromDB(){
       progress.stats.todayStudyDate=getCalendarDate();
       progress.stats.todayStudyMinutes=0;
     }
-    // FSRS migration: migrate all existing words
-    if(progress.words){
-      for(const w in progress.words){ migrateToFSRS(progress.words[w]); }
+    // FSRS-6 migration: migrate all existing words to official ts-fsrs format
+    if(progress.words && fsrsReady){
+      for(const w in progress.words){ migrateToFSRS6(progress.words[w]); }
       // V5-EX5: Migrate firstLearned field
       for(const w in progress.words){
         const wp=progress.words[w];
@@ -1071,6 +1375,7 @@ function saveSession(){
       retestInserted:session.retestInserted?[...session.retestInserted]:[],
       answeredWords:session.answeredWords?[...session.answeredWords]:[],
       reviewResults:session.reviewResults||{},
+      wordCorrectCount:session.wordCorrectCount||{},
       isWrongPractice:session.isWrongPractice||false,
       isAutoReview:session.isAutoReview||false,
       startTime:session.startTime||Date.now(),
@@ -1155,22 +1460,32 @@ function getDueWords(){
   const all=getAllVocab();
   return all.filter(w=>{
     const wp=progress.words[w.word];
-    return wp && wp.status==='review' && wp.nextReview<=now;
+    return wp && wp.status!=='new' && wp.status!=='ignored' && wp.nextReview<=now;
   });
 }
 
 function getDueCount(){
-  // 统计今日待复习的不同单词数：今天内到期 且 今天还没复习过
-  // 同一个词一天内反复到期的只算一次，避免用户感觉"怎么刷都刷不完"
+  // 今日待复习 = 今天新到期 且 今天还没复习过 的词（FSRS-6 标准到期计算）
   const todayEnd=getTodayEnd();
   const todayStart=getTodayStart();
   const all=getAllVocab();
   return all.filter(w=>{
     const wp=progress.words[w.word];
-    if(!wp || wp.status!=='review') return false;
-    if(wp.nextReview>todayEnd) return false; // 今天不到期
+    if(!wp || wp.status==='new' || wp.status==='ignored') return false;
+    if(!wp.nextReview || wp.nextReview<todayStart || wp.nextReview>todayEnd) return false;
     if(wp.lastReview && wp.lastReview>=todayStart) return false; // 今天已经复习过了
     return true;
+  }).length;
+}
+
+function getOverdueCount(){
+  // 累积逾期 = 今天之前到期 且 还没复习过 的词（历史欠账）
+  const todayStart=getTodayStart();
+  const all=getAllVocab();
+  return all.filter(w=>{
+    const wp=progress.words[w.word];
+    if(!wp || wp.status==='new' || wp.status==='ignored') return false;
+    return wp.nextReview && wp.nextReview<todayStart;
   }).length;
 }
 
@@ -1179,9 +1494,16 @@ function getNewCount(){
   return all.filter(w=>!progress.words[w.word]||progress.words[w.word].status==='new').length;
 }
 
-function getMasteredCount(){ return Object.values(progress.words).filter(w=>w.status==='mastered').length; }
+function getMasteredCount(){
+  // FSRS-6 已掌握标准：state === Review 且 stability >= 30天
+  let count=0;
+  for(const w in progress.words){
+    if(isWordMastered(progress.words[w])) count++;
+  }
+  return count;
+}
 function getIgnoredCount(){ return Object.values(progress.words).filter(w=>w.status==='ignored').length; }
-function getLearnedCount(){ return Object.values(progress.words).filter(w=>w.status!=='new').length; }
+function getLearnedCount(){ return Object.values(progress.words).filter(w=>w.status!=='new' && w.status!=='ignored').length; }
 
 function getWrongWords(){
   const all=getAllVocab();
@@ -1200,7 +1522,7 @@ function getForcedReviewWords(){
   // Use firstLearned if available, fallback to lastStudy for old data
   return all.filter(w=>{
     const wp=progress.words[w.word];
-    if(!wp || wp.status==='ignored') return false;
+    if(!wp || wp.status==='ignored' || wp.status==='new') return false;
     const learnDate = wp.firstLearned || wp.lastStudy;
     if(!learnDate) return false;
     return dateToStudyDay(learnDate)===yest;
@@ -1218,26 +1540,38 @@ function getAutoReviewWords(){
 
   if(learnedWords.length===0) return [];
 
-  const targetCount = progress.reviewGoal===0 ? getDueCount() : progress.reviewGoal;
+  const isDefaultMode = progress.reviewGoal===0;
+  let targetCount;
+  if(isDefaultMode){
+    // 默认模式：所有到期词（今日到期 + 逾期），不再设上限
+    targetCount = learnedWords.length;
+  } else {
+    targetCount = progress.reviewGoal;
+  }
   const takeCount = Math.min(targetCount, learnedWords.length);
   const selectedSet = new Set();
   const result = [];
 
-  // 1. Include ALL due words first
-  // 今日模式：只选 status==='review' 的到期词，和 getDueCount() 保持一致，数量精确对应"今日待复习"
-  // 固定数量模式：包含所有已学词的到期词（含mastered）
-  const dueCutoff = progress.reviewGoal===0 ? getTodayEnd() : Date.now();
+  // 1. Include due words first (expired first, then today's)
+  // 默认模式：所有已到期的词（含逾期），按"最该复习"排序（逾期最久的优先）
+  // 固定数量模式：所有到期词 + 补充未到期的
+  const dueCutoff = Date.now();
   const dueWords = learnedWords.filter(w=>{
     const wp=progress.words[w.word];
     if(!wp.nextReview || wp.nextReview>dueCutoff) return false;
-    if(progress.reviewGoal===0 && wp.status!=='review') return false; // 今日模式：只含review状态
-    return true;
+    return true; // FSRS-6: include all learning states (Learning/Review/Relearning)
   });
-  // Sort due words by retrievability (lowest R = most forgotten first)
+  // Sort due words: overdue first (most expired first), then by retrievability
   dueWords.sort((a,b)=>{
-    const rDiff = fsrsRetrievability(progress.words[a.word]||{}) - fsrsRetrievability(progress.words[b.word]||{});
+    const wpA = progress.words[a.word]||{};
+    const wpB = progress.words[b.word]||{};
+    // 逾期最久的排前面
+    const expireDiff = (wpA.nextReview||0) - (wpB.nextReview||0);
+    if(Math.abs(expireDiff)>3600000) return expireDiff; // 差超过1小时按到期时间排
+    // 同时间的按回忆率从低到高
+    const rDiff = fsrsRetrievability(wpA) - fsrsRetrievability(wpB);
     if(Math.abs(rDiff)>0.01) return rDiff;
-    return (progress.words[b.word]?.wrong||0)-(progress.words[a.word]?.wrong||0);
+    return (wpB.wrong||0)-(wpA.wrong||0);
   });
   for(const w of dueWords){
     if(result.length>=takeCount) break;
@@ -1245,8 +1579,8 @@ function getAutoReviewWords(){
   }
 
   // 2. Fill remaining with non-due learned words, sorted by retrievability
-  // 仅当固定数量模式且今日到期词不够时才补充
-  if(progress.reviewGoal!==0 && result.length<takeCount){
+  // 仅当固定数量模式且到期词不够时才补充未到期的
+  if(!isDefaultMode && result.length<takeCount){
     const remaining = learnedWords.filter(w=>!selectedSet.has(w.word));
     remaining.sort((a,b)=>{
       const rDiff = fsrsRetrievability(progress.words[a.word]||{}) - fsrsRetrievability(progress.words[b.word]||{});
@@ -1594,6 +1928,7 @@ async function syncVocabToGitHub(){
 function renderHome(){
   const allVocab=getAllVocab();
   const dueCount=getDueCount();
+  const overdueCount=getOverdueCount();
   const newCount=getNewCount();
   const learnedCount=getLearnedCount();
   const masteredCount=getMasteredCount();
@@ -1632,12 +1967,12 @@ function renderHome(){
     const typeLabel=pendingSession.type==='study'?'学习':(pendingSession.type==='review'?'复习':(pendingSession.type==='auto'?'自主复习':'错题本'));
     const progressPct=Math.round(pendingSession.currentIndex/total*100);
     resumeHtml=`
-      <div style="margin:0 24px 16px;padding:16px 20px;border-radius:16px;background:linear-gradient(135deg,#FFF3E0,#FFE0B2);border:1px solid #FFB74D">
-        <div style="font-size:13px;color:#E65100;font-weight:600;margin-bottom:4px">有未完成的${typeLabel}</div>
-        <div style="font-size:12px;color:#BF360C;margin-bottom:12px">进度：${idx} / ${total}（${progressPct}%）</div>
-        <div style="display:flex;gap:10px">
-          <button onclick="resumeSession()" style="flex:1;padding:12px;border-radius:12px;border:none;background:#FF9800;color:#fff;font-size:14px;font-weight:600;cursor:pointer">继续学习</button>
-          <button onclick="discardSession()" style="padding:12px 16px;border-radius:12px;border:1px solid #FFB74D;background:#fff;color:#E65100;font-size:14px;font-weight:600;cursor:pointer">放弃</button>
+      <div class="resume-banner">
+        <div class="resume-banner-title">有未完成的${typeLabel}</div>
+        <div class="resume-banner-desc">进度：${idx} / ${total}（${progressPct}%）</div>
+        <div class="resume-banner-actions">
+          <button class="resume-btn-primary" onclick="resumeSession()">继续学习</button>
+          <button class="resume-btn-secondary" onclick="discardSession()">放弃</button>
         </div>
       </div>`;
   }
@@ -1646,45 +1981,83 @@ function renderHome(){
     <div class="home-header">
       <div class="home-title">考研英语核心词</div>
       <div class="home-subtitle">${streak>0?'连续学习 '+streak+' 天':'开始你的学习之旅'}</div>
-      <div style="font-size:11px;color:#999;margin-top:4px">V2 · 2026-08-11</div>
+      <div style="font-size:11px;color:#94a3b8;margin-top:4px">V3 · FSRS-6 · 2026-08-16</div>
       ${currentUser?'<div style="margin-top:8px"><span class="user-badge">'+currentUser+'</span></div>':''}
-    </div>
-
-    <div class="hero-card">
-      <div class="hero-label">今日学习进度</div>
-      <div class="hero-number">${progress.todayNewCount}<span> / ${progress.studyGoal}</span></div>
-      <div class="hero-bar"><div class="hero-bar-fill" style="width:${todayProgress*100}%"></div></div>
-      <div class="hero-stats">
-        <span>剩余 ${Math.max(0,studyRemaining)} 个新词</span>
-        <span>${forcedReviewDone?'✓ 复习已完成':(forcedCount>0?forcedCount+' 个待复习':'无待复习')}</span>
-      </div>
     </div>
 
     ${resumeHtml}
 
-    <div class="countdown-card">
-      <div class="countdown-info">
-        <div class="countdown-label">预计学完全部单词</div>
-        <div class="countdown-value">${daysToFinish}<span> 天</span></div>
-        <div class="countdown-detail">词库 ${totalCount} 词 · 每天 ${progress.studyGoal} 词 · 约 ${finishDateStr} 完成</div>
+    <!-- 每日背诵量选择器 -->
+    <div class="daily-goal-card">
+      <div class="daily-goal-title">每日背诵量</div>
+      <div class="daily-goal-subtitle">今天的新词目标</div>
+      <div class="daily-goal-btns">
+        ${studyOptions.map(n=>`<button class="daily-goal-btn ${progress.studyGoal===n?'active':''}" onclick="setStudyGoal(${n})">${n}</button>`).join('')}
       </div>
     </div>
 
-    <div class="stat-grid">
-      <div class="stat-card">
+    <!-- 模式选择 Tab -->
+    <div class="mode-tabs">
+      <div class="mode-tab ${homeMode==='study'?'active':''}" onclick="setHomeMode('study')">
+        <div class="mode-tab-title">今日背诵</div>
+        <div class="mode-tab-desc">按每日数量加入新词</div>
+      </div>
+      <div class="mode-tab ${homeMode==='review'?'active':''}" onclick="setHomeMode('review')">
+        <div class="mode-tab-title">强制复习</div>
+        <div class="mode-tab-desc">复习前一天背诵的词</div>
+      </div>
+      <div class="mode-tab ${homeMode==='auto'?'active':''}" onclick="setHomeMode('auto')">
+        <div class="mode-tab-title">自主复习</div>
+        <div class="mode-tab-desc">复习今天全部到期词</div>
+      </div>
+    </div>
+
+    <!-- 统计行 -->
+    <div class="stats-row">
+      <div class="stat-item">
         <div class="stat-num">${newCount}</div>
-        <div class="stat-label">待学习</div>
+        <div class="stat-label">今日新词</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-num ${dueCount>0?'due':''}">${dueCount}</div>
-        <div class="stat-label">今日待复习</div>
+      <div class="stat-item">
+        <div class="stat-num ${forcedCount>0?'warn':''}">${forcedCount}</div>
+        <div class="stat-label">强制复习</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-num" style="color:#9CA3AF">${getIgnoredCount()}</div>
-        <div class="stat-label">已斩</div>
+      <div class="stat-item">
+        <div class="stat-num ${dueCount>0?'error':''}">${dueCount}</div>
+        <div class="stat-label">当前到期</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num muted">${totalCount}</div>
+        <div class="stat-label">词库</div>
       </div>
     </div>
 
+    <!-- 开始按钮区 -->
+    <div class="home-actions">
+      ${homeMode==='study'?`
+        <button class="action-btn primary" onclick="startStudy()" ${!canStudy?'disabled':''}>
+          ${hasDueReview?'请先完成复习':(forcedReviewDone&&studyRemaining>0&&newCount>0?'继续学习 ('+Math.min(studyRemaining,newCount)+'词)':(newCount===0?'全部单词已学完':(studyRemaining<=0?'今日新词已学完':'开始学习 ('+Math.min(studyRemaining,newCount)+'词)')))}
+        </button>
+      `:''}
+      ${homeMode==='review'?`
+        <button class="action-btn primary" onclick="startReview()" ${!canReview?'disabled':''}>
+          ${canReview?'开始复习 ('+forcedCount+'词)':(forcedReviewDone?'✓ 今日复习已完成':'暂无需要复习的单词')}
+        </button>
+      `:''}
+      ${homeMode==='auto'?`
+        <button class="action-btn primary" onclick="startAutoReview()" ${learnedTotal===0?'disabled':''}>
+          ${learnedTotal>0?'自主复习 ('+Math.min(progress.reviewGoal===0?dueCount:progress.reviewGoal,learnedTotal)+'词)':'暂无可复习的单词'}
+        </button>
+        <div class="daily-goal-btns" style="margin-top:0">
+          ${reviewOptions.map(o=>`<button class="daily-goal-btn ${progress.reviewGoal===o.v?'active':''}" onclick="setReviewGoal(${o.v})">${o.l}</button>`).join('')}
+        </div>
+      `:''}
+      <button class="action-btn secondary" onclick="startWrongWordPractice()" ${wrongCount===0?'disabled':''} style="border-color:${wrongCount>0?'var(--error)':'var(--outline)'};color:${wrongCount>0?'var(--error)':'var(--outline)'}">
+        ${wrongCount>0?'错题本 ('+wrongCount+'词)':'错题本（暂无）'}
+      </button>
+    </div>
+
+    <!-- 学习时长 -->
     <div class="timer-card">
       <div class="timer-item today">
         <div class="timer-num">${todayMin}<span class="timer-unit"> 分钟</span></div>
@@ -1696,36 +2069,14 @@ function renderHome(){
       </div>
     </div>
 
-    <div class="section-label">每次学习词数</div>
-    <div class="goal-row">
-      ${studyOptions.map(n=>`<button class="goal-btn ${progress.studyGoal===n?'active':''}" onclick="setStudyGoal(${n})">${n}</button>`).join('')}
-    </div>
-
-    <button class="btn-primary" onclick="startStudy()" ${!canStudy?'disabled':''}>
-      ${hasDueReview?'请先完成复习':(forcedReviewDone&&studyRemaining>0&&newCount>0?'继续学习 ('+Math.min(studyRemaining,newCount)+'词)':(newCount===0?'全部单词已学完':(studyRemaining<=0?'今日新词已学完':'开始学习 ('+Math.min(studyRemaining,newCount)+'词)')))}
-    </button>
-
-    <button class="btn-secondary" onclick="startReview()" ${!canReview?'disabled':''}>
-      ${canReview?'开始复习 ('+forcedCount+'词)':(forcedReviewDone?'✓ 今日复习已完成':'暂无需要复习的单词')}
-    </button>
-
-    <div class="section-label">自主复习词数</div>
-    <div class="goal-row">
-      ${reviewOptions.map(o=>`<button class="goal-btn ${progress.reviewGoal===o.v?'active':''}" onclick="setReviewGoal(${o.v})">${o.l}</button>`).join('')}
-    </div>
-
-    <button class="btn-tertiary" onclick="startAutoReview()" ${learnedTotal===0?'disabled':''}>
-      ${learnedTotal>0?'自主复习 ('+Math.min(progress.reviewGoal===0?dueCount:progress.reviewGoal,learnedTotal)+'词)':'暂无可复习的单词'}
-    </button>
-
-    <button class="btn-secondary" onclick="startWrongWordPractice()" ${wrongCount===0?'disabled':''} style="margin-top:8px;border-color:${wrongCount>0?'#E53E3E':'var(--outline)'};color:${wrongCount>0?'#E53E3E':'var(--outline)'}">
-      ${wrongCount>0?'错题本 ('+wrongCount+'词)':'错题本（暂无）'}
-    </button>
-
-    <div class="overall-progress">
-      <div class="op-row"><span>总进度</span><span>${learnedCount} / ${totalCount}</span></div>
-      <div class="op-bar"><div class="op-bar-fill" style="width:${(learnedCount/totalCount*100)}%"></div></div>
-      <div class="op-detail">
+    <!-- 总进度 -->
+    <div class="progress-card">
+      <div class="progress-header">
+        <span class="progress-title">总进度</span>
+        <span class="progress-value">${learnedCount} / ${totalCount}</span>
+      </div>
+      <div class="progress-bar"><div class="progress-bar-fill" style="width:${(learnedCount/totalCount*100)}%"></div></div>
+      <div class="progress-detail">
         <span>已学: <b>${learnedCount}</b></span>
         <span>掌握: <b>${masteredCount}</b></span>
         <span>正确: <b>${progress.stats.totalCorrect}</b></span>
@@ -1733,7 +2084,10 @@ function renderHome(){
       </div>
     </div>
 
-    <div class="section-label">词库管理</div>
+    <!-- 词库管理 -->
+    <div class="home-section">
+      <div class="home-section-title">词库管理</div>
+    </div>
     <div class="data-row">
       <button class="data-btn import-btn" onclick="showImportModal()">导入Excel词汇</button>
       <button class="data-btn" onclick="showVocabList()">单词表</button>
@@ -1743,29 +2097,12 @@ function renderHome(){
     </div>
     ${customVocab.length>0?(()=>{
       const hfTotal=customVocab.filter(w=>w.hfCount>=3).length + (progress&&progress.hfOverrides?Object.keys(progress.hfOverrides).length:0);
-      let info=`<div style="margin:0 24px 8px;padding:10px 14px;border-radius:10px;background:var(--success-container);color:var(--success);font-size:12px">✓ 已导入 ${customVocab.length} 个自定义词汇（已合并到词库）</div>`;
+      let info=`<div style="margin:0 20px 8px;padding:10px 14px;border-radius:var(--radius-sm);background:var(--success-container);color:var(--on-success);font-size:12px;font-weight:600">✓ 已导入 ${customVocab.length} 个自定义词汇（已合并到词库）</div>`;
       if(hfTotal>0){
-        info+=`<div style="margin:0 24px 8px;padding:10px 14px;border-radius:10px;background:linear-gradient(135deg,#FFF3E0,#FFE0B2);color:#E65100;font-size:12px;font-weight:600">${hfTotal} 个高频词已标记 · 背诵时将重点提醒</div>`;
+        info+=`<div style="margin:0 20px 8px;padding:10px 14px;border-radius:var(--radius-sm);background:linear-gradient(135deg,#FFF3E0,#FFE0B2);color:#E65100;font-size:12px;font-weight:700">${hfTotal} 个高频词已标记 · 背诵时将重点提醒</div>`;
       }
       return info;
     })():''}
-
-    <div class="section-label">真题例句</div>
-    <div style="margin:0 24px 12px;padding:14px 16px;border-radius:12px;background:var(--surface-variant)">
-      <div style="font-size:13px;color:var(--on-surface-variant);margin-bottom:8px">例句来自2010-2026年考研英语真题阅读原文，学习时自动展示</div>
-      <div style="display:flex;gap:12px;flex-wrap:wrap">
-        <div style="flex:1;padding:10px 14px;border-radius:10px;background:var(--success-container);color:var(--success);font-size:12px;min-width:120px">
-          已匹配 <b>${getExampleStats().total}</b> 个单词
-        </div>
-        <div style="flex:1;padding:10px 14px;border-radius:10px;background:var(--primary-container);color:var(--on-primary-container);font-size:12px;min-width:120px">
-          真题句子 <b>${typeof EXAM_SENTENCES!=='undefined'?EXAM_SENTENCES.length:0}</b> 句
-        </div>
-        <div style="flex:1;padding:10px 14px;border-radius:10px;background:#FFF3E0;color:#E65100;font-size:12px;min-width:120px">
-          已翻译 <b>${typeof SENTENCE_TRANSLATIONS!=='undefined'?Object.keys(SENTENCE_TRANSLATIONS).length:0}</b> 句
-        </div>
-      </div>
-      <div style="font-size:11px;margin-top:8px;color:var(--on-surface-variant);opacity:.7">答题后显示真题例句+完整中文翻译｜新导入单词自动匹配</div>
-    </div>
 
     <button class="reset-btn" onclick="resetProgress()">重置全部进度</button>
     <button class="logout-btn" onclick="logout()">切换用户</button>`;
@@ -1780,6 +2117,13 @@ function renderHome(){
 
 function setStudyGoal(n){ progress.studyGoal=n; progress.dailyGoal=n; saveProgress(); renderHome(); }
 function setReviewGoal(n){ progress.reviewGoal=n; saveProgress(); renderHome(); }
+
+// Home mode tab state
+let homeMode = 'study';
+function setHomeMode(mode){
+  homeMode = mode;
+  renderHome();
+}
 
 function resetProgress(){
   if(confirm('确定要重置全部学习进度吗？此操作不可撤销。')){
@@ -1855,6 +2199,10 @@ function importData(){
           progress=data;
           if(progress.studyGoal===undefined || progress.studyGoal<80) progress.studyGoal=80;
           if(progress.reviewGoal===undefined) progress.reviewGoal=0;
+          // FSRS-6 migration for imported data
+          if(progress.words && fsrsReady){
+            for(const w in progress.words){ migrateToFSRS6(progress.words[w]); }
+          }
           if(importedCustomVocab.length>0){
             customVocab=importedCustomVocab;
             saveCustomVocab();
@@ -2063,6 +2411,7 @@ function renderCard(){
   saveSession();
   answered=false;
   revealed=false;
+  session.ratingApplied=false;
   currentCard=session.cards[session.currentIndex];
   const genResult=generateOptions(currentCard);
   currentOptions=genResult.options;
@@ -2145,12 +2494,11 @@ function toggleReveal(){
 // 斩词：将单词标记为ignored，不再参与任何复习，但保留在词库和学习记录中
 function ignoreCurrentWord(){
   if(!session || !currentCard) return;
-  if(!confirm('确定要斩掉这个单词吗？它将不再出现在任何复习中，但仍保留在词库中。')) return;
   const word=currentCard.word;
   let wp=progress.words[word];
   if(!wp){
     // 学习阶段的新词可能还没写入progress，先创建记录
-    wp={status:'ignored', stability:0, difficulty:0, lastReview:Date.now(), nextReview:0, correct:0, wrong:0, firstLearned:Date.now(), lastStudy:Date.now()};
+    wp={status:'ignored', stability:0, difficulty:0, lastReview:Date.now(), nextReview:0, correct:0, wrong:0, firstLearned:Date.now(), lastStudy:Date.now(), fsrs:null, fsrsState:'Ignored'};
     progress.words[word]=wp;
   } else {
     wp.status='ignored';
@@ -2195,65 +2543,104 @@ function selectOption(index){
     session.wordCorrectCount[card.word] = (session.wordCorrectCount[card.word]||0) + 1;
   }
 
-  // FSRS: update word state using spaced repetition algorithm
-  if(session.type==='review' || session.type==='auto' || session.type==='wrong'){
-    const wp=progress.words[card.word];
-    if(wp){
-      if(isCorrect){ wp.correct++; progress.stats.totalCorrect++; }
-      else { wp.wrong++; progress.stats.totalWrong++; }
-      // Capture FSRS state before update for review logging
-      const sBefore = wp.stability;
-      const dBefore = wp.difficulty;
-      const lastRev = wp.lastReview;
-      const wasMastered = wp.status === 'mastered';
-      // FSRS algorithm updates stability, difficulty, nextReview
-      fsrsUpdate(wp, isCorrect);
-      if(wp.status==='mastered' && !wasMastered) progress.stats.totalMastered++;
-      // V5-EX5: Do NOT update lastStudy during review - only during initial study
-      // lastReview is already updated by fsrsUpdate(), lastStudy must stay as first-learned date
-      // Log review event for FSRS parameter optimization
-      const daysSince = lastRev ? (Date.now() - lastRev) / 86400000 : 0;
-      logReview(card.word, isCorrect, sBefore, dBefore, wp.stability, wp.difficulty, daysSince, session.type);
+  const isReviewMode = session.type==='review' || session.type==='auto' || session.type==='wrong';
+
+  // For review modes: track correct/wrong count but DON'T apply FSRS yet
+  // User will select a rating (Again/Hard/Good/Easy) from the rating panel
+  if(isReviewMode){
+    if(isCorrect){
+      const wp=progress.words[card.word];
+      if(wp){ wp.correct=(wp.correct||0)+1; progress.stats.totalCorrect++; }
+    }else{
+      const wp=progress.words[card.word];
+      if(wp){ wp.wrong=(wp.wrong||0)+1; progress.stats.totalWrong++; }
+      session.wrongWords && session.wrongWords.add(card.word);
     }
     session.reviewResults[card.word]=isCorrect;
   }
-  if(!isCorrect && !session.retestInserted.has(card.word)){
-    session.wrongWords && session.wrongWords.add(card.word);
+
+  // For non-review modes (study): add wrong words to retest queue
+  if(!isReviewMode && !isCorrect && !session.retestInserted.has(card.word)){
     const retestCard={...card, passType:Math.random()<0.5?'cn2en':'en2cn', passLabel:Math.random()<0.5?'汉选英':'英选汉', passNum:0, isRetest:true, retestDelay:3+Math.floor(Math.random()*3)};
     session.retestQueue.push(retestCard);
     session.retestInserted.add(card.word);
   }
+
   const retestBadge = card.isRetest ? ' · 重测' : '';
   const autoBadge = card.isAutoReview ? ' · 自主复习' : '';
+  const wrongBadge = card.isWrongPractice ? ' · 错题本' : '';
   const hfCount=getWordHfCount(card.word);
   const hfResult=hfCount>=3?`<div class="result-hf-hint">高频词 · 出现${hfCount}次 · 重点记忆</div>`:'';
-  // FSRS info: show stability, difficulty, next review interval
+
+  // FSRS info: show current state, stability, difficulty, retrievability
   const wp=progress.words[card.word];
   let fsrsInfo='';
-  if(wp && wp.stability){
+  let wordStatusBadge='';
+  if(wp && wp.fsrs){
+    const r=fsrsRetrievability(wp);
+    const sDays=wp.stability<1?Math.round(wp.stability*24)+'小时':Math.round(wp.stability*10)/10+'天';
+    const dLevel=wp.difficulty<3?'简单':(wp.difficulty<6?'中等':(wp.difficulty<8?'较难':'困难'));
+    const dColor=wp.difficulty<3?'#2F855A':(wp.difficulty<6?'#4A5568':(wp.difficulty<8?'#DD6B20':'#E53E3E'));
+    const nextInterval=wp.nextReview?Math.max(0,(wp.nextReview-Date.now())/86400000):0;
+    const nextStr=nextInterval<=0?'立即':(nextInterval<1?'<1天':Math.round(nextInterval*10)/10+'天');
+    const stateName = wp.fsrsState||'New';
+    const stateClass = stateName.toLowerCase();
+    const stateLabelCn = fsrsStateNameCn(wp.fsrs?.state ?? 0);
+    wordStatusBadge = `<div class="word-status-badge ${stateClass}">${stateLabelCn}</div>`;
+    fsrsInfo=`<div class="word-fsrs-info">
+      <span>R: <b>${Math.round(r*100)}%</b></span>
+      <span>S: <b>${sDays}</b></span>
+      <span>D: <b>${dLevel}</b></span>
+    </div>
+    <div style="margin-top:12px;padding:10px 12px;border-radius:var(--radius-sm);background:var(--surface-variant);font-size:12px;color:var(--on-surface-variant);display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+      <span>状态: <b style="color:var(--primary)">${stateName}</b></span>
+      <span>下次复习: <b style="color:var(--primary)">${nextStr}</b></span>
+    </div>`;
+  } else if(wp && wp.stability){
+    // Legacy display for not-yet-migrated words
     const sDays=wp.stability<1?Math.round(wp.stability*24)+'小时':Math.round(wp.stability)+'天';
     const dLevel=wp.difficulty<3?'简单':(wp.difficulty<6?'中等':(wp.difficulty<8?'较难':'困难'));
     const dColor=wp.difficulty<3?'#2F855A':(wp.difficulty<6?'#4A5568':(wp.difficulty<8?'#DD6B20':'#E53E3E'));
     const nextInterval=wp.nextReview?Math.ceil((wp.nextReview-Date.now())/86400000):0;
     const nextStr=nextInterval<=0?'立即':(nextInterval<1?'<1天':nextInterval+'天');
-    fsrsInfo=`<div style="margin-top:8px;padding:8px 12px;border-radius:10px;background:#F0F4F8;font-size:12px;color:var(--on-surface-variant);display:flex;gap:12px;flex-wrap:wrap">
-      <span>稳定性: <b style="color:var(--primary)">${sDays}</b></span>
-      <span>难度: <b style="color:${dColor}">${dLevel}</b></span>
+    wordStatusBadge = `<div class="word-status-badge review">复习中</div>`;
+    fsrsInfo=`<div class="word-fsrs-info">
+      <span>S: <b>${sDays}</b></span>
+      <span>D: <b>${dLevel}</b></span>
+    </div>
+    <div style="margin-top:12px;padding:10px 12px;border-radius:var(--radius-sm);background:var(--surface-variant);font-size:12px;color:var(--on-surface-variant);display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
       <span>下次复习: <b style="color:var(--primary)">${nextStr}</b></span>
     </div>`;
   }
+
+  // FSRS-6 rating panel for review modes
+  let ratingPanel='';
+  if(isReviewMode){
+    ratingPanel=`<div class="fsrs-rating-panel" id="fsrs-rating-panel">
+      <div class="fsrs-rating-title">请选择这次复习的真实感受（FSRS-6）</div>
+      <div class="fsrs-rating-grid">
+        <button class="fsrs-rating-btn again" onclick="applyReviewRating(1)">重来<small>忘记了</small></button>
+        <button class="fsrs-rating-btn hard" onclick="applyReviewRating(2)">困难<small>很困难</small></button>
+        <button class="fsrs-rating-btn good" onclick="applyReviewRating(3)">良好<small>正常记住</small></button>
+        <button class="fsrs-rating-btn easy" onclick="applyReviewRating(4)">简单<small>非常轻松</small></button>
+      </div>
+    </div>`;
+  }
+
   const resultHtml=`
-    <div class="result-card">
+    <div class="result-card" style="text-align:center">
+      ${isReviewMode && wordStatusBadge ? wordStatusBadge : ''}
       <button class="result-speak-btn" onclick="speakWord('${card.word.replace(/'/g,"\\'")}',this)">🔊</button>
-      <div class="result-word">${card.word}</div>
-      <div class="result-type">${card.type||''} · ${card.passLabel}${retestBadge}${autoBadge}</div>
-      <div class="result-meaning">${card.meaning}</div>
+      <div class="result-word" style="font-size:${isReviewMode?'30px':'22px'};font-weight:${isReviewMode?'800':'700'}">${card.word}</div>
+      <div class="result-type">${card.type||''} · ${card.passLabel}${retestBadge}${autoBadge}${wrongBadge}</div>
+      <div class="result-meaning" style="font-size:${isReviewMode?'17px':'16px'};font-weight:${isReviewMode?'500':'400'}">${card.meaning}</div>
       <span class="result-category">${card.category}</span>
       ${hfResult}
       ${fsrsInfo}
       ${getResultExampleHtml(card.word, card.meaning)}
+      ${ratingPanel}
     </div>
-    <button class="btn-continue" onclick="nextCard()">${isCorrect?'正确 · 继续':'错误 · 继续'} →</button>`;
+    ${!isReviewMode?`<button class="btn-continue" onclick="nextCard()">${isCorrect?'正确 · 继续':'错误 · 继续'} →</button>`:''}`;
   document.querySelector('.card-container').insertAdjacentHTML('beforeend',resultHtml);
   if(isCorrect){
     setTimeout(()=>{ const sb=document.querySelector('.result-speak-btn'); speakWord(card.word, sb); },300);
@@ -2261,6 +2648,73 @@ function selectOption(index){
   setTimeout(()=>{ document.querySelector('.result-card')?.scrollIntoView({behavior:'smooth',block:'center'}); },100);
   saveProgress();
   saveSession();
+}
+
+// FSRS-6: Apply a 4-level rating after answering
+function applyReviewRating(ratingNumber){
+  if(!session || !currentCard || !answered) return;
+  if(session.ratingApplied) return;
+  session.ratingApplied=true;
+  const api=fsrsApi();
+  const ratingMap={1:api.Rating.Again,2:api.Rating.Hard,3:api.Rating.Good,4:api.Rating.Easy};
+  const rating=ratingMap[ratingNumber];
+  const wp=progress.words[currentCard.word];
+  if(!wp){ session.ratingApplied=false; return; }
+
+  // Capture state before
+  const beforeCard=getFSRSCard(wp);
+  const before=serializeFSRSCard(beforeCard);
+  const wasMastered=isWordMastered(wp);
+
+  try{
+    // Apply FSRS rating
+    const {result}=applyFSRSRating(wp,rating,Date.now());
+
+    // Update stats
+    if(rating===api.Rating.Again){
+      // Already counted wrong in selectOption
+    }else{
+      // correct count already incremented in selectOption for correct answers
+      // but we need to check: Hard/Good/Easy all count as "correct"
+    }
+
+    if(isWordMastered(wp) && !wasMastered && progress.stats){
+      progress.stats.totalMastered=(progress.stats.totalMastered||0)+1;
+    }
+
+    // Update review results
+    session.reviewResults[currentCard.word]={rating:ratingNumber,ratingName:fsrsRatingName(rating),state:wp.fsrsState};
+
+    // Log review
+    logReview(currentCard.word,rating,before,serializeFSRSCard(result.card),session.type);
+
+    // Update rating panel to show confirmation
+    const panel=document.getElementById('fsrs-rating-panel');
+    if(panel){
+      const nextInterval=wp.nextReview?Math.max(0,(wp.nextReview-Date.now())/86400000):0;
+      const nextStr=nextInterval<=0?'立即再学':(nextInterval<1?Math.round(nextInterval*24)+'小时后':Math.round(nextInterval)+'天后');
+      panel.innerHTML=`<div class="fsrs-rating-title">已记录：<b>${fsrsRatingName(rating)}</b> · FSRS-6 已更新</div><div class="fsrs-state-badge">${wp.fsrsState} · ${nextStr}</div><button class="btn-continue" style="margin-top:10px" onclick="nextCardAfterRating()">继续 →</button>`;
+    }
+
+    // Handle retest: Again rating adds to retest queue
+    if(rating===api.Rating.Again && !session.retestInserted.has(currentCard.word)){
+      const card=currentCard;
+      const retestCard={...card, passType:Math.random()<0.5?'cn2en':'en2cn', passLabel:Math.random()<0.5?'汉选英':'英选汉', passNum:0, isRetest:true, retestDelay:3+Math.floor(Math.random()*3)};
+      session.retestQueue.push(retestCard);
+      session.retestInserted.add(card.word);
+    }
+
+    saveProgress();
+    saveSession();
+  }catch(e){
+    console.error(e);
+    session.ratingApplied=false;
+    showToast('FSRS 调度失败，请重试');
+  }
+}
+
+function nextCardAfterRating(){
+  nextCard();
 }
 
 function nextCard(){
@@ -2317,12 +2771,30 @@ function saveSessionExit(){
     wordsToSave.forEach(word=>{
       const wp=progress.words[word];
       if(!wp || wp.status==='new'){
-        // FSRS: adjust initial stability based on study performance
+        // FSRS-6: use official scheduler with rating based on study performance
         const correctInStudy = session.wordCorrectCount ? (session.wordCorrectCount[word]||0) : 0;
-        const initStab = correctInStudy>=4 ? 2.0 : (correctInStudy===3 ? 1.5 : (correctInStudy===2 ? 1.0 : 0.5));
-        const initDiff = correctInStudy>=3 ? 4.0 : (correctInStudy>=2 ? 5.5 : 7.0);
-        progress.words[word]={status:'review', level:0, stability:initStab, difficulty:initDiff, nextReview:now+fsrsNextInterval(initStab)*86400000, lastReview:now, lastStudy:now, firstLearned:now, correct:correctInStudy, wrong:4-correctInStudy};
+        const api=fsrsApi();
+        const rating=fsrsRatingFromStudyResult(correctInStudy);
+        const card=api.createEmptyCard();
+        const result=fsrsScheduler.next(card,new Date(now),rating);
+        const newWp={
+          status:'review',
+          level:rating===api.Rating.Easy?2:(rating===api.Rating.Good?1:0),
+          correct:correctInStudy,
+          wrong:Math.max(0,4-correctInStudy),
+          firstLearned:now,
+          lastStudy:now,
+          fsrs:serializeFSRSCard(result.card),
+          stability:result.card.stability,
+          difficulty:result.card.difficulty,
+          lastReview:result.card.last_review?result.card.last_review.getTime():now,
+          nextReview:result.card.due.getTime(),
+          fsrsState:fsrsStateName(result.card.state),
+          fsrsRating:fsrsRatingName(rating)
+        };
+        progress.words[word]=newWp;
         newLearned++;
+        logReview(word,rating,serializeFSRSCard(card),serializeFSRSCard(result.card),'study-init');
       }
     });
     progress.todayNewCount+=newLearned;
@@ -2428,12 +2900,30 @@ function completeSession(){
     session.studiedWords.forEach(word=>{
       const wp=progress.words[word];
       if(!wp || wp.status==='new'){
-        // FSRS: adjust initial stability based on study performance
+        // FSRS-6: use official scheduler with rating based on study performance
         const correctInStudy = session.wordCorrectCount ? (session.wordCorrectCount[word]||0) : 0;
-        const initStab = correctInStudy>=4 ? 2.0 : (correctInStudy===3 ? 1.5 : (correctInStudy===2 ? 1.0 : 0.5));
-        const initDiff = correctInStudy>=3 ? 4.0 : (correctInStudy>=2 ? 5.5 : 7.0);
-        progress.words[word]={status:'review', level:0, stability:initStab, difficulty:initDiff, nextReview:now+fsrsNextInterval(initStab)*86400000, lastReview:now, lastStudy:now, firstLearned:now, correct:correctInStudy, wrong:4-correctInStudy};
+        const api=fsrsApi();
+        const rating=fsrsRatingFromStudyResult(correctInStudy);
+        const card=api.createEmptyCard();
+        const result=fsrsScheduler.next(card,new Date(now),rating);
+        const newWp={
+          status:'review',
+          level:rating===api.Rating.Easy?2:(rating===api.Rating.Good?1:0),
+          correct:correctInStudy,
+          wrong:Math.max(0,4-correctInStudy),
+          firstLearned:now,
+          lastStudy:now,
+          fsrs:serializeFSRSCard(result.card),
+          stability:result.card.stability,
+          difficulty:result.card.difficulty,
+          lastReview:result.card.last_review?result.card.last_review.getTime():now,
+          nextReview:result.card.due.getTime(),
+          fsrsState:fsrsStateName(result.card.state),
+          fsrsRating:fsrsRatingName(rating)
+        };
+        progress.words[word]=newWp;
         newLearned++;
+        logReview(word,rating,serializeFSRSCard(card),serializeFSRSCard(result.card),'study-init');
       }
     });
     progress.todayNewCount+=newLearned;
@@ -2498,7 +2988,7 @@ function renderComplete(){
         </div>
       </div>
       <div class="next-review-info">${nextReviewText}</div>
-      <button class="btn-primary" onclick="session=null;renderHome();showView('home')">返回首页</button>
+      <button class="action-btn primary" style="width:100%" onclick="session=null;renderHome();showView('home')">返回首页</button>
     </div>`;
   document.getElementById('view-complete').innerHTML=html;
   showView('complete');
@@ -2555,6 +3045,13 @@ let currentOptionWords = [];
 async function initApp(){
   await loadRemoteVocab();
   await initDB();
+  // Initialize official ts-fsrs (FSRS-6) scheduler before loading progress
+  try{
+    await ensureFSRS();
+  }catch(e){
+    console.error('Failed to load ts-fsrs:',e);
+    showToast('FSRS 模块加载失败，请刷新重试');
+  }
   loadCustomVocab();
   if(dbInstance){
     const dbCustom=await dbGet('customVocab');
