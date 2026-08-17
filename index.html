@@ -2629,14 +2629,11 @@ function selectOption(index){
 
   const resultHtml=`
     <div class="result-card" style="text-align:center">
-      ${isReviewMode && wordStatusBadge ? wordStatusBadge : ''}
       <button class="result-speak-btn" onclick="speakWord('${card.word.replace(/'/g,"\\'")}',this)">🔊</button>
       <div class="result-word" style="font-size:${isReviewMode?'30px':'22px'};font-weight:${isReviewMode?'800':'700'}">${card.word}</div>
-      <div class="result-type">${card.type||''} · ${card.passLabel}${retestBadge}${autoBadge}${wrongBadge}</div>
       <div class="result-meaning" style="font-size:${isReviewMode?'17px':'16px'};font-weight:${isReviewMode?'500':'400'}">${card.meaning}</div>
       <span class="result-category">${card.category}</span>
       ${hfResult}
-      ${fsrsInfo}
       ${getResultExampleHtml(card.word, card.meaning)}
       ${ratingPanel}
     </div>
@@ -2688,12 +2685,13 @@ function applyReviewRating(ratingNumber){
     // Log review
     logReview(currentCard.word,rating,before,serializeFSRSCard(result.card),session.type);
 
-    // Update rating panel to show confirmation
+    // Update rating panel to show brief confirmation then auto-advance
     const panel=document.getElementById('fsrs-rating-panel');
     if(panel){
-      const nextInterval=wp.nextReview?Math.max(0,(wp.nextReview-Date.now())/86400000):0;
-      const nextStr=nextInterval<=0?'立即再学':(nextInterval<1?Math.round(nextInterval*24)+'小时后':Math.round(nextInterval)+'天后');
-      panel.innerHTML=`<div class="fsrs-rating-title">已记录：<b>${fsrsRatingName(rating)}</b> · FSRS-6 已更新</div><div class="fsrs-state-badge">${wp.fsrsState} · ${nextStr}</div><button class="btn-continue" style="margin-top:10px" onclick="nextCardAfterRating()">继续 →</button>`;
+      const ratingBtns=panel.querySelectorAll('.fsrs-rating-btn');
+      ratingBtns.forEach(btn=>btn.disabled=true);
+      // Brief flash of selected rating, then auto-next
+      setTimeout(()=>{ nextCardAfterRating(); }, 400);
     }
 
     // Handle retest: Again rating adds to retest queue
