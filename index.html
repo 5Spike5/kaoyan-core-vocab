@@ -1941,6 +1941,7 @@ function renderHome(){
   const newCount=getNewCount();
   const learnedCount=getLearnedCount();
   const masteredCount=getMasteredCount();
+  const ignoredCount=getIgnoredCount();
   const wrongCount=getWrongCount();
   const totalCount=allVocab.length;
   const studyRemaining=progress.studyGoal-progress.todayNewCount;
@@ -1953,8 +1954,9 @@ function renderHome(){
   const canStudy=!hasDueReview && studyRemaining>0 && newCount>0;
   const canReview=forcedCount>0 && !forcedReviewDone;
 
-  const unlearnedCount=totalCount-learnedCount;
-  const daysToFinish=progress.studyGoal>0?Math.ceil(unlearnedCount/progress.studyGoal):0;
+  const progressDone=learnedCount+ignoredCount;
+  const unlearnedCount=totalCount-progressDone;
+  const daysToFinish=progress.studyGoal>0?Math.ceil(Math.max(unlearnedCount,0)/progress.studyGoal):0;
   const finishDate=new Date();
   finishDate.setDate(finishDate.getDate()+daysToFinish);
   const finishDateStr=daysToFinish>0?finishDate.toLocaleDateString('zh-CN',{month:'long',day:'numeric'}):'已学完';
@@ -2085,14 +2087,14 @@ function renderHome(){
     <div class="progress-card">
       <div class="progress-header">
         <span class="progress-title">总进度</span>
-        <span class="progress-value">${learnedCount} / ${totalCount}</span>
+        <span class="progress-value">${progressDone} / ${totalCount}</span>
       </div>
-      <div class="progress-bar"><div class="progress-bar-fill" style="width:${(learnedCount/totalCount*100)}%"></div></div>
+      <div class="progress-bar"><div class="progress-bar-fill" style="width:${(progressDone/totalCount*100)}%"></div></div>
       <div class="progress-detail">
         <span>已学: <b>${learnedCount}</b></span>
         <span>掌握: <b>${masteredCount}</b></span>
-        <span>正确: <b>${progress.stats.totalCorrect}</b></span>
-        <span>错误: <b>${progress.stats.totalWrong}</b></span>
+        <span>已斩: <b>${ignoredCount}</b></span>
+        <span>待学: <b>${newCount}</b></span>
       </div>
     </div>
 
