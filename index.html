@@ -1271,7 +1271,7 @@ function loadProgress(){
   if(!progress){
     progress={
       dailyGoal:80, studyGoal:80, reviewGoal:80,
-      todayDate:getToday(), todayNewCount:0,
+      todayDate:getToday(), todayNewCount:0, todayReviewCount:0,
       words:{},
       stats:{totalLearned:0,totalMastered:0,totalCorrect:0,totalWrong:0,streak:0,lastStudyDate:null,
              todayStudyMinutes:0,totalStudyMinutes:0,todayStudyDate:''}
@@ -1280,7 +1280,8 @@ function loadProgress(){
   // V5 defaults
   if(progress.studyGoal===undefined || progress.studyGoal<80) progress.studyGoal=80;
   if(progress.reviewGoal===undefined) progress.reviewGoal=0; // 0=今日待复习量
-  if(progress.todayDate!==getToday()){ progress.todayDate=getToday(); progress.todayNewCount=0; }
+  if(progress.todayDate!==getToday()){ progress.todayDate=getToday(); progress.todayNewCount=0; progress.todayReviewCount=0; }
+  if(progress.todayReviewCount===undefined) progress.todayReviewCount=0;
   if(!progress.stats) progress.stats={};
   if(progress.stats.todayStudyMinutes===undefined) progress.stats.todayStudyMinutes=0;
   if(progress.stats.totalStudyMinutes===undefined) progress.stats.totalStudyMinutes=0;
@@ -1325,7 +1326,8 @@ async function loadProgressFromDB(){
     progress = typeof data === 'string' ? JSON.parse(data) : data;
     if(progress.studyGoal===undefined || progress.studyGoal<80) progress.studyGoal=80;
     if(progress.reviewGoal===undefined) progress.reviewGoal=0;
-    if(progress.todayDate!==getToday()){ progress.todayDate=getToday(); progress.todayNewCount=0; }
+    if(progress.todayDate!==getToday()){ progress.todayDate=getToday(); progress.todayNewCount=0; progress.todayReviewCount=0; }
+    if(progress.todayReviewCount===undefined) progress.todayReviewCount=0;
     if(!progress.stats) progress.stats={};
     if(progress.stats.todayStudyMinutes===undefined) progress.stats.todayStudyMinutes=0;
     if(progress.stats.totalStudyMinutes===undefined) progress.stats.totalStudyMinutes=0;
@@ -1552,8 +1554,18 @@ function getAutoReviewWords(){
   const isDefaultMode = progress.reviewGoal===0;
   let targetCount;
   if(isDefaultMode){
-    // 默认模式：所有到期词（今日到期 + 逾期），不再设上限
-    targetCount = learnedWords.length;
+    // 默认模式：今日固定复习量（每天第一次打开时计算，当天内不再增加）
+    const dueNow = learnedWords.filter(w=>{
+      const wp=progress.words[w.word];
+      return wp.nextReview && wp.nextReview<=Date.now();
+    }).length;
+    // 每天第一次打开时缓存今日总量
+    if(!progress.todayReviewCount || progress.todayReviewCount<=0){
+      progress.todayReviewCount = dueNow;
+      saveProgress();
+    }
+    // 当天内不超过今日总量，但随着复习会减少
+    targetCount = Math.min(progress.todayReviewCount, dueNow);
   } else {
     targetCount = progress.reviewGoal;
   }
@@ -1960,6 +1972,16 @@ function renderHome(){
   const finishDate=new Date();
   finishDate.setDate(finishDate.getDate()+daysToFinish);
   const finishDateStr=daysToFinish>0?finishDate.toLocaleDateString('zh-CN',{month:'long',day:'numeric'}):'已学完';
+  // Total pending review = today's due + overdue (matches auto review default mode)
+  const realPending = dueCount + overdueCount;
+  // Daily fixed count: calculate once per day and cache it, so the number doesn't grow during the day
+  if(progress.todayReviewCount <= 0 || progress.todayReviewCount === undefined){
+    progress.todayReviewCount = realPending;
+    saveProgress();
+  }
+  // If real pending is LESS than cached (e.g. user reviewed some), use the lower number
+  // But never let it grow beyond the day's starting count
+  const pendingReviewCount = Math.min(progress.todayReviewCount, realPending);
 
   const streak=progress.stats.streak||0;
   const todayMin=progress.stats.todayStudyMinutes||0;
@@ -1992,7 +2014,7 @@ function renderHome(){
     <div class="home-header">
       <div class="home-title">考研英语核心词</div>
       <div class="home-subtitle">${streak>0?'连续学习 '+streak+' 天':'开始你的学习之旅'}</div>
-      <div style="font-size:11px;color:#94a3b8;margin-top:4px">V3 · FSRS-6 · 2026-08-17</div>
+      <div style="font-size:11px;color:#94a3b8;margin-top:4px">V3 · FSRS-6 · 2026-08-18</div>
       ${currentUser?'<div style="margin-top:8px"><span class="user-badge">'+currentUser+'</span></div>':''}
     </div>
 
@@ -2022,7 +2044,7 @@ function renderHome(){
       </div>
       <div class="mode-tab ${homeMode==='auto'?'active':''}" onclick="setHomeMode('auto')">
         <div class="mode-tab-title">自主复习</div>
-        <div class="mode-tab-desc">复习今天全部到期词</div>
+        <div class="mode-tab-desc">复习全部到期词</div>
       </div>
     </div>
 
@@ -2037,8 +2059,8 @@ function renderHome(){
         <div class="stat-label">强制复习</div>
       </div>
       <div class="stat-item">
-        <div class="stat-num ${dueCount>0?'error':''}">${dueCount}</div>
-        <div class="stat-label">当前到期</div>
+        <div class="stat-num ${pendingReviewCount>0?'error':''}">${pendingReviewCount}</div>
+        <div class="stat-label">待复习</div>
       </div>
       <div class="stat-item">
         <div class="stat-num muted">${totalCount}</div>
@@ -2060,7 +2082,7 @@ function renderHome(){
       `:''}
       ${homeMode==='auto'?`
         <button class="action-btn primary" onclick="startAutoReview()" ${learnedTotal===0?'disabled':''}>
-          ${learnedTotal>0?'自主复习 ('+Math.min(progress.reviewGoal===0?dueCount:progress.reviewGoal,learnedTotal)+'词)':'暂无可复习的单词'}
+          ${learnedTotal>0?'自主复习 ('+Math.min(progress.reviewGoal===0?pendingReviewCount:progress.reviewGoal,learnedTotal)+'词)':'暂无可复习的单词'}
         </button>
         <div class="daily-goal-btns" style="margin-top:0">
           ${reviewOptions.map(o=>`<button class="daily-goal-btn ${progress.reviewGoal===o.v?'active':''}" onclick="setReviewGoal(${o.v})">${o.l}</button>`).join('')}
