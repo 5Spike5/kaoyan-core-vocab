@@ -28,6 +28,7 @@ supabase db push
 
 1. `supabase/migrations/202608210001_initial_schema.sql`
 2. `supabase/migrations/202608210002_rls_policies.sql`
+3. `supabase/migrations/202608210003_text_ids.sql`（必做：应用使用字符串 ID，需将用户表 `id` 列从 `uuid` 改为 `text`，否则同步会报 400）
 
 执行后确认所有用户表（`profiles`、`user_words`、`review_logs`、`study_sessions`、`user_settings`）均已启用 RLS。
 
@@ -81,11 +82,11 @@ supabase functions deploy dictionary-lookup
 
 ## 7. 数据归属规则
 
-| 数据 | 存放位置 |
-| --- | --- |
-| 公开词库、真题句子、前端代码、SQL 迁移 | GitHub（公开仓库） |
+| 数据                                            | 存放位置             |
+| ----------------------------------------------- | -------------------- |
+| 公开词库、真题句子、前端代码、SQL 迁移          | GitHub（公开仓库）   |
 | 用户账号、生词、FSRS 状态、复习日志、会话、设置 | Supabase（RLS 隔离） |
-| 离线副本、同步队列、词典缓存 | 浏览器 IndexedDB |
+| 离线副本、同步队列、词典缓存                    | 浏览器 IndexedDB     |
 
 ## 8. 上线前安全检查
 
