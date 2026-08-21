@@ -119,14 +119,16 @@ export async function flushSyncQueue(
 }
 
 /**
- * 本地优先同步：把本地（local 身份）的单词、复习日志、会话整体上传到
+ * 本地优先同步：把本地（local 身份）有变化的单词、复习日志、会话上传到
  * 云端账号（userId 映射为登录用户），再拉取云端数据合并回本地。
+ * lastSyncAt 为上次同步时间，只上传其后有变化的数据（首次传 null 全量）。
  * 本地是学习的工作集，云端是账号下的数据副本。
  */
 export async function syncLocalToCloud(
   db: LocalVocabDatabase,
   remote: CloudSyncRemote,
   cloudUserId: string,
+  lastSyncAt: number | null = null,
 ): Promise<{ uploaded: number; merged: number }> {
   const [localWords, localLogs, localSessions] = await Promise.all([
     db.userWords.where("userId").equals(LOCAL_USER_ID).toArray(),
@@ -134,16 +136,42 @@ export async function syncLocalToCloud(
     db.studySessions.where("userId").equals(LOCAL_USER_ID).toArray(),
   ]);
 
-  // 1. 上传本地改动到云端账号
-  for (const word of localWords) {
-    await remote.upsertWord({ ...word, userId: cloudUserId });
+  const changedWords =
+    lastSyncAt === null
+      ? localWords
+      : localWords.filter((word) => word.updatedAt > lastSyncAt);
+  const changedLogs =
+    lastSyncAt === null
+      ? localLogs
+      : localLogs.filter((log) => log.reviewedAt > lastSyncAt);
+  const changedSessions =
+    lastSyncAt === null
+      ? localSessions
+      : localSessions.filter(
+          (session) =>
+            session.startedAt > lastSyncAt ||
+            (session.completedAt ?? 0) > lastSyncAt,
+        );
+
+  // 1. 并发分批上传本地改动到云端账号
+  const CHUNK_SIZE = 20;
+  async function uploadChunks<T>(
+    items: T[],
+    upload: (item: T) => Promise<void>,
+  ) {
+    for (let index = 0; index < items.length; index += CHUNK_SIZE) {
+      await Promise.all(items.slice(index, index + CHUNK_SIZE).map(upload));
+    }
   }
-  for (const log of localLogs) {
-    await remote.appendReviewLog({ ...log, userId: cloudUserId });
-  }
-  for (const session of localSessions) {
-    await remote.upsertSession({ ...session, userId: cloudUserId });
-  }
+  await uploadChunks(changedWords, (word) =>
+    remote.upsertWord({ ...word, userId: cloudUserId }),
+  );
+  await uploadChunks(changedLogs, (log) =>
+    remote.appendReviewLog({ ...log, userId: cloudUserId }),
+  );
+  await uploadChunks(changedSessions, (session) =>
+    remote.upsertSession({ ...session, userId: cloudUserId }),
+  );
 
   // 2. 拉取云端数据并与本地合并（以 updatedAt / id 去重，写回时保持 local 身份）
   const [cloudWords, cloudLogs, cloudSessions] = await Promise.all([
@@ -185,7 +213,7 @@ export async function syncLocalToCloud(
   await db.studySessions.where("userId").equals(cloudUserId).delete();
 
   return {
-    uploaded: localWords.length + localLogs.length + localSessions.length,
+    uploaded: changedWords.length + changedLogs.length + changedSessions.length,
     merged: mergedWords.size,
   };
 }

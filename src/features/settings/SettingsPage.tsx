@@ -9,15 +9,9 @@ import {
 import { useCallback, useEffect, useState } from "react";
 import { toast } from "../../components/Toast";
 import { getCurrentUser, signOut, subscribeToAuth } from "../auth/authService";
+import { LAST_SYNC_KEY, runAutoCloudSync } from "../../repositories/cloudSync";
 import { createLocalDb } from "../../repositories/localDb";
-import {
-  isSupabaseConfigured,
-  createSupabaseClient,
-} from "../../repositories/supabaseClient";
-import { createSupabaseRepository } from "../../repositories/supabaseRepository";
-import { syncLocalToCloud } from "../../repositories/syncService";
-
-const LAST_SYNC_KEY = "kaoyan-last-sync-at";
+import { isSupabaseConfigured } from "../../repositories/supabaseClient";
 
 export default function SettingsPage() {
   const configured = isSupabaseConfigured();
@@ -37,12 +31,13 @@ export default function SettingsPage() {
     }
 
     setSyncing(true);
-    const db = createLocalDb();
     try {
-      const client = createSupabaseClient();
-      const remote = createSupabaseRepository(client);
+      const result = await runAutoCloudSync({ notify: false });
 
-      const result = await syncLocalToCloud(db, remote, user.id);
+      if (!result) {
+        toast("当前为本地模式，无法同步。请先登录。", "error");
+        return;
+      }
 
       const now = Date.now();
       localStorage.setItem(LAST_SYNC_KEY, String(now));
@@ -57,7 +52,6 @@ export default function SettingsPage() {
         "error",
       );
     } finally {
-      db.close();
       setSyncing(false);
     }
   }, [configured, user]);

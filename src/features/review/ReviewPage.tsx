@@ -8,21 +8,13 @@ import {
 } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { toast } from "../../components/Toast";
 import { searchExamCorpus } from "../../data/corpusIndex";
 import { publicVocab } from "../../data/publicVocab";
 import { normalizeTerm } from "../../lib/normalizeTerm";
 import { speakWord } from "../../lib/tts";
-import { createLocalDb } from "../../repositories/localDb";
+import { runAutoCloudSync } from "../../repositories/cloudSync";
 import { createLocalRepository } from "../../repositories/localRepository";
-import {
-  createSupabaseClient,
-  isSupabaseConfigured,
-} from "../../repositories/supabaseClient";
-import { createSupabaseRepository } from "../../repositories/supabaseRepository";
-import { syncLocalToCloud } from "../../repositories/syncService";
 import type { UserWord } from "../../types/domain";
-import { getCurrentUser } from "../auth/authService";
 import { lookupWithCache } from "../lookup/dictionaryApi";
 import { createDictionaryProvider } from "../lookup/dictionaryProvider";
 import { calculateTodayStudyMinutes } from "../stats/statsSelectors";
@@ -420,20 +412,8 @@ export default function ReviewPage() {
 
   /** 完成后自动把本地进度同步到云端账号（静默失败，可手动重试）。 */
   const autoSyncToCloud = useCallback(async () => {
-    if (!isSupabaseConfigured()) {
-      return;
-    }
-    const user = getCurrentUser();
-    if (!user) {
-      return;
-    }
     try {
-      const db = createLocalDb();
-      const client = createSupabaseClient();
-      const remote = createSupabaseRepository(client);
-      const result = await syncLocalToCloud(db, remote, user.id);
-      toast(`学习进度已同步到云端（${result.uploaded} 条）`, "success");
-      await db.close();
+      await runAutoCloudSync({ notify: true });
     } catch {
       // 网络或权限失败时静默，之后可在设置页手动同步
     }

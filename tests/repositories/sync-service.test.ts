@@ -167,4 +167,49 @@ describe("sync local to cloud", () => {
 
     db.close();
   });
+
+  it("only uploads data changed since the last sync", async () => {
+    const db = createLocalDb(`test-sync-delta-${crypto.randomUUID()}`);
+
+    const oldWord: UserWord = {
+      id: "word-old",
+      userId: "local",
+      term: "old",
+      normalizedTerm: "old",
+      meanings: [{ text: "旧的", source: "curated" }],
+      status: "new",
+      tags: [],
+      nextReviewAt: null,
+      createdAt: 1,
+      updatedAt: 100,
+    };
+    const newWord: UserWord = {
+      ...oldWord,
+      id: "word-new",
+      term: "new",
+      normalizedTerm: "new",
+      updatedAt: 200,
+    };
+    await db.userWords.bulkPut([oldWord, newWord]);
+
+    const uploaded: string[] = [];
+    const remote = {
+      upsertWord: vi.fn().mockImplementation(async (item: UserWord) => {
+        uploaded.push(item.normalizedTerm);
+      }),
+      appendReviewLog: vi.fn().mockResolvedValue(undefined),
+      upsertSession: vi.fn().mockResolvedValue(undefined),
+      listUserWords: vi.fn().mockResolvedValue([]),
+      listReviewLogs: vi.fn().mockResolvedValue([]),
+      listStudySessions: vi.fn().mockResolvedValue([]),
+    };
+
+    // 上次同步时间 150：只应上传 updatedAt > 150 的 new
+    const result = await syncLocalToCloud(db, remote as never, "user-1", 150);
+
+    expect(result.uploaded).toBe(1);
+    expect(uploaded).toEqual(["new"]);
+
+    db.close();
+  });
 });
