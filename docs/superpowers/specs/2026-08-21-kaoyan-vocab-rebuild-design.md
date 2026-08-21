@@ -509,6 +509,15 @@ interface DictionaryProvider {
 
 ## 12. GitHub 和 Vercel 发布
 
+当前本地仓库来自 fork：
+
+- `origin` 指向用户 fork：`https://github.com/5Spike5/kaoyan-core-vocab.git`。
+- `upstream` 指向原作者仓库：`https://github.com/SOGOOD-ONE/kaoyan-core-vocab.git`。
+- 本地已将 `upstream` 的 push URL 设置为 `DISABLED`，防止误推原作者仓库。
+- 重构工作在 `codex/rebuild-react-supabase` 分支进行。
+- 默认只向 `origin` 推送重构分支；除非用户明确要求，不向原作者仓库发起 PR 或推送。
+- 如需同步原作者更新，先从 `upstream` 拉取，再人工处理冲突，不能覆盖本地重构提交。
+
 GitHub 仓库结构目标：
 
 ```text

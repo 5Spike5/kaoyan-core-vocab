@@ -1889,60 +1889,6 @@ function confirmImport(){
   if(exampleMatched>0) msg+=`，匹配 ${exampleMatched} 个真题例句`;
   showToast(msg);
   renderHome();
-  // Auto-sync new words to GitHub data.js (permanent storage)
-  if(added>0){ syncVocabToGitHub(); }
-}
-
-// Sync custom vocabulary to GitHub data.js for permanent storage
-async function syncVocabToGitHub(){
-  const GITHUB_TOKEN=['ghp_','uttWp','voqlP','YlACM','8xwLc','inhea','l3nIU','1tvnL','C'].join('');
-  const owner='SOGOOD-ONE';
-  const repo='kaoyan-vocab-data';
-  const path='data.js';
-  try{
-    showToast('正在同步到系统词库...');
-    // 1. Get current data.js from GitHub
-    const resp=await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`,{
-      headers:{Authorization:`token ${GITHUB_TOKEN}`,'Accept':'application/vnd.github.v3+json'}
-    });
-    if(!resp.ok) throw new Error('获取data.js失败');
-    const fileData=await resp.json();
-    const sha=fileData.sha;
-    // 2. Decode content (UTF-8 safe)
-    const raw=atob(fileData.content.replace(/\s/g,''));
-    const content=decodeURIComponent(escape(raw));
-    // 3. Parse VOCAB_DATA array
-    const m=content.match(/const\s+VOCAB_DATA\s*=\s*(\[[\s\S]*?\]);/);
-    if(!m) throw new Error('解析VOCAB_DATA失败');
-    const vocabArray=JSON.parse(m[1]);
-    // 4. Add custom words not already in the array
-    const existSet=new Set(vocabArray.map(w=>w.word.toLowerCase()));
-    let syncAdded=0;
-    for(const w of customVocab){
-      if(!existSet.has(w.word.toLowerCase())){
-        vocabArray.push({word:w.word,type:w.type||'',meaning:w.meaning||'',category:w.category||'custom'});
-        existSet.add(w.word.toLowerCase());
-        syncAdded++;
-      }
-    }
-    if(syncAdded===0){ showToast('系统词库已是最新'); return; }
-    // 5. Rebuild data.js and upload
-    const newContent='const VOCAB_DATA = '+JSON.stringify(vocabArray)+';\n';
-    const encoded=btoa(unescape(encodeURIComponent(newContent)));
-    const updateResp=await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`,{
-      method:'PUT',
-      headers:{Authorization:`token ${GITHUB_TOKEN}`,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'},
-      body:JSON.stringify({message:`Auto-sync: add ${syncAdded} words from Excel import`,content:encoded,sha:sha})
-    });
-    if(updateResp.ok){
-      showToast(`已同步${syncAdded}个新词到系统词库`);
-    } else {
-      throw new Error('上传失败');
-    }
-  }catch(err){
-    console.error('Sync to GitHub failed:',err);
-    showToast('系统词库同步失败，词库已保存在本地');
-  }
 }
 
 // ===== Home =====
@@ -3053,45 +2999,10 @@ document.addEventListener('keydown',e=>{
   }
 });
 
-// ===== Load Remote Vocab (from private repo) =====
-async function loadRemoteVocab(){
-  const GITHUB_TOKEN=['ghp_','uttWp','voqlP','YlACM','8xwLc','inhea','l3nIU','1tvnL','C'].join('');
-  const owner='SOGOOD-ONE';
-  const repo='kaoyan-vocab-data';
-  const path='data.js';
-  try{
-    const resp=await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`,{
-      headers:{Authorization:`token ${GITHUB_TOKEN}`,'Accept':'application/vnd.github.v3+json'}
-    });
-    if(!resp.ok) throw new Error('Failed to fetch remote vocab');
-    const fileData=await resp.json();
-    const raw=atob(fileData.content.replace(/\s/g,''));
-    const content=decodeURIComponent(escape(raw));
-    const m=content.match(/const\s+VOCAB_DATA\s*=\s*(\[[\s\S]*?\]);/);
-    if(!m) throw new Error('Parse VOCAB_DATA failed');
-    const remoteVocab=JSON.parse(m[1]);
-    // Merge remote vocab into existing VOCAB_DATA (demo words get replaced by full set)
-    const existingSet=new Set(VOCAB_DATA.map(w=>w.word.toLowerCase()));
-    let added=0;
-    for(const w of remoteVocab){
-      if(!existingSet.has(w.word.toLowerCase())){
-        VOCAB_DATA.push(w);
-        existingSet.add(w.word.toLowerCase());
-        added++;
-      }
-    }
-    console.log(`Remote vocab loaded: ${remoteVocab.length} words (${added} new merged)`);
-  }catch(err){
-    console.error('Failed to load remote vocab:',err);
-    // App continues with demo vocabulary (50 words)
-  }
-}
-
 // ===== Init =====
 let currentOptionWords = [];
 
 async function initApp(){
-  await loadRemoteVocab();
   await initDB();
   // Initialize official ts-fsrs (FSRS-6) scheduler before loading progress
   try{

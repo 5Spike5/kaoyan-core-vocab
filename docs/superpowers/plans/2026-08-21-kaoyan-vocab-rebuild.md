@@ -104,6 +104,15 @@ package.json
 
 `data.js` 和 `sentences.js` 在迁移完成前保留为源数据输入；迁移脚本将它们转换为 `src/data` 可导入的结构。原始文件不删除，避免丢失已有资料。
 
+## Fork 工作流
+
+- `origin` 是用户 fork：`https://github.com/5Spike5/kaoyan-core-vocab.git`。
+- `upstream` 是原作者仓库：`https://github.com/SOGOOD-ONE/kaoyan-core-vocab.git`。
+- 本地已将 `upstream` 的 push URL 设置为 `DISABLED`，避免误推原作者仓库。
+- 所有重构提交落在 `codex/rebuild-react-supabase`。
+- 默认只推送到 `origin`，不直接向 `upstream` 推送。
+- 需要同步原作者更新时，先执行 `git fetch upstream`，再在当前重构分支上人工合并或变基并解决冲突。
+
 ### Task 1: 建立安全基线、备份和重构分支
 
 **Files:**
@@ -113,7 +122,7 @@ package.json
 - Create: `docs/superpowers/baselines/2026-08-21-local-feature-baseline.md`
 - Test: `tests/security/no-client-secrets.test.ts`
 
-- [ ] **Step 1: Write the failing secret-scan test**
+- [x] **Step 1: Write the failing secret-scan test**
 
 Create `tests/security/no-client-secrets.test.ts`:
 
@@ -131,7 +140,7 @@ describe('client secret safety', () => {
 })
 ```
 
-- [ ] **Step 2: Run the focused test and verify the expected failure**
+- [x] **Step 2: Run the focused test and verify the expected failure**
 
 Run:
 
@@ -141,7 +150,7 @@ npx vitest run tests/security/no-client-secrets.test.ts
 
 Expected: `FAIL` because the current legacy page contains a hard-coded GitHub token and browser-side GitHub API request.
 
-- [ ] **Step 3: Remove the browser-side GitHub write/read code**
+- [x] **Step 3: Remove the browser-side GitHub write/read code**
 
 Delete the `loadRemoteVocab` function and its invocation from `index.html`. The legacy page must load only its checked-in `data.js` and `sentences.js` data. Do not replace the token with an empty token or a different token.
 
@@ -165,7 +174,7 @@ VITE_SUPABASE_URL=
 VITE_SUPABASE_PUBLISHABLE_KEY=
 ```
 
-- [ ] **Step 4: Run the security test and verify it passes**
+- [x] **Step 4: Run the security test and verify it passes**
 
 Run:
 
@@ -175,7 +184,7 @@ npx vitest run tests/security/no-client-secrets.test.ts
 
 Expected: `PASS`.
 
-- [ ] **Step 5: Record the legacy behavior baseline**
+- [x] **Step 5: Record the legacy behavior baseline**
 
 Create `docs/superpowers/baselines/2026-08-21-local-feature-baseline.md` with the currently observed behaviors:
 
@@ -195,7 +204,7 @@ Create `docs/superpowers/baselines/2026-08-21-local-feature-baseline.md` with th
 - Browser-side GitHub repository access is removed before the rewrite.
 ```
 
-- [ ] **Step 6: Commit the security baseline**
+- [x] **Step 6: Commit the security baseline**
 
 Run:
 
