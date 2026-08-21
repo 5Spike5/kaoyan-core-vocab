@@ -156,15 +156,15 @@ Supabase（账号下的数据副本，RLS 隔离）
 3. 部署后把正式域名回填到 Supabase Auth 的 Site URL / Redirect URLs。
 4. 推送 `main` 自动部署；GitHub Actions 自动跑 typecheck / test / build。
 
-### 方案 B：GitHub Pages
+### 方案 B：GitHub Pages（已内置部署配置）
 
-项目是 `BrowserRouter` 单页应用，直接用 GitHub Pages 需要三处调整（否则刷新 / 深链接会 404）：
+仓库已包含 `.github/workflows/pages.yml`，构建时会自动设置子路径 `base`、生成 SPA 回退页（`404.html`）并部署。只需三步：
 
-1. `vite.config.ts` 设置 `base`（如 `/仓库名/`）。
-2. 新建 `public/404.html`（内容复制 `index.html`）作为 SPA 回退。
-3. 添加一个 Pages 部署的 GitHub Actions workflow，并在仓库 Settings → Pages 把 Source 设为 **GitHub Actions**。
+1. **配置环境变量**：仓库 **Settings → Secrets and variables → Actions** 新建两个 repository variable：`VITE_SUPABASE_URL` 和 `VITE_SUPABASE_PUBLISHABLE_KEY`（不配则站点以本地模式运行，朋友无法注册登录）。
+2. **开启 Pages**：仓库 **Settings → Pages → Source 选择 GitHub Actions**。
+3. **触发部署**：推送到 `main` 自动部署（或 Actions 页手动 Run workflow）。
 
-或把 `main.tsx` 的 `BrowserRouter` 换成 `HashRouter`（地址带 `#`，免配置）。
+部署地址：`https://<你的用户名>.github.io/kaoyan-core-vocab/`，部署后把该地址填入 Supabase Auth 的 Site URL / Redirect URLs。
 
 ---
 
