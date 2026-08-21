@@ -79,6 +79,18 @@ a {
   gap: var(--space-2);
 }
 
+.sync-status {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: auto;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-sm);
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
 .nav-link {
   display: flex;
   align-items: center;
@@ -151,6 +163,32 @@ h2 {
   gap: var(--space-4);
 }
 
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.metric-grid div {
+  padding: var(--space-4);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.metric-grid span {
+  display: block;
+  font-size: 1.45rem;
+  font-weight: 900;
+}
+
+.metric-grid p {
+  margin: var(--space-1) 0 0;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
 .action-panel {
   display: grid;
   min-height: 245px;
@@ -199,6 +237,7 @@ h2 {
   min-height: 44px;
   gap: var(--space-2);
   padding: 0 var(--space-4);
+  text-decoration: none;
 }
 
 .button-primary {
@@ -242,6 +281,143 @@ h2 {
   border: 1px solid var(--color-line);
   border-radius: var(--radius-md);
   background: var(--color-surface);
+}
+
+.review-page {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.back-button {
+  margin-bottom: var(--space-2);
+}
+
+.review-card,
+.result-panel {
+  max-width: 920px;
+  padding: var(--space-5);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-panel);
+}
+
+.review-meta,
+.result-heading,
+.rating-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.review-meta {
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.review-prompt h1 {
+  margin-bottom: var(--space-6);
+}
+
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.answer-option {
+  display: grid;
+  min-height: 76px;
+  grid-template-columns: 36px minmax(0, 1fr);
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border: 1px solid var(--color-line-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+  cursor: pointer;
+  text-align: left;
+}
+
+.answer-option span {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-muted);
+  color: var(--color-primary-strong);
+  font-weight: 900;
+}
+
+.answer-option strong {
+  overflow-wrap: anywhere;
+  line-height: 1.45;
+}
+
+.answer-option:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  background: var(--color-primary-soft);
+}
+
+.answer-option:disabled {
+  cursor: default;
+}
+
+.option-correct {
+  border-color: var(--color-primary);
+  background: var(--color-primary-soft);
+}
+
+.option-wrong {
+  border-color: var(--color-accent);
+  background: #f8e4dc;
+}
+
+.result-panel {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.result-heading {
+  color: var(--color-primary-strong);
+}
+
+.result-heading h2 {
+  margin: 0;
+}
+
+.result-panel blockquote {
+  margin: 0;
+  padding: var(--space-4);
+  border-left: 4px solid var(--color-primary);
+  background: var(--color-surface-muted);
+}
+
+.result-panel blockquote span {
+  display: block;
+  margin-bottom: var(--space-2);
+  color: var(--color-primary-strong);
+  font-weight: 900;
+}
+
+.result-panel blockquote p {
+  margin-bottom: var(--space-3);
+  line-height: 1.7;
+}
+
+.result-panel cite {
+  color: var(--color-muted);
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.rating-row {
+  flex-wrap: wrap;
 }
 
 .lookup-form label {
@@ -295,6 +471,10 @@ h2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .sync-status {
+    display: none;
+  }
+
   .nav-link {
     justify-content: center;
   }
@@ -307,7 +487,20 @@ h2 {
     grid-template-columns: 1fr;
   }
 
+  .metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .action-panel {
     min-height: 220px;
+  }
+
+  .option-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-card,
+  .result-panel {
+    padding: var(--space-4);
   }
 }

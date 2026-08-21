@@ -6,4 +6,6 @@ dist/
 !.env.example
 .vercel/
 .superpowers/
+.reasonix/
+reasonix.toml
 *.local.json
