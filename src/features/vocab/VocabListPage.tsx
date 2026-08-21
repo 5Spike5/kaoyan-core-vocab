@@ -159,7 +159,7 @@ export default function VocabListPage() {
     }
   }, [modal.result, loadWords]);
 
-  const previewRows = modal.result?.imported.slice(0, 8) ?? [];
+  const previewRows = modal.result?.imported.slice(0, 6) ?? [];
   const previewMore = (modal.result?.imported.length ?? 0) - previewRows.length;
 
   return (

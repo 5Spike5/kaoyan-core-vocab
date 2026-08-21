@@ -5,19 +5,28 @@ import {
   Download,
   RefreshCw,
   Trash2,
+  Upload,
 } from "lucide-react";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { toast } from "../../components/Toast";
 import { getCurrentUser, signOut, subscribeToAuth } from "../auth/authService";
+import {
+  parseLegacyBackup,
+  type LegacyBackupParseResult,
+} from "../../lib/legacyBackup";
 import { LAST_SYNC_KEY, runAutoCloudSync } from "../../repositories/cloudSync";
 import { createLocalDb } from "../../repositories/localDb";
+import { createLocalRepository } from "../../repositories/localRepository";
 import { isSupabaseConfigured } from "../../repositories/supabaseClient";
+
+const GOAL_KEY = "kaoyan-daily-goal";
 
 export default function SettingsPage() {
   const configured = isSupabaseConfigured();
   const [user, setUser] = useState(() => getCurrentUser());
   const [syncing, setSyncing] = useState(false);
   const [clearing, setClearing] = useState(false);
+  const legacyFileRef = useRef<HTMLInputElement>(null);
   const [lastSyncAt, setLastSyncAt] = useState<string | null>(() =>
     localStorage.getItem(LAST_SYNC_KEY),
   );
@@ -55,6 +64,38 @@ export default function SettingsPage() {
       setSyncing(false);
     }
   }, [configured, user]);
+
+  const handleImportLegacy = useCallback(async (file: File) => {
+    let result: LegacyBackupParseResult;
+    try {
+      result = parseLegacyBackup(await file.text());
+    } catch (error) {
+      toast(error instanceof Error ? error.message : "备份解析失败", "error");
+      return;
+    }
+
+    if (result.words.length === 0) {
+      toast("备份中没有可导入的单词", "error");
+      return;
+    }
+
+    const repository = createLocalRepository();
+    try {
+      for (const word of result.words) {
+        await repository.upsertUserWord(word);
+      }
+    } finally {
+      await repository.close();
+    }
+
+    if (result.dailyGoal !== null) {
+      localStorage.setItem(GOAL_KEY, String(result.dailyGoal));
+    }
+    toast(
+      `已导入 ${result.words.length} 个单词${result.dailyGoal !== null ? `，每日目标 ${result.dailyGoal}` : ""}`,
+      "success",
+    );
+  }, []);
 
   const handleExport = useCallback(async () => {
     const db = createLocalDb();
@@ -167,6 +208,37 @@ export default function SettingsPage() {
             >
               导出个人数据
             </button>
+          </div>
+        </div>
+
+        <div className="settings-row">
+          <div className="settings-row-icon">
+            <Upload size={20} aria-hidden="true" />
+          </div>
+          <div className="settings-row-main">
+            <h2>导入旧版进度</h2>
+            <p>从旧版导出的 JSON 备份恢复单词状态与 FSRS 复习计划。</p>
+            <button
+              type="button"
+              className="button button-secondary"
+              onClick={() => legacyFileRef.current?.click()}
+            >
+              选择备份文件
+            </button>
+            <input
+              ref={legacyFileRef}
+              type="file"
+              accept=".json,application/json"
+              className="hidden-file-input"
+              aria-label="选择旧版进度备份"
+              onChange={(event) => {
+                const file = event.target.files?.[0];
+                if (file) {
+                  void handleImportLegacy(file);
+                }
+                event.target.value = "";
+              }}
+            />
           </div>
         </div>
 
