@@ -15,15 +15,8 @@ import {
   createSupabaseClient,
 } from "../../repositories/supabaseClient";
 import { createSupabaseRepository } from "../../repositories/supabaseRepository";
-import {
-  flushSyncQueue,
-  mergeReviewLogs,
-  mergeStudySessions,
-  mergeUserWord,
-} from "../../repositories/syncService";
-import type { ReviewLog, StudySession, UserWord } from "../../types/domain";
+import { syncLocalToCloud } from "../../repositories/syncService";
 
-const LOCAL_USER_ID = "local";
 const LAST_SYNC_KEY = "kaoyan-last-sync-at";
 
 export default function SettingsPage() {
@@ -49,49 +42,13 @@ export default function SettingsPage() {
       const client = createSupabaseClient();
       const remote = createSupabaseRepository(client);
 
-      // 1. 先上传本地待同步队列
-      const flushed = await flushSyncQueue(db, user.id, remote);
-
-      // 2. 拉取云端数据并合并回本地
-      const [cloudWords, cloudLogs, cloudSessions] = await Promise.all([
-        remote.listUserWords(user.id),
-        remote.listReviewLogs(user.id),
-        remote.listStudySessions(user.id),
-      ]);
-
-      const [localWords, localLogs, localSessions] = await Promise.all([
-        db.userWords.where("userId").equals(user.id).toArray(),
-        db.reviewLogs.where("userId").equals(user.id).toArray(),
-        db.studySessions.where("userId").equals(user.id).toArray(),
-      ]);
-
-      const mergedWords = new Map<string, UserWord>();
-      for (const word of [...cloudWords, ...localWords]) {
-        const existing = mergedWords.get(word.normalizedTerm);
-        mergedWords.set(
-          word.normalizedTerm,
-          existing ? mergeUserWord(existing, word) : word,
-        );
-      }
-      for (const word of mergedWords.values()) {
-        await db.userWords.put(word);
-      }
-
-      const mergedLogs = mergeReviewLogs(localLogs, cloudLogs);
-      for (const log of mergedLogs) {
-        await db.reviewLogs.put(log);
-      }
-
-      const mergedSessions = mergeStudySessions(localSessions, cloudSessions);
-      for (const session of mergedSessions) {
-        await db.studySessions.put(session);
-      }
+      const result = await syncLocalToCloud(db, remote, user.id);
 
       const now = Date.now();
       localStorage.setItem(LAST_SYNC_KEY, String(now));
       setLastSyncAt(new Date(now).toLocaleString());
       toast(
-        `同步完成：上传 ${flushed.succeeded} 条${flushed.failed ? `，失败 ${flushed.failed} 条` : ""}，合并云端数据 ${mergedWords.size} 词 / ${mergedLogs.length} 日志 / ${mergedSessions.length} 会话。`,
+        `同步完成：上传 ${result.uploaded} 条，合并云端 ${result.merged} 词。`,
         "success",
       );
     } catch (error) {

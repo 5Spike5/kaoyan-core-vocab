@@ -6,20 +6,33 @@ import {
   Volume2,
   XCircle,
 } from "lucide-react";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
+import { toast } from "../../components/Toast";
 import { searchExamCorpus } from "../../data/corpusIndex";
 import { publicVocab } from "../../data/publicVocab";
 import { normalizeTerm } from "../../lib/normalizeTerm";
 import { speakWord } from "../../lib/tts";
+import { createLocalDb } from "../../repositories/localDb";
 import { createLocalRepository } from "../../repositories/localRepository";
+import {
+  createSupabaseClient,
+  isSupabaseConfigured,
+} from "../../repositories/supabaseClient";
+import { createSupabaseRepository } from "../../repositories/supabaseRepository";
+import { syncLocalToCloud } from "../../repositories/syncService";
 import type { UserWord } from "../../types/domain";
+import { getCurrentUser } from "../auth/authService";
 import { lookupWithCache } from "../lookup/dictionaryApi";
 import { createDictionaryProvider } from "../lookup/dictionaryProvider";
 import { calculateTodayStudyMinutes } from "../stats/statsSelectors";
 import { mergePublicAndUserWords } from "../vocab/vocabService";
-import { buildReviewOptions } from "./reviewService";
-import type { ReviewOption } from "./reviewTypes";
+import {
+  applyWordReview,
+  buildReviewOptions,
+  createReviewLog,
+} from "./reviewService";
+import type { ReviewOption, ReviewRating } from "./reviewTypes";
 
 const LOCAL_USER_ID = "local";
 const GOAL_KEY = "kaoyan-daily-goal";
@@ -56,7 +69,7 @@ const MODE_BADGES: Record<string, string> = {
 };
 
 const RATINGS: Array<{
-  value: string;
+  value: ReviewRating;
   label: string;
   interval: string;
   className: string;
@@ -202,6 +215,12 @@ export default function ReviewPage() {
     totalMinutes: number;
   } | null>(null);
 
+  // 新词模式：记录每个词 3 遍的整体对错，用于最后的 FSRS 评级
+  const wordResultsRef = useRef(
+    new Map<string, { correct: number; total: number }>(),
+  );
+  const questionStartRef = useRef(Date.now());
+
   const goal = loadGoal();
   const isNewWordMode = mode === "today";
 
@@ -212,17 +231,15 @@ export default function ReviewPage() {
       setWords(mergePublicAndUserWords(publicVocab, userWords));
     } finally {
       await repository.close();
-      setLoading(false);
     }
   }, []);
 
   useEffect(() => {
     let cancelled = false;
     void loadWords().finally(() => {
-      if (cancelled) {
-        return;
+      if (!cancelled) {
+        setLoading(false);
       }
-      setLoading(false);
     });
     return () => {
       cancelled = true;
@@ -355,33 +372,107 @@ export default function ReviewPage() {
     };
   }, [completed]);
 
-  const persistSession = useCallback(async () => {
-    try {
+  /** 把一次评分写回本地：更新 FSRS 卡片 + 状态 + 下次复习时间，并记录复习日志。 */
+  const writeBackWord = useCallback(
+    async (
+      wordId: string,
+      rating: ReviewRating,
+      answeredCorrectly: boolean,
+      elapsedMs: number,
+    ) => {
+      const word = words.find((entry) => entry.id === wordId);
+      if (!word) {
+        return;
+      }
       const repository = createLocalRepository();
-      await repository.upsertStudySession({
-        id: "local-review-session",
-        userId: "local",
-        mode: mode === "today" ? "new" : mode === "due" ? "due" : "free",
-        wordIds: [...new Set(deck.map((deckItem) => deckItem.word.id))],
-        currentIndex,
-        startedAt: Date.now() - elapsed * 1000,
-        completedAt: null,
-      });
-      await repository.close();
-    } catch {
-      // Local persistence should not block review navigation.
+      try {
+        const updated = applyWordReview(word, rating);
+        await repository.upsertUserWord(updated);
+        await repository.appendReviewLog(
+          createReviewLog({
+            word: updated,
+            rating,
+            answeredCorrectly,
+            elapsedMs,
+          }),
+        );
+      } finally {
+        await repository.close();
+      }
+    },
+    [words],
+  );
+
+  /** 新词模式：单词 3 遍结束后按整体表现评级（全对 → good，有错 → again）。 */
+  const finalizeWord = useCallback(
+    async (wordId: string) => {
+      const result = wordResultsRef.current.get(wordId);
+      if (!result || result.total === 0) {
+        return;
+      }
+      wordResultsRef.current.delete(wordId);
+      const rating: ReviewRating =
+        result.correct === result.total ? "good" : "again";
+      await writeBackWord(wordId, rating, result.correct === result.total, 0);
+    },
+    [writeBackWord],
+  );
+
+  /** 完成后自动把本地进度同步到云端账号（静默失败，可手动重试）。 */
+  const autoSyncToCloud = useCallback(async () => {
+    if (!isSupabaseConfigured()) {
+      return;
     }
-  }, [currentIndex, deck, elapsed, mode]);
+    const user = getCurrentUser();
+    if (!user) {
+      return;
+    }
+    try {
+      const db = createLocalDb();
+      const client = createSupabaseClient();
+      const remote = createSupabaseRepository(client);
+      const result = await syncLocalToCloud(db, remote, user.id);
+      toast(`学习进度已同步到云端（${result.uploaded} 条）`, "success");
+      await db.close();
+    } catch {
+      // 网络或权限失败时静默，之后可在设置页手动同步
+    }
+  }, []);
+
+  const persistSession = useCallback(
+    async (completedAt: number | null) => {
+      try {
+        const repository = createLocalRepository();
+        await repository.upsertStudySession({
+          id: "local-review-session",
+          userId: "local",
+          mode: mode === "today" ? "new" : mode === "due" ? "due" : "free",
+          wordIds: [...new Set(deck.map((deckItem) => deckItem.word.id))],
+          currentIndex,
+          startedAt: Date.now() - elapsed * 1000,
+          completedAt,
+        });
+        await repository.close();
+      } catch {
+        // Local persistence should not block review navigation.
+      }
+    },
+    [currentIndex, deck, elapsed, mode],
+  );
 
   const handleExit = useCallback(() => {
-    void persistSession();
+    if (isNewWordMode && item) {
+      void finalizeWord(item.word.id);
+    }
+    void persistSession(null);
     navigate("/");
-  }, [navigate, persistSession]);
+  }, [finalizeWord, isNewWordMode, item, navigate, persistSession]);
 
   const handleFinish = useCallback(() => {
-    void persistSession();
+    void persistSession(Date.now());
     setCompleted(true);
-  }, [persistSession]);
+    void autoSyncToCloud();
+  }, [autoSyncToCloud, persistSession]);
 
   const handleAdvance = useCallback(() => {
     if (!answered) {
@@ -389,6 +480,18 @@ export default function ReviewPage() {
     }
 
     const nextIndex = currentIndex + 1;
+    const current = deck[currentIndex];
+    const next = deck[nextIndex];
+
+    // 新词模式：当前词的最后一遍结束后写回
+    if (
+      isNewWordMode &&
+      current &&
+      (!next || next.word.id !== current.word.id)
+    ) {
+      void finalizeWord(current.word.id);
+    }
+
     if (nextIndex >= deck.length) {
       handleFinish();
       return;
@@ -397,7 +500,8 @@ export default function ReviewPage() {
     setCurrentIndex(nextIndex);
     setSelectedIndex(null);
     setExampleOpen(false);
-  }, [answered, currentIndex, deck.length, handleFinish]);
+    questionStartRef.current = Date.now();
+  }, [answered, currentIndex, deck, finalizeWord, handleFinish, isNewWordMode]);
 
   const handleSelect = useCallback(
     (index: number) => {
@@ -410,8 +514,30 @@ export default function ReviewPage() {
       } else {
         setWrongCount((value) => value + 1);
       }
+
+      const entry = wordResultsRef.current.get(item!.word.id) ?? {
+        correct: 0,
+        total: 0,
+      };
+      entry.total += 1;
+      if (options[index]?.isCorrect) {
+        entry.correct += 1;
+      }
+      wordResultsRef.current.set(item!.word.id, entry);
     },
-    [answered, options],
+    [answered, item, options],
+  );
+
+  const handleRate = useCallback(
+    (rating: ReviewRating) => {
+      if (!answered || !item) {
+        return;
+      }
+      const elapsedMs = Date.now() - questionStartRef.current;
+      void writeBackWord(item.word.id, rating, isCorrect, elapsedMs);
+      handleAdvance();
+    },
+    [answered, handleAdvance, isCorrect, item, writeBackWord],
   );
 
   useReviewKeyboard({
@@ -671,7 +797,7 @@ export default function ReviewPage() {
               key={rating.value}
               type="button"
               className={`rating-btn ${rating.className}`}
-              onClick={handleAdvance}
+              onClick={() => handleRate(rating.value)}
             >
               <strong>{rating.label}</strong>
               <span>{rating.interval}</span>
