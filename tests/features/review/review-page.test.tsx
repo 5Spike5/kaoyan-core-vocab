@@ -23,7 +23,7 @@ describe("ReviewPage", () => {
     expect(await screen.findByText("没有可学习的内容")).toBeInTheDocument();
   });
 
-  it("teaches new words without rating, shuffled, with alternating direction", async () => {
+  it("teaches new words without rating, with interleaved rounds and mixed directions", async () => {
     const user = userEvent.setup();
     render(
       <MemoryRouter initialEntries={["/review?mode=today"]}>
@@ -31,7 +31,7 @@ describe("ReviewPage", () => {
       </MemoryRouter>,
     );
 
-    // 每日目标 80 词 × 3 遍 = 240 题（乱序）
+    // 每日目标 80 词 × 3 遍 = 240 题（3 遍随机穿插，不连续）
     expect(await screen.findByText(/1 \/ 240/)).toBeInTheDocument();
     expect(screen.getByRole("heading", { level: 1 })).toBeInTheDocument();
     // 新词模式没有评分按钮
@@ -39,26 +39,29 @@ describe("ReviewPage", () => {
       screen.queryByRole("button", { name: /Again/ }),
     ).not.toBeInTheDocument();
 
-    // 第 1 遍：英文问中文 → 选项是中文释义
-    expect(
-      optionButtons().every((button) =>
-        /[\u4e00-\u9fff]/.test(button.textContent ?? ""),
-      ),
-    ).toBe(true);
+    // 方向随机（英→中 / 中→英），逐题作答并统计两种方向都出现过
+    let sawChineseOptions = false;
+    let sawEnglishOptions = false;
+    for (let round = 0; round < 240; round += 1) {
+      const buttons = optionButtons();
+      const text = buttons.map((button) => button.textContent ?? "").join(" ");
+      if (/[\u4e00-\u9fff]/.test(text)) {
+        sawChineseOptions = true;
+      }
+      if (/[a-zA-Z]/.test(text)) {
+        sawEnglishOptions = true;
+      }
 
-    await user.click(optionButtons()[0]);
-    expect(screen.getByText(/正确答案/)).toBeInTheDocument();
+      await user.click(buttons[0]);
+      expect(screen.getByText(/正确答案/)).toBeInTheDocument();
 
-    // 下一题 → 第 2 遍：中文问英文 → 选项变成英文单词
-    await user.click(screen.getByRole("button", { name: "下一题" }));
-    expect(
-      optionButtons().every((button) =>
-        /[a-zA-Z]/.test(button.textContent ?? ""),
-      ),
-    ).toBe(true);
-
-    await user.click(optionButtons()[0]);
-    expect(await screen.findByText(/回答/)).toBeInTheDocument();
+      if (round === 239 || (sawChineseOptions && sawEnglishOptions)) {
+        break;
+      }
+      await user.click(screen.getByRole("button", { name: "下一题" }));
+    }
+    expect(sawChineseOptions).toBe(true);
+    expect(sawEnglishOptions).toBe(true);
   });
 
   it("reviews due words in English-to-Chinese with FSRS rating and auto example", async () => {
