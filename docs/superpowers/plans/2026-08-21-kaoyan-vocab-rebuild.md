@@ -1,5 +1,7 @@
 # 考研英语核心词重构 Implementation Plan
 
+> **实施状态（2026-08-21 更新）：** Task 1–5 与 Task 6–11 已实现并提交（分支 `codex/rebuild-react-supabase`，commit 见 `git log`）。Task 6/9 中的真实浏览器验证与 Task 8 的 `supabase db reset` 依赖 Supabase 项目配置，待用户按 `docs/deployment.md` 建好项目后补充；Task 12 的代码审查由用户集成前进行。测试共 42 个全部通过，`npm run build` 成功。
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** 将当前单文件考研词汇网页重构为 React + Vite + TypeScript 应用，在保留四选一复习和 FSRS-6 的基础上，增加本地数据迁移、邮箱登录、Supabase 云同步、查词、考研语料统计和 GitHub/Vercel 部署能力。
