@@ -97,14 +97,14 @@ function buildDeck(words: UserWord[], mode: string, goal: number): DeckItem[] {
   const hasMeaning = (word: UserWord) => Boolean(meaningOf(word));
 
   if (mode === "today") {
-    // 新词乱序学习
+    // 新词乱序学习：同一词的 3 遍分散穿插在队列各处，不连续出现
     const newWords = shuffle(
       words.filter((word) => word.status === "new" && hasMeaning(word)),
     ).slice(0, goal);
-    const items: DeckItem[] = [];
+    const rounds: DeckItem[] = [];
     for (const word of newWords) {
       for (let round = 0; round < NEW_WORD_ROUNDS; round += 1) {
-        items.push({
+        rounds.push({
           id: `${word.normalizedTerm}#r${round}`,
           word: {
             id: word.id,
@@ -116,7 +116,7 @@ function buildDeck(words: UserWord[], mode: string, goal: number): DeckItem[] {
         });
       }
     }
-    return items;
+    return shuffle(rounds);
   }
 
   const now = Date.now();
@@ -517,15 +517,13 @@ export default function ReviewPage() {
 
     const nextIndex = currentIndex + 1;
     const current = deck[currentIndex];
-    const next = deck[nextIndex];
 
-    // 新词模式：当前词的最后一遍结束后写回
-    if (
-      isNewWordMode &&
-      current &&
-      (!next || next.word.id !== current.word.id)
-    ) {
-      void finalizeWord(current.word.id);
+    // 新词模式：3 遍分散在队列各处，当前词最后一遍答完后才写回
+    if (isNewWordMode && current) {
+      const entry = wordResultsRef.current.get(current.word.id);
+      if (entry && entry.total >= NEW_WORD_ROUNDS) {
+        void finalizeWord(current.word.id);
+      }
     }
 
     if (nextIndex >= deck.length) {
