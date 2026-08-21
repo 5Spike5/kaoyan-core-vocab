@@ -72,14 +72,22 @@ export default function DashboardPage() {
         repository.listReviewLogs(LOCAL_USER_ID),
         repository.listStudySessions(LOCAL_USER_ID),
       ]);
-      setData({ words, logs, sessions });
+      return { words, logs, sessions };
     } finally {
       await repository.close();
     }
   }, []);
 
   useEffect(() => {
-    void load();
+    let cancelled = false;
+    void load().then((result) => {
+      if (!cancelled) {
+        setData(result);
+      }
+    });
+    return () => {
+      cancelled = true;
+    };
   }, [load]);
 
   const words = data?.words ?? [];
