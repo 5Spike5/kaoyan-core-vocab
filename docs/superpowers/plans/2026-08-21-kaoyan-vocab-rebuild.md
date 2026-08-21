@@ -229,7 +229,7 @@ git commit -m "security: remove browser github credential path"
 - Create: `src/styles/globals.css`
 - Test: `tests/app/app-shell.test.tsx`
 
-- [ ] **Step 1: Add the package manifest and scripts**
+- [x] **Step 1: Add the package manifest and scripts**
 
 Create `package.json`:
 
@@ -278,7 +278,7 @@ Create `package.json`:
 }
 ```
 
-- [ ] **Step 2: Add the Vite and TypeScript configuration**
+- [x] **Step 2: Add the Vite and TypeScript configuration**
 
 Create `vite.config.ts`:
 
@@ -331,7 +331,7 @@ Create `tsconfig.app.json`:
 }
 ```
 
-- [ ] **Step 3: Write the failing app shell test**
+- [x] **Step 3: Write the failing app shell test**
 
 Create `tests/setup.ts`:
 
@@ -363,7 +363,7 @@ describe('app shell', () => {
 })
 ```
 
-- [ ] **Step 4: Run the test and verify it fails because the shell does not exist**
+- [x] **Step 4: Run the test and verify it fails because the shell does not exist**
 
 Run:
 
@@ -374,7 +374,7 @@ npx vitest run tests/app/app-shell.test.tsx
 
 Expected: `FAIL` with a module-not-found error for `src/app/App`.
 
-- [ ] **Step 5: Implement the minimal application shell**
+- [x] **Step 5: Implement the minimal application shell**
 
 Create `src/app/router.tsx`:
 
@@ -493,7 +493,7 @@ Create `index.html` with only the Vite mount point:
 
 Add `src/styles/tokens.css` with the approved restrained palette and `src/styles/globals.css` with the shell layout, focus states, responsive breakpoint, and button styles.
 
-- [ ] **Step 6: Run the app shell test and build**
+- [x] **Step 6: Run the app shell test and build**
 
 Run:
 
@@ -505,7 +505,7 @@ npm run build
 
 Expected: all commands pass.
 
-- [ ] **Step 7: Commit the scaffold**
+- [x] **Step 7: Commit the scaffold**
 
 Run:
 
