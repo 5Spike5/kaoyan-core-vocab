@@ -12,6 +12,7 @@ export type WordLookupResult = {
   audioUrl?: string
   partsOfSpeech: PartOfSpeechGroup[]
   publicEntry?: PublicVocabEntry
+  dictionary?: DictionaryResult
   examStats: {
     totalOccurrences: number
     exampleCount: number

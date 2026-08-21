@@ -904,3 +904,53 @@ h2 {
 .sync-signout-button:hover {
   color: #b91c1c;
 }
+
+/* ---------- Dictionary enrichment ---------- */
+.lookup-phonetic {
+  margin-left: var(--space-2);
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.source-tag-dictionary {
+  background: rgba(147, 51, 234, 0.1);
+  color: #7c3aed;
+}
+
+.dictionary-group {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.dictionary-pos {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.dictionary-note {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.audio-button {
+  border: 1px solid var(--color-line);
+  background: var(--color-surface);
+  border-radius: 999px;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--color-primary);
+  margin-left: auto;
+}
+
+.audio-button:hover {
+  background: var(--color-line);
+}

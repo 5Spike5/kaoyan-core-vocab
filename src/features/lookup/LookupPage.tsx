@@ -1,8 +1,10 @@
-import { BookPlus, Check, Loader2, Search } from 'lucide-react'
+import { BookPlus, Check, Loader2, Search, Volume2 } from 'lucide-react'
 import { useCallback, useState } from 'react'
 import { createLocalRepository } from '../../repositories/localRepository'
 import { createUserWordFromLookup } from '../vocab/vocabService'
-import { lookupLocalWord } from './lookupService'
+import { lookupWithCache } from './dictionaryApi'
+import { createDictionaryProvider } from './dictionaryProvider'
+import { enrichLookupWithDictionary, lookupLocalWord } from './lookupService'
 import type { WordLookupResult } from './lookupTypes'
 
 const LOCAL_USER_ID = 'local'
@@ -18,20 +20,45 @@ export default function LookupPage() {
   const [state, setState] = useState<LookupState>({ phase: 'idle' })
   const [addedTerms, setAddedTerms] = useState<Set<string>>(new Set())
 
-  const handleSubmit = useCallback((event: React.FormEvent) => {
-    event.preventDefault()
-    const query = term.trim()
-    if (!query) {
-      return
+  const enrichWithDictionary = useCallback(async (localResult: WordLookupResult) => {
+    try {
+      const provider = createDictionaryProvider()
+      const dictionary = await lookupWithCache(localResult.normalizedTerm, provider)
+      const enriched = await enrichLookupWithDictionary(localResult, { lookup: async () => dictionary })
+
+      setState((previous) =>
+        previous.phase === 'done' && previous.result.normalizedTerm === localResult.normalizedTerm
+          ? { phase: 'done', result: enriched }
+          : previous
+      )
+    } catch {
+      setState((previous) =>
+        previous.phase === 'done' && previous.result.normalizedTerm === localResult.normalizedTerm
+          ? {
+              phase: 'done',
+              result: { ...previous.result, sourceStatus: { ...previous.result.sourceStatus, dictionary: 'error' } }
+            }
+          : previous
+      )
     }
+  }, [])
 
-    setState({ phase: 'loading', term: query })
+  const handleSubmit = useCallback(
+    (event: React.FormEvent) => {
+      event.preventDefault()
+      const query = term.trim()
+      if (!query) {
+        return
+      }
 
-    // 本地查词是同步的；保留异步边界以便后续接入词典 provider。
-    Promise.resolve().then(() => {
-      setState({ phase: 'done', result: lookupLocalWord(query) })
-    })
-  }, [term])
+      const localResult = lookupLocalWord(query)
+      setState({ phase: 'done', result: localResult })
+
+      // 本地结果先展示；公共词典异步补充，失败不影响本地结果。
+      void enrichWithDictionary(localResult)
+    },
+    [enrichWithDictionary, term]
+  )
 
   const handleAddToVocab = useCallback(async (result: WordLookupResult) => {
     const meaning = result.publicEntry?.meanings.map((item) => item.text).join('；') ?? ''
@@ -110,9 +137,12 @@ function LookupResultView({
     return (
       <div className="lookup-result" role="status">
         <h2>未找到本地记录</h2>
-        <p>
-          本地核心词库和考研语料中没有「{result.term}」。接入公共词典后可以继续补充释义，也可以先手动加入生词库。
-        </p>
+        <p>本地核心词库和考研语料中没有「{result.term}」。</p>
+        {result.dictionary ? (
+          <DictionaryBlock dictionary={result.dictionary} phonetic={result.phonetic} />
+        ) : (
+          <p className="dictionary-note">正在查询公共词典…</p>
+        )}
         {!alreadyAdded ? (
           <button type="button" className="button button-primary" onClick={() => onAdd(result)}>
             <BookPlus size={16} aria-hidden="true" />
@@ -129,6 +159,7 @@ function LookupResultView({
         <div>
           <h2>{result.term}</h2>
           {result.publicEntry?.partOfSpeech ? <span className="lookup-pos">{result.publicEntry.partOfSpeech}</span> : null}
+          {result.phonetic ? <span className="lookup-phonetic">{result.phonetic}</span> : null}
         </div>
 
         {alreadyAdded ? (
@@ -156,6 +187,21 @@ function LookupResultView({
             ))}
           </ul>
         </section>
+      ) : null}
+
+      {result.dictionary ? (
+        <DictionaryBlock dictionary={result.dictionary} phonetic={result.phonetic} />
+      ) : (
+        <p className="dictionary-note" role="status">
+          <Loader2 size={14} className="spin" aria-hidden="true" />
+          正在查询公共词典…
+        </p>
+      )}
+
+      {result.sourceStatus.dictionary === 'error' ? (
+        <p className="dictionary-note" role="status">
+          公共词典暂时不可用，以上为本地语料结果。
+        </p>
       ) : null}
 
       <section className="lookup-block" aria-label="考研语料统计">
@@ -189,5 +235,55 @@ function LookupResultView({
         </section>
       ) : null}
     </div>
+  )
+}
+
+function playAudio(url: string) {
+  const audio = new Audio(url)
+  void audio.play().catch(() => {
+    // 浏览器阻止自动播放时静默失败
+  })
+}
+
+function DictionaryBlock({
+  dictionary,
+  phonetic
+}: {
+  dictionary: NonNullable<WordLookupResult['dictionary']>
+  phonetic?: string
+}) {
+  return (
+    <section className="lookup-block" aria-label="公共词典释义">
+      <h3>
+        <span className="source-tag source-tag-dictionary">公共词典</span>
+        词典释义
+        {phonetic ? <span className="lookup-phonetic">{phonetic}</span> : null}
+        {dictionary.audioUrl ? (
+          <button
+            type="button"
+            className="audio-button"
+            aria-label="播放发音"
+            onClick={() => playAudio(dictionary.audioUrl as string)}
+          >
+            <Volume2 size={16} aria-hidden="true" />
+          </button>
+        ) : null}
+      </h3>
+
+      {dictionary.partsOfSpeech.length === 0 ? (
+        <p className="dictionary-note">公共词典未返回释义。</p>
+      ) : (
+        dictionary.partsOfSpeech.map((group, index) => (
+          <div key={`${group.label}-${index}`} className="dictionary-group">
+            {group.label ? <span className="dictionary-pos">{group.label}</span> : null}
+            <ul className="meaning-list">
+              {group.meanings.map((meaning, meaningIndex) => (
+                <li key={`${meaning}-${meaningIndex}`}>{meaning}</li>
+              ))}
+            </ul>
+          </div>
+        ))
+      )}
+    </section>
   )
 }
