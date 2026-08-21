@@ -43,6 +43,8 @@ type ImportModalState = {
   dragover: boolean;
 };
 
+const PAGE_SIZE = 10;
+
 export default function VocabListPage() {
   const [words, setWords] = useState<UserWord[]>([]);
   const [statusFilter, setStatusFilter] = useState<UserWordStatus | "all">(
@@ -50,7 +52,9 @@ export default function VocabListPage() {
   );
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(true);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const sentinelRef = useRef<HTMLDivElement>(null);
   const [modal, setModal] = useState<ImportModalState>({
     open: false,
     fileName: null,
@@ -93,6 +97,32 @@ export default function VocabListPage() {
       );
     });
   }, [words, statusFilter, search]);
+
+  // 搜索或筛选变化时，分页回到第一页
+  useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [search, statusFilter]);
+
+  // 滚动到底部时加载下一批
+  useEffect(() => {
+    const sentinel = sentinelRef.current;
+    if (!sentinel || typeof IntersectionObserver === "undefined") {
+      return;
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setVisibleCount((count) => count + PAGE_SIZE);
+        }
+      },
+      { rootMargin: "300px" },
+    );
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, [filteredWords.length]);
+
+  const visibleWords = filteredWords.slice(0, visibleCount);
+  const hasMore = visibleWords.length < filteredWords.length;
 
   const handleExport = useCallback(() => {
     downloadVocabWorkbook(filteredWords);
@@ -220,8 +250,8 @@ export default function VocabListPage() {
 
       {!loading ? (
         <p className="vocab-count">
-          {filteredWords.length.toLocaleString()} /{" "}
-          {words.length.toLocaleString()} 词
+          显示 {visibleWords.length.toLocaleString()} /{" "}
+          {filteredWords.length.toLocaleString()} 词
           {statusFilter !== "all" ? ` · ${STATUS_LABELS[statusFilter]}` : ""}
         </p>
       ) : null}
@@ -230,7 +260,7 @@ export default function VocabListPage() {
         <p className="page-note">正在加载生词库…</p>
       ) : (
         <ul className="vocab-list" aria-label="生词列表">
-          {filteredWords.map((word, index) => (
+          {visibleWords.map((word, index) => (
             <li key={`${word.normalizedTerm}-${index}`} className="vocab-row">
               <div className="vocab-row-main">
                 <strong>{word.term}</strong>
@@ -245,6 +275,15 @@ export default function VocabListPage() {
           ))}
         </ul>
       )}
+
+      {hasMore ? (
+        <div ref={sentinelRef} className="vocab-more" aria-hidden="true">
+          <span>
+            继续下滑加载更多（还有 {filteredWords.length - visibleWords.length}{" "}
+            个）
+          </span>
+        </div>
+      ) : null}
 
       {!loading && filteredWords.length === 0 ? (
         <p className="page-note">没有符合条件的单词。</p>
