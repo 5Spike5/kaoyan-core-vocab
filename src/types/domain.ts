@@ -35,12 +35,13 @@ export type FsrsSnapshot = {
   due: string
   stability: number
   difficulty: number
-  elapsedDays: number
-  scheduledDays: number
+  elapsed_days: number
+  scheduled_days: number
+  learning_steps: number
   reps: number
   lapses: number
   state: number
-  lastReview?: string
+  last_review?: string
 }
 
 export type UserWordStatus = 'new' | 'learning' | 'reviewing' | 'mastered' | 'suspended'

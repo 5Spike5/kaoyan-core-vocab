@@ -806,7 +806,7 @@ git commit -m "refactor: extract vocabulary and fsrs services"
 - Test: `tests/repositories/local-repository.test.ts`
 - Test: `tests/migrations/legacy-storage.test.ts`
 
-- [ ] **Step 1: Define repository contracts and write failing tests**
+- [x] **Step 1: Define repository contracts and write failing tests**
 
 Create `src/repositories/repositoryTypes.ts`:
 
@@ -854,7 +854,7 @@ describe('local repository', () => {
 
 Create `tests/migrations/legacy-storage.test.ts` with an in-memory localStorage fixture containing one legacy progress record and one custom word. Assert that `readLegacyStorage` returns both records and does not throw on malformed unrelated keys.
 
-- [ ] **Step 2: Run the repository tests and verify they fail**
+- [x] **Step 2: Run the repository tests and verify they fail**
 
 Run:
 
@@ -864,7 +864,7 @@ npx vitest run tests/repositories/local-repository.test.ts tests/migrations/lega
 
 Expected: `FAIL` because the repository and migration modules do not exist.
 
-- [ ] **Step 3: Implement the Dexie database**
+- [x] **Step 3: Implement the Dexie database**
 
 Create `src/repositories/localDb.ts` with tables for:
 
@@ -876,7 +876,7 @@ Create `src/repositories/localDb.ts` with tables for:
 
 Create `src/repositories/localRepository.ts` with `createLocalRepository(options)` returning the repository interfaces. All methods must scope reads and writes by `userId`; no method may query all users and filter afterward.
 
-- [ ] **Step 4: Implement legacy readers and migration**
+- [x] **Step 4: Implement legacy readers and migration**
 
 Create `src/migrations/legacyStorage.ts`:
 
@@ -911,7 +911,7 @@ export async function migrateLegacyData(
 
 Use the existing FSRS fields when present; create a new card only when the legacy record has no valid card. Never delete the original localStorage keys during migration.
 
-- [ ] **Step 5: Run migration and repository tests**
+- [x] **Step 5: Run migration and repository tests**
 
 Run:
 
@@ -922,7 +922,7 @@ npm run typecheck
 
 Expected: all tests pass.
 
-- [ ] **Step 6: Commit local persistence**
+- [x] **Step 6: Commit local persistence**
 
 Run:
 
