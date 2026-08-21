@@ -1,4 +1,4 @@
-import { BookOpenCheck, Library, Search } from 'lucide-react'
+import { BarChart3, BookOpenCheck, Library, Search, Settings } from 'lucide-react'
 import type { PropsWithChildren } from 'react'
 import { NavLink } from 'react-router-dom'
 import SyncStatus from './SyncStatus'
@@ -6,7 +6,9 @@ import SyncStatus from './SyncStatus'
 const navItems = [
   { to: '/', label: '今日学习', icon: BookOpenCheck, end: true },
   { to: '/lookup', label: '查词', icon: Search, end: false },
-  { to: '/vocab', label: '生词库', icon: Library, end: false }
+  { to: '/vocab', label: '生词库', icon: Library, end: false },
+  { to: '/stats', label: '统计', icon: BarChart3, end: false },
+  { to: '/settings', label: '设置', icon: Settings, end: false }
 ]
 
 export default function AppShell({ children }: PropsWithChildren) {
