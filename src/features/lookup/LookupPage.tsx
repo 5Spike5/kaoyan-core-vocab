@@ -1,6 +1,55 @@
-import { Search } from 'lucide-react'
+import { BookPlus, Check, Loader2, Search } from 'lucide-react'
+import { useCallback, useState } from 'react'
+import { createLocalRepository } from '../../repositories/localRepository'
+import { createUserWordFromLookup } from '../vocab/vocabService'
+import { lookupLocalWord } from './lookupService'
+import type { WordLookupResult } from './lookupTypes'
+
+const LOCAL_USER_ID = 'local'
+
+type LookupState =
+  | { phase: 'idle' }
+  | { phase: 'loading'; term: string }
+  | { phase: 'done'; result: WordLookupResult }
+  | { phase: 'error'; message: string }
 
 export default function LookupPage() {
+  const [term, setTerm] = useState('')
+  const [state, setState] = useState<LookupState>({ phase: 'idle' })
+  const [addedTerms, setAddedTerms] = useState<Set<string>>(new Set())
+
+  const handleSubmit = useCallback((event: React.FormEvent) => {
+    event.preventDefault()
+    const query = term.trim()
+    if (!query) {
+      return
+    }
+
+    setState({ phase: 'loading', term: query })
+
+    // 本地查词是同步的；保留异步边界以便后续接入词典 provider。
+    Promise.resolve().then(() => {
+      setState({ phase: 'done', result: lookupLocalWord(query) })
+    })
+  }, [term])
+
+  const handleAddToVocab = useCallback(async (result: WordLookupResult) => {
+    const meaning = result.publicEntry?.meanings.map((item) => item.text).join('；') ?? ''
+    const word = createUserWordFromLookup({
+      term: result.term,
+      meaning,
+      sourceVocabKey: result.publicEntry?.key
+    })
+
+    const repository = createLocalRepository()
+    try {
+      await repository.upsertUserWord({ ...word, userId: LOCAL_USER_ID })
+      setAddedTerms((previous) => new Set(previous).add(result.normalizedTerm))
+    } finally {
+      await repository.close()
+    }
+  }, [])
+
   return (
     <section className="page lookup-page" aria-labelledby="lookup-title">
       <div className="page-heading">
@@ -9,15 +58,136 @@ export default function LookupPage() {
         <p className="lede">先从本地考研语料和核心词表查，之后再接公共词典补充音标、英文释义和短语。</p>
       </div>
 
-      <form className="lookup-form" role="search">
+      <form className="lookup-form" role="search" onSubmit={handleSubmit}>
         <label htmlFor="lookup-term">输入单词或短语</label>
         <div className="search-row">
-          <input id="lookup-term" name="term" type="search" placeholder="address / account for" />
+          <input
+            id="lookup-term"
+            name="term"
+            type="search"
+            placeholder="address / account for"
+            value={term}
+            onChange={(event) => setTerm(event.target.value)}
+            autoComplete="off"
+          />
           <button type="submit" className="icon-button" aria-label="搜索">
             <Search size={20} aria-hidden="true" />
           </button>
         </div>
       </form>
+
+      {state.phase === 'loading' ? (
+        <p className="page-note" role="status">
+          <Loader2 size={16} className="spin" aria-hidden="true" />
+          正在查询…
+        </p>
+      ) : null}
+
+      {state.phase === 'error' ? (
+        <p className="page-note page-note-error" role="alert">
+          {state.message}
+        </p>
+      ) : null}
+
+      {state.phase === 'done' ? <LookupResultView result={state.result} addedTerms={addedTerms} onAdd={handleAddToVocab} /> : null}
     </section>
+  )
+}
+
+function LookupResultView({
+  result,
+  addedTerms,
+  onAdd
+}: {
+  result: WordLookupResult
+  addedTerms: Set<string>
+  onAdd(result: WordLookupResult): void
+}) {
+  const hasLocalData = result.publicEntry !== undefined || result.examStats.totalOccurrences > 0
+  const alreadyAdded = addedTerms.has(result.normalizedTerm)
+
+  if (!hasLocalData) {
+    return (
+      <div className="lookup-result" role="status">
+        <h2>未找到本地记录</h2>
+        <p>
+          本地核心词库和考研语料中没有「{result.term}」。接入公共词典后可以继续补充释义，也可以先手动加入生词库。
+        </p>
+        {!alreadyAdded ? (
+          <button type="button" className="button button-primary" onClick={() => onAdd(result)}>
+            <BookPlus size={16} aria-hidden="true" />
+            加入生词库
+          </button>
+        ) : null}
+      </div>
+    )
+  }
+
+  return (
+    <div className="lookup-result">
+      <div className="lookup-heading">
+        <div>
+          <h2>{result.term}</h2>
+          {result.publicEntry?.partOfSpeech ? <span className="lookup-pos">{result.publicEntry.partOfSpeech}</span> : null}
+        </div>
+
+        {alreadyAdded ? (
+          <span className="added-badge" role="status">
+            <Check size={14} aria-hidden="true" />
+            已加入生词库
+          </span>
+        ) : (
+          <button type="button" className="button button-primary" onClick={() => onAdd(result)}>
+            <BookPlus size={16} aria-hidden="true" />
+            加入生词库
+          </button>
+        )}
+      </div>
+
+      {result.publicEntry ? (
+        <section className="lookup-block" aria-label="本地释义">
+          <h3>
+            <span className="source-tag source-tag-vocab">核心词库</span>
+            释义
+          </h3>
+          <ul className="meaning-list">
+            {result.publicEntry.meanings.map((meaning, index) => (
+              <li key={`${meaning.text}-${index}`}>{meaning.text}</li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+
+      <section className="lookup-block" aria-label="考研语料统计">
+        <h3>
+          <span className="source-tag source-tag-corpus">考研真题语料</span>
+          出现情况
+        </h3>
+        <div className="corpus-stats">
+          <div>
+            <strong>{result.examStats.totalOccurrences}</strong>
+            <span>总出现次数</span>
+          </div>
+          <div>
+            <strong>{result.examStats.exampleCount}</strong>
+            <span>例句数量</span>
+          </div>
+        </div>
+      </section>
+
+      {result.examples.length > 0 ? (
+        <section className="lookup-block" aria-label="真题例句">
+          <h3>真题例句</h3>
+          <ul className="example-list">
+            {result.examples.slice(0, 5).map((example) => (
+              <li key={example.id}>
+                <p>{example.sentence}</p>
+                {example.translation ? <cite>{example.translation}</cite> : null}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+    </div>
   )
 }
