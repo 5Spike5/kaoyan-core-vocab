@@ -778,3 +778,129 @@ h2 {
   background: var(--color-line);
   color: var(--color-text-muted);
 }
+
+/* ---------- Auth page ---------- */
+.auth-form {
+  margin-top: var(--space-5);
+  max-width: 420px;
+  display: grid;
+  gap: var(--space-4);
+}
+
+.mode-tabs {
+  display: flex;
+  gap: var(--space-2);
+  border-bottom: 1px solid var(--color-line);
+  padding-bottom: var(--space-2);
+}
+
+.mode-tab {
+  border: 0;
+  background: none;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  border-radius: var(--radius);
+}
+
+.mode-tab-active {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+.field input {
+  padding: 10px 12px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  font-size: 1rem;
+}
+
+.form-error {
+  margin: 0;
+  color: #b91c1c;
+  font-size: 0.875rem;
+}
+
+.form-notice {
+  margin: 0;
+  color: #0f766e;
+  font-size: 0.875rem;
+}
+
+.auth-local-note {
+  margin-top: var(--space-5);
+  max-width: 480px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+  display: grid;
+  gap: var(--space-3);
+}
+
+.auth-local-note code {
+  background: var(--color-line);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+/* ---------- Sync status ---------- */
+.sync-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: auto;
+  padding: 0 var(--space-1);
+  flex-wrap: wrap;
+}
+
+.sync-status-user {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.sync-user-email {
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sync-login-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.sync-login-link:hover {
+  text-decoration: underline;
+}
+
+.sync-signout-button {
+  border: 0;
+  background: none;
+  padding: 0;
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.sync-signout-button:hover {
+  color: #b91c1c;
+}
