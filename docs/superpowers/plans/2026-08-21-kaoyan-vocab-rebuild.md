@@ -526,7 +526,7 @@ git commit -m "refactor: scaffold react application"
 - Test: `tests/data/public-vocab.test.ts`
 - Test: `tests/data/corpus-index.test.ts`
 
-- [ ] **Step 1: Define the domain types and write failing data tests**
+- [x] **Step 1: Define the domain types and write failing data tests**
 
 Create `src/types/domain.ts` with `PublicVocabEntry`, `ExamExample`, `ExamSenseOccurrence`, `WordMeaning`, `UserWord`, `ReviewLog`, and `StudySession` types matching the approved design.
 
@@ -564,7 +564,7 @@ describe('exam corpus index', () => {
 })
 ```
 
-- [ ] **Step 2: Run the data tests to verify they fail**
+- [x] **Step 2: Run the data tests to verify they fail**
 
 Run:
 
@@ -574,7 +574,7 @@ npx vitest run tests/data/public-vocab.test.ts tests/data/corpus-index.test.ts
 
 Expected: `FAIL` because the new typed data modules do not exist.
 
-- [ ] **Step 3: Implement the conversion script**
+- [x] **Step 3: Implement the conversion script**
 
 Create `scripts/convert-legacy-data.mjs` that:
 
@@ -606,7 +606,7 @@ export function toPublicEntry(raw, index) {
 }
 ```
 
-- [ ] **Step 4: Generate the typed data modules and corpus index**
+- [x] **Step 4: Generate the typed data modules and corpus index**
 
 Run:
 
@@ -634,7 +634,7 @@ Matching rules:
 - Deduplicate identical sentence IDs.
 - Return at most 20 examples for the first result page.
 
-- [ ] **Step 5: Run data tests and typecheck**
+- [x] **Step 5: Run data tests and typecheck**
 
 Run:
 
@@ -645,7 +645,7 @@ npm run typecheck
 
 Expected: all pass; the test output must report no duplicate normalized vocabulary keys.
 
-- [ ] **Step 6: Commit the public data migration**
+- [x] **Step 6: Commit the public data migration**
 
 Run:
 
