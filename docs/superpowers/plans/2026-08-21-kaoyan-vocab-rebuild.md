@@ -668,7 +668,7 @@ git commit -m "refactor: type public vocabulary and exam corpus"
 - Test: `tests/features/review/review-service.test.ts`
 - Test: `tests/features/vocab/vocab-service.test.ts`
 
-- [ ] **Step 1: Write failing pure-logic tests**
+- [x] **Step 1: Write failing pure-logic tests**
 
 Create `tests/lib/normalize-term.test.ts`:
 
@@ -710,7 +710,7 @@ describe('review service', () => {
 })
 ```
 
-- [ ] **Step 2: Run the focused tests and verify they fail**
+- [x] **Step 2: Run the focused tests and verify they fail**
 
 Run:
 
@@ -720,7 +720,7 @@ npx vitest run tests/lib/normalize-term.test.ts tests/features/review/review-ser
 
 Expected: `FAIL` because the extracted modules do not exist.
 
-- [ ] **Step 3: Implement normalization and FSRS wrappers**
+- [x] **Step 3: Implement normalization and FSRS wrappers**
 
 Implement `normalizeTerm` as a pure function. Implement `src/lib/fsrs.ts` as a narrow wrapper around `ts-fsrs@5.4.1`:
 
@@ -736,7 +736,7 @@ export function isDue(card: SerializedFsrsCard, now: Date): boolean
 
 The wrapper must preserve the existing serialized fields and use the official scheduler. Do not implement scheduling math manually.
 
-- [ ] **Step 4: Implement review and vocabulary services**
+- [x] **Step 4: Implement review and vocabulary services**
 
 `reviewService.ts` must expose:
 
@@ -775,7 +775,7 @@ export function createUserWordFromLookup(input: {
 
 Duplicate user words are matched by `normalizedTerm`; user-entered notes, tags, and meanings override public defaults without deleting the public source key.
 
-- [ ] **Step 5: Run pure-logic tests and typecheck**
+- [x] **Step 5: Run pure-logic tests and typecheck**
 
 Run:
 
@@ -786,7 +786,7 @@ npm run typecheck
 
 Expected: all tests pass.
 
-- [ ] **Step 6: Commit the domain services**
+- [x] **Step 6: Commit the domain services**
 
 Run:
 

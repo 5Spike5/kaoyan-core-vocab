@@ -52,6 +52,7 @@ export type UserWord = {
   normalizedTerm: string
   meanings: WordMeaning[]
   status: UserWordStatus
+  sourceVocabKey?: string
   notes?: string
   tags: string[]
   fsrs?: FsrsSnapshot
