@@ -1,27 +1,49 @@
 :root {
-  color-scheme: light;
-  --color-bg: #f7f7f3;
-  --color-surface: #ffffff;
-  --color-surface-muted: #eef2ed;
-  --color-line: #d9ded6;
-  --color-line-strong: #bdc8bf;
-  --color-text: #18211c;
-  --color-muted: #627067;
-  --color-primary: #176b5b;
-  --color-primary-strong: #0d4f43;
-  --color-primary-soft: #d9ece7;
-  --color-accent: #b5512f;
-  --color-focus: #2f7dd1;
-  --shadow-panel: 0 16px 40px rgb(24 33 28 / 10%);
-  --radius-sm: 6px;
-  --radius-md: 8px;
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-5: 1.25rem;
-  --space-6: 1.5rem;
-  --space-8: 2rem;
-  --font-sans:
-    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color-scheme: light;
+    --color-bg: #eef2fa;
+    --color-surface: #ffffff;
+    --color-surface-muted: #f4f6fb;
+    --color-line: #e3e7f2;
+    --color-line-strong: #c4cee4;
+    --color-text: #16192b;
+    --color-muted: #6e7591;
+    --color-text-muted: #6e7591;
+    --color-primary: #4c6fff;
+    --color-primary-hover: #3b5bf5;
+    --color-primary-strong: #2a3eb1;
+    --color-primary-soft: #e2e9ff;
+    --color-primary-light: #f0f4ff;
+    --color-accent: #4c6fff;
+    --color-focus: #4c6fff;
+    --color-success: #12b76a;
+    --color-success-container: #dcf6e9;
+    --color-warning: #f79009;
+    --color-warning-container: #fef0c7;
+    --color-error: #f04438;
+    --color-error-container: #feeceb;
+    --shadow-sm: 0 1px 2px rgb(22 25 43 / 4%), 0 2px 8px rgb(22 25 43 / 4%);
+    --shadow-md: 0 2px 6px rgb(22 25 43 / 5%), 0 12px 32px rgb(22 25 43 / 8%);
+    --shadow-panel:
+        0 4px 12px rgb(22 25 43 / 6%), 0 24px 56px rgb(22 25 43 / 12%);
+    --shadow-primary: 0 8px 20px rgb(76 111 255 / 30%);
+    --radius-sm: 12px;
+    --radius-md: 16px;
+    --radius-lg: 20px;
+    --radius-xl: 26px;
+    --radius: 16px;
+    --transition-fast: 150ms;
+    --transition-med: 200ms;
+    --transition-slow: 300ms;
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --font-sans:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC",
+        "PingFang SC", "HarmonyOS Sans SC", "Microsoft YaHei", sans-serif;
 }
