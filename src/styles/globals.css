@@ -398,6 +398,67 @@ h2 {
     max-width: 640px;
 }
 
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: var(--space-4);
+    padding: 16px 18px;
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-lg);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-sm);
+}
+
+.profile-avatar {
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    flex: 0 0 46px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #5c7bff, var(--color-primary));
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+    box-shadow: var(--shadow-primary);
+}
+
+.profile-info {
+    min-width: 0;
+    flex: 1;
+}
+
+.profile-name {
+    font-size: 15px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.profile-meta {
+    font-size: 12px;
+    color: var(--color-muted);
+    margin-top: 2px;
+}
+
+.profile-extra {
+    display: grid;
+    gap: 2px;
+    text-align: right;
+    font-size: 11px;
+    color: var(--color-muted);
+    flex-shrink: 0;
+}
+
+.profile-extra b {
+    color: var(--color-primary-strong);
+    font-weight: 700;
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+}
+
 .goal-card {
     margin-bottom: var(--space-4);
     padding: var(--space-5);

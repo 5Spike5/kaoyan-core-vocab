@@ -38,18 +38,22 @@ describe("local learning flow", () => {
 
     // 2. Start review.
     await user.click(screen.getByRole("button", { name: "开始今日学习" }));
-    expect(await screen.findByText("address")).toBeInTheDocument();
 
-    // 3. Four answer options are present.
+    // 3. New-word learning view: a word card with four answer options.
     expect(
-      screen.getByRole("button", { name: /处理，应对/ }),
+      await screen.findByRole("heading", { level: 1 }),
     ).toBeInTheDocument();
+    const optionButtons = () =>
+      screen
+        .getAllByRole("button")
+        .filter((button) => button.className.includes("answer-option"));
+    expect(optionButtons()).toHaveLength(4);
 
-    // 4. Select an answer.
-    await user.click(screen.getByRole("button", { name: /处理，应对/ }));
-
-    // 5. Result appears; reveal the exam example.
+    // 4. Select the first option; feedback appears.
+    await user.click(optionButtons()[0]);
     expect(await screen.findByText(/正确答案/)).toBeInTheDocument();
+
+    // 5. Reveal the exam example.
     await user.click(screen.getByRole("button", { name: "查看例句" }));
     expect(screen.getByText(/真题例句/)).toBeInTheDocument();
 

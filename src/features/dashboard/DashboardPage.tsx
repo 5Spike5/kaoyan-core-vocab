@@ -13,6 +13,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { publicVocab } from "../../data/publicVocab";
 import { createLocalRepository } from "../../repositories/localRepository";
 import type { ReviewLog, StudySession, UserWord } from "../../types/domain";
+import { getCurrentUser, subscribeToAuth } from "../auth/authService";
 import {
   calculateTodayStudyMinutes,
   countLearnedWords,
@@ -56,6 +57,7 @@ function startOfToday(now = Date.now()) {
 
 export default function DashboardPage() {
   const navigate = useNavigate();
+  const [user, setUser] = useState(() => getCurrentUser());
   const [goal, setGoal] = useState(loadGoal);
   const [mode, setMode] = useState<StudyMode>("today");
   const [data, setData] = useState<{
@@ -63,6 +65,8 @@ export default function DashboardPage() {
     logs: ReviewLog[];
     sessions: StudySession[];
   } | null>(null);
+
+  useEffect(() => subscribeToAuth(() => setUser(getCurrentUser())), []);
 
   const load = useCallback(async () => {
     const repository = createLocalRepository();
@@ -126,6 +130,26 @@ export default function DashboardPage() {
         <p className="lede">
           先攻下 {stats.newCount} 个新词，再复习 {stats.dueCount} 个到期词。
         </p>
+      </div>
+
+      <div className="profile-card" aria-label="个人资料">
+        <div className="profile-avatar" aria-hidden="true">
+          {(user?.email?.[0] ?? "本").toUpperCase()}
+        </div>
+        <div className="profile-info">
+          <div className="profile-name">{user?.email ?? "本地学习者"}</div>
+          <div className="profile-meta">
+            {user ? "云同步模式" : "本地模式 · 数据保存在本机"}
+          </div>
+        </div>
+        <div className="profile-extra">
+          <span>
+            已学 <b>{learned.toLocaleString()}</b> 词
+          </span>
+          <span>
+            连续 <b>{stats.streakDays}</b> 天
+          </span>
+        </div>
       </div>
 
       <div className="goal-card" aria-label="今日学习目标">

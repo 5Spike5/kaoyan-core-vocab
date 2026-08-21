@@ -13,31 +13,33 @@ import { publicVocab } from "../../data/publicVocab";
 import { normalizeTerm } from "../../lib/normalizeTerm";
 import { speakWord } from "../../lib/tts";
 import { createLocalRepository } from "../../repositories/localRepository";
+import type { UserWord } from "../../types/domain";
 import { lookupWithCache } from "../lookup/dictionaryApi";
 import { createDictionaryProvider } from "../lookup/dictionaryProvider";
 import { calculateTodayStudyMinutes } from "../stats/statsSelectors";
-import { buildReviewOptions, rateReviewAnswer } from "./reviewService";
+import { mergePublicAndUserWords } from "../vocab/vocabService";
+import { buildReviewOptions } from "./reviewService";
 import type { ReviewOption } from "./reviewTypes";
 
-type ReviewCard = {
+const LOCAL_USER_ID = "local";
+const GOAL_KEY = "kaoyan-daily-goal";
+const NEW_WORD_ROUNDS = 3;
+const NEW_WORD_DIRECTIONS: Array<"e2c" | "c2e"> = ["e2c", "c2e", "e2c"];
+const REVIEW_CAP = 50;
+const FREE_CAP = 20;
+
+type Direction = "e2c" | "c2e";
+
+type DeckItem = {
   id: string;
-  term: string;
-  meaning: string;
+  word: {
+    id: string;
+    term: string;
+    meaning: string;
+    fsrs: UserWord["fsrs"];
+  };
+  direction: Direction;
 };
-
-const sampleCards: ReviewCard[] = [
-  { id: "address", term: "address", meaning: "处理，应对" },
-  { id: "account-for", term: "account for", meaning: "占比，占据" },
-];
-
-const optionCandidates = [
-  { term: "address", meaning: "处理，应对" },
-  { term: "fetch", meaning: "售得" },
-  { term: "bid", meaning: "出价" },
-  { term: "peak", meaning: "顶峰" },
-  { term: "account for", meaning: "占比，占据" },
-  { term: "crucial", meaning: "至关重要的" },
-];
 
 const OPTION_LETTERS = ["A", "B", "C", "D"];
 
@@ -65,9 +67,79 @@ const RATINGS: Array<{
   { value: "easy", label: "Easy", interval: "4天", className: "easy" },
 ];
 
+function loadGoal(): number {
+  const saved = Number(localStorage.getItem(GOAL_KEY));
+  return [60, 80, 100, 120].includes(saved) ? saved : 80;
+}
+
+function shuffle<T>(items: T[]): T[] {
+  const result = [...items];
+  for (let index = result.length - 1; index > 0; index -= 1) {
+    const swap = Math.floor(Math.random() * (index + 1));
+    [result[index], result[swap]] = [result[swap], result[index]];
+  }
+  return result;
+}
+
 function orderOptions(options: ReviewOption[], term: string) {
   const offset = term.length % options.length;
   return [...options.slice(offset), ...options.slice(0, offset)];
+}
+
+function buildDeck(words: UserWord[], mode: string, goal: number): DeckItem[] {
+  const meaningOf = (word: UserWord) => word.meanings[0]?.text ?? "";
+  const hasMeaning = (word: UserWord) => Boolean(meaningOf(word));
+
+  if (mode === "today") {
+    const newWords = words
+      .filter((word) => word.status === "new" && hasMeaning(word))
+      .slice(0, goal);
+    const items: DeckItem[] = [];
+    for (const word of newWords) {
+      for (let round = 0; round < NEW_WORD_ROUNDS; round += 1) {
+        items.push({
+          id: `${word.normalizedTerm}#r${round}`,
+          word: {
+            id: word.id,
+            term: word.term,
+            meaning: meaningOf(word),
+            fsrs: word.fsrs,
+          },
+          direction: NEW_WORD_DIRECTIONS[round % NEW_WORD_DIRECTIONS.length],
+        });
+      }
+    }
+    return items;
+  }
+
+  const now = Date.now();
+  const pool =
+    mode === "due"
+      ? words.filter(
+          (word) =>
+            word.nextReviewAt !== null &&
+            word.nextReviewAt <= now &&
+            hasMeaning(word),
+        )
+      : words.filter(
+          (word) =>
+            ["learning", "reviewing", "mastered"].includes(word.status) &&
+            hasMeaning(word),
+        );
+  const cap = mode === "due" ? REVIEW_CAP : FREE_CAP;
+
+  return shuffle(pool)
+    .slice(0, cap)
+    .map((word) => ({
+      id: `${word.normalizedTerm}#review`,
+      word: {
+        id: word.id,
+        term: word.term,
+        meaning: meaningOf(word),
+        fsrs: word.fsrs,
+      },
+      direction: "e2c" as const,
+    }));
 }
 
 function formatTime(totalSeconds: number) {
@@ -114,6 +186,8 @@ export default function ReviewPage() {
   const [searchParams] = useSearchParams();
   const mode = searchParams.get("mode") ?? "today";
 
+  const [words, setWords] = useState<UserWord[]>([]);
+  const [loading, setLoading] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [exampleOpen, setExampleOpen] = useState(false);
@@ -123,50 +197,96 @@ export default function ReviewPage() {
   const [elapsed, setElapsed] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
   const [wrongCount, setWrongCount] = useState(0);
-  const [fsrsInfo, setFsrsInfo] = useState<{
-    stability: number;
-    difficulty: number;
-    reps: number;
-  } | null>(null);
   const [summary, setSummary] = useState<{
     todayMinutes: number;
     totalMinutes: number;
   } | null>(null);
 
-  const currentCard =
-    sampleCards[Math.min(currentIndex, sampleCards.length - 1)];
+  const goal = loadGoal();
+  const isNewWordMode = mode === "today";
+
+  const loadWords = useCallback(async () => {
+    const repository = createLocalRepository();
+    try {
+      const userWords = await repository.listUserWords(LOCAL_USER_ID);
+      setWords(mergePublicAndUserWords(publicVocab, userWords));
+    } finally {
+      await repository.close();
+      setLoading(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    void loadWords().finally(() => {
+      if (cancelled) {
+        return;
+      }
+      setLoading(false);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [loadWords]);
+
+  const deck = useMemo(() => buildDeck(words, mode, goal), [words, mode, goal]);
+  const item = deck[currentIndex];
   const answered = selectedIndex !== null;
 
-  const options = useMemo(
-    () =>
-      orderOptions(
-        buildReviewOptions(
-          { term: currentCard.term, meaning: currentCard.meaning },
-          optionCandidates,
-        ),
-        currentCard.term,
-      ),
-    [currentCard],
-  );
+  const options = useMemo(() => {
+    if (!item) {
+      return [];
+    }
+    const wordsWithMeaning = words.filter((word) => word.meanings[0]?.text);
+    const current =
+      item.direction === "e2c"
+        ? { term: item.word.term, meaning: item.word.meaning }
+        : { term: item.word.meaning, meaning: item.word.term };
+    const candidates =
+      item.direction === "e2c"
+        ? wordsWithMeaning.map((word) => ({
+            term: word.term,
+            meaning: word.meanings[0]!.text,
+          }))
+        : wordsWithMeaning.map((word) => ({
+            term: word.meanings[0]!.text,
+            meaning: word.term,
+          }));
+    return orderOptions(
+      buildReviewOptions(current, candidates),
+      item.word.term,
+    );
+  }, [item, words]);
+
   const selectedOption = selectedIndex === null ? null : options[selectedIndex];
   const isCorrect = selectedOption?.isCorrect ?? false;
-  const rating = answered
-    ? rateReviewAnswer({ correct: isCorrect, attempts: 1 })
-    : null;
-  const example = searchExamCorpus(currentCard.term).examples[0];
+  const example = item
+    ? searchExamCorpus(item.word.term).examples[0]
+    : undefined;
 
   const modeLabel = MODE_LABELS[mode] ?? MODE_LABELS.today;
   const modeBadge = MODE_BADGES[mode] ?? "new";
-  const publicEntry = publicVocab.find(
-    (entry) => entry.normalizedTerm === normalizeTerm(currentCard.term),
-  );
+  const fsrsInfo = useMemo(() => {
+    const fsrs = item?.word.fsrs;
+    if (!fsrs) {
+      return null;
+    }
+    return {
+      stability: Math.round(fsrs.stability),
+      difficulty: Math.round(fsrs.difficulty * 10) / 10,
+      reps: fsrs.reps,
+    };
+  }, [item]);
 
   // 音标：异步从公共词典补充，失败时静默隐藏
   useEffect(() => {
+    if (!item) {
+      return;
+    }
     let cancelled = false;
     setPhonetic(null);
     const provider = createDictionaryProvider();
-    void lookupWithCache(currentCard.term, provider)
+    void lookupWithCache(item.word.term, provider)
       .then((result) => {
         if (!cancelled && result.phonetic) {
           setPhonetic(result.phonetic);
@@ -178,37 +298,15 @@ export default function ReviewPage() {
     return () => {
       cancelled = true;
     };
-  }, [currentCard.id, currentCard.term]);
+  }, [item]);
 
-  // FSRS 信息：有真实学习记录才展示
+  // 每次作答后自动朗读一次当前单词
   useEffect(() => {
-    let cancelled = false;
-    setFsrsInfo(null);
-    const repository = createLocalRepository();
-    void repository
-      .getUserWord("local", normalizeTerm(currentCard.term))
-      .then((word) => {
-        if (cancelled) {
-          return;
-        }
-        if (word?.fsrs) {
-          setFsrsInfo({
-            stability: Math.round(word.fsrs.stability),
-            difficulty: Math.round(word.fsrs.difficulty * 10) / 10,
-            reps: word.fsrs.reps,
-          });
-        }
-      })
-      .catch(() => {
-        // 本地读取失败时不展示 FSRS 信息
-      })
-      .finally(() => {
-        void repository.close();
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, [currentCard.id, currentCard.term]);
+    if (!answered || !item) {
+      return;
+    }
+    speakWord(item.word.term);
+  }, [answered, item]);
 
   // 学习计时
   useEffect(() => {
@@ -263,8 +361,8 @@ export default function ReviewPage() {
       await repository.upsertStudySession({
         id: "local-review-session",
         userId: "local",
-        mode: "due",
-        wordIds: sampleCards.map((card) => card.id),
+        mode: mode === "today" ? "new" : mode === "due" ? "due" : "free",
+        wordIds: [...new Set(deck.map((deckItem) => deckItem.word.id))],
         currentIndex,
         startedAt: Date.now() - elapsed * 1000,
         completedAt: null,
@@ -273,7 +371,7 @@ export default function ReviewPage() {
     } catch {
       // Local persistence should not block review navigation.
     }
-  }, [currentIndex, elapsed]);
+  }, [currentIndex, deck, elapsed, mode]);
 
   const handleExit = useCallback(() => {
     void persistSession();
@@ -291,7 +389,7 @@ export default function ReviewPage() {
     }
 
     const nextIndex = currentIndex + 1;
-    if (nextIndex >= sampleCards.length) {
+    if (nextIndex >= deck.length) {
       handleFinish();
       return;
     }
@@ -299,7 +397,7 @@ export default function ReviewPage() {
     setCurrentIndex(nextIndex);
     setSelectedIndex(null);
     setExampleOpen(false);
-  }, [answered, currentIndex, handleFinish]);
+  }, [answered, currentIndex, deck.length, handleFinish]);
 
   const handleSelect = useCallback(
     (index: number) => {
@@ -323,6 +421,38 @@ export default function ReviewPage() {
     onAdvance: handleAdvance,
     onExit: handleExit,
   });
+
+  if (loading) {
+    return (
+      <section className="page review-page">
+        <p className="page-note">正在准备学习内容…</p>
+      </section>
+    );
+  }
+
+  if (deck.length === 0) {
+    const emptyMessage =
+      mode === "today"
+        ? "今天没有新词了，明天再来巩固。"
+        : mode === "due"
+          ? "暂时没有到期复习的单词。"
+          : "还没有已学单词，先去「今日背诵」学习新词吧。";
+    return (
+      <section className="page review-page">
+        <div className="complete-view">
+          <div className="complete-icon" aria-hidden="true">
+            <CheckCircle2 size={36} />
+          </div>
+          <h2 className="complete-title">没有可学习的内容</h2>
+          <p className="complete-subtitle">{emptyMessage}</p>
+          <button type="button" className="btn-continue" onClick={handleExit}>
+            返回首页
+            <ArrowRight size={18} aria-hidden="true" />
+          </button>
+        </div>
+      </section>
+    );
+  }
 
   if (completed) {
     const total = correctCount + wrongCount;
@@ -370,7 +500,11 @@ export default function ReviewPage() {
             </div>
           </div>
 
-          <p className="complete-note">这些单词将在明天进入复习</p>
+          <p className="complete-note">
+            {isNewWordMode
+              ? "新词已学完，明天记得回来复习"
+              : "这些单词将在明天进入复习"}
+          </p>
 
           <button type="button" className="btn-continue" onClick={handleExit}>
             返回首页
@@ -380,6 +514,8 @@ export default function ReviewPage() {
       </section>
     );
   }
+
+  const isC2E = item?.direction === "c2e";
 
   return (
     <section className="page review-page" aria-labelledby="review-title">
@@ -393,7 +529,7 @@ export default function ReviewPage() {
           <ArrowLeft size={18} aria-hidden="true" />
         </button>
         <div className="study-progress">
-          {currentIndex + 1} / {sampleCards.length}
+          {currentIndex + 1} / {deck.length}
         </div>
         <div className="study-timer">
           <Clock size={14} aria-hidden="true" />
@@ -406,37 +542,39 @@ export default function ReviewPage() {
         <div
           className="study-bar-fill"
           style={{
-            width: `${((currentIndex + (answered ? 1 : 0)) / sampleCards.length) * 100}%`,
+            width: `${((currentIndex + (answered ? 1 : 0)) / deck.length) * 100}%`,
           }}
         />
       </div>
 
-      <div className="word-card" key={currentCard.id}>
+      <div className="word-card" key={item?.id}>
         <span className={`word-status-badge ${modeBadge}`}>
-          {mode === "today" ? "新词" : mode === "due" ? "复习中" : "学习中"}
+          {isNewWordMode ? "新词" : mode === "due" ? "复习中" : "学习中"}
         </span>
 
-        <h1 className="word-main" id="review-title">
-          {currentCard.term}
-        </h1>
+        {isC2E ? (
+          <h1 className="word-main" id="review-title">
+            {item?.word.meaning}
+          </h1>
+        ) : (
+          <>
+            <h1 className="word-main" id="review-title">
+              {item?.word.term}
+            </h1>
+            {phonetic ? <div className="word-phonetic">{phonetic}</div> : null}
+            <div className="word-speak-row">
+              <button
+                type="button"
+                className={`speak-btn ${speaking ? "speaking" : ""}`}
+                aria-label={`朗读 ${item?.word.term ?? ""}`}
+                onClick={() => item && speakWord(item.word.term, setSpeaking)}
+              >
+                <Volume2 size={20} aria-hidden="true" />
+              </button>
+            </div>
+          </>
+        )}
 
-        {phonetic ? <div className="word-phonetic">{phonetic}</div> : null}
-
-        <div className="word-speak-row">
-          <button
-            type="button"
-            className={`speak-btn ${speaking ? "speaking" : ""}`}
-            aria-label={`朗读 ${currentCard.term}`}
-            onClick={() => speakWord(currentCard.term, setSpeaking)}
-          >
-            <Volume2 size={20} aria-hidden="true" />
-          </button>
-        </div>
-
-        <div className="word-meaning">{currentCard.meaning}</div>
-        {publicEntry?.partOfSpeech ? (
-          <div className="word-type">{publicEntry.partOfSpeech}</div>
-        ) : null}
         {fsrsInfo ? (
           <div className="word-fsrs" aria-label="FSRS 信息">
             <span>
@@ -454,7 +592,9 @@ export default function ReviewPage() {
 
       <div className="question-card">
         <p className="question-text">
-          「{currentCard.term}」的中文释义是什么？
+          {isC2E
+            ? `「${item?.word.meaning}」对应的英文单词是？`
+            : `「${item?.word.term}」的中文释义是什么？`}
         </p>
         <p className="question-hint">按 A–D 或 1–4 选择答案</p>
       </div>
@@ -486,21 +626,21 @@ export default function ReviewPage() {
       </div>
 
       {answered ? (
-        isCorrect ? (
-          <div className="result-banner correct" role="status">
+        <div
+          className={`result-banner ${isCorrect ? "correct" : "wrong"}`}
+          role="status"
+        >
+          {isCorrect ? (
             <CheckCircle2 size={20} aria-hidden="true" />
-            <p>
-              回答正确 · 正确答案：<strong>{currentCard.meaning}</strong>
-            </p>
-          </div>
-        ) : (
-          <div className="result-banner wrong" role="status">
+          ) : (
             <XCircle size={20} aria-hidden="true" />
-            <p>
-              回答错误 · 正确答案：<strong>{currentCard.meaning}</strong>
-            </p>
-          </div>
-        )
+          )}
+          <p>
+            {isCorrect ? "回答正确 · " : "回答错误 · "}
+            正确答案：
+            <strong>{isC2E ? item?.word.term : item?.word.meaning}</strong>
+          </p>
+        </div>
       ) : null}
 
       {example ? (
@@ -524,17 +664,17 @@ export default function ReviewPage() {
         </>
       ) : null}
 
-      {answered ? (
+      {answered && !isNewWordMode ? (
         <div className="rating-row" aria-label="FSRS 评分">
-          {RATINGS.map((item) => (
+          {RATINGS.map((rating) => (
             <button
-              key={item.value}
+              key={rating.value}
               type="button"
-              className={`rating-btn ${item.className}`}
+              className={`rating-btn ${rating.className}`}
               onClick={handleAdvance}
             >
-              <strong>{item.label}</strong>
-              <span>{item.interval}</span>
+              <strong>{rating.label}</strong>
+              <span>{rating.interval}</span>
             </button>
           ))}
         </div>
@@ -542,7 +682,7 @@ export default function ReviewPage() {
 
       {answered ? (
         <button type="button" className="btn-continue" onClick={handleAdvance}>
-          下一题
+          {isNewWordMode ? "下一题" : "继续"}
           <ArrowRight size={18} aria-hidden="true" />
         </button>
       ) : null}
