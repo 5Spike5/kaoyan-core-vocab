@@ -1024,6 +1024,10 @@ h2 {
     line-height: 1.15;
 }
 
+.word-main.english {
+    font-family: "Times New Roman", Georgia, "Times", serif;
+}
+
 .word-phonetic {
     font-size: 14px;
     color: var(--color-muted);
@@ -1113,29 +1117,7 @@ h2 {
     font-weight: 700;
 }
 
-.question-card {
-    background: var(--color-surface);
-    border-radius: var(--radius-lg);
-    padding: 18px 20px;
-    margin-bottom: var(--space-4);
-    box-shadow: var(--shadow-sm);
-    border: 1px solid var(--color-line);
-}
-
-.question-text {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.5;
-    text-align: center;
-}
-
-.question-hint {
-    font-size: 12px;
-    color: var(--color-muted);
-    text-align: center;
-    margin-top: 6px;
-}
-
+/* ===== 选项 ===== */
 .option-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1145,18 +1127,18 @@ h2 {
 
 .answer-option {
     display: grid;
-    grid-template-columns: 32px minmax(0, 1fr);
+    grid-template-columns: 36px minmax(0, 1fr);
     align-items: center;
-    gap: 10px;
-    min-height: 60px;
-    padding: 12px 14px;
+    gap: 12px;
+    min-height: 66px;
+    padding: 13px 16px;
     border: 2px solid var(--color-line);
     border-radius: var(--radius-md);
     background: var(--color-surface);
     color: var(--color-text);
     cursor: pointer;
     text-align: left;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.4;
     box-shadow: var(--shadow-sm);
     transition: all var(--transition-med) ease;
@@ -1164,20 +1146,25 @@ h2 {
 
 .answer-option span {
     display: grid;
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
     place-items: center;
     border-radius: 10px;
     border: 1px solid var(--color-line);
     background: var(--color-surface-muted);
     color: var(--color-primary-strong);
     font-weight: 800;
-    font-size: 13px;
+    font-size: 14px;
     transition: all var(--transition-med) ease;
 }
 
 .answer-option strong {
     overflow-wrap: anywhere;
+}
+
+/* 英文选项使用 Times New Roman，中文自动回退系统字体 */
+.answer-option.english-option strong {
+    font-family: "Times New Roman", Georgia, "Times", serif;
 }
 
 .answer-option:hover:not(:disabled) {
@@ -1244,6 +1231,75 @@ h2 {
     90% {
         transform: translateX(2px);
     }
+}
+
+.option-translation {
+    display: none;
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--color-muted);
+}
+
+.answer-option.revealed .option-translation {
+    display: block;
+    animation: fadeIn 0.25s ease;
+}
+
+.reveal-btn {
+    display: block;
+    width: 100%;
+    margin-bottom: var(--space-4);
+    padding: 10px;
+    border-radius: var(--radius-md);
+    border: 1.5px dashed var(--color-primary);
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast) ease;
+}
+
+.reveal-btn:hover {
+    background: var(--color-primary-soft);
+}
+
+.reveal-btn.revealed {
+    border-style: solid;
+    background: var(--color-surface);
+    color: var(--color-muted);
+    border-color: var(--color-line);
+}
+
+.ignore-row {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-4);
+}
+
+.ignore-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 22px;
+    border-radius: 999px;
+    border: 1px solid rgb(240 68 56 / 35%);
+    background: transparent;
+    color: var(--color-error);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast) ease;
+}
+
+.ignore-btn:hover {
+    background: var(--color-error-container);
+}
+
+.ignore-btn:active {
+    transform: scale(0.97);
 }
 
 .example-toggle {

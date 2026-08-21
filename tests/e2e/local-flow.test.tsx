@@ -53,10 +53,6 @@ describe("local learning flow", () => {
     await user.click(optionButtons()[0]);
     expect(await screen.findByText(/正确答案/)).toBeInTheDocument();
 
-    // 5. Reveal the exam example.
-    await user.click(screen.getByRole("button", { name: "查看例句" }));
-    expect(screen.getByText(/真题例句/)).toBeInTheDocument();
-
     // 6. Escape returns to the dashboard.
     await user.keyboard("{Escape}");
     const dashboardNav = screen.getByRole("navigation", { name: "主导航" });

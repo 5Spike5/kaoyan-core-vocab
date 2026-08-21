@@ -3,6 +3,7 @@ import {
   ArrowRight,
   CheckCircle2,
   Clock,
+  Trash2,
   Volume2,
   XCircle,
 } from "lucide-react";
@@ -96,9 +97,10 @@ function buildDeck(words: UserWord[], mode: string, goal: number): DeckItem[] {
   const hasMeaning = (word: UserWord) => Boolean(meaningOf(word));
 
   if (mode === "today") {
-    const newWords = words
-      .filter((word) => word.status === "new" && hasMeaning(word))
-      .slice(0, goal);
+    // 新词乱序学习
+    const newWords = shuffle(
+      words.filter((word) => word.status === "new" && hasMeaning(word)),
+    ).slice(0, goal);
     const items: DeckItem[] = [];
     for (const word of newWords) {
       for (let round = 0; round < NEW_WORD_ROUNDS; round += 1) {
@@ -196,6 +198,8 @@ export default function ReviewPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [exampleOpen, setExampleOpen] = useState(false);
+  const [revealOpen, setRevealOpen] = useState(false);
+  const [removedWordIds, setRemovedWordIds] = useState<Set<string>>(new Set());
   const [completed, setCompleted] = useState(false);
   const [speaking, setSpeaking] = useState(false);
   const [phonetic, setPhonetic] = useState<string | null>(null);
@@ -238,9 +242,26 @@ export default function ReviewPage() {
     };
   }, [loadWords]);
 
-  const deck = useMemo(() => buildDeck(words, mode, goal), [words, mode, goal]);
+  const deck = useMemo(
+    () =>
+      buildDeck(words, mode, goal).filter(
+        (deckItem) => !removedWordIds.has(deckItem.word.id),
+      ),
+    [words, mode, goal, removedWordIds],
+  );
   const item = deck[currentIndex];
   const answered = selectedIndex !== null;
+
+  // 斩掉某词后，如果指针越界则回退到最后一个词
+  useEffect(() => {
+    if (deck.length === 0 || currentIndex < deck.length) {
+      return;
+    }
+    setCurrentIndex(deck.length - 1);
+    setSelectedIndex(null);
+    setExampleOpen(false);
+    setRevealOpen(false);
+  }, [deck.length, currentIndex]);
 
   const options = useMemo(() => {
     if (!item) {
@@ -275,6 +296,11 @@ export default function ReviewPage() {
 
   const modeLabel = MODE_LABELS[mode] ?? MODE_LABELS.today;
   const modeBadge = MODE_BADGES[mode] ?? "new";
+  const partOfSpeech = item
+    ? publicVocab.find(
+        (entry) => entry.normalizedTerm === normalizeTerm(item.word.term),
+      )?.partOfSpeech
+    : undefined;
   const fsrsInfo = useMemo(() => {
     const fsrs = item?.word.fsrs;
     if (!fsrs) {
@@ -410,6 +436,36 @@ export default function ReviewPage() {
     [writeBackWord],
   );
 
+  /** 斩掉某词：标记为已斩，并从当前学习队列中移除。 */
+  const handleSuspend = useCallback(() => {
+    if (!item) {
+      return;
+    }
+    const wordId = item.word.id;
+    const word = words.find((entry) => entry.id === wordId);
+    if (word) {
+      const repository = createLocalRepository();
+      void repository
+        .upsertUserWord({
+          ...word,
+          status: "suspended",
+          nextReviewAt: null,
+          updatedAt: Date.now(),
+        })
+        .finally(() => repository.close());
+    }
+    wordResultsRef.current.delete(wordId);
+    setRemovedWordIds((previous) => {
+      const next = new Set(previous);
+      next.add(wordId);
+      return next;
+    });
+    setSelectedIndex(null);
+    setExampleOpen(false);
+    setRevealOpen(false);
+    questionStartRef.current = Date.now();
+  }, [item, words]);
+
   /** 完成后自动把本地进度同步到云端账号（静默失败，可手动重试）。 */
   const autoSyncToCloud = useCallback(async () => {
     try {
@@ -480,6 +536,7 @@ export default function ReviewPage() {
     setCurrentIndex(nextIndex);
     setSelectedIndex(null);
     setExampleOpen(false);
+    setRevealOpen(false);
     questionStartRef.current = Date.now();
   }, [answered, currentIndex, deck, finalizeWord, handleFinish, isNewWordMode]);
 
@@ -495,6 +552,11 @@ export default function ReviewPage() {
         setWrongCount((value) => value + 1);
       }
 
+      // 答完自动展开真题例句（无论对错）
+      if (example) {
+        setExampleOpen(true);
+      }
+
       const entry = wordResultsRef.current.get(item!.word.id) ?? {
         correct: 0,
         total: 0,
@@ -505,7 +567,7 @@ export default function ReviewPage() {
       }
       wordResultsRef.current.set(item!.word.id, entry);
     },
-    [answered, item, options],
+    [answered, example, item, options],
   );
 
   const handleRate = useCallback(
@@ -664,7 +726,7 @@ export default function ReviewPage() {
           </h1>
         ) : (
           <>
-            <h1 className="word-main" id="review-title">
+            <h1 className="word-main english" id="review-title">
               {item?.word.term}
             </h1>
             {phonetic ? <div className="word-phonetic">{phonetic}</div> : null}
@@ -681,6 +743,8 @@ export default function ReviewPage() {
           </>
         )}
 
+        {partOfSpeech ? <div className="word-type">{partOfSpeech}</div> : null}
+
         {fsrsInfo ? (
           <div className="word-fsrs" aria-label="FSRS 信息">
             <span>
@@ -694,15 +758,6 @@ export default function ReviewPage() {
             </span>
           </div>
         ) : null}
-      </div>
-
-      <div className="question-card">
-        <p className="question-text">
-          {isC2E
-            ? `「${item?.word.meaning}」对应的英文单词是？`
-            : `「${item?.word.term}」的中文释义是什么？`}
-        </p>
-        <p className="question-hint">按 A–D 或 1–4 选择答案</p>
       </div>
 
       <div className="option-grid" aria-label="答案选项">
@@ -720,16 +775,31 @@ export default function ReviewPage() {
             <button
               key={`${option.sourceTerm}-${option.meaning}`}
               type="button"
-              className={`answer-option ${stateClass}`}
+              className={`answer-option ${isC2E ? "english-option" : ""} ${stateClass} ${
+                revealOpen ? "revealed" : ""
+              }`}
               disabled={answered}
               onClick={() => handleSelect(index)}
             >
               <span>{OPTION_LETTERS[index]}</span>
               <strong>{option.meaning}</strong>
+              {revealOpen ? (
+                <em className="option-translation">{option.sourceTerm}</em>
+              ) : null}
             </button>
           );
         })}
       </div>
+
+      {!answered ? (
+        <button
+          type="button"
+          className={`reveal-btn ${revealOpen ? "revealed" : ""}`}
+          onClick={() => setRevealOpen((value) => !value)}
+        >
+          {revealOpen ? "收起释义" : "查看释义"}
+        </button>
+      ) : null}
 
       {answered ? (
         <div
@@ -749,25 +819,14 @@ export default function ReviewPage() {
         </div>
       ) : null}
 
-      {example ? (
-        <>
-          <button
-            type="button"
-            className={`example-toggle ${exampleOpen ? "revealed" : ""}`}
-            onClick={() => setExampleOpen((value) => !value)}
-          >
-            {exampleOpen ? "收起例句" : "查看例句"}
-          </button>
-          {exampleOpen ? (
-            <div className="example-box" role="note">
-              <p className="example-label">真题例句</p>
-              <p className="example-en">{example.sentence}</p>
-              {example.translation ? (
-                <p className="example-cn">{example.translation}</p>
-              ) : null}
-            </div>
+      {answered && example ? (
+        <div className="example-box" role="note">
+          <p className="example-label">真题例句</p>
+          <p className="example-en">{example.sentence}</p>
+          {example.translation ? (
+            <p className="example-cn">{example.translation}</p>
           ) : null}
-        </>
+        </div>
       ) : null}
 
       {answered && !isNewWordMode ? (
@@ -792,6 +851,13 @@ export default function ReviewPage() {
           <ArrowRight size={18} aria-hidden="true" />
         </button>
       ) : null}
+
+      <div className="ignore-row">
+        <button type="button" className="ignore-btn" onClick={handleSuspend}>
+          <Trash2 size={14} aria-hidden="true" />
+          斩掉该词（不再学习）
+        </button>
+      </div>
     </section>
   );
 }
