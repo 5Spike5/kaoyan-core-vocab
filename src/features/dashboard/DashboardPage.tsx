@@ -101,7 +101,12 @@ export default function DashboardPage() {
   const stats = selectDashboardStats(words, logs);
   const statusCounts = countWordsByStatus(words);
   const learned = countLearnedWords(words);
-  const totalVocab = publicVocab.length;
+  // 词库总数 = 核心词表 + 用户通过查词自建的词（不在核心词表内）
+  const publicTerms = new Set(publicVocab.map((entry) => entry.normalizedTerm));
+  const customWordCount = words.filter(
+    (word) => !publicTerms.has(word.normalizedTerm),
+  ).length;
+  const totalVocab = publicVocab.length + customWordCount;
 
   const todayStart = startOfToday();
   const todayDone = logs.filter((log) => log.reviewedAt >= todayStart).length;
@@ -209,7 +214,7 @@ export default function DashboardPage() {
           <div className="stat-label">待学</div>
         </div>
         <div className="stat-item">
-          <div className="stat-num">{stats.dueCount}</div>
+          <div className="stat-num warn">{stats.dueCount}</div>
           <div className="stat-label">待复习</div>
         </div>
         <div className="stat-item">

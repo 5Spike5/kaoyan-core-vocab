@@ -659,6 +659,10 @@ h2 {
     color: var(--color-success);
 }
 
+.stat-num.warn {
+    color: var(--color-warning);
+}
+
 .stat-label {
     font-size: 11px;
     color: var(--color-muted);
@@ -1812,6 +1816,11 @@ h2 {
 .example-list p {
     margin: 0;
     line-height: 1.6;
+}
+
+.example-list p .hl {
+    color: var(--color-primary);
+    font-weight: 700;
 }
 
 .example-list cite {

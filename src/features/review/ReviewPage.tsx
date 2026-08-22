@@ -12,6 +12,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { searchExamCorpus } from "../../data/corpusIndex";
 import { publicVocab } from "../../data/publicVocab";
 import { normalizeTerm } from "../../lib/normalizeTerm";
+import { highlightTerm } from "../../lib/highlightTerm";
 import { speakWord } from "../../lib/tts";
 import { runAutoCloudSync } from "../../repositories/cloudSync";
 import { createLocalRepository } from "../../repositories/localRepository";
@@ -820,7 +821,9 @@ export default function ReviewPage() {
       {answered && example ? (
         <div className="example-box" role="note">
           <p className="example-label">真题例句</p>
-          <p className="example-en">{example.sentence}</p>
+          <p className="example-en">
+            {highlightTerm(example.sentence, item!.word.term)}
+          </p>
           {example.translation ? (
             <p className="example-cn">{example.translation}</p>
           ) : null}
