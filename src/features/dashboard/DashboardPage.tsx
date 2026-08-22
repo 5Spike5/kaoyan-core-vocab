@@ -17,6 +17,7 @@ import { getCurrentUser, subscribeToAuth } from "../auth/authService";
 import {
   calculateTodayStudyMinutes,
   countLearnedWords,
+  countNewWordsToday,
   countWordsByStatus,
 } from "../stats/statsSelectors";
 import { selectDashboardStats } from "./dashboardSelectors";
@@ -47,12 +48,6 @@ const MODE_CTA: Record<StudyMode, string> = {
 function loadGoal(): number {
   const saved = Number(localStorage.getItem(GOAL_KEY));
   return GOAL_OPTIONS.includes(saved) ? saved : 80;
-}
-
-function startOfToday(now = Date.now()) {
-  const date = new Date(now);
-  date.setHours(0, 0, 0, 0);
-  return date.getTime();
 }
 
 export default function DashboardPage() {
@@ -108,11 +103,8 @@ export default function DashboardPage() {
   ).length;
   const totalVocab = publicVocab.length + customWordCount;
 
-  const todayStart = startOfToday();
-  // 今日目标只统计新词学习（修复前产生的旧日志没有 mode 标记，按新词计入）
-  const todayDone = logs.filter(
-    (log) => log.reviewedAt >= todayStart && log.mode !== "review",
-  ).length;
+  // 今日目标只统计新词学习，复习不占目标额度；刷新后进度从日志重新计算，不会清零
+  const todayDone = countNewWordsToday(logs);
   const goalPercent = Math.min(100, Math.round((todayDone / goal) * 100));
   const progressPercent =
     totalVocab === 0 ? 0 : Math.round((learned / totalVocab) * 100);
