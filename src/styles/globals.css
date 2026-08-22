@@ -1200,14 +1200,11 @@ h2 {
     transition: all var(--transition-med) ease;
 }
 
-.answer-option strong {
+.answer-option .option-text {
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
-/* 英文选项使用 Times New Roman，中文自动回退系统字体 */
-.answer-option.english-option strong {
+.answer-option .option-text.english-option-text {
     font-family: "Times New Roman", Georgia, "Times", serif;
 }
 
@@ -1285,8 +1282,6 @@ h2 {
     font-style: normal;
     color: var(--color-muted);
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .answer-option.revealed .option-translation {
