@@ -1284,6 +1284,8 @@ h2 {
     font-style: normal;
     color: var(--color-muted);
     overflow-wrap: break-word;
+    /* 横跨整个选项宽度（字母格 + 文本列），而不是挤在 36px 的字母格里 */
+    grid-column: 1 / -1;
 }
 
 .answer-option.revealed .option-translation {
