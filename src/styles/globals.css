@@ -939,6 +939,44 @@ h2 {
     flex-shrink: 0;
 }
 
+.review-limit-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.review-limit-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-muted);
+    margin-right: 2px;
+}
+
+.review-limit-btn {
+    padding: 5px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--color-line);
+    background: var(--color-surface);
+    color: var(--color-muted);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast) ease;
+}
+
+.review-limit-btn:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.review-limit-btn.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #fff;
+}
+
 .study-bar {
     height: 4px;
     background: var(--color-line);
@@ -1163,7 +1201,9 @@ h2 {
 }
 
 .answer-option strong {
-    overflow-wrap: anywhere;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* 英文选项使用 Times New Roman，中文自动回退系统字体 */
@@ -1244,6 +1284,9 @@ h2 {
     font-weight: 500;
     font-style: normal;
     color: var(--color-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .answer-option.revealed .option-translation {

@@ -13,7 +13,7 @@ import { searchExamCorpus } from "../../data/corpusIndex";
 import { publicVocab } from "../../data/publicVocab";
 import { normalizeTerm } from "../../lib/normalizeTerm";
 import { highlightTerm } from "../../lib/highlightTerm";
-import { speakWord } from "../../lib/tts";
+import { speakWord, stopSpeech } from "../../lib/tts";
 import { runAutoCloudSync } from "../../repositories/cloudSync";
 import { createLocalRepository } from "../../repositories/localRepository";
 import type { UserWord } from "../../types/domain";
@@ -30,10 +30,11 @@ import type { ReviewOption, ReviewRating } from "./reviewTypes";
 
 const LOCAL_USER_ID = "local";
 const GOAL_KEY = "kaoyan-daily-goal";
+const REVIEW_LIMIT_KEY = "kaoyan-review-limit";
 const NEW_WORD_ROUNDS = 3;
 const NEW_WORD_DIRECTIONS: Array<"e2c" | "c2e"> = ["e2c", "c2e", "e2c"];
-const REVIEW_CAP = 50;
-const FREE_CAP = 20;
+/** 复习数量选项：0 表示全部（不限制） */
+const REVIEW_LIMIT_OPTIONS = [10, 20, 30, 50, 0];
 
 type Direction = "e2c" | "c2e";
 
@@ -79,6 +80,19 @@ function loadGoal(): number {
   return [60, 80, 100, 120].includes(saved) ? saved : 80;
 }
 
+/** 复习数量：0 表示不限制（全部）；上次的选择会被记住。 */
+function loadReviewLimit(): number {
+  const saved = Number(localStorage.getItem(REVIEW_LIMIT_KEY));
+  return REVIEW_LIMIT_OPTIONS.includes(saved) ? saved : 20;
+}
+
+function startOfTomorrow(now = Date.now()) {
+  const date = new Date(now);
+  date.setDate(date.getDate() + 1);
+  date.setHours(0, 0, 0, 0);
+  return date.getTime();
+}
+
 function shuffle<T>(items: T[]): T[] {
   const result = [...items];
   for (let index = result.length - 1; index > 0; index -= 1) {
@@ -93,7 +107,12 @@ function orderOptions(options: ReviewOption[], term: string) {
   return [...options.slice(offset), ...options.slice(0, offset)];
 }
 
-function buildDeck(words: UserWord[], mode: string, goal: number): DeckItem[] {
+function buildDeck(
+  words: UserWord[],
+  mode: string,
+  goal: number,
+  reviewLimit: number,
+): DeckItem[] {
   const meaningOf = (word: UserWord) => word.meanings[0]?.text ?? "";
   const hasMeaning = (word: UserWord) => Boolean(meaningOf(word));
 
@@ -134,7 +153,7 @@ function buildDeck(words: UserWord[], mode: string, goal: number): DeckItem[] {
             ["learning", "reviewing", "mastered"].includes(word.status) &&
             hasMeaning(word),
         );
-  const cap = mode === "due" ? REVIEW_CAP : FREE_CAP;
+  const cap = reviewLimit === 0 ? pool.length : reviewLimit;
 
   return shuffle(pool)
     .slice(0, cap)
@@ -211,10 +230,11 @@ export default function ReviewPage() {
     todayMinutes: number;
     totalMinutes: number;
   } | null>(null);
+  const [reviewLimit, setReviewLimit] = useState(loadReviewLimit);
 
-  // 新词模式：记录每个词 3 遍的整体对错，用于最后的 FSRS 评级
+  // 新词模式：记录每个词 3 遍的整体对错与作答耗时，用于最后的 FSRS 评级
   const wordResultsRef = useRef(
-    new Map<string, { correct: number; total: number }>(),
+    new Map<string, { correct: number; total: number; elapsedMs: number }>(),
   );
   const questionStartRef = useRef(Date.now());
 
@@ -245,10 +265,10 @@ export default function ReviewPage() {
 
   const deck = useMemo(
     () =>
-      buildDeck(words, mode, goal).filter(
+      buildDeck(words, mode, goal, reviewLimit).filter(
         (deckItem) => !removedWordIds.has(deckItem.word.id),
       ),
-    [words, mode, goal, removedWordIds],
+    [words, mode, goal, reviewLimit, removedWordIds],
   );
   const item = deck[currentIndex];
   const answered = selectedIndex !== null;
@@ -336,12 +356,16 @@ export default function ReviewPage() {
     };
   }, [item]);
 
-  // 每次作答后自动朗读一次当前单词
+  // 每次作答后自动朗读一次当前单词；离开时停掉未播完的语音避免叠加
   useEffect(() => {
     if (!answered || !item) {
       return;
     }
-    speakWord(item.word.term);
+    speakWord(item.word.term, setSpeaking);
+    return () => {
+      stopSpeech();
+      setSpeaking(false);
+    };
   }, [answered, item]);
 
   // 学习计时
@@ -398,6 +422,8 @@ export default function ReviewPage() {
       rating: ReviewRating,
       answeredCorrectly: boolean,
       elapsedMs: number,
+      mode: "new" | "review",
+      deferToTomorrow = false,
     ) => {
       const word = words.find((entry) => entry.id === wordId);
       if (!word) {
@@ -406,6 +432,13 @@ export default function ReviewPage() {
       const repository = createLocalRepository();
       try {
         const updated = applyWordReview(word, rating);
+        // 新词学完不立即涌入复习队列：good 的到期时间至少推到次日
+        if (deferToTomorrow) {
+          updated.nextReviewAt =
+            updated.nextReviewAt === null
+              ? startOfTomorrow()
+              : Math.max(updated.nextReviewAt, startOfTomorrow());
+        }
         await repository.upsertUserWord(updated);
         await repository.appendReviewLog(
           createReviewLog({
@@ -413,6 +446,7 @@ export default function ReviewPage() {
             rating,
             answeredCorrectly,
             elapsedMs,
+            mode,
           }),
         );
       } finally {
@@ -432,7 +466,14 @@ export default function ReviewPage() {
       wordResultsRef.current.delete(wordId);
       const rating: ReviewRating =
         result.correct === result.total ? "good" : "again";
-      await writeBackWord(wordId, rating, result.correct === result.total, 0);
+      await writeBackWord(
+        wordId,
+        rating,
+        result.correct === result.total,
+        result.elapsedMs,
+        "new",
+        true,
+      );
     },
     [writeBackWord],
   );
@@ -551,16 +592,19 @@ export default function ReviewPage() {
         setWrongCount((value) => value + 1);
       }
 
-      // 答完自动展开真题例句（无论对错）
+      // 答完自动展开真题例句（无论对错）；收起"查看释义"，避免答错后还挂着所有选项释义
       if (example) {
         setExampleOpen(true);
       }
+      setRevealOpen(false);
 
       const entry = wordResultsRef.current.get(item!.word.id) ?? {
         correct: 0,
         total: 0,
+        elapsedMs: 0,
       };
       entry.total += 1;
+      entry.elapsedMs += Date.now() - questionStartRef.current;
       if (options[index]?.isCorrect) {
         entry.correct += 1;
       }
@@ -575,7 +619,7 @@ export default function ReviewPage() {
         return;
       }
       const elapsedMs = Date.now() - questionStartRef.current;
-      void writeBackWord(item.word.id, rating, isCorrect, elapsedMs);
+      void writeBackWord(item.word.id, rating, isCorrect, elapsedMs, "review");
       handleAdvance();
     },
     [answered, handleAdvance, isCorrect, item, writeBackWord],
@@ -704,6 +748,34 @@ export default function ReviewPage() {
         </div>
         <span className="pass-badge">{modeLabel}</span>
       </div>
+
+      {!isNewWordMode ? (
+        <div
+          className="review-limit-row"
+          role="group"
+          aria-label="本次复习数量"
+        >
+          <span className="review-limit-label">本次复习</span>
+          {REVIEW_LIMIT_OPTIONS.map((option) => (
+            <button
+              key={option}
+              type="button"
+              className={`review-limit-btn ${reviewLimit === option ? "active" : ""}`}
+              aria-pressed={reviewLimit === option}
+              onClick={() => {
+                setReviewLimit(option);
+                localStorage.setItem(REVIEW_LIMIT_KEY, String(option));
+                setCurrentIndex(0);
+                setSelectedIndex(null);
+                setExampleOpen(false);
+                setRevealOpen(false);
+              }}
+            >
+              {option === 0 ? "全部" : option}
+            </button>
+          ))}
+        </div>
+      ) : null}
 
       <div className="study-bar" aria-hidden="true">
         <div

@@ -4,124 +4,171 @@
  * 与 legacy 版本（v1）保持一致的发音行为。
  */
 
-let ttsVoice: SpeechSynthesisVoice | null = null
-let ttsUnlocked = false
+let ttsVoice: SpeechSynthesisVoice | null = null;
+let ttsUnlocked = false;
+/** 当前正在播放的在线发音，播下一个前先停掉，避免快速作答时语音叠加 */
+let currentOnlineAudio: HTMLAudioElement | null = null;
 
-export const ttsAvailable = typeof window !== 'undefined' && 'speechSynthesis' in window
+export const ttsAvailable =
+  typeof window !== "undefined" && "speechSynthesis" in window;
 
 function loadTTSVoice() {
   if (!ttsAvailable) {
-    return
+    return;
   }
-  const voices = window.speechSynthesis.getVoices()
+  const voices = window.speechSynthesis.getVoices();
   if (voices.length === 0) {
-    return
+    return;
   }
-  const usVoices = voices.filter((voice) => voice.lang === 'en-US')
+  const usVoices = voices.filter((voice) => voice.lang === "en-US");
   if (usVoices.length > 0) {
-    const preferred = usVoices.find((voice) => /google|natural|samantha|aria|daniel|zira/i.test(voice.name))
-    ttsVoice = preferred ?? usVoices[0]
+    const preferred = usVoices.find((voice) =>
+      /google|natural|samantha|aria|daniel|zira/i.test(voice.name),
+    );
+    ttsVoice = preferred ?? usVoices[0];
   } else {
-    ttsVoice = voices.find((voice) => voice.lang.startsWith('en')) ?? voices[0]
+    ttsVoice = voices.find((voice) => voice.lang.startsWith("en")) ?? voices[0];
   }
 }
 
 function unlockTTS() {
   if (ttsUnlocked || !ttsAvailable) {
-    return
+    return;
   }
-  ttsUnlocked = true
+  ttsUnlocked = true;
   try {
-    window.speechSynthesis.cancel()
-    const utterance = new SpeechSynthesisUtterance('')
-    utterance.volume = 0
-    utterance.rate = 1
-    utterance.lang = 'en-US'
-    window.speechSynthesis.speak(utterance)
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance("");
+    utterance.volume = 0;
+    utterance.rate = 1;
+    utterance.lang = "en-US";
+    window.speechSynthesis.speak(utterance);
   } catch {
     // 浏览器不支持时静默跳过
   }
 }
 
-if (typeof window !== 'undefined') {
-  ;['touchstart', 'click', 'keydown'].forEach((event) => {
-    window.addEventListener(event, unlockTTS, { once: true, passive: true })
-  })
+if (typeof window !== "undefined") {
+  ["touchstart", "click", "keydown"].forEach((event) => {
+    window.addEventListener(event, unlockTTS, { once: true, passive: true });
+  });
   if (ttsAvailable) {
-    loadTTSVoice()
-    window.speechSynthesis.onvoiceschanged = loadTTSVoice
+    loadTTSVoice();
+    window.speechSynthesis.onvoiceschanged = loadTTSVoice;
+  }
+}
+
+function stopOnlineAudio() {
+  if (currentOnlineAudio) {
+    currentOnlineAudio.pause();
+    currentOnlineAudio = null;
+  }
+}
+
+/** 立即停止所有正在播放的发音（在线音频 + 浏览器 TTS）。 */
+export function stopSpeech() {
+  stopOnlineAudio();
+  if (ttsAvailable) {
+    try {
+      window.speechSynthesis.cancel();
+    } catch {
+      // 忽略
+    }
   }
 }
 
 function speakOnline(word: string, onStateChange: (speaking: boolean) => void) {
   try {
-    const url = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(word)}&type=2`
-    const audio = new Audio(url)
-    onStateChange(true)
-    audio.onended = () => onStateChange(false)
-    audio.onerror = () => onStateChange(false)
-    void audio.play().catch(() => onStateChange(false))
+    stopOnlineAudio();
+    const url = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(word)}&type=2`;
+    const audio = new Audio(url);
+    currentOnlineAudio = audio;
+    onStateChange(true);
+    audio.onended = () => {
+      if (currentOnlineAudio === audio) {
+        currentOnlineAudio = null;
+      }
+      onStateChange(false);
+    };
+    audio.onerror = () => {
+      if (currentOnlineAudio === audio) {
+        currentOnlineAudio = null;
+      }
+      onStateChange(false);
+    };
+    void audio.play().catch(() => {
+      if (currentOnlineAudio === audio) {
+        currentOnlineAudio = null;
+      }
+      onStateChange(false);
+    });
   } catch {
-    onStateChange(false)
+    onStateChange(false);
   }
 }
 
 /** 朗读单词。speaking 回调用于按钮的播放态。 */
-export function speakWord(word: string, onStateChange: (speaking: boolean) => void = () => {}) {
+export function speakWord(
+  word: string,
+  onStateChange: (speaking: boolean) => void = () => {},
+) {
+  // 先停掉上一个在线发音，避免叠加
+  stopOnlineAudio();
+
   if (!ttsAvailable) {
-    speakOnline(word, onStateChange)
-    return
+    speakOnline(word, onStateChange);
+    return;
   }
 
   try {
-    window.speechSynthesis.resume()
-    window.speechSynthesis.cancel()
+    window.speechSynthesis.resume();
+    window.speechSynthesis.cancel();
   } catch {
     // 忽略
   }
 
   window.setTimeout(() => {
-    const utterance = new SpeechSynthesisUtterance(word)
-    utterance.lang = 'en-US'
-    utterance.rate = 0.9
-    utterance.pitch = 1
-    utterance.volume = 1
+    const utterance = new SpeechSynthesisUtterance(word);
+    utterance.lang = "en-US";
+    utterance.rate = 0.9;
+    utterance.pitch = 1;
+    utterance.volume = 1;
     if (ttsVoice) {
-      utterance.voice = ttsVoice
+      utterance.voice = ttsVoice;
     }
 
-    onStateChange(true)
-    utterance.onend = () => onStateChange(false)
+    onStateChange(true);
+    utterance.onend = () => onStateChange(false);
     utterance.onerror = () => {
-      onStateChange(false)
-      speakOnline(word, onStateChange)
-    }
+      onStateChange(false);
+      speakOnline(word, onStateChange);
+    };
 
     try {
-      window.speechSynthesis.speak(utterance)
+      window.speechSynthesis.speak(utterance);
       window.setTimeout(() => {
         try {
-          window.speechSynthesis.resume()
+          window.speechSynthesis.resume();
         } catch {
           // 忽略
         }
-      }, 100)
+      }, 100);
       // TTS 长时间无输出时回退到在线发音
       window.setTimeout(() => {
         if (utterance && window.speechSynthesis.speaking === false) {
-          return
+          return;
         }
         try {
-          window.speechSynthesis.cancel()
+          window.speechSynthesis.cancel();
         } catch {
           // 忽略
         }
-        onStateChange(false)
-        speakOnline(word, onStateChange)
-      }, 3000)
+        onStateChange(false);
+        speakOnline(word, onStateChange);
+      }, 3000);
     } catch {
-      onStateChange(false)
-      speakOnline(word, onStateChange)
+      onStateChange(false);
+      speakOnline(word, onStateChange);
     }
-  }, 50)
+  }, 50);
 }
