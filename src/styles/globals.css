@@ -1200,11 +1200,13 @@ h2 {
     transition: all var(--transition-med) ease;
 }
 
-.answer-option .option-text {
+.answer-option strong {
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.answer-option .option-text.english-option-text {
+.answer-option.english-option strong {
     font-family: "Times New Roman", Georgia, "Times", serif;
 }
 
@@ -1282,6 +1284,8 @@ h2 {
     font-style: normal;
     color: var(--color-muted);
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .answer-option.revealed .option-translation {
