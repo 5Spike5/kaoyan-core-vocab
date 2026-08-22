@@ -109,9 +109,9 @@ export default function DashboardPage() {
   const totalVocab = publicVocab.length + customWordCount;
 
   const todayStart = startOfToday();
-  // 今日目标只统计新词学习，复习不占目标额度
+  // 今日目标只统计新词学习（修复前产生的旧日志没有 mode 标记，按新词计入）
   const todayDone = logs.filter(
-    (log) => log.reviewedAt >= todayStart && log.mode === "new",
+    (log) => log.reviewedAt >= todayStart && log.mode !== "review",
   ).length;
   const goalPercent = Math.min(100, Math.round((todayDone / goal) * 100));
   const progressPercent =

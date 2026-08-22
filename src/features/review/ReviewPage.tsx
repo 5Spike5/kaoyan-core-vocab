@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
+import FitText from "../../components/FitText";
 import { searchExamCorpus } from "../../data/corpusIndex";
 import { publicVocab } from "../../data/publicVocab";
 import { normalizeTerm } from "../../lib/normalizeTerm";
@@ -853,9 +854,16 @@ export default function ReviewPage() {
               onClick={() => handleSelect(index)}
             >
               <span>{OPTION_LETTERS[index]}</span>
-              <strong>{option.meaning}</strong>
+              <FitText
+                text={option.meaning}
+                className={`option-text ${isC2E ? "english-option-text" : ""}`}
+              />
               {revealOpen ? (
-                <em className="option-translation">{option.sourceTerm}</em>
+                <FitText
+                  text={option.sourceTerm}
+                  className="option-translation"
+                  baseSize={12}
+                />
               ) : null}
             </button>
           );
