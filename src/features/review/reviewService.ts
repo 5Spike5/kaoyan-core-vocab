@@ -13,6 +13,15 @@ type ReviewCandidate = {
   meaning: string;
 };
 
+function shuffle<T>(items: T[]): T[] {
+  const result = [...items];
+  for (let index = result.length - 1; index > 0; index -= 1) {
+    const swap = Math.floor(Math.random() * (index + 1));
+    [result[index], result[swap]] = [result[swap], result[index]];
+  }
+  return result;
+}
+
 export function createId(prefix: string) {
   return `${prefix}-${globalThis.crypto?.randomUUID?.() ?? `${Date.now()}-${Math.random()}`}`;
 }
@@ -73,13 +82,15 @@ export function buildReviewOptions(
     isCorrect: true,
   });
 
-  for (const candidate of candidates) {
+  // 干扰项随机抽取：每次从候选词里随机选其他词的释义，避免固定用词表前几个词
+  for (const candidate of shuffle(candidates)) {
     if (options.size >= 4) {
       break;
     }
 
     if (
       normalizeTerm(candidate.term) === currentKey ||
+      candidate.meaning === current.meaning ||
       !candidate.meaning.trim()
     ) {
       continue;
