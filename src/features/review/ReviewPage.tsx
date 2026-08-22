@@ -592,11 +592,11 @@ export default function ReviewPage() {
         setWrongCount((value) => value + 1);
       }
 
-      // 答完自动展开真题例句（无论对错）；收起"查看释义"，避免答错后还挂着所有选项释义
+      // 答完自动展开真题例句（无论对错）；答错后自动展开所有选项释义方便对照，答对则收起
       if (example) {
         setExampleOpen(true);
       }
-      setRevealOpen(false);
+      setRevealOpen(options[index]?.isCorrect ? false : true);
 
       const entry = wordResultsRef.current.get(item!.word.id) ?? {
         correct: 0,
