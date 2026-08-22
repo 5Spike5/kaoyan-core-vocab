@@ -56,6 +56,7 @@ export function createReviewLog(input: {
   answeredCorrectly: boolean;
   elapsedMs: number;
   reviewedAt?: number;
+  mode?: "new" | "review";
 }): ReviewLog {
   return {
     id: createId("log"),
@@ -66,6 +67,7 @@ export function createReviewLog(input: {
     answeredCorrectly: input.answeredCorrectly,
     reviewedAt: input.reviewedAt ?? Date.now(),
     elapsedMs: input.elapsedMs,
+    mode: input.mode,
   };
 }
 

@@ -109,7 +109,10 @@ export default function DashboardPage() {
   const totalVocab = publicVocab.length + customWordCount;
 
   const todayStart = startOfToday();
-  const todayDone = logs.filter((log) => log.reviewedAt >= todayStart).length;
+  // 今日目标只统计新词学习，复习不占目标额度
+  const todayDone = logs.filter(
+    (log) => log.reviewedAt >= todayStart && log.mode === "new",
+  ).length;
   const goalPercent = Math.min(100, Math.round((todayDone / goal) * 100));
   const progressPercent =
     totalVocab === 0 ? 0 : Math.round((learned / totalVocab) * 100);
