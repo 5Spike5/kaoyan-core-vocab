@@ -82,3 +82,17 @@ export function recentActivity(
 
   return [...buckets.entries()].map(([date, count]) => ({ date, count }));
 }
+
+/**
+ * 今日目标进度：只统计新词学习，复习（mode="review"）不计入。
+ * 旧日志没有 mode 标记时按新词计入，保证刷新页面后今日进度不丢失。
+ */
+export function countNewWordsToday(
+  logs: ReviewLog[],
+  now = Date.now(),
+): number {
+  const dayStart = startOfToday(now);
+  return logs.filter(
+    (log) => log.reviewedAt >= dayStart && log.mode !== "review",
+  ).length;
+}
