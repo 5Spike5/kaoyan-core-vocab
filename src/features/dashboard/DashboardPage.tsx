@@ -102,6 +102,8 @@ export default function DashboardPage() {
     (word) => !publicTerms.has(word.normalizedTerm),
   ).length;
   const totalVocab = publicVocab.length + customWordCount;
+  // 待学 = 总词库 - 已学（查词添加的新词也会计入总词库和待学）
+  const todoCount = Math.max(0, totalVocab - learned);
 
   // 今日目标只统计新词学习，复习不占目标额度；刷新后进度从日志重新计算，不会清零
   const todayDone = countNewWordsToday(logs);
@@ -128,7 +130,7 @@ export default function DashboardPage() {
         <p className="eyebrow">TODAY'S STUDY</p>
         <h1 id="dashboard-title">今天，继续保持学习节奏</h1>
         <p className="lede">
-          先攻下 {stats.newCount} 个新词，再复习 {stats.dueCount} 个到期词。
+          先攻下 {todoCount} 个新词，再复习 {stats.dueCount} 个到期词。
         </p>
       </div>
 
@@ -205,7 +207,7 @@ export default function DashboardPage() {
 
       <div className="stats-row" aria-label="今日概览">
         <div className="stat-item">
-          <div className="stat-num">{stats.newCount}</div>
+          <div className="stat-num">{todoCount}</div>
           <div className="stat-label">待学</div>
         </div>
         <div className="stat-item">
@@ -255,7 +257,7 @@ export default function DashboardPage() {
             已斩 <b>{statusCounts.suspended.toLocaleString()}</b>
           </span>
           <span>
-            待学 <b>{statusCounts.new.toLocaleString()}</b>
+            待学 <b>{todoCount.toLocaleString()}</b>
           </span>
         </div>
       </div>

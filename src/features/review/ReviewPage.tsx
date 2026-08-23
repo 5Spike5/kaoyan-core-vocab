@@ -456,7 +456,7 @@ export default function ReviewPage() {
     [words],
   );
 
-  /** 新词模式：单词 3 遍结束后按整体表现评级（全对 → good，有错 → again）。 */
+  /** 新词模式：单词 3 遍结束后按整体表现更新词状态（日志已按遍写入，这里不再重复记录）。 */
   const finalizeWord = useCallback(
     async (wordId: string) => {
       const result = wordResultsRef.current.get(wordId);
@@ -464,18 +464,26 @@ export default function ReviewPage() {
         return;
       }
       wordResultsRef.current.delete(wordId);
+      const word = words.find((entry) => entry.id === wordId);
+      if (!word) {
+        return;
+      }
       const rating: ReviewRating =
         result.correct === result.total ? "good" : "again";
-      await writeBackWord(
-        wordId,
-        rating,
-        result.correct === result.total,
-        result.elapsedMs,
-        "new",
-        true,
-      );
+      const repository = createLocalRepository();
+      try {
+        const updated = applyWordReview(word, rating);
+        // 新词学完不立即涌入复习队列：到期时间至少推到次日
+        updated.nextReviewAt =
+          updated.nextReviewAt === null
+            ? startOfTomorrow()
+            : Math.max(updated.nextReviewAt, startOfTomorrow());
+        await repository.upsertUserWord(updated);
+      } finally {
+        await repository.close();
+      }
     },
-    [writeBackWord],
+    [words],
   );
 
   /** 斩掉某词：标记为已斩，并从当前学习队列中移除。 */
@@ -604,13 +612,34 @@ export default function ReviewPage() {
         elapsedMs: 0,
       };
       entry.total += 1;
-      entry.elapsedMs += Date.now() - questionStartRef.current;
+      const answerMs = Date.now() - questionStartRef.current;
+      entry.elapsedMs += answerMs;
       if (options[index]?.isCorrect) {
         entry.correct += 1;
       }
       wordResultsRef.current.set(item!.word.id, entry);
+
+      // 新词模式：每遍作答即时写一条日志（中途退出/刷新也不丢今日进度），
+      // 今日目标按词去重统计；词状态仍在 3 遍完成后由 finalizeWord 更新。
+      if (isNewWordMode) {
+        const word = words.find((candidate) => candidate.id === item!.word.id);
+        if (word) {
+          const repository = createLocalRepository();
+          void repository
+            .appendReviewLog(
+              createReviewLog({
+                word,
+                rating: options[index]?.isCorrect ? "good" : "again",
+                answeredCorrectly: Boolean(options[index]?.isCorrect),
+                elapsedMs: answerMs,
+                mode: "new",
+              }),
+            )
+            .finally(() => repository.close());
+        }
+      }
     },
-    [answered, example, item, options],
+    [answered, example, isNewWordMode, item, options, words],
   );
 
   const handleRate = useCallback(

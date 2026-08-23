@@ -23,20 +23,33 @@ function makeLog(overrides: Partial<ReviewLog>): ReviewLog {
 describe("countNewWordsToday", () => {
   it("counts today's new-word logs but not review logs", () => {
     const logs = [
-      makeLog({ reviewedAt: now, mode: "new" }),
-      makeLog({ reviewedAt: now, mode: "review" }),
-      makeLog({ reviewedAt: now - 1, mode: "new" }), // 今天 0 点后
-      makeLog({ reviewedAt: now - oneDay, mode: "new" }), // 昨天
+      makeLog({ reviewedAt: now, mode: "new", normalizedTerm: "address" }),
+      makeLog({ reviewedAt: now, mode: "review", normalizedTerm: "fetch" }),
+      makeLog({ reviewedAt: now - 1, mode: "new", normalizedTerm: "bid" }), // 今天 0 点后
+      makeLog({
+        reviewedAt: now - oneDay,
+        mode: "new",
+        normalizedTerm: "peak",
+      }), // 昨天
     ];
     expect(countNewWordsToday(logs, now)).toBe(2);
   });
 
   it("keeps legacy logs without a mode marker so the daily goal survives refresh", () => {
     const logs = [
-      makeLog({ reviewedAt: now }), // 旧数据：无 mode
-      makeLog({ reviewedAt: now, mode: "review" }),
-      makeLog({ reviewedAt: now - oneDay }), // 昨天的旧日志
+      makeLog({ reviewedAt: now, normalizedTerm: "address" }), // 旧数据：无 mode
+      makeLog({ reviewedAt: now, mode: "review", normalizedTerm: "fetch" }),
+      makeLog({ reviewedAt: now - oneDay, normalizedTerm: "peak" }), // 昨天的旧日志
     ];
     expect(countNewWordsToday(logs, now)).toBe(1);
+  });
+
+  it("counts each new word once even with multiple answer logs", () => {
+    const logs = [
+      makeLog({ reviewedAt: now, mode: "new", normalizedTerm: "address" }),
+      makeLog({ reviewedAt: now, mode: "new", normalizedTerm: "address" }),
+      makeLog({ reviewedAt: now, mode: "new", normalizedTerm: "fetch" }),
+    ];
+    expect(countNewWordsToday(logs, now)).toBe(2);
   });
 });
