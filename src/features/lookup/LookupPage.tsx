@@ -21,6 +21,25 @@ export default function LookupPage() {
   const [term, setTerm] = useState("");
   const [state, setState] = useState<LookupState>({ phase: "idle" });
   const [addedTerms, setAddedTerms] = useState<Set<string>>(new Set());
+  // 本地生词库里已存在的词（查到了就不显示“加入生词库”按钮）
+  const [knownTerms, setKnownTerms] = useState<Set<string>>(new Set());
+
+  const checkKnown = useCallback(async (result: WordLookupResult) => {
+    const repository = createLocalRepository();
+    try {
+      const existing = await repository.getUserWord(
+        LOCAL_USER_ID,
+        result.normalizedTerm,
+      );
+      if (existing) {
+        setKnownTerms((previous) =>
+          new Set(previous).add(result.normalizedTerm),
+        );
+      }
+    } finally {
+      await repository.close();
+    }
+  }, []);
 
   const enrichWithDictionary = useCallback(
     async (localResult: WordLookupResult) => {
@@ -74,8 +93,10 @@ export default function LookupPage() {
 
       // 本地结果先展示；公共词典异步补充，失败不影响本地结果。
       void enrichWithDictionary(localResult);
+      // 查一下该词是否已在生词库，避免重复添加
+      void checkKnown(localResult);
     },
-    [enrichWithDictionary, term],
+    [checkKnown, enrichWithDictionary, term],
   );
 
   const handleAddToVocab = useCallback(async (result: WordLookupResult) => {
@@ -142,6 +163,7 @@ export default function LookupPage() {
         <LookupResultView
           result={state.result}
           addedTerms={addedTerms}
+          knownTerms={knownTerms}
           onAdd={handleAddToVocab}
         />
       ) : null}
@@ -152,15 +174,19 @@ export default function LookupPage() {
 function LookupResultView({
   result,
   addedTerms,
+  knownTerms,
   onAdd,
 }: {
   result: WordLookupResult;
   addedTerms: Set<string>;
+  knownTerms: Set<string>;
   onAdd(result: WordLookupResult): void;
 }) {
   const hasLocalData =
     result.publicEntry !== undefined || result.examStats.totalOccurrences > 0;
   const alreadyAdded = addedTerms.has(result.normalizedTerm);
+  const alreadyInVocab = alreadyAdded || knownTerms.has(result.normalizedTerm);
+  const vocabBadgeText = alreadyAdded ? "已加入生词库" : "已在生词库";
 
   if (!hasLocalData) {
     return (
@@ -175,10 +201,10 @@ function LookupResultView({
         ) : (
           <p className="dictionary-note">正在查询公共词典…</p>
         )}
-        {alreadyAdded ? (
+        {alreadyInVocab ? (
           <span className="added-badge" role="status">
             <Check size={14} aria-hidden="true" />
-            已加入生词库
+            {vocabBadgeText}
           </span>
         ) : (
           <button
@@ -209,10 +235,10 @@ function LookupResultView({
           ) : null}
         </div>
 
-        {alreadyAdded ? (
+        {alreadyInVocab ? (
           <span className="added-badge" role="status">
             <Check size={14} aria-hidden="true" />
-            已加入生词库
+            {vocabBadgeText}
           </span>
         ) : (
           <button
