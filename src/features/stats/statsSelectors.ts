@@ -87,12 +87,20 @@ export function recentActivity(
  * 今日目标进度：只统计新词学习，复习（mode="review"）不计入。
  * 旧日志没有 mode 标记时按新词计入，保证刷新页面后今日进度不丢失。
  */
+/**
+ * 今日目标进度：只统计新词学习，复习（mode="review"）不计入；按词去重（
+ * 每遍作答都会写日志，同一词算一次）。旧日志没有 mode 标记时按新词计入。
+ */
 export function countNewWordsToday(
   logs: ReviewLog[],
   now = Date.now(),
 ): number {
   const dayStart = startOfToday(now);
-  return logs.filter(
-    (log) => log.reviewedAt >= dayStart && log.mode !== "review",
-  ).length;
+  const seen = new Set<string>();
+  for (const log of logs) {
+    if (log.reviewedAt >= dayStart && log.mode !== "review") {
+      seen.add(log.normalizedTerm);
+    }
+  }
+  return seen.size;
 }
