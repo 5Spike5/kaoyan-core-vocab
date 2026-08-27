@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { countNewWordsToday } from "../../../src/features/stats/statsSelectors";
+import {
+  calculateStreakDays,
+  countNewWordsToday,
+  recentActivity,
+} from "../../../src/features/stats/statsSelectors";
 import type { ReviewLog } from "../../../src/types/domain";
 
 // 2026-08-22 15:00 本地时间
@@ -51,5 +55,38 @@ describe("countNewWordsToday", () => {
       makeLog({ reviewedAt: now, mode: "new", normalizedTerm: "fetch" }),
     ];
     expect(countNewWordsToday(logs, now)).toBe(2);
+  });
+});
+
+describe("calculateStreakDays", () => {
+  it("counts consecutive days ending today", () => {
+    const logs = [
+      makeLog({ reviewedAt: now }),
+      makeLog({ reviewedAt: now - oneDay }),
+      makeLog({ reviewedAt: now - 3 * oneDay }), // 断了一天
+    ];
+    expect(calculateStreakDays(logs, now)).toBe(2);
+  });
+
+  it("keeps a yesterday-only streak alive until midnight", () => {
+    expect(
+      calculateStreakDays([makeLog({ reviewedAt: now - oneDay })], now),
+    ).toBe(1);
+  });
+
+  it("returns zero when there are no logs", () => {
+    expect(calculateStreakDays([], now)).toBe(0);
+  });
+});
+
+describe("recentActivity", () => {
+  it("buckets logs by local calendar day", () => {
+    const ts = new Date(2026, 7, 20, 10, 0, 0).getTime();
+    const activity = recentActivity([makeLog({ reviewedAt: ts })], 7, now);
+
+    expect(activity).toHaveLength(7);
+    // 最后一天是今天（本地 2026-8-22）
+    expect(activity[activity.length - 1]?.date).toBe("2026-8-22");
+    expect(activity.find((entry) => entry.date === "2026-8-20")?.count).toBe(1);
   });
 });

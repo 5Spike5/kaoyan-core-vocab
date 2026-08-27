@@ -35,6 +35,33 @@ function startOfToday(now = Date.now()) {
   return date.getTime();
 }
 
+/** 本地日期键："2026-8-27" 形式（与解析端一致即可，无需补零）。 */
+function dayKey(timestamp: number): string {
+  const date = new Date(timestamp);
+  return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+}
+
+/**
+ * 连续学习天数：从今天（或昨天——今天还没学不算断）往回数，
+ * 连续有复习日志的天数。
+ */
+export function calculateStreakDays(
+  logs: ReviewLog[],
+  now = Date.now(),
+): number {
+  const days = new Set(logs.map((log) => dayKey(log.reviewedAt)));
+  let cursor = startOfToday(now);
+  if (!days.has(dayKey(cursor))) {
+    cursor -= 24 * 60 * 60 * 1000;
+  }
+  let streak = 0;
+  while (days.has(dayKey(cursor))) {
+    streak += 1;
+    cursor -= 24 * 60 * 60 * 1000;
+  }
+  return streak;
+}
+
 export function calculateTodayStudyMinutes(
   logs: ReviewLog[],
   sessions: StudySession[],
@@ -59,7 +86,7 @@ export function calculateTodayStudyMinutes(
   return Math.round(logMinutes + sessionMinutes);
 }
 
-/** 最近 7 天每天的复习次数（按天聚合，用于活动列表）。 */
+/** 最近 7 天每天的复习次数（按本地时区的天聚合，用于活动列表）。 */
 export function recentActivity(
   logs: ReviewLog[],
   days = 7,
@@ -69,12 +96,12 @@ export function recentActivity(
   const buckets = new Map<string, number>();
 
   for (let offset = days - 1; offset >= 0; offset -= 1) {
-    const date = new Date(dayStart - offset * 24 * 60 * 60 * 1000);
-    buckets.set(date.toISOString().slice(0, 10), 0);
+    const date = dayStart - offset * 24 * 60 * 60 * 1000;
+    buckets.set(dayKey(date), 0);
   }
 
   for (const log of logs) {
-    const key = new Date(log.reviewedAt).toISOString().slice(0, 10);
+    const key = dayKey(log.reviewedAt);
     if (buckets.has(key)) {
       buckets.set(key, (buckets.get(key) ?? 0) + 1);
     }

@@ -19,8 +19,8 @@ function makeWord(term: string, meaning: string): UserWord {
 }
 
 describe('vocab excel round-trip', () => {
-  it('exports and re-imports words with the expected columns', () => {
-    const workbook = exportVocabWorkbook([makeWord('address', '处理，应对'), makeWord('fetch', '售得')])
+  it(`exports and re-imports words with the expected columns`, async () => {
+    const workbook = await exportVocabWorkbook([makeWord('address', '处理，应对'), makeWord('fetch', '售得')])
     const result = parseVocabWorkbook(workbook)
 
     expect(result.imported).toHaveLength(2)
@@ -30,8 +30,8 @@ describe('vocab excel round-trip', () => {
     expect(result.failed).toBe(0)
   })
 
-  it('skips empty rows and rejects rows without a word', () => {
-    const workbook = exportVocabWorkbook([makeWord('address', '处理，应对')])
+  it(`skips empty rows and rejects rows without a word`, async () => {
+    const workbook = await exportVocabWorkbook([makeWord('address', '处理，应对')])
     const worksheet = workbook.Sheets[workbook.SheetNames[0]]
     const header = '单词'
     const addressRow = 'address'
@@ -46,22 +46,22 @@ describe('vocab excel round-trip', () => {
     const result = parseVocabWorkbook({
       SheetNames: ['Sheet1'],
       Sheets: { Sheet1: worksheet }
-    } as unknown as ReturnType<typeof exportVocabWorkbook>)
+    } as unknown as Parameters<typeof parseVocabWorkbook>[0])
 
     expect(result.imported).toHaveLength(1)
     expect(result.skipped).toBeGreaterThanOrEqual(2)
   })
 
-  it('normalizes duplicate rows by term', () => {
-    const workbook = exportVocabWorkbook([makeWord('address', '处理，应对'), makeWord('Address', '地址')])
+  it(`normalizes duplicate rows by term`, async () => {
+    const workbook = await exportVocabWorkbook([makeWord('address', '处理，应对'), makeWord('Address', '地址')])
     const result = parseVocabWorkbook(workbook)
 
     expect(result.imported).toHaveLength(1)
     expect(result.duplicates).toBe(1)
   })
 
-  it('reports a failed row when the meaning column is missing', () => {
-    const workbook = exportVocabWorkbook([makeWord('address', '处理，应对')])
+  it(`reports a failed row when the meaning column is missing`, async () => {
+    const workbook = await exportVocabWorkbook([makeWord('address', '处理，应对')])
     const worksheet = workbook.Sheets[workbook.SheetNames[0]]
     // 覆盖表头，使“释义”列不存在
     worksheet.A1 = { t: 's', v: '单词' }
@@ -73,7 +73,7 @@ describe('vocab excel round-trip', () => {
     const result = parseVocabWorkbook({
       SheetNames: ['Sheet1'],
       Sheets: { Sheet1: worksheet }
-    } as unknown as ReturnType<typeof exportVocabWorkbook>)
+    } as unknown as Parameters<typeof parseVocabWorkbook>[0])
 
     expect(result.failed).toBe(1)
   })
