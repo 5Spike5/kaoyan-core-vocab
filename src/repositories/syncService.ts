@@ -163,12 +163,34 @@ export async function syncLocalToCloud(
       await Promise.all(items.slice(index, index + CHUNK_SIZE).map(upload));
     }
   }
-  await uploadChunks(changedWords, (word) =>
+
+  // 单词：除了 updatedAt 有变化的词，还要带上本次待上传日志引用的父词。
+  // 新词模式下日志先于 finalizeWord 落库，父词可能还不在 changedWords 里，
+  // 不一起上传的话日志的 user_word_id 在云端找不到 → 外键违例 409。
+  const localWordIds = new Set(localWords.map((word) => word.id));
+  const changedLogWordIds = new Set(changedLogs.map((log) => log.wordId));
+  const wordsToUpload = new Map<string, UserWord>();
+  for (const word of changedWords) {
+    wordsToUpload.set(word.id, word);
+  }
+  for (const word of localWords) {
+    if (changedLogWordIds.has(word.id)) {
+      wordsToUpload.set(word.id, word);
+    }
+  }
+  await uploadChunks([...wordsToUpload.values()], (word) =>
     remote.upsertWord({ ...word, userId: cloudUserId }),
   );
-  await uploadChunks(changedLogs, (log) =>
+
+  // 日志：跳过父词不在本地的孤儿日志（理论不应出现，但避免外键 409 卡死同步）。
+  // 这些日志会留在本地，待父词落库后的下次同步再上传。
+  const uploadableLogs = changedLogs.filter((log) =>
+    localWordIds.has(log.wordId),
+  );
+  await uploadChunks(uploadableLogs, (log) =>
     remote.appendReviewLog({ ...log, userId: cloudUserId }),
   );
+
   await uploadChunks(changedSessions, (session) =>
     remote.upsertSession({ ...session, userId: cloudUserId }),
   );
@@ -213,7 +235,8 @@ export async function syncLocalToCloud(
   await db.studySessions.where("userId").equals(cloudUserId).delete();
 
   return {
-    uploaded: changedWords.length + changedLogs.length + changedSessions.length,
+    uploaded:
+      wordsToUpload.size + uploadableLogs.length + changedSessions.length,
     merged: mergedWords.size,
   };
 }

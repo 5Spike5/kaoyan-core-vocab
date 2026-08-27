@@ -763,19 +763,25 @@ export default function ReviewPage() {
 
       // 新词模式：每遍作答即时写一条日志（中途退出/刷新也不丢今日进度），
       // 今日目标按词去重统计；词状态仍在 3 遍完成后由 finalizeWord 更新。
+      // 同时把单词（status 保持 new，不动 FSRS）落库，确保日志的父词存在，
+      // 云同步时外键 user_word_id 能匹配，避免 409 卡死同步。
       if (isNewWordMode) {
         const word = words.find((candidate) => candidate.id === item!.word.id);
         if (word) {
           const repository = createLocalRepository();
+          const persistedWord = { ...word, updatedAt: Date.now() };
           void repository
-            .appendReviewLog(
-              createReviewLog({
-                word,
-                rating: options[index]?.isCorrect ? "good" : "again",
-                answeredCorrectly: Boolean(options[index]?.isCorrect),
-                elapsedMs: answerMs,
-                mode: "new",
-              }),
+            .upsertUserWord(persistedWord)
+            .then(() =>
+              repository.appendReviewLog(
+                createReviewLog({
+                  word,
+                  rating: options[index]?.isCorrect ? "good" : "again",
+                  answeredCorrectly: Boolean(options[index]?.isCorrect),
+                  elapsedMs: answerMs,
+                  mode: "new",
+                }),
+              ),
             )
             .finally(() => repository.close());
         }
