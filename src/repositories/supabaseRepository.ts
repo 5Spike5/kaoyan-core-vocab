@@ -102,16 +102,22 @@ export function createSupabaseRepository(client: SupabaseClient): CloudRepositor
     },
 
     async appendReviewLog(log: ReviewLog) {
-      const { error } = await client.from('review_logs').insert({
-        id: log.id,
-        user_id: log.userId,
-        user_word_id: log.wordId,
-        normalized_term: log.normalizedTerm,
-        rating: log.rating,
-        answered_correctly: log.answeredCorrectly,
-        elapsed_ms: log.elapsedMs,
-        reviewed_at: new Date(log.reviewedAt).toISOString()
-      })
+      // 复习日志按主键 id 幂等写入：同步中途失败重试、多设备合并回传时，
+      // 同一条日志会被重复上传，用 upsert + ignoreDuplicates（ON CONFLICT DO
+      // NOTHING）避免主键冲突 409 把整个同步卡死。日志内容不可变，跳过重复即可。
+      const { error } = await client.from('review_logs').upsert(
+        {
+          id: log.id,
+          user_id: log.userId,
+          user_word_id: log.wordId,
+          normalized_term: log.normalizedTerm,
+          rating: log.rating,
+          answered_correctly: log.answeredCorrectly,
+          elapsed_ms: log.elapsedMs,
+          reviewed_at: new Date(log.reviewedAt).toISOString()
+        },
+        { onConflict: 'id', ignoreDuplicates: true }
+      )
       if (error) {
         throw error
       }
