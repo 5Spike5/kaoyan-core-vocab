@@ -1057,6 +1057,12 @@ h2 {
     color: #dc2626;
 }
 
+/* 续学徽章：今天已答过但还没学满 3 遍、回炉的词 */
+.word-status-badge.resumed {
+    background: #ede9fe;
+    color: #7c3aed;
+}
+
 .word-main {
     font-size: 40px;
     font-weight: 800;

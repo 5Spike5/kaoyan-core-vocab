@@ -43,6 +43,10 @@ type Direction = "e2c" | "c2e";
 
 type DeckItem = {
   id: string;
+  /** bonus = 新词 3 遍后的巩固题；retry = 复习模式答错后重排的同一词 */
+  kind?: "normal" | "bonus" | "retry";
+  /** 今日已答过但未学满 3 遍、回炉续学的词 */
+  resumed?: boolean;
   word: {
     id: string;
     term: string;
@@ -128,9 +132,12 @@ function buildDeck(
     const newWords = [...started, ...fresh];
     const rounds: DeckItem[] = [];
     for (const word of newWords) {
+      const resumed = startedTerms.has(word.normalizedTerm);
       for (let round = 0; round < NEW_WORD_ROUNDS; round += 1) {
         rounds.push({
           id: `${word.normalizedTerm}#r${round}`,
+          kind: "normal",
+          resumed,
           word: {
             id: word.id,
             term: word.term,
@@ -164,6 +171,7 @@ function buildDeck(
     .slice(0, cap)
     .map((word) => ({
       id: `${word.normalizedTerm}#review`,
+      kind: "normal" as const,
       word: {
         id: word.id,
         term: word.term,
@@ -237,12 +245,20 @@ export default function ReviewPage() {
     totalMinutes: number;
   } | null>(null);
   const [reviewLimit, setReviewLimit] = useState(loadReviewLimit);
+  // 会话内动态追加的题目：新词巩固题 / 复习错词重排
+  const [extraItems, setExtraItems] = useState<DeckItem[]>([]);
 
   // 新词模式：记录每个词 3 遍的整体对错与作答耗时，用于最后的 FSRS 评级
   const wordResultsRef = useRef(
     new Map<string, { correct: number; total: number; elapsedMs: number }>(),
   );
   const questionStartRef = useRef(Date.now());
+  /** 本会话已排过巩固题的新词（每词最多一次） */
+  const bonusQueuedRef = useRef(new Set<string>());
+  /** 本会话已重排过的复习词（每词最多一次） */
+  const requeuedRef = useRef(new Set<string>());
+  /** 巩固题的作答结果（答对视为当天记住） */
+  const bonusResultRef = useRef(new Map<string, boolean>());
 
   const goal = loadGoal();
   const isNewWordMode = mode === "today";
@@ -275,7 +291,7 @@ export default function ReviewPage() {
 
   // 今日已学新词（按词去重）：用来计算剩余额度，保证一天学的新词不超过目标
   const newWordTerms = useMemo(() => newWordTermsToday(logs), [logs]);
-  const deck = useMemo(
+  const baseDeck = useMemo(
     () =>
       buildDeck(
         words,
@@ -285,6 +301,14 @@ export default function ReviewPage() {
         newWordTerms,
       ).filter((deckItem) => !removedWordIds.has(deckItem.word.id)),
     [words, mode, goal, reviewLimit, newWordTerms, removedWordIds, isNewWordMode],
+  );
+  // 最终队列 = 计划题目 + 动态追加（巩固/重排），斩掉的词从两部分都移除
+  const deck = useMemo(
+    () => [
+      ...baseDeck,
+      ...extraItems.filter((extra) => !removedWordIds.has(extra.word.id)),
+    ],
+    [baseDeck, extraItems, removedWordIds],
   );
   const item = deck[currentIndex];
   const answered = selectedIndex !== null;
@@ -486,7 +510,7 @@ export default function ReviewPage() {
     [words],
   );
 
-  /** 新词模式：单词 3 遍结束后按整体表现更新词状态（日志已按遍写入，这里不再重复记录）。 */
+  /** 新词模式：单词学完（含巩固题）后按表现更新词状态（日志已按遍写入，这里不再重复记录）。 */
   const finalizeWord = useCallback(
     async (wordId: string) => {
       const result = wordResultsRef.current.get(wordId);
@@ -494,12 +518,21 @@ export default function ReviewPage() {
         return;
       }
       wordResultsRef.current.delete(wordId);
+      const bonusCorrect = bonusResultRef.current.get(wordId);
+      bonusResultRef.current.delete(wordId);
       const word = words.find((entry) => entry.id === wordId);
       if (!word) {
         return;
       }
+      // 有巩固题时以巩固题结果为准（答对说明当天记住了）；否则按 3 遍全对与否
       const rating: ReviewRating =
-        result.correct === result.total ? "good" : "again";
+        bonusCorrect === undefined
+          ? result.correct === result.total
+            ? "good"
+            : "again"
+          : bonusCorrect
+            ? "good"
+            : "again";
       const repository = createLocalRepository();
       try {
         const updated = applyWordReview(word, rating);
@@ -590,23 +623,51 @@ export default function ReviewPage() {
     void autoSyncToCloud();
   }, [autoSyncToCloud, persistSession]);
 
-  const handleAdvance = useCallback(() => {
+  /**
+   * 推进到下一题。同一次调用里如果刚追加了新题（巩固题），用
+   * queuedBeyondClosure 补上尚未反映进 deck 闭包的长度。
+   */
+  const advanceCore = useCallback(() => {
     if (!answered) {
       return;
     }
 
     const nextIndex = currentIndex + 1;
     const current = deck[currentIndex];
+    let queuedBeyondClosure = 0;
 
-    // 新词模式：3 遍分散在队列各处，当前词最后一遍答完后才写回
+    // 新词模式：3 遍答完后决定写回还是追加巩固题；巩固题答完才写回
     if (isNewWordMode && current) {
       const entry = wordResultsRef.current.get(current.word.id);
+      const bonusQueued = bonusQueuedRef.current.has(current.word.id);
       if (entry && entry.total >= NEW_WORD_ROUNDS) {
-        void finalizeWord(current.word.id);
+        if (current.kind === "bonus") {
+          // 巩固题答完才写回
+          void finalizeWord(current.word.id);
+        } else if (!bonusQueued && entry.correct < NEW_WORD_ROUNDS) {
+          // 有错：排一道方向相反的巩固题，答对则按记住写回
+          bonusQueuedRef.current.add(current.word.id);
+          setExtraItems((previous) => [
+            ...previous,
+            {
+              ...current,
+              id: `${current.id}#bonus`,
+              kind: "bonus" as const,
+              resumed: false,
+              direction:
+                current.direction === "e2c"
+                  ? ("c2e" as const)
+                  : ("e2c" as const),
+            },
+          ]);
+          queuedBeyondClosure += 1;
+        } else {
+          void finalizeWord(current.word.id);
+        }
       }
     }
 
-    if (nextIndex >= deck.length) {
+    if (nextIndex >= deck.length + queuedBeyondClosure) {
       handleFinish();
       return;
     }
@@ -617,6 +678,10 @@ export default function ReviewPage() {
     setRevealOpen(false);
     questionStartRef.current = Date.now();
   }, [answered, currentIndex, deck, finalizeWord, handleFinish, isNewWordMode]);
+
+  const handleAdvance = useCallback(() => {
+    advanceCore();
+  }, [advanceCore]);
 
   const handleSelect = useCallback(
     (index: number) => {
@@ -648,6 +713,27 @@ export default function ReviewPage() {
         entry.correct += 1;
       }
       wordResultsRef.current.set(item!.word.id, entry);
+
+      // 巩固题的对错单独记录，用于最终评级
+      if (item!.kind === "bonus") {
+        bonusResultRef.current.set(
+          item!.word.id,
+          Boolean(options[index]?.isCorrect),
+        );
+      }
+
+      // 复习模式答错：把该词追加到队列末尾再练一遍（每词每次会话最多一次）
+      if (
+        !isNewWordMode &&
+        !options[index]?.isCorrect &&
+        !requeuedRef.current.has(item!.word.id)
+      ) {
+        requeuedRef.current.add(item!.word.id);
+        setExtraItems((previous) => [
+          ...previous,
+          { ...item!, id: `${item!.id}#retry`, kind: "retry" as const },
+        ]);
+      }
 
       // 新词模式：每遍作答即时写一条日志（中途退出/刷新也不丢今日进度），
       // 今日目标按词去重统计；词状态仍在 3 遍完成后由 finalizeWord 更新。
@@ -861,8 +947,19 @@ export default function ReviewPage() {
 
       <div className="word-card" key={item?.id}>
         <span className={`word-status-badge ${modeBadge}`}>
-          {isNewWordMode ? "新词" : mode === "due" ? "复习中" : "学习中"}
+          {item?.kind === "bonus"
+            ? "巩固"
+            : item?.kind === "retry"
+              ? "再练"
+              : isNewWordMode
+                ? "新词"
+                : mode === "due"
+                  ? "复习中"
+                  : "学习中"}
         </span>
+        {item?.resumed && item.kind === "normal" ? (
+          <span className="word-status-badge resumed">续学</span>
+        ) : null}
 
         {isC2E ? (
           <h1 className="word-main" id="review-title">

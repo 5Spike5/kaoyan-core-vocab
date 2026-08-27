@@ -124,9 +124,13 @@ export default function VocabListPage() {
   const visibleWords = filteredWords.slice(0, visibleCount);
   const hasMore = visibleWords.length < filteredWords.length;
 
-  const handleExport = useCallback(() => {
-    downloadVocabWorkbook(filteredWords);
-    toast(`已导出 ${filteredWords.length} 个单词`, "success");
+  const handleExport = useCallback(async () => {
+    try {
+      await downloadVocabWorkbook(filteredWords);
+      toast(`已导出 ${filteredWords.length} 个单词`, "success");
+    } catch {
+      toast("导出失败，请重试", "error");
+    }
   }, [filteredWords]);
 
   const handleParseFile = useCallback(async (file: File) => {

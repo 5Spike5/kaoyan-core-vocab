@@ -1,6 +1,6 @@
-import * as XLSX from 'xlsx'
 import { normalizeTerm } from './normalizeTerm'
 import type { UserWord, UserWordStatus } from '../types/domain'
+import type { WorkBook, WorkSheet } from 'xlsx'
 
 const EXPORT_HEADERS = ['单词', '词性', '释义', '状态', '下次复习时间', '笔记', '标签'] as const
 
@@ -29,8 +29,45 @@ function statusLabel(status: UserWordStatus) {
   return STATUS_LABELS[status] ?? status
 }
 
-function rowValue(sheet: XLSX.WorkSheet, row: number, col: number): string {
-  const cell = sheet[XLSX.utils.encode_cell({ r: row, c: col })]
+/** 列序号转 Excel 列名：0 -> A，26 -> AA。 */
+function columnName(col: number): string {
+  let name = ''
+  let value = col
+  while (value >= 0) {
+    name = String.fromCharCode(65 + (value % 26)) + name
+    value = Math.floor(value / 26) - 1
+  }
+  return name
+}
+
+/** 行列号转单元格引用：{r:1,c:2} -> C2。 */
+function encodeCell(address: { r: number; c: number }): string {
+  return `${columnName(address.c)}${address.r + 1}`
+}
+
+/** Excel 列名转列序号："AA" -> 26。 */
+function decodeColumn(name: string): number {
+  let value = 0
+  for (const char of name.toUpperCase()) {
+    value = value * 26 + (char.charCodeAt(0) - 64)
+  }
+  return value - 1
+}
+
+/** 解析 "A1:C10" 形式的范围引用。 */
+function decodeRange(ref: string): { s: { r: number; c: number }; e: { r: number; c: number } } | null {
+  const match = /^([A-Z]+)(\d+):([A-Z]+)(\d+)$/i.exec(ref.trim())
+  if (!match) {
+    return null
+  }
+  return {
+    s: { c: decodeColumn(match[1]), r: Number(match[2]) - 1 },
+    e: { c: decodeColumn(match[3]), r: Number(match[4]) - 1 }
+  }
+}
+
+function rowValue(sheet: WorkSheet, row: number, col: number): string {
+  const cell = sheet[encodeCell({ r: row, c: col })]
   if (cell == null) {
     return ''
   }
@@ -42,16 +79,18 @@ function rowValue(sheet: XLSX.WorkSheet, row: number, col: number): string {
 }
 
 /** 计算实际数据范围：合并 !ref 与所有已写入单元格的行列。 */
-function effectiveRange(sheet: XLSX.WorkSheet): { minRow: number; maxRow: number; maxCol: number } {
+function effectiveRange(sheet: WorkSheet): { minRow: number; maxRow: number; maxCol: number } {
   let minRow = 0
   let maxRow = 0
   let maxCol = 0
 
   if (sheet['!ref']) {
-    const range = XLSX.utils.decode_range(sheet['!ref'])
-    minRow = range.s.r
-    maxRow = range.e.r
-    maxCol = range.e.c
+    const range = decodeRange(sheet['!ref'])
+    if (range) {
+      minRow = range.s.r
+      maxRow = range.e.r
+      maxCol = range.e.c
+    }
   }
 
   for (const key of Object.keys(sheet)) {
@@ -59,7 +98,7 @@ function effectiveRange(sheet: XLSX.WorkSheet): { minRow: number; maxRow: number
     if (!match) {
       continue
     }
-    const col = XLSX.utils.decode_col(match[1])
+    const col = decodeColumn(match[1])
     const row = Number(match[2]) - 1
     if (row > maxRow) {
       maxRow = row
@@ -83,7 +122,7 @@ function findColumn(headers: string[], names: string[]): number {
   return -1
 }
 
-export function parseVocabWorkbook(workbook: XLSX.WorkBook): VocabImportResult {
+export function parseVocabWorkbook(workbook: WorkBook): VocabImportResult {
   const result: VocabImportResult = { imported: [], skipped: 0, failed: 0, duplicates: 0, errors: [] }
   const sheetName = workbook.SheetNames[0]
 
@@ -142,7 +181,13 @@ export function parseVocabWorkbook(workbook: XLSX.WorkBook): VocabImportResult {
   return result
 }
 
-export function exportVocabWorkbook(words: UserWord[]): XLSX.WorkBook {
+/**
+ * xlsx 库只在这两个入口按需加载，避免静态打包进首屏 bundle。
+ * buildWorkbook 需要 XLSX 运行时，通过参数注入。
+ */
+type XlsxModule = typeof import('xlsx')
+
+async function buildWorkbook(XLSX: XlsxModule, words: UserWord[]): Promise<WorkBook> {
   const rows: string[][] = [EXPORT_HEADERS as unknown as string[]]
 
   for (const word of words) {
@@ -165,8 +210,18 @@ export function exportVocabWorkbook(words: UserWord[]): XLSX.WorkBook {
   return workbook
 }
 
-export function downloadVocabWorkbook(words: UserWord[], filename = `生词库-${new Date().toISOString().slice(0, 10)}.xlsx`) {
-  const workbook = exportVocabWorkbook(words)
+/** 构建导出工作簿（不触发下载）。xlsx 库按需动态加载。 */
+export async function exportVocabWorkbook(words: UserWord[]): Promise<WorkBook> {
+  const XLSX = await import('xlsx')
+  return buildWorkbook(XLSX, words)
+}
+
+export async function downloadVocabWorkbook(
+  words: UserWord[],
+  filename = `生词库-${new Date().toISOString().slice(0, 10)}.xlsx`
+) {
+  const XLSX = await import('xlsx')
+  const workbook = await buildWorkbook(XLSX, words)
   const data = XLSX.write(workbook, { bookType: 'xlsx', type: 'array' })
   const blob = new Blob([data], {
     type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
@@ -180,7 +235,7 @@ export function downloadVocabWorkbook(words: UserWord[], filename = `生词库-$
 }
 
 export async function readVocabWorkbookFile(file: File): Promise<VocabImportResult> {
-  const buffer = await file.arrayBuffer()
+  const [XLSX, buffer] = await Promise.all([import('xlsx'), file.arrayBuffer()])
   const workbook = XLSX.read(buffer, { type: 'array' })
   return parseVocabWorkbook(workbook)
 }

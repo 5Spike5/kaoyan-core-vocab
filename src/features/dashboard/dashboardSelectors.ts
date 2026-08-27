@@ -1,4 +1,5 @@
 import type { ReviewLog, UserWord } from '../../types/domain'
+import { calculateStreakDays } from '../stats/statsSelectors'
 
 export type DashboardStats = {
   dueCount: number
@@ -24,6 +25,6 @@ export function selectDashboardStats(
     dueCount,
     newCount,
     accuracy,
-    streakDays: logs.length > 0 ? 1 : 0
+    streakDays: calculateStreakDays(logs, now)
   }
 }
