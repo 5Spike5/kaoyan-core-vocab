@@ -16,10 +16,13 @@ import { highlightTerm } from "../../lib/highlightTerm";
 import { speakWord, stopSpeech } from "../../lib/tts";
 import { runAutoCloudSync } from "../../repositories/cloudSync";
 import { createLocalRepository } from "../../repositories/localRepository";
-import type { UserWord } from "../../types/domain";
+import type { ReviewLog, UserWord } from "../../types/domain";
 import { lookupWithCache } from "../lookup/dictionaryApi";
 import { createDictionaryProvider } from "../lookup/dictionaryProvider";
-import { calculateTodayStudyMinutes } from "../stats/statsSelectors";
+import {
+  calculateTodayStudyMinutes,
+  newWordTermsToday,
+} from "../stats/statsSelectors";
 import { mergePublicAndUserWords } from "../vocab/vocabService";
 import {
   applyWordReview,
@@ -102,25 +105,27 @@ function shuffle<T>(items: T[]): T[] {
   return result;
 }
 
-function orderOptions(options: ReviewOption[], term: string) {
-  const offset = term.length % options.length;
-  return [...options.slice(offset), ...options.slice(0, offset)];
-}
-
 function buildDeck(
   words: UserWord[],
   mode: string,
-  goal: number,
   reviewLimit: number,
+  newWordBudget: number,
+  startedTerms: Set<string>,
 ): DeckItem[] {
   const meaningOf = (word: UserWord) => word.meanings[0]?.text ?? "";
   const hasMeaning = (word: UserWord) => Boolean(meaningOf(word));
 
   if (mode === "today") {
-    // 新词乱序学习：同一词的 3 遍分散穿插在队列各处，不连续出现
-    const newWords = shuffle(
-      words.filter((word) => word.status === "new" && hasMeaning(word)),
-    ).slice(0, goal);
+    const pool = words.filter((word) => word.status === "new" && hasMeaning(word));
+    // 今日已答过但未学满 3 遍的词优先回炉（已计入今日进度，不占新词名额）
+    const started = shuffle(
+      pool.filter((word) => startedTerms.has(word.normalizedTerm)),
+    );
+    // 全新词只发“今日剩余额度”，保证每天学的新词正好是目标数量
+    const fresh = shuffle(
+      pool.filter((word) => !startedTerms.has(word.normalizedTerm)),
+    ).slice(0, Math.max(0, newWordBudget));
+    const newWords = [...started, ...fresh];
     const rounds: DeckItem[] = [];
     for (const word of newWords) {
       for (let round = 0; round < NEW_WORD_ROUNDS; round += 1) {
@@ -214,6 +219,7 @@ export default function ReviewPage() {
   const mode = searchParams.get("mode") ?? "today";
 
   const [words, setWords] = useState<UserWord[]>([]);
+  const [logs, setLogs] = useState<ReviewLog[]>([]);
   const [loading, setLoading] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
@@ -244,8 +250,12 @@ export default function ReviewPage() {
   const loadWords = useCallback(async () => {
     const repository = createLocalRepository();
     try {
-      const userWords = await repository.listUserWords(LOCAL_USER_ID);
+      const [userWords, reviewLogs] = await Promise.all([
+        repository.listUserWords(LOCAL_USER_ID),
+        repository.listReviewLogs(LOCAL_USER_ID),
+      ]);
       setWords(mergePublicAndUserWords(publicVocab, userWords));
+      setLogs(reviewLogs);
     } finally {
       await repository.close();
     }
@@ -263,15 +273,38 @@ export default function ReviewPage() {
     };
   }, [loadWords]);
 
+  // 今日已学新词（按词去重）：用来计算剩余额度，保证一天学的新词不超过目标
+  const newWordTerms = useMemo(() => newWordTermsToday(logs), [logs]);
   const deck = useMemo(
     () =>
-      buildDeck(words, mode, goal, reviewLimit).filter(
-        (deckItem) => !removedWordIds.has(deckItem.word.id),
-      ),
-    [words, mode, goal, reviewLimit, removedWordIds],
+      buildDeck(
+        words,
+        mode,
+        reviewLimit,
+        isNewWordMode ? goal - newWordTerms.size : 0,
+        newWordTerms,
+      ).filter((deckItem) => !removedWordIds.has(deckItem.word.id)),
+    [words, mode, goal, reviewLimit, newWordTerms, removedWordIds, isNewWordMode],
   );
   const item = deck[currentIndex];
   const answered = selectedIndex !== null;
+
+  // 新词模式按“词”统计进度：一个词 3 遍全部答完才算学完 1 词
+  const deckWordCount = useMemo(
+    () => new Set(deck.map((deckItem) => deckItem.word.id)).size,
+    [deck],
+  );
+  const learnedWordCount = useMemo(() => {
+    const position = currentIndex + (answered ? 1 : 0);
+    const lastIndexOf = new Map<string, number>();
+    deck.forEach((deckItem, index) => {
+      lastIndexOf.set(
+        deckItem.word.id,
+        Math.max(lastIndexOf.get(deckItem.word.id) ?? -1, index),
+      );
+    });
+    return [...lastIndexOf.values()].filter((index) => index < position).length;
+  }, [answered, currentIndex, deck]);
 
   // 斩掉某词后，如果指针越界则回退到最后一个词
   useEffect(() => {
@@ -303,10 +336,7 @@ export default function ReviewPage() {
             term: word.meanings[0]!.text,
             meaning: word.term,
           }));
-    return orderOptions(
-      buildReviewOptions(current, candidates),
-      item.word.term,
-    );
+    return buildReviewOptions(current, candidates);
   }, [item, words]);
 
   const selectedOption = selectedIndex === null ? null : options[selectedIndex];
@@ -671,9 +701,15 @@ export default function ReviewPage() {
   }
 
   if (deck.length === 0) {
+    const goalReached =
+      mode === "today" &&
+      goal - newWordTerms.size <= 0 &&
+      words.some((word) => word.status === "new");
     const emptyMessage =
       mode === "today"
-        ? "今天没有新词了，明天再来巩固。"
+        ? goalReached
+          ? "今日目标已完成，明天再来学习新词。"
+          : "今天没有新词了，明天再来巩固。"
         : mode === "due"
           ? "暂时没有到期复习的单词。"
           : "还没有已学单词，先去「今日背诵」学习新词吧。";
@@ -709,6 +745,12 @@ export default function ReviewPage() {
           <p className="complete-subtitle">今天又完成了一组学习</p>
 
           <div className="complete-stats" aria-label="本次结果">
+            {isNewWordMode ? (
+              <div className="complete-stat">
+                <strong>{deckWordCount}</strong>
+                <span>单词</span>
+              </div>
+            ) : null}
             <div className="complete-stat correct">
               <strong>{correctCount}</strong>
               <span>正确</span>
@@ -719,7 +761,7 @@ export default function ReviewPage() {
             </div>
             <div className="complete-stat">
               <strong>{total}</strong>
-              <span>总数</span>
+              <span>{isNewWordMode ? "答题" : "总数"}</span>
             </div>
           </div>
 
@@ -742,7 +784,7 @@ export default function ReviewPage() {
 
           <p className="complete-note">
             {isNewWordMode
-              ? "新词已学完，明天记得回来复习"
+              ? "每个单词学习了 3 遍，明天记得回来复习"
               : "这些单词将在明天进入复习"}
           </p>
 
@@ -769,7 +811,9 @@ export default function ReviewPage() {
           <ArrowLeft size={18} aria-hidden="true" />
         </button>
         <div className="study-progress">
-          {currentIndex + 1} / {deck.length}
+          {isNewWordMode
+            ? `${learnedWordCount} / ${deckWordCount} 词`
+            : `${currentIndex + 1} / ${deck.length}`}
         </div>
         <div className="study-timer">
           <Clock size={14} aria-hidden="true" />

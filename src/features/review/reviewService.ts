@@ -109,7 +109,8 @@ export function buildReviewOptions(
     throw new Error("At least four distinct review options are required");
   }
 
-  return Array.from(options.values()).slice(0, 4);
+  // 最终整体打乱：正确选项的位置每次随机，避免同一词的答案位置固定
+  return shuffle(Array.from(options.values()).slice(0, 4));
 }
 
 export function rateReviewAnswer(input: ReviewAnswerInput): ReviewRating {

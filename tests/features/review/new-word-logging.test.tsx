@@ -21,7 +21,7 @@ describe("new-word answer logging", () => {
       </MemoryRouter>,
     );
 
-    expect(await screen.findByText(/1 \/ 180/)).toBeInTheDocument();
+    expect(await screen.findByText(/0 \/ 60 词/)).toBeInTheDocument();
 
     // 答 2 遍（未学完任何词）也应立即写入 2 条新词日志
     await user.click(optionButtons()[0]);

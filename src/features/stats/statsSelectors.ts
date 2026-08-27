@@ -91,10 +91,10 @@ export function recentActivity(
  * 今日目标进度：只统计新词学习，复习（mode="review"）不计入；按词去重（
  * 每遍作答都会写日志，同一词算一次）。旧日志没有 mode 标记时按新词计入。
  */
-export function countNewWordsToday(
+export function newWordTermsToday(
   logs: ReviewLog[],
   now = Date.now(),
-): number {
+): Set<string> {
   const dayStart = startOfToday(now);
   const seen = new Set<string>();
   for (const log of logs) {
@@ -102,5 +102,12 @@ export function countNewWordsToday(
       seen.add(log.normalizedTerm);
     }
   }
-  return seen.size;
+  return seen;
+}
+
+export function countNewWordsToday(
+  logs: ReviewLog[],
+  now = Date.now(),
+): number {
+  return newWordTermsToday(logs, now).size;
 }
