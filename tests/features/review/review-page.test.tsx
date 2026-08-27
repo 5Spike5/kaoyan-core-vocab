@@ -31,8 +31,8 @@ describe("ReviewPage", () => {
       </MemoryRouter>,
     );
 
-    // 每日目标 80 词 × 3 遍 = 240 题（3 遍随机穿插，不连续）
-    expect(await screen.findByText(/1 \/ 240/)).toBeInTheDocument();
+    // 每日目标 80 词；顶部进度按“词”统计（每词 3 遍随机穿插，不连续）
+    expect(await screen.findByText(/0 \/ 80 词/)).toBeInTheDocument();
     expect(screen.getByRole("heading", { level: 1 })).toBeInTheDocument();
     // 新词模式没有评分按钮
     expect(

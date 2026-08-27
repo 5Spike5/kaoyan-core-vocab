@@ -22,6 +22,27 @@ describe("review service", () => {
     expect(new Set(options.map((option) => option.meaning)).size).toBe(4);
   });
 
+  it("shuffles option order so the same word does not always look identical", () => {
+    const card = { term: "address", meaning: "处理，应对" };
+    const candidates = [
+      { term: "address", meaning: "处理，应对" },
+      { term: "fetch", meaning: "售得" },
+      { term: "bid", meaning: "出价" },
+      { term: "peak", meaning: "顶峰" },
+      { term: "gear", meaning: "齿轮" },
+    ];
+
+    const orders = new Set(
+      Array.from({ length: 24 }, () =>
+        buildReviewOptions(card, candidates)
+          .map((option) => option.meaning)
+          .join("|"),
+      ),
+    );
+
+    expect(orders.size).toBeGreaterThan(1);
+  });
+
   it("maps answer quality to an FSRS rating", () => {
     expect(rateReviewAnswer({ correct: true, attempts: 1 })).toBe("good");
     expect(rateReviewAnswer({ correct: true, attempts: 2 })).toBe("hard");
