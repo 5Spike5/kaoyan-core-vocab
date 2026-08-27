@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import AppShell from "../components/AppShell";
+import Onboarding from "../components/Onboarding";
 import { restoreSession } from "../features/auth/authService";
 import { runAutoCloudSync } from "../repositories/cloudSync";
 import { AppProviders } from "./providers";
@@ -24,6 +25,8 @@ export default function App() {
       <AppShell>
         <AppRoutes />
       </AppShell>
+      {/* 首次使用的三步引导（完成后写入 localStorage 不再出现） */}
+      <Onboarding />
     </AppProviders>
   );
 }

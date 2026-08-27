@@ -3,7 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4c6fff" />
+    <meta name="description" content="考研核心词汇学习：FSRS 复习调度、真题语料、每日目标打卡" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/icon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <title>研词 Core</title>
+    <script>
+      // 在样式加载前应用持久化的主题，避免深色模式闪白
+      (function () {
+        try {
+          var mode = localStorage.getItem("kaoyan-theme");
+          var dark =
+            mode === "dark" ||
+            ((mode === null || mode === "system") &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches);
+          document.documentElement.dataset.theme = dark ? "dark" : "light";
+          var accent = localStorage.getItem("kaoyan-accent");
+          if (accent) {
+            document.documentElement.dataset.accent = accent;
+          }
+          var size = Number(localStorage.getItem("kaoyan-word-size"));
+          if (size >= 28 && size <= 56) {
+            document.documentElement.style.setProperty("--word-main-size", size + "px");
+          }
+        } catch (error) {
+          /* 本地存储不可用时按默认浅色渲染 */
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

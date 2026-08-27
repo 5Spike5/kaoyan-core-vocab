@@ -110,6 +110,39 @@ export function recentActivity(
   return [...buckets.entries()].map(([date, count]) => ({ date, count }));
 }
 
+/** 最近 N 天的每日正确率（只返回有作答记录的天，用于趋势折线）。 */
+export function dailyAccuracy(
+  logs: ReviewLog[],
+  days = 14,
+  now = Date.now(),
+): Array<{ date: string; accuracy: number; total: number }> {
+  const dayStart = startOfToday(now);
+  const buckets = new Map<string, { correct: number; total: number }>();
+
+  for (let offset = days - 1; offset >= 0; offset -= 1) {
+    const date = dayStart - offset * 24 * 60 * 60 * 1000;
+    buckets.set(dayKey(date), { correct: 0, total: 0 });
+  }
+
+  for (const log of logs) {
+    const bucket = buckets.get(dayKey(log.reviewedAt));
+    if (bucket) {
+      bucket.total += 1;
+      if (log.answeredCorrectly) {
+        bucket.correct += 1;
+      }
+    }
+  }
+
+  return [...buckets.entries()]
+    .filter(([, value]) => value.total > 0)
+    .map(([date, value]) => ({
+      date,
+      accuracy: Math.round((value.correct / value.total) * 100),
+      total: value.total,
+    }));
+}
+
 /**
  * 今日目标进度：只统计新词学习，复习（mode="review"）不计入。
  * 旧日志没有 mode 标记时按新词计入，保证刷新页面后今日进度不丢失。

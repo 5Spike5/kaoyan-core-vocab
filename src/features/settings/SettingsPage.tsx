@@ -3,12 +3,23 @@ import {
   CloudOff,
   Database,
   Download,
+  Palette,
   RefreshCw,
   Trash2,
   Upload,
 } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { toast } from "../../components/Toast";
+import {
+  ACCENTS,
+  THEME_MODES,
+  getAccent,
+  getThemeMode,
+  setAccent,
+  setThemeMode,
+  type AccentName,
+  type ThemeMode,
+} from "../../lib/theme";
 import { getCurrentUser, signOut, subscribeToAuth } from "../auth/authService";
 import {
   parseLegacyBackup,
@@ -30,6 +41,8 @@ export default function SettingsPage() {
   const [lastSyncAt, setLastSyncAt] = useState<string | null>(() =>
     localStorage.getItem(LAST_SYNC_KEY),
   );
+  const [themeMode, setThemeModeState] = useState<ThemeMode>(getThemeMode);
+  const [accent, setAccentState] = useState<AccentName>(getAccent);
 
   useEffect(() => subscribeToAuth(() => setUser(getCurrentUser())), []);
 
@@ -151,6 +164,67 @@ export default function SettingsPage() {
       </div>
 
       <div className="settings-list">
+        <div className="settings-row">
+          <div className="settings-row-icon">
+            <Palette size={20} aria-hidden="true" />
+          </div>
+          <div className="settings-row-main">
+            <h2>外观</h2>
+            <p>深色模式适合夜间背单词，主题色随你心情。</p>
+            <div
+              className="appearance-options"
+              role="group"
+              aria-label="主题模式"
+            >
+              {THEME_MODES.map((item) => (
+                <button
+                  key={item.value}
+                  type="button"
+                  className={`appearance-btn ${
+                    themeMode === item.value ? "active" : ""
+                  }`}
+                  aria-pressed={themeMode === item.value}
+                  onClick={() => {
+                    setThemeMode(item.value);
+                    setThemeModeState(item.value);
+                  }}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
+            <div
+              className="appearance-options accent-row"
+              role="group"
+              aria-label="主题色"
+            >
+              {ACCENTS.map((item) => (
+                <button
+                  key={item.value}
+                  type="button"
+                  className={`accent-btn ${
+                    accent === item.value ? "active" : ""
+                  }`}
+                  aria-pressed={accent === item.value}
+                  aria-label={item.label}
+                  title={item.label}
+                  onClick={() => {
+                    setAccent(item.value);
+                    setAccentState(item.value);
+                  }}
+                >
+                  <span
+                    className="accent-dot"
+                    style={{ background: item.color }}
+                    aria-hidden="true"
+                  />
+                  {item.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+
         <div className="settings-row">
           <div className="settings-row-icon">
             {configured ? (

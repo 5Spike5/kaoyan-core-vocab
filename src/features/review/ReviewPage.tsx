@@ -3,23 +3,35 @@ import {
   ArrowRight,
   CheckCircle2,
   Clock,
+  Flame,
   Trash2,
   Volume2,
   XCircle,
 } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
+import Confetti from "../../components/Confetti";
+import EmptyState from "../../components/EmptyState";
+import { ReviewSkeleton } from "../../components/Skeleton";
 import { searchExamCorpus } from "../../data/corpusIndex";
 import { publicVocab } from "../../data/publicVocab";
 import { normalizeTerm } from "../../lib/normalizeTerm";
 import { highlightTerm } from "../../lib/highlightTerm";
 import { speakWord, stopSpeech } from "../../lib/tts";
+import {
+  WORD_SIZE_MAX,
+  WORD_SIZE_MIN,
+  WORD_SIZE_STEP,
+  getWordSize,
+  setWordSize,
+} from "../../lib/theme";
 import { runAutoCloudSync } from "../../repositories/cloudSync";
 import { createLocalRepository } from "../../repositories/localRepository";
 import type { ReviewLog, UserWord } from "../../types/domain";
 import { lookupWithCache } from "../lookup/dictionaryApi";
 import { createDictionaryProvider } from "../lookup/dictionaryProvider";
 import {
+  calculateStreakDays,
   calculateTodayStudyMinutes,
   newWordTermsToday,
 } from "../stats/statsSelectors";
@@ -246,10 +258,13 @@ export default function ReviewPage() {
   const [summary, setSummary] = useState<{
     todayMinutes: number;
     totalMinutes: number;
+    streakDays: number;
   } | null>(null);
   const [reviewLimit, setReviewLimit] = useState(loadReviewLimit);
   // 会话内动态追加的题目：新词巩固题 / 复习错词重排
   const [extraItems, setExtraItems] = useState<DeckItem[]>([]);
+  const [wordSize, setWordSizeState] = useState(getWordSize);
+  const [correctStreak, setCorrectStreak] = useState(0);
 
   // 新词模式：记录每个词 3 遍的整体对错与作答耗时，用于最后的 FSRS 评级
   const wordResultsRef = useRef(
@@ -458,11 +473,12 @@ export default function ReviewPage() {
           totalMinutes: Math.round(
             logs.reduce((total, log) => total + log.elapsedMs, 0) / 60000,
           ),
+          streakDays: calculateStreakDays(logs),
         });
       })
       .catch(() => {
         if (!cancelled) {
-          setSummary({ todayMinutes: 0, totalMinutes: 0 });
+          setSummary({ todayMinutes: 0, totalMinutes: 0, streakDays: 0 });
         }
       })
       .finally(() => {
@@ -695,8 +711,14 @@ export default function ReviewPage() {
       setSelectedIndex(index);
       if (options[index]?.isCorrect) {
         setCorrectCount((value) => value + 1);
+        setCorrectStreak((value) => value + 1);
       } else {
         setWrongCount((value) => value + 1);
+        setCorrectStreak(0);
+        // 移动端答错时轻震一下（不支持震动的环境静默忽略）
+        if (typeof navigator.vibrate === "function") {
+          navigator.vibrate(80);
+        }
       }
 
       // 答完自动展开真题例句（无论对错）；答错后自动展开所有选项释义方便对照，答对则收起
@@ -783,11 +805,7 @@ export default function ReviewPage() {
   });
 
   if (loading) {
-    return (
-      <section className="page review-page">
-        <p className="page-note">正在准备学习内容…</p>
-      </section>
-    );
+    return <ReviewSkeleton />;
   }
 
   if (deck.length === 0) {
@@ -805,17 +823,70 @@ export default function ReviewPage() {
           : "还没有已学单词，先去「今日背诵」学习新词吧。";
     return (
       <section className="page review-page">
-        <div className="complete-view">
-          <div className="complete-icon" aria-hidden="true">
-            <CheckCircle2 size={36} />
-          </div>
-          <h2 className="complete-title">没有可学习的内容</h2>
-          <p className="complete-subtitle">{emptyMessage}</p>
+        <EmptyState
+          title="没有可学习的内容"
+          description={emptyMessage}
+          illustration={
+            <svg
+              width="72"
+              height="72"
+              viewBox="0 0 72 72"
+              fill="none"
+              aria-hidden="true"
+            >
+              <rect
+                x="14"
+                y="10"
+                width="44"
+                height="52"
+                rx="6"
+                stroke="var(--color-line-strong)"
+                strokeWidth="2.5"
+              />
+              <line
+                x1="22"
+                y1="24"
+                x2="50"
+                y2="24"
+                stroke="var(--color-line-strong)"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+              />
+              <line
+                x1="22"
+                y1="34"
+                x2="44"
+                y2="34"
+                stroke="var(--color-line-strong)"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+              />
+              <circle cx="47" cy="48" r="12" fill="var(--color-primary-soft)" />
+              <path
+                d="M42 48l4 4 7-8"
+                stroke="var(--color-primary)"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          }
+        >
           <button type="button" className="btn-continue" onClick={handleExit}>
             返回首页
             <ArrowRight size={18} aria-hidden="true" />
           </button>
-        </div>
+          {mode !== "today" ? (
+            <button
+              type="button"
+              className="btn-continue"
+              onClick={() => navigate("/review?mode=today")}
+            >
+              去学新词
+              <ArrowRight size={18} aria-hidden="true" />
+            </button>
+          ) : null}
+        </EmptyState>
       </section>
     );
   }
@@ -825,6 +896,7 @@ export default function ReviewPage() {
     const accuracy = total === 0 ? 0 : Math.round((correctCount / total) * 100);
     return (
       <section className="page review-page" aria-labelledby="complete-title">
+        <Confetti />
         <div className="complete-view">
           <div className="complete-icon" aria-hidden="true">
             <CheckCircle2 size={36} />
@@ -832,7 +904,11 @@ export default function ReviewPage() {
           <h2 className="complete-title" id="complete-title">
             学习完成
           </h2>
-          <p className="complete-subtitle">今天又完成了一组学习</p>
+          <p className="complete-subtitle">
+            {isNewWordMode && (summary?.streakDays ?? 0) >= 2
+              ? `连续第 ${summary?.streakDays} 天达成目标，坚持的感觉不错吧`
+              : "今天又完成了一组学习"}
+          </p>
 
           <div className="complete-stats" aria-label="本次结果">
             {isNewWordMode ? (
@@ -910,6 +986,16 @@ export default function ReviewPage() {
           {formatTime(elapsed)}
         </div>
         <span className="pass-badge">{modeLabel}</span>
+        {correctStreak >= 3 ? (
+          <span
+            className="streak-badge"
+            title={`连对 ${correctStreak} 题`}
+            aria-label={`连对 ${correctStreak} 题`}
+          >
+            <Flame size={14} aria-hidden="true" />
+            ×{correctStreak}
+          </span>
+        ) : null}
       </div>
 
       {!isNewWordMode ? (
@@ -984,6 +1070,34 @@ export default function ReviewPage() {
               >
                 <Volume2 size={20} aria-hidden="true" />
               </button>
+              <div
+                className="size-controls"
+                role="group"
+                aria-label="单词字号调节"
+              >
+                <button
+                  type="button"
+                  className="size-btn"
+                  aria-label="减小字号"
+                  disabled={wordSize <= WORD_SIZE_MIN}
+                  onClick={() =>
+                    setWordSizeState(setWordSize(wordSize - WORD_SIZE_STEP))
+                  }
+                >
+                  A−
+                </button>
+                <button
+                  type="button"
+                  className="size-btn"
+                  aria-label="增大字号"
+                  disabled={wordSize >= WORD_SIZE_MAX}
+                  onClick={() =>
+                    setWordSizeState(setWordSize(wordSize + WORD_SIZE_STEP))
+                  }
+                >
+                  A+
+                </button>
+              </div>
             </div>
           </>
         )}
@@ -1035,6 +1149,11 @@ export default function ReviewPage() {
           );
         })}
       </div>
+
+      <p className="kbd-hint" aria-hidden="true">
+        键盘 <kbd>1</kbd>–<kbd>4</kbd> / <kbd>A</kbd>–<kbd>D</kbd> 选择答案 ·{" "}
+        <kbd>Enter</kbd> 下一题 · <kbd>Esc</kbd> 退出
+      </p>
 
       {!answered ? (
         <button

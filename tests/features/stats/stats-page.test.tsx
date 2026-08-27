@@ -37,7 +37,7 @@ describe('StatsPage', () => {
 
     expect(await screen.findByText(/今日学习/)).toBeInTheDocument()
     expect(screen.getByText(/已学单词/)).toBeInTheDocument()
-    expect(screen.getByText(/正确率/)).toBeInTheDocument()
+    expect(screen.getByText('正确率')).toBeInTheDocument()
     expect(screen.getByText(/待复习/)).toBeInTheDocument()
   })
 })

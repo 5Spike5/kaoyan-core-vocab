@@ -1,5 +1,7 @@
 import { Download, FileSpreadsheet, Upload, X } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import EmptyState from "../../components/EmptyState";
+import { ListSkeleton } from "../../components/Skeleton";
 import { toast } from "../../components/Toast";
 import { publicVocab } from "../../data/publicVocab";
 import {
@@ -261,7 +263,7 @@ export default function VocabListPage() {
       ) : null}
 
       {loading ? (
-        <p className="page-note">正在加载生词库…</p>
+        <ListSkeleton rows={8} />
       ) : (
         <ul className="vocab-list" aria-label="生词列表">
           {visibleWords.map((word, index) => (
@@ -290,7 +292,63 @@ export default function VocabListPage() {
       ) : null}
 
       {!loading && filteredWords.length === 0 ? (
-        <p className="page-note">没有符合条件的单词。</p>
+        <EmptyState
+          title="没有符合条件的单词"
+          description={
+            words.length === 0
+              ? "词库还是空的，去「今日背诵」开始学习，或在上方导入词汇。"
+              : "换个关键词或状态筛选试试。"
+          }
+          illustration={
+            <svg
+              width="72"
+              height="72"
+              viewBox="0 0 72 72"
+              fill="none"
+              aria-hidden="true"
+            >
+              <circle
+                cx="30"
+                cy="30"
+                r="18"
+                stroke="var(--color-line-strong)"
+                strokeWidth="2.5"
+              />
+              <line
+                x1="43"
+                y1="43"
+                x2="58"
+                y2="58"
+                stroke="var(--color-line-strong)"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+              />
+              <line
+                x1="22"
+                y1="30"
+                x2="38"
+                y2="30"
+                stroke="var(--color-primary)"
+                strokeWidth="3"
+                strokeLinecap="round"
+              />
+            </svg>
+          }
+        >
+          {words.length > 0 ? (
+            <button
+              type="button"
+              className="btn-continue"
+              onClick={() => {
+                setSearch("");
+                setStatusFilter("all");
+                setVisibleCount(PAGE_SIZE);
+              }}
+            >
+              清除筛选条件
+            </button>
+          ) : null}
+        </EmptyState>
       ) : null}
 
       {modal.open ? (

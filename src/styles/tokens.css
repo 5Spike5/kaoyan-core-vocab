@@ -46,4 +46,56 @@
     --font-sans:
         -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC",
         "PingFang SC", "HarmonyOS Sans SC", "Microsoft YaHei", sans-serif;
+    /* 复习页大词字号（可在页面内 A-/A+ 调节） */
+    --word-main-size: 40px;
+}
+
+/* 深色模式：由 lib/theme 在 <html data-theme="dark"> 上启用 */
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --color-bg: #0d1020;
+    --color-surface: #161a2e;
+    --color-surface-muted: #1c2138;
+    --color-line: #2a3050;
+    --color-line-strong: #3a4270;
+    --color-text: #e8eaf6;
+    --color-muted: #99a1c2;
+    --color-text-muted: #99a1c2;
+    --color-primary-soft: #26304f;
+    --color-primary-light: #1c2340;
+    --color-success-container: #123527;
+    --color-warning-container: #3a2c10;
+    --color-error-container: #3d1a18;
+    --shadow-sm: 0 1px 2px rgb(0 0 0 / 24%), 0 2px 8px rgb(0 0 0 / 24%);
+    --shadow-md: 0 2px 6px rgb(0 0 0 / 28%), 0 12px 32px rgb(0 0 0 / 36%);
+    --shadow-panel:
+        0 4px 12px rgb(0 0 0 / 32%), 0 24px 56px rgb(0 0 0 / 48%);
+}
+
+/* 主题色预设：由 lib/theme 在 <html data-accent="..."> 上启用 */
+:root[data-accent="violet"] {
+    --color-primary: #8b5cf6;
+    --color-primary-hover: #7c4ef0;
+    --color-primary-strong: #6d3fd1;
+    --color-accent: #8b5cf6;
+    --color-focus: #8b5cf6;
+    --shadow-primary: 0 8px 20px rgb(139 92 246 / 30%);
+}
+
+:root[data-accent="emerald"] {
+    --color-primary: #0e9f6e;
+    --color-primary-hover: #0b8f62;
+    --color-primary-strong: #0a7a54;
+    --color-accent: #0e9f6e;
+    --color-focus: #0e9f6e;
+    --shadow-primary: 0 8px 20px rgb(14 159 110 / 30%);
+}
+
+:root[data-accent="rose"] {
+    --color-primary: #e11d66;
+    --color-primary-hover: #cf0f57;
+    --color-primary-strong: #b30e4b;
+    --color-accent: #e11d66;
+    --color-focus: #e11d66;
+    --shadow-primary: 0 8px 20px rgb(225 29 102 / 30%);
 }

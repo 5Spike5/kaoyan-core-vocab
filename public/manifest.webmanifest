@@ -1,0 +1,24 @@
+{
+  "name": "研词 Core · 考研英语词汇系统",
+  "short_name": "研词 Core",
+  "description": "考研核心词汇学习：FSRS 复习调度、真题语料、每日目标打卡",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#eef2fa",
+  "theme_color": "#4c6fff",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

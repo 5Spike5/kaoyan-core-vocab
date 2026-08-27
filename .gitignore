@@ -9,3 +9,4 @@ dist/
 .reasonix/
 reasonix.toml
 *.local.json
+.workbuddy/
