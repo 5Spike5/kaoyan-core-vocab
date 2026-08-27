@@ -114,6 +114,7 @@ function buildDeck(
   mode: string,
   reviewLimit: number,
   newWordBudget: number,
+  newWordCap: number,
   startedTerms: Set<string>,
 ): DeckItem[] {
   const meaningOf = (word: UserWord) => word.meanings[0]?.text ?? "";
@@ -129,7 +130,9 @@ function buildDeck(
     const fresh = shuffle(
       pool.filter((word) => !startedTerms.has(word.normalizedTerm)),
     ).slice(0, Math.max(0, newWordBudget));
-    const newWords = [...started, ...fresh];
+    // 总量以每日目标硬性封顶：旧版本一天多次进入可能留下超额的半途词，
+    // 超出部分今天不再回炉（仍是新词，明天会重新发放）
+    const newWords = [...started, ...fresh].slice(0, newWordCap);
     const rounds: DeckItem[] = [];
     for (const word of newWords) {
       const resumed = startedTerms.has(word.normalizedTerm);
@@ -298,6 +301,7 @@ export default function ReviewPage() {
         mode,
         reviewLimit,
         isNewWordMode ? goal - newWordTerms.size : 0,
+        isNewWordMode ? goal : 0,
         newWordTerms,
       ).filter((deckItem) => !removedWordIds.has(deckItem.word.id)),
     [words, mode, goal, reviewLimit, newWordTerms, removedWordIds, isNewWordMode],
