@@ -19572,5 +19572,21527 @@ export const publicVocab = [
     ],
     "category": "核心词",
     "source": "legacy-data.js"
+  },
+  {
+    "key": "abandon",
+    "term": "abandon",
+    "normalizedTerm": "abandon",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "放弃，抛弃；⚡n. 尽兴，放纵（with ~）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "abstract",
+    "term": "abstract",
+    "normalizedTerm": "abstract",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "抽象的 n. 摘要；⚡v. 提取，抽取",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "accelerate",
+    "term": "accelerate",
+    "normalizedTerm": "accelerate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "加速，促进",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "access",
+    "term": "access",
+    "normalizedTerm": "access",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "通道；使用权 v. 获取；⚡have ~ to sth. 有机会使用",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "account",
+    "term": "account",
+    "normalizedTerm": "account",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "账户；描述；解释；⚡v.（~ for）解释；占比；take ~ of 考虑到",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "accurate",
+    "term": "accurate",
+    "normalizedTerm": "accurate",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "准确的，精确的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "achieve",
+    "term": "achieve",
+    "normalizedTerm": "achieve",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "实现，达到",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "adequate",
+    "term": "adequate",
+    "normalizedTerm": "adequate",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "足够的；胜任的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "adjust",
+    "term": "adjust",
+    "normalizedTerm": "adjust",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "调整，适应",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "administer",
+    "term": "administer",
+    "normalizedTerm": "administer",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "管理；施行；⚡v. 执行（法律、测试）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "adopt",
+    "term": "adopt",
+    "normalizedTerm": "adopt",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "采纳；收养；通过（决议）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "advocate",
+    "term": "advocate",
+    "normalizedTerm": "advocate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "提倡（后接 doing）n. 提倡者",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "affect",
+    "term": "affect",
+    "normalizedTerm": "affect",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "影响；感动；⚡v. 假装",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "alternative",
+    "term": "alternative",
+    "normalizedTerm": "alternative",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "替代方案 adj. 可替代的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ambiguous",
+    "term": "ambiguous",
+    "normalizedTerm": "ambiguous",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "模糊的，有歧义的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "analogy",
+    "term": "analogy",
+    "normalizedTerm": "analogy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "类比，类推",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "analyze",
+    "term": "analyze",
+    "normalizedTerm": "analyze",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "分析",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "anticipate",
+    "term": "anticipate",
+    "normalizedTerm": "anticipate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "预期；期望",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "anxiety",
+    "term": "anxiety",
+    "normalizedTerm": "anxiety",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "焦虑；渴望",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "apparent",
+    "term": "apparent",
+    "normalizedTerm": "apparent",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "显然的；⚡adj. 表面上的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "apply",
+    "term": "apply",
+    "normalizedTerm": "apply",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "申请；应用；适用于",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "appreciate",
+    "term": "appreciate",
+    "normalizedTerm": "appreciate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "感激；欣赏；升值；⚡v. 理解，意识到",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "approach",
+    "term": "approach",
+    "normalizedTerm": "approach",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "方法 v. 接近；⚡v. 处理，着手",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "appropriate",
+    "term": "appropriate",
+    "normalizedTerm": "appropriate",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "恰当的；⚡v. 挪用；拨款",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "approve",
+    "term": "approve",
+    "normalizedTerm": "approve",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "批准；赞成",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "argue",
+    "term": "argue",
+    "normalizedTerm": "argue",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "主张，认为；争论",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "arrange",
+    "term": "arrange",
+    "normalizedTerm": "arrange",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "安排，整理",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "articulate",
+    "term": "articulate",
+    "normalizedTerm": "articulate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "清晰表达 adj. 口齿清楚的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "aspect",
+    "term": "aspect",
+    "normalizedTerm": "aspect",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "方面；外观",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "asset",
+    "term": "asset",
+    "normalizedTerm": "asset",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "资产；⚡n.（人的）优势，宝贵之处",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "assist",
+    "term": "assist",
+    "normalizedTerm": "assist",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "协助",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "assume",
+    "term": "assume",
+    "normalizedTerm": "assume",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "假定；承担；呈现；⚡n. assumption 假设（真题高频）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "assure",
+    "term": "assure",
+    "normalizedTerm": "assure",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "保证，确保",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "attempt",
+    "term": "attempt",
+    "normalizedTerm": "attempt",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "尝试，企图",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "attend",
+    "term": "attend",
+    "normalizedTerm": "attend",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "出席；照料；⚡~ to 专心于，处理",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "attitude",
+    "term": "attitude",
+    "normalizedTerm": "attitude",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "态度，看法",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "attribute",
+    "term": "attribute",
+    "normalizedTerm": "attribute",
+    "meanings": [
+      {
+        "text": "v.（~ to）归因于 n. 属性",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "authority",
+    "term": "authority",
+    "normalizedTerm": "authority",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "权威；当局；⚡复数 authorities = 官方",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "automatic",
+    "term": "automatic",
+    "normalizedTerm": "automatic",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "自动的；无意识的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "available",
+    "term": "available",
+    "normalizedTerm": "available",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "可获得的；有空的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "aware",
+    "term": "aware",
+    "normalizedTerm": "aware",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "意识到的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "balance",
+    "term": "balance",
+    "normalizedTerm": "balance",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "平衡；余额",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "barrier",
+    "term": "barrier",
+    "normalizedTerm": "barrier",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "障碍；屏障",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "base",
+    "term": "base",
+    "normalizedTerm": "base",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "基础 v. 以…为基础；⚡n. 基地；本垒",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "behavior",
+    "term": "behavior",
+    "normalizedTerm": "behavior",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "行为，表现",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "benefit",
+    "term": "benefit",
+    "normalizedTerm": "benefit",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "好处 v. 有益于；⚡n.（复数）补贴，救济金",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "bias",
+    "term": "bias",
+    "normalizedTerm": "bias",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "偏见；⚡v. 使有偏见",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "boundary",
+    "term": "boundary",
+    "normalizedTerm": "boundary",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "边界；界限",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "brand",
+    "term": "brand",
+    "normalizedTerm": "brand",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "品牌 v. 打烙印于",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "budget",
+    "term": "budget",
+    "normalizedTerm": "budget",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "预算 v. 编制预算 adj. 廉价的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "burden",
+    "term": "burden",
+    "normalizedTerm": "burden",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "负担 v. 使负重",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "business",
+    "term": "business",
+    "normalizedTerm": "business",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "生意；事务；行业",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "campaign",
+    "term": "campaign",
+    "normalizedTerm": "campaign",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "运动；竞选活动 v. 发起运动",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "candidate",
+    "term": "candidate",
+    "normalizedTerm": "candidate",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "候选人；考生",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "capital",
+    "term": "capital",
+    "normalizedTerm": "capital",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "首都；资本；大写字母；⚡adj. 死刑的（capital punishment）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "capture",
+    "term": "capture",
+    "normalizedTerm": "capture",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "捕获；吸引；⚡v. 抢占（市场）；记录",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "career",
+    "term": "career",
+    "normalizedTerm": "career",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "职业，事业",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "challenge",
+    "term": "challenge",
+    "normalizedTerm": "challenge",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "挑战；⚡v. 质疑，反驳",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "channel",
+    "term": "channel",
+    "normalizedTerm": "channel",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "频道；渠道；海峡；⚡v. 引导，输送",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "character",
+    "term": "character",
+    "normalizedTerm": "character",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "性格；角色；汉字；⚡n. 人物塑造；品质",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "characteristic",
+    "term": "characteristic",
+    "normalizedTerm": "characteristic",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "特征 adj. 典型的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "charge",
+    "term": "charge",
+    "normalizedTerm": "charge",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "费用；指控 v. 收费；充电；⚡in ~ of 负责；free of ~ 免费",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "circumstance",
+    "term": "circumstance",
+    "normalizedTerm": "circumstance",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "环境，情况（常用复数）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "cite",
+    "term": "cite",
+    "normalizedTerm": "cite",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "引用；⚡v. 举例；传唤",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "civil",
+    "term": "civil",
+    "normalizedTerm": "civil",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "平民的；民事的；有礼貌的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "claim",
+    "term": "claim",
+    "normalizedTerm": "claim",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "声称；索赔；⚡n. 权利主张；断言（真题常考\"观点\"）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "clarify",
+    "term": "clarify",
+    "normalizedTerm": "clarify",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "澄清，阐明",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "classic",
+    "term": "classic",
+    "normalizedTerm": "classic",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "经典的；⚡adj. 典型的（a ~ mistake）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "client",
+    "term": "client",
+    "normalizedTerm": "client",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "客户，委托人",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "climate",
+    "term": "climate",
+    "normalizedTerm": "climate",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "气候；⚡n. 风气，氛围（investment ~）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "code",
+    "term": "code",
+    "normalizedTerm": "code",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "法典；代码；⚡n. 道德准则，行为规范",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "cognitive",
+    "term": "cognitive",
+    "normalizedTerm": "cognitive",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "认知的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "collaborate",
+    "term": "collaborate",
+    "normalizedTerm": "collaborate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "合作，协作",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "collapse",
+    "term": "collapse",
+    "normalizedTerm": "collapse",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "倒塌；崩溃；⚡v.（价格）暴跌；（体制）瓦解",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "combine",
+    "term": "combine",
+    "normalizedTerm": "combine",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "结合，联合",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "command",
+    "term": "command",
+    "normalizedTerm": "command",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "命令；指挥；⚡n. 掌握（a good ~ of English）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "comment",
+    "term": "comment",
+    "normalizedTerm": "comment",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "评论",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "commodity",
+    "term": "commodity",
+    "normalizedTerm": "commodity",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "商品，日用品",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "communicate",
+    "term": "communicate",
+    "normalizedTerm": "communicate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "交流；传达",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "community",
+    "term": "community",
+    "normalizedTerm": "community",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "社区；⚡n. 界，群体（the scientific ~）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "compact",
+    "term": "compact",
+    "normalizedTerm": "compact",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "紧凑的 n. 协议",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "company",
+    "term": "company",
+    "normalizedTerm": "company",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "公司；⚡n. 陪伴；同伴（in the ~ of）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "comparable",
+    "term": "comparable",
+    "normalizedTerm": "comparable",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "可比较的，比得上的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "compare",
+    "term": "compare",
+    "normalizedTerm": "compare",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "比较；比喻",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "compete",
+    "term": "compete",
+    "normalizedTerm": "compete",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "竞争",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "compile",
+    "term": "compile",
+    "normalizedTerm": "compile",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "编纂，汇编",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "complement",
+    "term": "complement",
+    "normalizedTerm": "complement",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "补充；⚡与 compliment（恭维）区分",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "complex",
+    "term": "complex",
+    "normalizedTerm": "complex",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "复杂的；⚡n. 综合体；情结",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "comply",
+    "term": "comply",
+    "normalizedTerm": "comply",
+    "meanings": [
+      {
+        "text": "v.（~ with）遵守",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "component",
+    "term": "component",
+    "normalizedTerm": "component",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "组成部分；零部件",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "compose",
+    "term": "compose",
+    "normalizedTerm": "compose",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "组成；创作；⚡be composed of 由…构成",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "comprehensive",
+    "term": "comprehensive",
+    "normalizedTerm": "comprehensive",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "全面的，综合的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "comprise",
+    "term": "comprise",
+    "normalizedTerm": "comprise",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "包含，构成",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "compute",
+    "term": "compute",
+    "normalizedTerm": "compute",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "计算",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "conceal",
+    "term": "conceal",
+    "normalizedTerm": "conceal",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "隐藏，隐瞒",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "concept",
+    "term": "concept",
+    "normalizedTerm": "concept",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "概念",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "concern",
+    "term": "concern",
+    "normalizedTerm": "concern",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "担忧；关切 v. 涉及；⚡be concerned with 与…有关；as far as…be concerned 就…而言",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "conclude",
+    "term": "conclude",
+    "normalizedTerm": "conclude",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "得出结论；缔结；⚡v. 结束",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "condition",
+    "term": "condition",
+    "normalizedTerm": "condition",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "条件；状况；⚡on ~ that 条件是；（复数）环境",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "conduct",
+    "term": "conduct",
+    "normalizedTerm": "conduct",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "进行；指挥 n. 行为；⚡n. 举止，品行",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "confer",
+    "term": "confer",
+    "normalizedTerm": "confer",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "授予；⚡~ with sb. 商讨，交换意见",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "confidence",
+    "term": "confidence",
+    "normalizedTerm": "confidence",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "信心；⚡n. 秘密（in ~）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "confine",
+    "term": "confine",
+    "normalizedTerm": "confine",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "限制；监禁",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "confirm",
+    "term": "confirm",
+    "normalizedTerm": "confirm",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "确认，证实",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "conflict",
+    "term": "conflict",
+    "normalizedTerm": "conflict",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "冲突",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "conform",
+    "term": "conform",
+    "normalizedTerm": "conform",
+    "meanings": [
+      {
+        "text": "v.（~ to）符合；遵从",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "confront",
+    "term": "confront",
+    "normalizedTerm": "confront",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "面对；对抗",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "confuse",
+    "term": "confuse",
+    "normalizedTerm": "confuse",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使困惑；混淆",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "connect",
+    "term": "connect",
+    "normalizedTerm": "connect",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "连接；联系",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "conscious",
+    "term": "conscious",
+    "normalizedTerm": "conscious",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "有意识的；⚡adj. 故意的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "consensus",
+    "term": "consensus",
+    "normalizedTerm": "consensus",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "共识",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "consequence",
+    "term": "consequence",
+    "normalizedTerm": "consequence",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "后果；⚡n. 重要性（of no ~ 不重要）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "conservative",
+    "term": "conservative",
+    "normalizedTerm": "conservative",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "保守的 n. 保守派",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "considerable",
+    "term": "considerable",
+    "normalizedTerm": "considerable",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "相当大的；⚡区别 considerate（体贴的）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "consistent",
+    "term": "consistent",
+    "normalizedTerm": "consistent",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "一致的；持续的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "consolidate",
+    "term": "consolidate",
+    "normalizedTerm": "consolidate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "巩固；合并",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "constant",
+    "term": "constant",
+    "normalizedTerm": "constant",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "持续不断的；恒定的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "constitute",
+    "term": "constitute",
+    "normalizedTerm": "constitute",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "构成；设立",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "constrain",
+    "term": "constrain",
+    "normalizedTerm": "constrain",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "限制，约束",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "constraint",
+    "term": "constraint",
+    "normalizedTerm": "constraint",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "约束，限制条件",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "construct",
+    "term": "construct",
+    "normalizedTerm": "construct",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "建造；⚡n. 构想，概念",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "consult",
+    "term": "consult",
+    "normalizedTerm": "consult",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "咨询；请教；查阅",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "consume",
+    "term": "consume",
+    "normalizedTerm": "consume",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "消耗；消费；⚡be consumed with 被…吞噬，满心是",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "contact",
+    "term": "contact",
+    "normalizedTerm": "contact",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "联系",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "contemporary",
+    "term": "contemporary",
+    "normalizedTerm": "contemporary",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "当代的；同时代的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "contend",
+    "term": "contend",
+    "normalizedTerm": "contend",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "主张；竞争；⚡v. 争辩，声称",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "contest",
+    "term": "contest",
+    "normalizedTerm": "contest",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "比赛；⚡v. 质疑，争辩",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "contract",
+    "term": "contract",
+    "normalizedTerm": "contract",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "合同 v. 收缩；⚡v. 感染（疾病）；订约",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "contradict",
+    "term": "contradict",
+    "normalizedTerm": "contradict",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "反驳；与…矛盾",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "contrast",
+    "term": "contrast",
+    "normalizedTerm": "contrast",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "对比；⚡by contrast 相比之下",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "contribute",
+    "term": "contribute",
+    "normalizedTerm": "contribute",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "贡献；⚡~ to 导致；有助于；投稿",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "controversy",
+    "term": "controversy",
+    "normalizedTerm": "controversy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "争议，争论",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "conventional",
+    "term": "conventional",
+    "normalizedTerm": "conventional",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "传统的；常规的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "convey",
+    "term": "convey",
+    "normalizedTerm": "convey",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "传达；运输",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "convince",
+    "term": "convince",
+    "normalizedTerm": "convince",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使信服",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "cooperate",
+    "term": "cooperate",
+    "normalizedTerm": "cooperate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "合作",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "coordinate",
+    "term": "coordinate",
+    "normalizedTerm": "coordinate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "协调 n. 坐标",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "copyright",
+    "term": "copyright",
+    "normalizedTerm": "copyright",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "版权",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "corporate",
+    "term": "corporate",
+    "normalizedTerm": "corporate",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "公司的；⚡adj. 整体的，共同的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "correspond",
+    "term": "correspond",
+    "normalizedTerm": "correspond",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "符合；通信；对应",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "cost",
+    "term": "cost",
+    "normalizedTerm": "cost",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "成本 v. 花费；⚡at the ~ of 以…为代价",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "council",
+    "term": "council",
+    "normalizedTerm": "council",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "委员会，理事会",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "counterpart",
+    "term": "counterpart",
+    "normalizedTerm": "counterpart",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "对应的人/物",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "court",
+    "term": "court",
+    "normalizedTerm": "court",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "法院；球场；⚡v. 讨好；追求；招致",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "crash",
+    "term": "crash",
+    "normalizedTerm": "crash",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "暴跌；坠毁",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "create",
+    "term": "create",
+    "normalizedTerm": "create",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "创造，造成",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "credit",
+    "term": "credit",
+    "normalizedTerm": "credit",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "信用；学分；⚡v. 归功于（~ sb. with）；n. 赞扬",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "criteria",
+    "term": "criteria",
+    "normalizedTerm": "criteria",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "标准（criterion 的复数）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "critic",
+    "term": "critic",
+    "normalizedTerm": "critic",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "批评家；⚡critical adj. 关键的；批判的；挑剔的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "curiosity",
+    "term": "curiosity",
+    "normalizedTerm": "curiosity",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "好奇（心）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "currency",
+    "term": "currency",
+    "normalizedTerm": "currency",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "货币；⚡n. 流传，通用",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "current",
+    "term": "current",
+    "normalizedTerm": "current",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "当前的 n. 水流；⚡n. 思潮，趋势",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "custom",
+    "term": "custom",
+    "normalizedTerm": "custom",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "习俗；⚡n. 海关；顾客惠顾",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "debate",
+    "term": "debate",
+    "normalizedTerm": "debate",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "辩论",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "decline",
+    "term": "decline",
+    "normalizedTerm": "decline",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "下降；衰退；⚡v. 婉拒，谢绝",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "dedicate",
+    "term": "dedicate",
+    "normalizedTerm": "dedicate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "奉献（~ to）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "define",
+    "term": "define",
+    "normalizedTerm": "define",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "定义；界定",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "demonstrate",
+    "term": "demonstrate",
+    "normalizedTerm": "demonstrate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "证明；演示；⚡v. 游行示威",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "deny",
+    "term": "deny",
+    "normalizedTerm": "deny",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "否认；⚡v. 拒绝给予",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "derive",
+    "term": "derive",
+    "normalizedTerm": "derive",
+    "meanings": [
+      {
+        "text": "v.（~ from）源自；⚡v. 推论出",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "design",
+    "term": "design",
+    "normalizedTerm": "design",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "设计；⚡n. 意图，图谋（by design 故意）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "despite",
+    "term": "despite",
+    "normalizedTerm": "despite",
+    "partOfSpeech": "prep.",
+    "meanings": [
+      {
+        "text": "尽管",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "device",
+    "term": "device",
+    "normalizedTerm": "device",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "设备；⚡n. 手段，策略（rhetorical ~）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "differ",
+    "term": "differ",
+    "normalizedTerm": "differ",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "不同；意见相左",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "dimension",
+    "term": "dimension",
+    "normalizedTerm": "dimension",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "尺寸；⚡n. 方面；维度",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "discipline",
+    "term": "discipline",
+    "normalizedTerm": "discipline",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "纪律；学科；⚡v. 惩戒，训练",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "discount",
+    "term": "discount",
+    "normalizedTerm": "discount",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "折扣；⚡v. 不全信，低估",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "display",
+    "term": "display",
+    "normalizedTerm": "display",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "展示；显露",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "dispute",
+    "term": "dispute",
+    "normalizedTerm": "dispute",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "争论；⚡v. 质疑（真实性）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "distinct",
+    "term": "distinct",
+    "normalizedTerm": "distinct",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "明显的；不同的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "distinguish",
+    "term": "distinguish",
+    "normalizedTerm": "distinguish",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "区分；使杰出",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "distribute",
+    "term": "distribute",
+    "normalizedTerm": "distribute",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "分配；分销",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "diverse",
+    "term": "diverse",
+    "normalizedTerm": "diverse",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "多样的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "document",
+    "term": "document",
+    "normalizedTerm": "document",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "文件；⚡v. 记录，用文件证明",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "domain",
+    "term": "domain",
+    "normalizedTerm": "domain",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "领域；域名",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "domestic",
+    "term": "domestic",
+    "normalizedTerm": "domestic",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "国内的；家庭的；⚡adj. 驯养的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "draft",
+    "term": "draft",
+    "normalizedTerm": "draft",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "草案 v. 起草；⚡n. 征兵；汇票",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "dynamic",
+    "term": "dynamic",
+    "normalizedTerm": "dynamic",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "动态的；⚡adj. 有活力的；n. 动力（复数）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "economy",
+    "term": "economy",
+    "normalizedTerm": "economy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "经济；节约；⚡adj. economical 经济实惠的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "emission",
+    "term": "emission",
+    "normalizedTerm": "emission",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "排放，排放物",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "emphasis",
+    "term": "emphasis",
+    "normalizedTerm": "emphasis",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "强调，重点（复数 emphases）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "enable",
+    "term": "enable",
+    "normalizedTerm": "enable",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使能够",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "engage",
+    "term": "engage",
+    "normalizedTerm": "engage",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "参与；吸引；雇用；⚡be engaged in 从事；~ sb. to do 使承诺",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ensure",
+    "term": "ensure",
+    "normalizedTerm": "ensure",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "确保",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "entity",
+    "term": "entity",
+    "normalizedTerm": "entity",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "实体",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "environment",
+    "term": "environment",
+    "normalizedTerm": "environment",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "环境",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "establish",
+    "term": "establish",
+    "normalizedTerm": "establish",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "建立；确立；证实",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "estimate",
+    "term": "estimate",
+    "normalizedTerm": "estimate",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "估计；⚡n. 估算书",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ethical",
+    "term": "ethical",
+    "normalizedTerm": "ethical",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "伦理的；道德的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "evaluate",
+    "term": "evaluate",
+    "normalizedTerm": "evaluate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "评估",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "evidence",
+    "term": "evidence",
+    "normalizedTerm": "evidence",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "证据；⚡in ~ of 作为…的证据",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "examine",
+    "term": "examine",
+    "normalizedTerm": "examine",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "检查；审查；考试",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "exceed",
+    "term": "exceed",
+    "normalizedTerm": "exceed",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "超过",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "exchange",
+    "term": "exchange",
+    "normalizedTerm": "exchange",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "交换；交流；交易所",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "exclude",
+    "term": "exclude",
+    "normalizedTerm": "exclude",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "排除",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "execute",
+    "term": "execute",
+    "normalizedTerm": "execute",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "执行；实施；⚡v. 处死",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "exhibit",
+    "term": "exhibit",
+    "normalizedTerm": "exhibit",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "展出；表现；⚡v. 显示出（特征）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "expand",
+    "term": "expand",
+    "normalizedTerm": "expand",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "扩大，扩张",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "expenditure",
+    "term": "expenditure",
+    "normalizedTerm": "expenditure",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "支出，花费",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "expertise",
+    "term": "expertise",
+    "normalizedTerm": "expertise",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "专业知识，专长",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "expose",
+    "term": "expose",
+    "normalizedTerm": "expose",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "暴露；使接触；⚡be exposed to 接触到；揭露",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "external",
+    "term": "external",
+    "normalizedTerm": "external",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "外部的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "extract",
+    "term": "extract",
+    "normalizedTerm": "extract",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "提取；榨取 n. 摘录",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "faculty",
+    "term": "faculty",
+    "normalizedTerm": "faculty",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "才能；全体教员；⚡n. 学院，系",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "facility",
+    "term": "facility",
+    "normalizedTerm": "facility",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "设施；⚡n. 熟练（with ~）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "factor",
+    "term": "factor",
+    "normalizedTerm": "factor",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "因素",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "feature",
+    "term": "feature",
+    "normalizedTerm": "feature",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "特征；⚡v. 以…为特色；n.（报纸）特写",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "federal",
+    "term": "federal",
+    "normalizedTerm": "federal",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "联邦的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "finance",
+    "term": "finance",
+    "normalizedTerm": "finance",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "财政；资金 v. 资助",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "focus",
+    "term": "focus",
+    "normalizedTerm": "focus",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "焦点 v. 集中",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "forecast",
+    "term": "forecast",
+    "normalizedTerm": "forecast",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "预测",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "formal",
+    "term": "formal",
+    "normalizedTerm": "formal",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "正式的；形式的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "formula",
+    "term": "formula",
+    "normalizedTerm": "formula",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "公式；配方；⚡n. 惯例，方案（复数 formulae）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fortune",
+    "term": "fortune",
+    "normalizedTerm": "fortune",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "财富；⚡n. 运气；make a ~ 发财",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "foundation",
+    "term": "foundation",
+    "normalizedTerm": "foundation",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "基础；基金会；⚡n. 建立",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "function",
+    "term": "function",
+    "normalizedTerm": "function",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "功能 v. 运行；⚡v. 起作用（~ as）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fund",
+    "term": "fund",
+    "normalizedTerm": "fund",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "基金 v. 资助",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fundamental",
+    "term": "fundamental",
+    "normalizedTerm": "fundamental",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "基本的，根本的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "global",
+    "term": "global",
+    "normalizedTerm": "global",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "全球的；全面的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "grant",
+    "term": "grant",
+    "normalizedTerm": "grant",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "授予；承认 n. 拨款；⚡take for ~ed 认为…理所当然",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "harness",
+    "term": "harness",
+    "normalizedTerm": "harness",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "利用（自然力）n. 马具",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "hazard",
+    "term": "hazard",
+    "normalizedTerm": "hazard",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "危险，隐患",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "hence",
+    "term": "hence",
+    "normalizedTerm": "hence",
+    "partOfSpeech": "adv.",
+    "meanings": [
+      {
+        "text": "因此；从此",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "highlight",
+    "term": "highlight",
+    "normalizedTerm": "highlight",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "强调，突出 n. 亮点",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "host",
+    "term": "host",
+    "normalizedTerm": "host",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "主人；主持人 v. 主办；⚡n.（生物）寄主；a ~ of 大量",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "identify",
+    "term": "identify",
+    "normalizedTerm": "identify",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "识别；确认；⚡~ with 认同",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ideology",
+    "term": "ideology",
+    "normalizedTerm": "ideology",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "意识形态",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "impact",
+    "term": "impact",
+    "normalizedTerm": "impact",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "影响；冲击",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "implement",
+    "term": "implement",
+    "normalizedTerm": "implement",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "实施 n. 工具",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "imply",
+    "term": "imply",
+    "normalizedTerm": "imply",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "暗示，意味着",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "impose",
+    "term": "impose",
+    "normalizedTerm": "impose",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "强加；征收（~ on）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "incidence",
+    "term": "incidence",
+    "normalizedTerm": "incidence",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "发生率",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "indicate",
+    "term": "indicate",
+    "normalizedTerm": "indicate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "表明；指示",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "individual",
+    "term": "individual",
+    "normalizedTerm": "individual",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "个人 adj. 个别的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "industrial",
+    "term": "industrial",
+    "normalizedTerm": "industrial",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "工业的；⚡industrialized 工业化的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "inflation",
+    "term": "inflation",
+    "normalizedTerm": "inflation",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "通货膨胀",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "influence",
+    "term": "influence",
+    "normalizedTerm": "influence",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "影响",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "initiate",
+    "term": "initiate",
+    "normalizedTerm": "initiate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "发起，开始",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "innovation",
+    "term": "innovation",
+    "normalizedTerm": "innovation",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "创新",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "install",
+    "term": "install",
+    "normalizedTerm": "install",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "安装；设置",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "intellectual",
+    "term": "intellectual",
+    "normalizedTerm": "intellectual",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "智力的 n. 知识分子",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "intelligent",
+    "term": "intelligent",
+    "normalizedTerm": "intelligent",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "智能的；聪明的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "intense",
+    "term": "intense",
+    "normalizedTerm": "intense",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "激烈的；强烈的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "interact",
+    "term": "interact",
+    "normalizedTerm": "interact",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "互动，相互作用",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "internal",
+    "term": "internal",
+    "normalizedTerm": "internal",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "内部的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "interpret",
+    "term": "interpret",
+    "normalizedTerm": "interpret",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "解释；口译；⚡interpretation n. 解读",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "intervene",
+    "term": "intervene",
+    "normalizedTerm": "intervene",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "干预；插话",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "investment",
+    "term": "investment",
+    "normalizedTerm": "investment",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "投资；⚡n. 值得投入的事物",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "involve",
+    "term": "involve",
+    "normalizedTerm": "involve",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "涉及；包含；使参与",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "issue",
+    "term": "issue",
+    "normalizedTerm": "issue",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "问题；期号 v. 发布；⚡v. 发放；n. 发行物",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "item",
+    "term": "item",
+    "normalizedTerm": "item",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "条目；物品；一条（新闻）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "journal",
+    "term": "journal",
+    "normalizedTerm": "journal",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "期刊；日记；⚡journalist n. 新闻记者",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "keep",
+    "term": "keep",
+    "normalizedTerm": "keep",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "保持；⚡~ pace with 跟上；~ track of 跟踪",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "knock",
+    "term": "knock",
+    "normalizedTerm": "knock",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "敲；⚡~ off 打折；~ out 淘汰",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "labor",
+    "term": "labor",
+    "normalizedTerm": "labor",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "劳动；劳动力 v. 劳作；⚡v. 苦干；Labor Party 工党",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "launch",
+    "term": "launch",
+    "normalizedTerm": "launch",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "发起；发射；推出（产品）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "legitimate",
+    "term": "legitimate",
+    "normalizedTerm": "legitimate",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "合法的；正当的；⚡v. 使合法化",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "license",
+    "term": "license",
+    "normalizedTerm": "license",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "执照 v. 许可",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "likely",
+    "term": "likely",
+    "normalizedTerm": "likely",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "可能的 adv. 很可能",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "logic",
+    "term": "logic",
+    "normalizedTerm": "logic",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "逻辑；⚡logical adj. 合理的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "lottery",
+    "term": "lottery",
+    "normalizedTerm": "lottery",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "彩票；⚡n. 靠运气的事",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "maintain",
+    "term": "maintain",
+    "normalizedTerm": "maintain",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "维持；坚持认为；保养；⚡v. 主张（观点）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "major",
+    "term": "major",
+    "normalizedTerm": "major",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "主要的 n. 专业 v.（~ in）主修；⚡n. 少校",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "measure",
+    "term": "measure",
+    "normalizedTerm": "measure",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "措施；测量 v. 测量；⚡n.（复数）办法；in some ~ 在某种程度上",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "media",
+    "term": "media",
+    "normalizedTerm": "media",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "媒体（medium 复数）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "medical",
+    "term": "medical",
+    "normalizedTerm": "medical",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "医学的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "mental",
+    "term": "mental",
+    "normalizedTerm": "mental",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "精神的；智力的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "method",
+    "term": "method",
+    "normalizedTerm": "method",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "方法",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "migrate",
+    "term": "migrate",
+    "normalizedTerm": "migrate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "迁移；移居；⚡migrant n. 移民；候鸟",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "moral",
+    "term": "moral",
+    "normalizedTerm": "moral",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "道德的 n. 寓意；⚡morale n. 士气",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "motive",
+    "term": "motive",
+    "normalizedTerm": "motive",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "动机；⚡motivate v. 激励",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "mutual",
+    "term": "mutual",
+    "normalizedTerm": "mutual",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "相互的；共同的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "negotiate",
+    "term": "negotiate",
+    "normalizedTerm": "negotiate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "谈判；协商；⚡v. 顺利通过（negotiate a turn）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "notorious",
+    "term": "notorious",
+    "normalizedTerm": "notorious",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "臭名昭著的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "nurture",
+    "term": "nurture",
+    "normalizedTerm": "nurture",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "培养；养育",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "objective",
+    "term": "objective",
+    "normalizedTerm": "objective",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "目标 adj. 客观的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "obligation",
+    "term": "obligation",
+    "normalizedTerm": "obligation",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "义务，责任",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "observe",
+    "term": "observe",
+    "normalizedTerm": "observe",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "观察；遵守；⚡v. 评论，评述；庆祝",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "obtain",
+    "term": "obtain",
+    "normalizedTerm": "obtain",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "获得",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "occupy",
+    "term": "occupy",
+    "normalizedTerm": "occupy",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "占据；⚡~ oneself with 忙于",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "occur",
+    "term": "occur",
+    "normalizedTerm": "occur",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "发生；出现；⚡~ to sb. 想到",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "operate",
+    "term": "operate",
+    "normalizedTerm": "operate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "运营；操作；手术",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "opinion",
+    "term": "opinion",
+    "normalizedTerm": "opinion",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "意见；⚡opinion poll 民意调查",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "opportunity",
+    "term": "opportunity",
+    "normalizedTerm": "opportunity",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "机会",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "oppose",
+    "term": "oppose",
+    "normalizedTerm": "oppose",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "反对；⚡as opposed to 与…相对",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "option",
+    "term": "option",
+    "normalizedTerm": "option",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "选项；选择权；⚡n.（金融）期权",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "organize",
+    "term": "organize",
+    "normalizedTerm": "organize",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "组织",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "origin",
+    "term": "origin",
+    "normalizedTerm": "origin",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "起源；⚡original adj. 独创的；originality n. 独创性",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "outcome",
+    "term": "outcome",
+    "normalizedTerm": "outcome",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "结果",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "output",
+    "term": "output",
+    "normalizedTerm": "output",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "产量；输出",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "overcome",
+    "term": "overcome",
+    "normalizedTerm": "overcome",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "克服",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "overlap",
+    "term": "overlap",
+    "normalizedTerm": "overlap",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "重叠；交叠处",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "panel",
+    "term": "panel",
+    "normalizedTerm": "panel",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "专家组；面板；⚡n. 专门小组",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "participate",
+    "term": "participate",
+    "normalizedTerm": "participate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "参与（~ in）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "partner",
+    "term": "partner",
+    "normalizedTerm": "partner",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "合伙人；搭档 v. 合作",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pattern",
+    "term": "pattern",
+    "normalizedTerm": "pattern",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "模式；图案",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "perceive",
+    "term": "perceive",
+    "normalizedTerm": "perceive",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "感知；认为",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "performance",
+    "term": "performance",
+    "normalizedTerm": "performance",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "表现；绩效；演出",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "period",
+    "term": "period",
+    "normalizedTerm": "period",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "时期；⚡n. 句号；周期",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "permanent",
+    "term": "permanent",
+    "normalizedTerm": "permanent",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "永久的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "perspective",
+    "term": "perspective",
+    "normalizedTerm": "perspective",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "观点，视角",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "physical",
+    "term": "physical",
+    "normalizedTerm": "physical",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "身体的；物质的；⚡adj. 物理的；实物的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "policy",
+    "term": "policy",
+    "normalizedTerm": "policy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "政策；保险单",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "potential",
+    "term": "potential",
+    "normalizedTerm": "potential",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "潜在的 n. 潜力",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "poverty",
+    "term": "poverty",
+    "normalizedTerm": "poverty",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "贫困",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "practice",
+    "term": "practice",
+    "normalizedTerm": "practice",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "实践；惯例；⚡n. 惯常做法（common ~）；v. 执业",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "predict",
+    "term": "predict",
+    "normalizedTerm": "predict",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "预测",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "premium",
+    "term": "premium",
+    "normalizedTerm": "premium",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "保费；溢价 adj. 优质的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "prescribe",
+    "term": "prescribe",
+    "normalizedTerm": "prescribe",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "开处方；⚡v. 规定，指定",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "presence",
+    "term": "presence",
+    "normalizedTerm": "presence",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "存在；⚡n. 出席；影响力",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "preserve",
+    "term": "preserve",
+    "normalizedTerm": "preserve",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "保存；保护；⚡n. 禁猎地；专属领域",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pressure",
+    "term": "pressure",
+    "normalizedTerm": "pressure",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "压力；压强；⚡v. 施压",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "previous",
+    "term": "previous",
+    "normalizedTerm": "previous",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "先前的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "primary",
+    "term": "primary",
+    "normalizedTerm": "primary",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "主要的；初级的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "principle",
+    "term": "principle",
+    "normalizedTerm": "principle",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "原则；原理；⚡区别 principal（校长；主要的）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "prior",
+    "term": "prior",
+    "normalizedTerm": "prior",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "在先的；⚡~ to 在…之前；priority n. 优先事项",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "privacy",
+    "term": "privacy",
+    "normalizedTerm": "privacy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "隐私",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "procedure",
+    "term": "procedure",
+    "normalizedTerm": "procedure",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "程序，步骤",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "process",
+    "term": "process",
+    "normalizedTerm": "process",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "过程 v. 处理；加工",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "produce",
+    "term": "produce",
+    "normalizedTerm": "produce",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "生产 n. 产品；⚡n.（集合名词）农产品",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "profile",
+    "term": "profile",
+    "normalizedTerm": "profile",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "简况；轮廓；⚡v. 概述；n. 姿态（high ~）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "project",
+    "term": "project",
+    "normalizedTerm": "project",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "项目 v. 预测；⚡v. 投射；放映",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "promote",
+    "term": "promote",
+    "normalizedTerm": "promote",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "促进；提拔；推销",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "proof",
+    "term": "proof",
+    "normalizedTerm": "proof",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "证据；⚡adj. 防…的（water-~）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "property",
+    "term": "property",
+    "normalizedTerm": "property",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "财产；房产；⚡n. 特性",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "proportion",
+    "term": "proportion",
+    "normalizedTerm": "proportion",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "比例；部分",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "proposal",
+    "term": "proposal",
+    "normalizedTerm": "proposal",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "提案，建议",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "prospect",
+    "term": "prospect",
+    "normalizedTerm": "prospect",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "前景（复数）；⚡n. 可能性；潜在客户",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "protocol",
+    "term": "protocol",
+    "normalizedTerm": "protocol",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "协议；规程；⚡n. 礼仪；治疗方案",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "provide",
+    "term": "provide",
+    "normalizedTerm": "provide",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "提供；⚡~ for 为…做准备；规定",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "publish",
+    "term": "publish",
+    "normalizedTerm": "publish",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "出版；发表；⚡publishing n. 出版业",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pursue",
+    "term": "pursue",
+    "normalizedTerm": "pursue",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "追求；从事；⚡pursuit n. 追求（in ~ of）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "qualify",
+    "term": "qualify",
+    "normalizedTerm": "qualify",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使合格；⚡qualifier n. 限定词；qualified adj. 有资格的；有保留的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "question",
+    "term": "question",
+    "normalizedTerm": "question",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "问题 v. 质疑；⚡v. 审问；questionnaire n. 问卷",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "quote",
+    "term": "quote",
+    "normalizedTerm": "quote",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "引用 n. 报价",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "radical",
+    "term": "radical",
+    "normalizedTerm": "radical",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "激进的；根本的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "rational",
+    "term": "rational",
+    "normalizedTerm": "rational",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "理性的；合理的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "react",
+    "term": "react",
+    "normalizedTerm": "react",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "反应；起化学反应",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "readily",
+    "term": "readily",
+    "normalizedTerm": "readily",
+    "partOfSpeech": "adv.",
+    "meanings": [
+      {
+        "text": "容易地；乐意地",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reality",
+    "term": "reality",
+    "normalizedTerm": "reality",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "现实；⚡in ~ 实际上",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reason",
+    "term": "reason",
+    "normalizedTerm": "reason",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "原因；理性 v. 推理；⚡reasonable adj. 合理的；不错的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "receive",
+    "term": "receive",
+    "normalizedTerm": "receive",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "收到；接待",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "recognize",
+    "term": "recognize",
+    "normalizedTerm": "recognize",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "认出；承认；认可",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "recommend",
+    "term": "recommend",
+    "normalizedTerm": "recommend",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "推荐；建议",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reduce",
+    "term": "reduce",
+    "normalizedTerm": "reduce",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "减少；使陷入；⚡~ to 沦为；简化为",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reform",
+    "term": "reform",
+    "normalizedTerm": "reform",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "改革",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reinforce",
+    "term": "reinforce",
+    "normalizedTerm": "reinforce",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "加强，强化",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reject",
+    "term": "reject",
+    "normalizedTerm": "reject",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "拒绝；排斥",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reliable",
+    "term": "reliable",
+    "normalizedTerm": "reliable",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "可靠的；⚡reliance n. 依赖（~ on）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "rely",
+    "term": "rely",
+    "normalizedTerm": "rely",
+    "meanings": [
+      {
+        "text": "v.（~ on）依赖",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "remarkable",
+    "term": "remarkable",
+    "normalizedTerm": "remarkable",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "显著的，非凡的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "represent",
+    "term": "represent",
+    "normalizedTerm": "represent",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "代表；描绘；意味着",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reputation",
+    "term": "reputation",
+    "normalizedTerm": "reputation",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "名声",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "require",
+    "term": "require",
+    "normalizedTerm": "require",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "需要；要求",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "research",
+    "term": "research",
+    "normalizedTerm": "research",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "研究",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reside",
+    "term": "reside",
+    "normalizedTerm": "reside",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "居住；⚡~ in 存在于；resident n. 居民",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "resolve",
+    "term": "resolve",
+    "normalizedTerm": "resolve",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "解决；决定；⚡n. 决心",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "resource",
+    "term": "resource",
+    "normalizedTerm": "resource",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "资源；才智",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "respond",
+    "term": "respond",
+    "normalizedTerm": "respond",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "回应；⚡response n. 反应（in ~ to）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "retain",
+    "term": "retain",
+    "normalizedTerm": "retain",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "保留；留住",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reveal",
+    "term": "reveal",
+    "normalizedTerm": "reveal",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "揭示；透露",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "revenue",
+    "term": "revenue",
+    "normalizedTerm": "revenue",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "收入，税收",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reverse",
+    "term": "reverse",
+    "normalizedTerm": "reverse",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "逆转 adj. 相反的 n. 反面；⚡n. 挫折；in ~ 相反地",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "review",
+    "term": "review",
+    "normalizedTerm": "review",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "评论；审查；复习",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "revise",
+    "term": "revise",
+    "normalizedTerm": "revise",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "修改；复习",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "role",
+    "term": "role",
+    "normalizedTerm": "role",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "角色；作用",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "rule",
+    "term": "rule",
+    "normalizedTerm": "rule",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "规则；统治 v. 统治；⚡v. 裁决（~ that）；out of the ~ 排除",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ruling",
+    "term": "ruling",
+    "normalizedTerm": "ruling",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "裁决 adj. 统治的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "satisfy",
+    "term": "satisfy",
+    "normalizedTerm": "satisfy",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "满足；⚡satisfaction n. 赔偿；令人满足的事",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "scale",
+    "term": "scale",
+    "normalizedTerm": "scale",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "规模；等级 v. 攀登；⚡v. 缩放；on a large ~ 大规模地",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "scenario",
+    "term": "scenario",
+    "normalizedTerm": "scenario",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "情景，设想",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "schedule",
+    "term": "schedule",
+    "normalizedTerm": "schedule",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "计划表 v. 安排",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "scheme",
+    "term": "scheme",
+    "normalizedTerm": "scheme",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "计划；方案；⚡n.（英）体系；阴谋",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "score",
+    "term": "score",
+    "normalizedTerm": "score",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "分数；二十 v. 得分；⚡n. 配乐；scores of 许多",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "screen",
+    "term": "screen",
+    "normalizedTerm": "screen",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "屏幕 v. 筛查；⚡v. 放映；遮挡",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "secure",
+    "term": "secure",
+    "normalizedTerm": "secure",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "安全的 v. 获得；保护；⚡v. 拿到（资源、职位）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "seek",
+    "term": "seek",
+    "normalizedTerm": "seek",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "寻求；⚡seek to do 试图做",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "select",
+    "term": "select",
+    "normalizedTerm": "select",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "选择；⚡selective adj. 挑剔的；选择性的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "shift",
+    "term": "shift",
+    "normalizedTerm": "shift",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "转变；轮班",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "significant",
+    "term": "significant",
+    "normalizedTerm": "significant",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "重要的；显著的；⚡significance n. 意义",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "similar",
+    "term": "similar",
+    "normalizedTerm": "similar",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "相似的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "solution",
+    "term": "solution",
+    "normalizedTerm": "solution",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "解决方案；溶液",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "source",
+    "term": "source",
+    "normalizedTerm": "source",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "来源；⚡v. 采购（~ from）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "specific",
+    "term": "specific",
+    "normalizedTerm": "specific",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "具体的；特定的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "specify",
+    "term": "specify",
+    "normalizedTerm": "specify",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "明确规定",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "spectrum",
+    "term": "spectrum",
+    "normalizedTerm": "spectrum",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "光谱；范围",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sponsor",
+    "term": "sponsor",
+    "normalizedTerm": "sponsor",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "赞助商 v. 赞助；⚡v. 提案支持",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stake",
+    "term": "stake",
+    "normalizedTerm": "stake",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "股份；赌注；⚡at ~ 处于危险中；stakeholder n. 利益相关方",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "standard",
+    "term": "standard",
+    "normalizedTerm": "standard",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "标准 adj. 标准的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "status",
+    "term": "status",
+    "normalizedTerm": "status",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "地位；身份；状况",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stress",
+    "term": "stress",
+    "normalizedTerm": "stress",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "压力；重音 v. 强调；⚡v. 强调（观点）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "structure",
+    "term": "structure",
+    "normalizedTerm": "structure",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "结构 v. 构筑",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "subject",
+    "term": "subject",
+    "normalizedTerm": "subject",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "主题；学科；受试者 v. 使遭受；⚡adj.（~ to）易受…影响的；取决于",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "subsequent",
+    "term": "subsequent",
+    "normalizedTerm": "subsequent",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "随后的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "subsidy",
+    "term": "subsidy",
+    "normalizedTerm": "subsidy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "补贴（复数 subsidies）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "substitute",
+    "term": "substitute",
+    "normalizedTerm": "substitute",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "替代品 v. 替换；⚡~ A for B 用 A 替换 B",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "succeed",
+    "term": "succeed",
+    "normalizedTerm": "succeed",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "成功；继任；⚡succession n. 连续；继承",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sufficient",
+    "term": "sufficient",
+    "normalizedTerm": "sufficient",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "足够的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "suggest",
+    "term": "suggest",
+    "normalizedTerm": "suggest",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "建议（虚拟）；暗示",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sum",
+    "term": "sum",
+    "normalizedTerm": "sum",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "总数；金额；⚡~ up 总结；in ~ 总之",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "survey",
+    "term": "survey",
+    "normalizedTerm": "survey",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "调查；测绘",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sustain",
+    "term": "sustain",
+    "normalizedTerm": "sustain",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "维持；承受；⚡sustainable adj. 可持续的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "target",
+    "term": "target",
+    "normalizedTerm": "target",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "目标 v. 瞄准",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "technique",
+    "term": "technique",
+    "normalizedTerm": "technique",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "技术；技巧",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "technology",
+    "term": "technology",
+    "normalizedTerm": "technology",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "技术",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "temporary",
+    "term": "temporary",
+    "normalizedTerm": "temporary",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "临时的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tend",
+    "term": "tend",
+    "normalizedTerm": "tend",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "倾向于；⚡v. 照管；tendency n. 趋势",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "term",
+    "term": "term",
+    "normalizedTerm": "term",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "术语；学期；条款 v. 称为；⚡in ~s of 就…而言；in the long ~ 长期",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "territory",
+    "term": "territory",
+    "normalizedTerm": "territory",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "领土；⚡n. 领域",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "theme",
+    "term": "theme",
+    "normalizedTerm": "theme",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "主题",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "theory",
+    "term": "theory",
+    "normalizedTerm": "theory",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "理论；⚡in theory 理论上；theoretical adj. 空谈的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "therapy",
+    "term": "therapy",
+    "normalizedTerm": "therapy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "治疗；心理治疗",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "threshold",
+    "term": "threshold",
+    "normalizedTerm": "threshold",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "门槛；临界点",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "thus",
+    "term": "thus",
+    "normalizedTerm": "thus",
+    "partOfSpeech": "adv.",
+    "meanings": [
+      {
+        "text": "因此；如此",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "topic",
+    "term": "topic",
+    "normalizedTerm": "topic",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "话题",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "track",
+    "term": "track",
+    "normalizedTerm": "track",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "轨道；踪迹 v. 追踪；⚡~ record 业绩记录；keep ~ of 掌握动态",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "trade",
+    "term": "trade",
+    "normalizedTerm": "trade",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "贸易；行业 v. 交易；⚡trade off 权衡（trade-off）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tradition",
+    "term": "tradition",
+    "normalizedTerm": "tradition",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "传统；⚡traditional/traditionally 派生",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "transfer",
+    "term": "transfer",
+    "normalizedTerm": "transfer",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "转移；调动；转账",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "transform",
+    "term": "transform",
+    "normalizedTerm": "transform",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "转变，改造",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "transition",
+    "term": "transition",
+    "normalizedTerm": "transition",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "过渡",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "transmit",
+    "term": "transmit",
+    "normalizedTerm": "transmit",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "传输；传播；⚡transmission n. 传播；变速器",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "transport",
+    "term": "transport",
+    "normalizedTerm": "transport",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "运输；⚡transportation n. 运输业",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "trend",
+    "term": "trend",
+    "normalizedTerm": "trend",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "趋势",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "trigger",
+    "term": "trigger",
+    "normalizedTerm": "trigger",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "引发 n. 扳机；诱因",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "typical",
+    "term": "typical",
+    "normalizedTerm": "typical",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "典型的；⚡typically adv. 通常",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ultimate",
+    "term": "ultimate",
+    "normalizedTerm": "ultimate",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "最终的；⚡n. 最好的事物（the ~ in sth.）",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "undergo",
+    "term": "undergo",
+    "normalizedTerm": "undergo",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "经历，承受",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "undertake",
+    "term": "undertake",
+    "normalizedTerm": "undertake",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "承担；着手做",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "uniform",
+    "term": "uniform",
+    "normalizedTerm": "uniform",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "制服；⚡adj. 统一的，一致的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "unify",
+    "term": "unify",
+    "normalizedTerm": "unify",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "统一",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "unique",
+    "term": "unique",
+    "normalizedTerm": "unique",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "独特的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "universal",
+    "term": "universal",
+    "normalizedTerm": "universal",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "普遍的；通用的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "update",
+    "term": "update",
+    "normalizedTerm": "update",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "更新；⚡news update 最新消息",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "upgrade",
+    "term": "upgrade",
+    "normalizedTerm": "upgrade",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "升级",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "urban",
+    "term": "urban",
+    "normalizedTerm": "urban",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "城市的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "urge",
+    "term": "urge",
+    "normalizedTerm": "urge",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "敦促 n. 强烈欲望",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "usage",
+    "term": "usage",
+    "normalizedTerm": "usage",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "用法；使用",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "valid",
+    "term": "valid",
+    "normalizedTerm": "valid",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "有效的；有根据的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "value",
+    "term": "value",
+    "normalizedTerm": "value",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "价值 v. 重视；⚡values n. 价值观；valuable adj. 宝贵的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "vary",
+    "term": "vary",
+    "normalizedTerm": "vary",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "变化；⚡~ from...to... 各不相同；various adj. 各种各样的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "venture",
+    "term": "venture",
+    "normalizedTerm": "venture",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "风险投资 v. 冒险；⚡joint ~ 合资企业",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "verify",
+    "term": "verify",
+    "normalizedTerm": "verify",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "核实",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "version",
+    "term": "version",
+    "normalizedTerm": "version",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "版本；说法",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "vessel",
+    "term": "vessel",
+    "normalizedTerm": "vessel",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "船；容器；⚡n. 血管",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "veteran",
+    "term": "veteran",
+    "normalizedTerm": "veteran",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "老兵；⚡n. 资深人士",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "via",
+    "term": "via",
+    "normalizedTerm": "via",
+    "partOfSpeech": "prep.",
+    "meanings": [
+      {
+        "text": "通过，经由",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "violate",
+    "term": "violate",
+    "normalizedTerm": "violate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "违反；侵犯",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "visible",
+    "term": "visible",
+    "normalizedTerm": "visible",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "可见的",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "volume",
+    "term": "volume",
+    "normalizedTerm": "volume",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "体积；音量；⚡n. 销售量；卷，册",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "welfare",
+    "term": "welfare",
+    "normalizedTerm": "welfare",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "福利；幸福",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "whereas",
+    "term": "whereas",
+    "normalizedTerm": "whereas",
+    "partOfSpeech": "conj.",
+    "meanings": [
+      {
+        "text": "然而，鉴于",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "witness",
+    "term": "witness",
+    "normalizedTerm": "witness",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "目击；见证 n. 证人；⚡v.（时期）经历；n. 证据",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "workforce",
+    "term": "workforce",
+    "normalizedTerm": "workforce",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "劳动力，员工总数",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "yield",
+    "term": "yield",
+    "normalizedTerm": "yield",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "产出；让步 n. 产量；⚡~ to 屈服；n. 收益率",
+        "source": "curated"
+      }
+    ],
+    "category": "最高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "abide",
+    "term": "abide",
+    "normalizedTerm": "abide",
+    "meanings": [
+      {
+        "text": "v.（~ by）遵守；忍受",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "abrupt",
+    "term": "abrupt",
+    "normalizedTerm": "abrupt",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "突然的；生硬的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "absence",
+    "term": "absence",
+    "normalizedTerm": "absence",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "缺席；缺乏；⚡in the ~ of 缺少",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "absolute",
+    "term": "absolute",
+    "normalizedTerm": "absolute",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "绝对的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "abundant",
+    "term": "abundant",
+    "normalizedTerm": "abundant",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "丰富的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "abuse",
+    "term": "abuse",
+    "normalizedTerm": "abuse",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "滥用；虐待",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "academy",
+    "term": "academy",
+    "normalizedTerm": "academy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "学院；研究院",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "acceptance",
+    "term": "acceptance",
+    "normalizedTerm": "acceptance",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "接受；认可",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "accidental",
+    "term": "accidental",
+    "normalizedTerm": "accidental",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "偶然的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "accountant",
+    "term": "accountant",
+    "normalizedTerm": "accountant",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "会计",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "accuse",
+    "term": "accuse",
+    "normalizedTerm": "accuse",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "指控（~ of）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "acquaintance",
+    "term": "acquaintance",
+    "normalizedTerm": "acquaintance",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "熟人；了解",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "activate",
+    "term": "activate",
+    "normalizedTerm": "activate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "激活",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "administration",
+    "term": "administration",
+    "normalizedTerm": "administration",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "管理；政府；行政",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "admirable",
+    "term": "admirable",
+    "normalizedTerm": "admirable",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "令人钦佩的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "admission",
+    "term": "admission",
+    "normalizedTerm": "admission",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "承认；准入；门票",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "adolescent",
+    "term": "adolescent",
+    "normalizedTerm": "adolescent",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "青少年 adj. 青春期的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "adventure",
+    "term": "adventure",
+    "normalizedTerm": "adventure",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "冒险",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "adverse",
+    "term": "adverse",
+    "normalizedTerm": "adverse",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "不利的，有害的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "advice",
+    "term": "advice",
+    "normalizedTerm": "advice",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "建议；⚡advisable adj. 明智的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "affair",
+    "term": "affair",
+    "normalizedTerm": "affair",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "事务；事件",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "affection",
+    "term": "affection",
+    "normalizedTerm": "affection",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "喜爱，感情",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "affirm",
+    "term": "affirm",
+    "normalizedTerm": "affirm",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "肯定，确认",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "aggravate",
+    "term": "aggravate",
+    "normalizedTerm": "aggravate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "加剧，恶化",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "aggressive",
+    "term": "aggressive",
+    "normalizedTerm": "aggressive",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "好斗的；进取的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "agitate",
+    "term": "agitate",
+    "normalizedTerm": "agitate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "煽动；使焦虑",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "agony",
+    "term": "agony",
+    "normalizedTerm": "agony",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "极度痛苦",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "albeit",
+    "term": "albeit",
+    "normalizedTerm": "albeit",
+    "partOfSpeech": "conj.",
+    "meanings": [
+      {
+        "text": "尽管",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "allege",
+    "term": "allege",
+    "normalizedTerm": "allege",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "指称，指控（未经证实）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "allowance",
+    "term": "allowance",
+    "normalizedTerm": "allowance",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "津贴；允许",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ally",
+    "term": "ally",
+    "normalizedTerm": "ally",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "同盟 v. 结盟",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "alongside",
+    "term": "alongside",
+    "normalizedTerm": "alongside",
+    "partOfSpeech": "prep.",
+    "meanings": [
+      {
+        "text": "在…旁边；与…一起",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "alter",
+    "term": "alter",
+    "normalizedTerm": "alter",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "改变",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ample",
+    "term": "ample",
+    "normalizedTerm": "ample",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "充足的；宽敞的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "analyst",
+    "term": "analyst",
+    "normalizedTerm": "analyst",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "分析员",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ancestor",
+    "term": "ancestor",
+    "normalizedTerm": "ancestor",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "祖先",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "annoy",
+    "term": "annoy",
+    "normalizedTerm": "annoy",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使恼怒",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "annual",
+    "term": "annual",
+    "normalizedTerm": "annual",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "每年的；⚡n. 年刊，年报",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "anonymous",
+    "term": "anonymous",
+    "normalizedTerm": "anonymous",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "匿名的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "apart",
+    "term": "apart",
+    "normalizedTerm": "apart",
+    "partOfSpeech": "adv.",
+    "meanings": [
+      {
+        "text": "分开；⚡~ from 除…之外",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "apology",
+    "term": "apology",
+    "normalizedTerm": "apology",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "道歉",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "apparatus",
+    "term": "apparatus",
+    "normalizedTerm": "apparatus",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "设备；机构",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "applaud",
+    "term": "applaud",
+    "normalizedTerm": "applaud",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "鼓掌；称赞",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "appliance",
+    "term": "appliance",
+    "normalizedTerm": "appliance",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "家用电器",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "application",
+    "term": "application",
+    "normalizedTerm": "application",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "申请；应用；应用程序",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "appoint",
+    "term": "appoint",
+    "normalizedTerm": "appoint",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "任命；约定",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "appraise",
+    "term": "appraise",
+    "normalizedTerm": "appraise",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "评估，鉴定",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "apprehensive",
+    "term": "apprehensive",
+    "normalizedTerm": "apprehensive",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "忧虑的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "approval",
+    "term": "approval",
+    "normalizedTerm": "approval",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "批准；赞成",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "approximately",
+    "term": "approximately",
+    "normalizedTerm": "approximately",
+    "partOfSpeech": "adv.",
+    "meanings": [
+      {
+        "text": "大约",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "apt",
+    "term": "apt",
+    "normalizedTerm": "apt",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "恰当的；易于…的；⚡be ~ to do 往往会",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "arbitrary",
+    "term": "arbitrary",
+    "normalizedTerm": "arbitrary",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "任意的；武断的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "arouse",
+    "term": "arouse",
+    "normalizedTerm": "arouse",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "唤起；激起",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "array",
+    "term": "array",
+    "normalizedTerm": "array",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "一系列；⚡an ~ of 大量",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "arrogant",
+    "term": "arrogant",
+    "normalizedTerm": "arrogant",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "傲慢的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "artificial",
+    "term": "artificial",
+    "normalizedTerm": "artificial",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "人造的；人工的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ascend",
+    "term": "ascend",
+    "normalizedTerm": "ascend",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "上升；攀登",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ascribe",
+    "term": "ascribe",
+    "normalizedTerm": "ascribe",
+    "meanings": [
+      {
+        "text": "v.（~ to）归因于",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "assembly",
+    "term": "assembly",
+    "normalizedTerm": "assembly",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "集会；装配",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "assert",
+    "term": "assert",
+    "normalizedTerm": "assert",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "断言；主张",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "assignment",
+    "term": "assignment",
+    "normalizedTerm": "assignment",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "任务；作业",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "assimilate",
+    "term": "assimilate",
+    "normalizedTerm": "assimilate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "同化；吸收",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "attain",
+    "term": "attain",
+    "normalizedTerm": "attain",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "达到，获得",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "attentive",
+    "term": "attentive",
+    "normalizedTerm": "attentive",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "专注的；周到的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "attract",
+    "term": "attract",
+    "normalizedTerm": "attract",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "吸引；⚡attraction n. 吸引力；景点",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "audit",
+    "term": "audit",
+    "normalizedTerm": "audit",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "审计",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "autonomous",
+    "term": "autonomous",
+    "normalizedTerm": "autonomous",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "自治的；自主的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "auxiliary",
+    "term": "auxiliary",
+    "normalizedTerm": "auxiliary",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "辅助的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "background",
+    "term": "background",
+    "normalizedTerm": "background",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "背景；学历；幕后",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "backing",
+    "term": "backing",
+    "normalizedTerm": "backing",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "支持；资助",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "backward",
+    "term": "backward",
+    "normalizedTerm": "backward",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "落后的；向后的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "bail",
+    "term": "bail",
+    "normalizedTerm": "bail",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "保释金；⚡bail out 救助（企业）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "bankruptcy",
+    "term": "bankruptcy",
+    "normalizedTerm": "bankruptcy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "破产",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "batch",
+    "term": "batch",
+    "normalizedTerm": "batch",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "一批",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "beam",
+    "term": "beam",
+    "normalizedTerm": "beam",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "光束；横梁；⚡v. 满面笑容",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "bearing",
+    "term": "bearing",
+    "normalizedTerm": "bearing",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "方位；⚡have a ~ on 与…有关",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "behave",
+    "term": "behave",
+    "normalizedTerm": "behave",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "表现；⚡behaviorist n. 行为主义者",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "belongings",
+    "term": "belongings",
+    "normalizedTerm": "belongings",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "财物",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "bet",
+    "term": "bet",
+    "normalizedTerm": "bet",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "打赌；⚡n. 预测，判断",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "betray",
+    "term": "betray",
+    "normalizedTerm": "betray",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "背叛；⚡v. 泄露；暴露",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "bind",
+    "term": "bind",
+    "normalizedTerm": "bind",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "捆绑；约束；⚡be bound to 必然",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "bizarre",
+    "term": "bizarre",
+    "normalizedTerm": "bizarre",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "怪异的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "blessing",
+    "term": "blessing",
+    "normalizedTerm": "blessing",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "祝福；好事",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "blind",
+    "term": "blind",
+    "normalizedTerm": "blind",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "盲的；⚡v. 使失明；~ spot 盲区",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "bloom",
+    "term": "bloom",
+    "normalizedTerm": "bloom",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "开花；繁荣",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "boom",
+    "term": "boom",
+    "normalizedTerm": "boom",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "繁荣；激增；⚡baby boom 婴儿潮",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "boredom",
+    "term": "boredom",
+    "normalizedTerm": "boredom",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "无聊",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "borrow",
+    "term": "borrow",
+    "normalizedTerm": "borrow",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "借入；⚡~ 借用（观点）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "bother",
+    "term": "bother",
+    "normalizedTerm": "bother",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "打扰；操心",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "bounce",
+    "term": "bounce",
+    "normalizedTerm": "bounce",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "弹跳；反弹",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "boycott",
+    "term": "boycott",
+    "normalizedTerm": "boycott",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "抵制",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "breach",
+    "term": "breach",
+    "normalizedTerm": "breach",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "违反；破裂",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "breakdown",
+    "term": "breakdown",
+    "normalizedTerm": "breakdown",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "故障；分解；崩溃",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "breakthrough",
+    "term": "breakthrough",
+    "normalizedTerm": "breakthrough",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "突破",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "breed",
+    "term": "breed",
+    "normalizedTerm": "breed",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "繁殖；引发 n. 品种",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "bribe",
+    "term": "bribe",
+    "normalizedTerm": "bribe",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "贿赂",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "brilliant",
+    "term": "brilliant",
+    "normalizedTerm": "brilliant",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "聪颖的；极好的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "broaden",
+    "term": "broaden",
+    "normalizedTerm": "broaden",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "拓宽",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "browse",
+    "term": "browse",
+    "normalizedTerm": "browse",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "浏览；逛（店）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "bulk",
+    "term": "bulk",
+    "normalizedTerm": "bulk",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "主体；大量；⚡in ~ 散装；大批",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "bump",
+    "term": "bump",
+    "normalizedTerm": "bump",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "碰撞 n. 碰撞；⚡~ into 偶遇",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "bunch",
+    "term": "bunch",
+    "normalizedTerm": "bunch",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "一束；一群",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "burst",
+    "term": "burst",
+    "normalizedTerm": "burst",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "爆发；突然发作",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "calamity",
+    "term": "calamity",
+    "normalizedTerm": "calamity",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "灾难",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "calculate",
+    "term": "calculate",
+    "normalizedTerm": "calculate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "计算；估算；⚡v. 打算",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "call",
+    "term": "call",
+    "normalizedTerm": "call",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "呼叫；⚡~ for 需要；~ off 取消；~ up 召集",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "cancel",
+    "term": "cancel",
+    "normalizedTerm": "cancel",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "取消；抵消",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "canteen",
+    "term": "canteen",
+    "normalizedTerm": "canteen",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "食堂",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "capable",
+    "term": "capable",
+    "normalizedTerm": "capable",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "有能力的；⚡capable of 也指\"可能做出（坏事）\"",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "caution",
+    "term": "caution",
+    "normalizedTerm": "caution",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "谨慎 v. 警告",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "cease",
+    "term": "cease",
+    "normalizedTerm": "cease",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "停止",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "celebrate",
+    "term": "celebrate",
+    "normalizedTerm": "celebrate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "庆祝；歌颂；⚡celebrity n. 名人",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "census",
+    "term": "census",
+    "normalizedTerm": "census",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "人口普查",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "certify",
+    "term": "certify",
+    "normalizedTerm": "certify",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "证明；发证书",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "chaos",
+    "term": "chaos",
+    "normalizedTerm": "chaos",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "混乱",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "chapter",
+    "term": "chapter",
+    "normalizedTerm": "chapter",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "章节；篇章",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "charity",
+    "term": "charity",
+    "normalizedTerm": "charity",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "慈善；慈善机构",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "charter",
+    "term": "charter",
+    "normalizedTerm": "charter",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "宪章 v. 特许；包租",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "cherish",
+    "term": "cherish",
+    "normalizedTerm": "cherish",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "珍视；怀有（希望）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "chorus",
+    "term": "chorus",
+    "normalizedTerm": "chorus",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "合唱；⚡a ~ of 齐声",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "civic",
+    "term": "civic",
+    "normalizedTerm": "civic",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "城市的；公民的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "civilian",
+    "term": "civilian",
+    "normalizedTerm": "civilian",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "平民",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "civilization",
+    "term": "civilization",
+    "normalizedTerm": "civilization",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "文明",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "clarification",
+    "term": "clarification",
+    "normalizedTerm": "clarification",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "澄清",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "classify",
+    "term": "classify",
+    "normalizedTerm": "classify",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "分类；⚡classified adj. 机密的；分类的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "clause",
+    "term": "clause",
+    "normalizedTerm": "clause",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "条款；从句",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "clue",
+    "term": "clue",
+    "normalizedTerm": "clue",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "线索",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "cluster",
+    "term": "cluster",
+    "normalizedTerm": "cluster",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "群；簇 v. 聚集",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "coach",
+    "term": "coach",
+    "normalizedTerm": "coach",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "教练；长途汽车 v. 指导",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "coarse",
+    "term": "coarse",
+    "normalizedTerm": "coarse",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "粗糙的；粗俗的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "coincide",
+    "term": "coincide",
+    "normalizedTerm": "coincide",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "巧合；一致（~ with）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "collaboration",
+    "term": "collaboration",
+    "normalizedTerm": "collaboration",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "合作；⚡in ~ with 与…合作",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "collective",
+    "term": "collective",
+    "normalizedTerm": "collective",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "集体的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "collision",
+    "term": "collision",
+    "normalizedTerm": "collision",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "碰撞；冲突",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "colonial",
+    "term": "colonial",
+    "normalizedTerm": "colonial",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "殖民的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "column",
+    "term": "column",
+    "normalizedTerm": "column",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "专栏；柱；⚡columnist n. 专栏作家",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "commence",
+    "term": "commence",
+    "normalizedTerm": "commence",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "开始",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "commentary",
+    "term": "commentary",
+    "normalizedTerm": "commentary",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "解说；评论",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "commerce",
+    "term": "commerce",
+    "normalizedTerm": "commerce",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "商业",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "condense",
+    "term": "condense",
+    "normalizedTerm": "condense",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "浓缩；压缩",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "confess",
+    "term": "confess",
+    "normalizedTerm": "confess",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "坦白，承认",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "configuration",
+    "term": "configuration",
+    "normalizedTerm": "configuration",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "配置；构型",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "consent",
+    "term": "consent",
+    "normalizedTerm": "consent",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "同意",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "considerate",
+    "term": "considerate",
+    "normalizedTerm": "considerate",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "体贴的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "consistency",
+    "term": "consistency",
+    "normalizedTerm": "consistency",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "一致性；连贯性",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "conspicuous",
+    "term": "conspicuous",
+    "normalizedTerm": "conspicuous",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "显眼的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "contaminate",
+    "term": "contaminate",
+    "normalizedTerm": "contaminate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "污染",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "contention",
+    "term": "contention",
+    "normalizedTerm": "contention",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "争论；论点",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "contingent",
+    "term": "contingent",
+    "normalizedTerm": "contingent",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "视条件而定的 n. 代表团",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "contrary",
+    "term": "contrary",
+    "normalizedTerm": "contrary",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "相反的 n. 相反；⚡on the ~ 恰恰相反",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "cop",
+    "term": "cop",
+    "normalizedTerm": "cop",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "警察",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "cope",
+    "term": "cope",
+    "normalizedTerm": "cope",
+    "meanings": [
+      {
+        "text": "v.（~ with）应对",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "correlate",
+    "term": "correlate",
+    "normalizedTerm": "correlate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "相关（~ with）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "corrode",
+    "term": "corrode",
+    "normalizedTerm": "corrode",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "腐蚀",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "corrupt",
+    "term": "corrupt",
+    "normalizedTerm": "corrupt",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "腐败的 v. 使腐化",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "cosmic",
+    "term": "cosmic",
+    "normalizedTerm": "cosmic",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "宇宙的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "count",
+    "term": "count",
+    "normalizedTerm": "count",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "计数；重要；⚡~ on 依靠；count in 把…算入",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "counter",
+    "term": "counter",
+    "normalizedTerm": "counter",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "柜台 v. 反驳；⚡counter- 前缀\"相反\"（counteract 抵制）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "coverage",
+    "term": "coverage",
+    "normalizedTerm": "coverage",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "覆盖范围；（新闻）报道；保险覆盖",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "crack",
+    "term": "crack",
+    "normalizedTerm": "crack",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "破裂 n. 裂缝；⚡~ down on 镇压；~ the code 破解",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "cradle",
+    "term": "cradle",
+    "normalizedTerm": "cradle",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "摇篮；发源地",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "credible",
+    "term": "credible",
+    "normalizedTerm": "credible",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "可信的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "cripple",
+    "term": "cripple",
+    "normalizedTerm": "cripple",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "削弱，使瘫痪",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "criterion",
+    "term": "criterion",
+    "normalizedTerm": "criterion",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "标准",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "crouch",
+    "term": "crouch",
+    "normalizedTerm": "crouch",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "蹲伏",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "crowd",
+    "term": "crowd",
+    "normalizedTerm": "crowd",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "人群 v. 拥挤",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "cue",
+    "term": "cue",
+    "normalizedTerm": "cue",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "提示；暗示",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "cut",
+    "term": "cut",
+    "normalizedTerm": "cut",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "削减；⚡cut back 削减；cut in 插话",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "dampen",
+    "term": "dampen",
+    "normalizedTerm": "dampen",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "抑制；使潮湿",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "data",
+    "term": "data",
+    "normalizedTerm": "data",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "数据（datum 复数）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "deadline",
+    "term": "deadline",
+    "normalizedTerm": "deadline",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "截止日期",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "deaf",
+    "term": "deaf",
+    "normalizedTerm": "deaf",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "失聪的；⚡turn a deaf ear to 置若罔闻",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "deceive",
+    "term": "deceive",
+    "normalizedTerm": "deceive",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "欺骗",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "decent",
+    "term": "decent",
+    "normalizedTerm": "decent",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "体面的；正派的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "declaration",
+    "term": "declaration",
+    "normalizedTerm": "declaration",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "宣言；申报",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "deduce",
+    "term": "deduce",
+    "normalizedTerm": "deduce",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "推断",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "defect",
+    "term": "defect",
+    "normalizedTerm": "defect",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "缺陷；⚡v. 叛逃",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "defend",
+    "term": "defend",
+    "normalizedTerm": "defend",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "保卫；辩护；⚡defendant n. 被告",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "deficiency",
+    "term": "deficiency",
+    "normalizedTerm": "deficiency",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "缺乏；缺陷",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "deficit",
+    "term": "deficit",
+    "normalizedTerm": "deficit",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "赤字；不足",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "delegate",
+    "term": "delegate",
+    "normalizedTerm": "delegate",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "代表 v. 授权，委派",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "deliberate",
+    "term": "deliberate",
+    "normalizedTerm": "deliberate",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "故意的 v. 深思",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "delicate",
+    "term": "delicate",
+    "normalizedTerm": "delicate",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "精致的；微妙的；脆弱的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "delivery",
+    "term": "delivery",
+    "normalizedTerm": "delivery",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "递送；交付；演讲方式",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "demand",
+    "term": "demand",
+    "normalizedTerm": "demand",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "要求；需求；⚡demanding adj. 要求苛刻的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "democracy",
+    "term": "democracy",
+    "normalizedTerm": "democracy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "民主",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "demographic",
+    "term": "demographic",
+    "normalizedTerm": "demographic",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "人口统计的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "denounce",
+    "term": "denounce",
+    "normalizedTerm": "denounce",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "谴责",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "dense",
+    "term": "dense",
+    "normalizedTerm": "dense",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "稠密的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "deposit",
+    "term": "deposit",
+    "normalizedTerm": "deposit",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "存款；定金；沉积物 v. 存放",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "depress",
+    "term": "depress",
+    "normalizedTerm": "depress",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使沮丧；使萧条；⚡depression n. 抑郁；萧条；洼地",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "deprive",
+    "term": "deprive",
+    "normalizedTerm": "deprive",
+    "meanings": [
+      {
+        "text": "v.（~ of）剥夺",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "deputy",
+    "term": "deputy",
+    "normalizedTerm": "deputy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "副手；代表",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "descend",
+    "term": "descend",
+    "normalizedTerm": "descend",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "下降；传下；⚡be descended from 是…的后裔",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "deserve",
+    "term": "deserve",
+    "normalizedTerm": "deserve",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "应得",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "desirable",
+    "term": "desirable",
+    "normalizedTerm": "desirable",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "令人向往的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "desperate",
+    "term": "desperate",
+    "normalizedTerm": "desperate",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "绝望的；孤注一掷的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "destination",
+    "term": "destination",
+    "normalizedTerm": "destination",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "目的地",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "destiny",
+    "term": "destiny",
+    "normalizedTerm": "destiny",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "命运",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "detach",
+    "term": "detach",
+    "normalizedTerm": "detach",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "拆卸；使分离",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "detain",
+    "term": "detain",
+    "normalizedTerm": "detain",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "拘留；耽搁",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "devastate",
+    "term": "devastate",
+    "normalizedTerm": "devastate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "毁坏；使震惊",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "devise",
+    "term": "devise",
+    "normalizedTerm": "devise",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "设计，想出",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "diagnose",
+    "term": "diagnose",
+    "normalizedTerm": "diagnose",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "诊断",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "dilemma",
+    "term": "dilemma",
+    "normalizedTerm": "dilemma",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "困境",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "diligent",
+    "term": "diligent",
+    "normalizedTerm": "diligent",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "勤勉的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "dilute",
+    "term": "dilute",
+    "normalizedTerm": "dilute",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "稀释；⚡v. 削弱",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "diminish",
+    "term": "diminish",
+    "normalizedTerm": "diminish",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "减少；贬低",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "discard",
+    "term": "discard",
+    "normalizedTerm": "discard",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "丢弃",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "disclose",
+    "term": "disclose",
+    "normalizedTerm": "disclose",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "披露",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "discontent",
+    "term": "discontent",
+    "normalizedTerm": "discontent",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "不满",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "discreet",
+    "term": "discreet",
+    "normalizedTerm": "discreet",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "谨慎的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "discrepancy",
+    "term": "discrepancy",
+    "normalizedTerm": "discrepancy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "差异，不符",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "disguise",
+    "term": "disguise",
+    "normalizedTerm": "disguise",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "伪装；⚡in ~ 伪装",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "disillusion",
+    "term": "disillusion",
+    "normalizedTerm": "disillusion",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使幻灭",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "dispatch",
+    "term": "dispatch",
+    "normalizedTerm": "dispatch",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "派遣 n. 急件",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "disperse",
+    "term": "disperse",
+    "normalizedTerm": "disperse",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "驱散；分散",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "displace",
+    "term": "displace",
+    "normalizedTerm": "displace",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "取代；使流离失所",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "dispose",
+    "term": "dispose",
+    "normalizedTerm": "dispose",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "处理（~ of）；⚡be disposed to 倾向于；disposal n. 处置",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "dissent",
+    "term": "dissent",
+    "normalizedTerm": "dissent",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "异议",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "distort",
+    "term": "distort",
+    "normalizedTerm": "distort",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "歪曲；使变形",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "distract",
+    "term": "distract",
+    "normalizedTerm": "distract",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "分散注意力",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "distress",
+    "term": "distress",
+    "normalizedTerm": "distress",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "痛苦；贫困 v. 使痛苦",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "disturb",
+    "term": "disturb",
+    "normalizedTerm": "disturb",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "打扰；扰乱",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "dividend",
+    "term": "dividend",
+    "normalizedTerm": "dividend",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "股息；红利",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "divorce",
+    "term": "divorce",
+    "normalizedTerm": "divorce",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "离婚；⚡n. 分离（~ between...and...）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "doctrine",
+    "term": "doctrine",
+    "normalizedTerm": "doctrine",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "学说；信条",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "dome",
+    "term": "dome",
+    "normalizedTerm": "dome",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "穹顶",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "donate",
+    "term": "donate",
+    "normalizedTerm": "donate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "捐赠",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "doubtless",
+    "term": "doubtless",
+    "normalizedTerm": "doubtless",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "无疑的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "downfall",
+    "term": "downfall",
+    "normalizedTerm": "downfall",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "垮台；衰落",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "downgrade",
+    "term": "downgrade",
+    "normalizedTerm": "downgrade",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "降级；下调评级",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "doze",
+    "term": "doze",
+    "normalizedTerm": "doze",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "打瞌睡",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "drain",
+    "term": "drain",
+    "normalizedTerm": "drain",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "排水；耗尽 n. 消耗",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "draw",
+    "term": "draw",
+    "normalizedTerm": "draw",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "画；拉；⚡~ on 利用；~ up 起草；drawing n. 绘画；抽奖",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "drift",
+    "term": "drift",
+    "normalizedTerm": "drift",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "漂流；漂移；⚡n. 趋势；大意",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "dumb",
+    "term": "dumb",
+    "normalizedTerm": "dumb",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "哑的；愚蠢的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "duplicate",
+    "term": "duplicate",
+    "normalizedTerm": "duplicate",
+    "partOfSpeech": "n./adj.",
+    "meanings": [
+      {
+        "text": "复制的 v. 复制",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "durable",
+    "term": "durable",
+    "normalizedTerm": "durable",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "耐用的；持久的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "dweller",
+    "term": "dweller",
+    "normalizedTerm": "dweller",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "居民",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "dwell",
+    "term": "dwell",
+    "normalizedTerm": "dwell",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "居住；⚡~ on 老是想着",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "earnings",
+    "term": "earnings",
+    "normalizedTerm": "earnings",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "收入；利润",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ease",
+    "term": "ease",
+    "normalizedTerm": "ease",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "容易；轻松 v. 缓解；⚡with ~ 轻松地；at ~ 舒适自在",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "eccentric",
+    "term": "eccentric",
+    "normalizedTerm": "eccentric",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "古怪的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ecological",
+    "term": "ecological",
+    "normalizedTerm": "ecological",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "生态的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "elaborate",
+    "term": "elaborate",
+    "normalizedTerm": "elaborate",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "精心制作的 v. 详述（~ on）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "elicit",
+    "term": "elicit",
+    "normalizedTerm": "elicit",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "引出，诱出",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "eloquent",
+    "term": "eloquent",
+    "normalizedTerm": "eloquent",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "雄辩的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "embark",
+    "term": "embark",
+    "normalizedTerm": "embark",
+    "meanings": [
+      {
+        "text": "v.（~ on/upon）着手，从事",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "embarrass",
+    "term": "embarrass",
+    "normalizedTerm": "embarrass",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使尴尬；⚡embarrassment n. 困窘；令人尴尬的事",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "embed",
+    "term": "embed",
+    "normalizedTerm": "embed",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "嵌入，扎根",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "embody",
+    "term": "embody",
+    "normalizedTerm": "embody",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "体现，包含",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "eminent",
+    "term": "eminent",
+    "normalizedTerm": "eminent",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "杰出的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "empathy",
+    "term": "empathy",
+    "normalizedTerm": "empathy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "同理心",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "enact",
+    "term": "enact",
+    "normalizedTerm": "enact",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "制定（法律）；实施",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "encounter",
+    "term": "encounter",
+    "normalizedTerm": "encounter",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "遭遇",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "endeavor",
+    "term": "endeavor",
+    "normalizedTerm": "endeavor",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "努力",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "endorse",
+    "term": "endorse",
+    "normalizedTerm": "endorse",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "背书；⚡v. 赞同，支持；（名人）代言",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "endow",
+    "term": "endow",
+    "normalizedTerm": "endow",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "捐赠；赋予（be endowed with）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "energetic",
+    "term": "energetic",
+    "normalizedTerm": "energetic",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "精力充沛的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "enforce",
+    "term": "enforce",
+    "normalizedTerm": "enforce",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "执行；强制",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "enormous",
+    "term": "enormous",
+    "normalizedTerm": "enormous",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "巨大的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "enrich",
+    "term": "enrich",
+    "normalizedTerm": "enrich",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "充实；使富裕",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "enroll",
+    "term": "enroll",
+    "normalizedTerm": "enroll",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "注册，入学",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "enterprise",
+    "term": "enterprise",
+    "normalizedTerm": "enterprise",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "企业；事业心",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "entertain",
+    "term": "entertain",
+    "normalizedTerm": "entertain",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "娱乐；⚡v. 怀抱（想法）；entertainer n. 表演艺人",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "enthusiasm",
+    "term": "enthusiasm",
+    "normalizedTerm": "enthusiasm",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "热情",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "entitle",
+    "term": "entitle",
+    "normalizedTerm": "entitle",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使有权（be ~d to）；命名",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "envisage",
+    "term": "envisage",
+    "normalizedTerm": "envisage",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "设想，预见",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "equivalent",
+    "term": "equivalent",
+    "normalizedTerm": "equivalent",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "等价的 n. 等价物",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "erode",
+    "term": "erode",
+    "normalizedTerm": "erode",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "侵蚀；⚡v.（信心、价值）逐渐削弱",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "erroneous",
+    "term": "erroneous",
+    "normalizedTerm": "erroneous",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "错误的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "escalate",
+    "term": "escalate",
+    "normalizedTerm": "escalate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "升级，加剧",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "estate",
+    "term": "estate",
+    "normalizedTerm": "estate",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "房地产；庄园；遗产",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "esteem",
+    "term": "esteem",
+    "normalizedTerm": "esteem",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "尊重",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ethnic",
+    "term": "ethnic",
+    "normalizedTerm": "ethnic",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "民族的；族裔的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "evacuate",
+    "term": "evacuate",
+    "normalizedTerm": "evacuate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "疏散",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "evaporate",
+    "term": "evaporate",
+    "normalizedTerm": "evaporate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "蒸发；⚡v.（希望）化为泡影",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "eventually",
+    "term": "eventually",
+    "normalizedTerm": "eventually",
+    "partOfSpeech": "adv.",
+    "meanings": [
+      {
+        "text": "最终",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "evident",
+    "term": "evident",
+    "normalizedTerm": "evident",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "明显的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "exaggerate",
+    "term": "exaggerate",
+    "normalizedTerm": "exaggerate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "夸张",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "excellence",
+    "term": "excellence",
+    "normalizedTerm": "excellence",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "卓越",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "exception",
+    "term": "exception",
+    "normalizedTerm": "exception",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "例外；⚡with the ~ of 除…之外",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "excerpt",
+    "term": "excerpt",
+    "normalizedTerm": "excerpt",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "摘录，节选",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "exert",
+    "term": "exert",
+    "normalizedTerm": "exert",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "施加（~ pressure/influence）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "exhaust",
+    "term": "exhaust",
+    "normalizedTerm": "exhaust",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "耗尽；使精疲力竭 n. 废气",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "exile",
+    "term": "exile",
+    "normalizedTerm": "exile",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "流放",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "exotic",
+    "term": "exotic",
+    "normalizedTerm": "exotic",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "异国情调的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "expectation",
+    "term": "expectation",
+    "normalizedTerm": "expectation",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "期望",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "expedition",
+    "term": "expedition",
+    "normalizedTerm": "expedition",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "远征；探险",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "explicit",
+    "term": "explicit",
+    "normalizedTerm": "explicit",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "明确的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "exploit",
+    "term": "exploit",
+    "normalizedTerm": "exploit",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "利用；开发；⚡v. 剥削；n. 英勇事迹",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "explosive",
+    "term": "explosive",
+    "normalizedTerm": "explosive",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "爆炸性的；⚡adj.（增长）急剧的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "exponentially",
+    "term": "exponentially",
+    "normalizedTerm": "exponentially",
+    "partOfSpeech": "adv.",
+    "meanings": [
+      {
+        "text": "呈指数地",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "extend",
+    "term": "extend",
+    "normalizedTerm": "extend",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "延伸；扩展；给予；⚡~ an invitation 发出邀请",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "extent",
+    "term": "extent",
+    "normalizedTerm": "extent",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "程度；范围；⚡to the ~ of 到…程度",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "extraordinary",
+    "term": "extraordinary",
+    "normalizedTerm": "extraordinary",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "非凡的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "extreme",
+    "term": "extreme",
+    "normalizedTerm": "extreme",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "极端的 n. 极端；⚡in the ~s 极端情况下",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fabricate",
+    "term": "fabricate",
+    "normalizedTerm": "fabricate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "捏造；制造",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "facilitate",
+    "term": "facilitate",
+    "normalizedTerm": "facilitate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "促进，使便利",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "faction",
+    "term": "faction",
+    "normalizedTerm": "faction",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "派别",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fade",
+    "term": "fade",
+    "normalizedTerm": "fade",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "褪色；逐渐消失",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "faint",
+    "term": "faint",
+    "normalizedTerm": "faint",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "微弱的 v. 昏倒",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fair",
+    "term": "fair",
+    "normalizedTerm": "fair",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "公平的 n. 集市；博览会；⚡adv. 公正地；fairly adv. 相当地；公平地",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "famine",
+    "term": "famine",
+    "normalizedTerm": "famine",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "饥荒",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fancy",
+    "term": "fancy",
+    "normalizedTerm": "fancy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "想象力；喜好 adj. 花哨的 v. 想要；⚡take a ~ to 喜欢上",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fatigue",
+    "term": "fatigue",
+    "normalizedTerm": "fatigue",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "疲劳",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fault",
+    "term": "fault",
+    "normalizedTerm": "fault",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "过错；故障；⚡faulty adj. 有缺陷的；find ~ with 挑剔",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "favor",
+    "term": "favor",
+    "normalizedTerm": "favor",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "支持；恩惠 v. 赞成；偏爱；⚡in ~ of 赞成；favorable adj. 有利的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fee",
+    "term": "fee",
+    "normalizedTerm": "fee",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "费用",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "feeble",
+    "term": "feeble",
+    "normalizedTerm": "feeble",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "虚弱的；无力的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "feedback",
+    "term": "feedback",
+    "normalizedTerm": "feedback",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "反馈",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fellow",
+    "term": "fellow",
+    "normalizedTerm": "fellow",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "同伴；研究员 adj. 同伴的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fertile",
+    "term": "fertile",
+    "normalizedTerm": "fertile",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "肥沃的；多产的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fierce",
+    "term": "fierce",
+    "normalizedTerm": "fierce",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "激烈的；凶猛的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "figure",
+    "term": "figure",
+    "normalizedTerm": "figure",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "数字；人物；身材 v. 认为；⚡~ out 弄明白；key ~ 关键人物",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "filter",
+    "term": "filter",
+    "normalizedTerm": "filter",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "过滤；⚡n. 滤镜",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "finite",
+    "term": "finite",
+    "normalizedTerm": "finite",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "有限的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "firm",
+    "term": "firm",
+    "normalizedTerm": "firm",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "公司 adj. 坚定的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fit",
+    "term": "fit",
+    "normalizedTerm": "fit",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "适合的 v. 适合；⚡~ in 融入；fitting adj. 恰当的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "flaw",
+    "term": "flaw",
+    "normalizedTerm": "flaw",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "缺陷；⚡flawed adj. 有缺陷的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "flexible",
+    "term": "flexible",
+    "normalizedTerm": "flexible",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "灵活的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "flourish",
+    "term": "flourish",
+    "normalizedTerm": "flourish",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "繁荣，茂盛",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fluctuate",
+    "term": "fluctuate",
+    "normalizedTerm": "fluctuate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "波动",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fluid",
+    "term": "fluid",
+    "normalizedTerm": "fluid",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "流动的；不稳定的 n. 液体",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "flush",
+    "term": "flush",
+    "normalizedTerm": "flush",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "冲洗；脸红；⚡be flushed with 因…而脸红",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fold",
+    "term": "fold",
+    "normalizedTerm": "fold",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "折叠；⚡v.（企业）倒闭",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "folk",
+    "term": "folk",
+    "normalizedTerm": "folk",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "民众 adj. 民间的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "forbid",
+    "term": "forbid",
+    "normalizedTerm": "forbid",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "禁止",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "foremost",
+    "term": "foremost",
+    "normalizedTerm": "foremost",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "最重要的；⚡first and ~ 首要的是",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "forge",
+    "term": "forge",
+    "normalizedTerm": "forge",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "锻造；⚡v. 建立（关系）；伪造",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "formulate",
+    "term": "formulate",
+    "normalizedTerm": "formulate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "制定；系统阐述",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fortify",
+    "term": "fortify",
+    "normalizedTerm": "fortify",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "加强；设防",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "forum",
+    "term": "forum",
+    "normalizedTerm": "forum",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "论坛",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fragile",
+    "term": "fragile",
+    "normalizedTerm": "fragile",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "脆弱的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "franchise",
+    "term": "franchise",
+    "normalizedTerm": "franchise",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "特许经营权；加盟店",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fraud",
+    "term": "fraud",
+    "normalizedTerm": "fraud",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "欺诈",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "freight",
+    "term": "freight",
+    "normalizedTerm": "freight",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "货运",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "friction",
+    "term": "friction",
+    "normalizedTerm": "friction",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "摩擦；不和",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fringe",
+    "term": "fringe",
+    "normalizedTerm": "fringe",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "边缘；fringe benefit 额外补贴",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "frustrate",
+    "term": "frustrate",
+    "normalizedTerm": "frustrate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使沮丧；挫败；⚡frustrating adj. 令人泄气的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "fulfill",
+    "term": "fulfill",
+    "normalizedTerm": "fulfill",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "履行；实现",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "furnish",
+    "term": "furnish",
+    "normalizedTerm": "furnish",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "布置家具；⚡v. 提供（~ sb. with）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "gain",
+    "term": "gain",
+    "normalizedTerm": "gain",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "获得；收益；⚡n. 增值；gains from 红利",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "gallop",
+    "term": "gallop",
+    "normalizedTerm": "gallop",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "飞驰；⚡（价格）飞涨",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "gamble",
+    "term": "gamble",
+    "normalizedTerm": "gamble",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "赌博；冒险",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "gap",
+    "term": "gap",
+    "normalizedTerm": "gap",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "差距；缺口",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "gasp",
+    "term": "gasp",
+    "normalizedTerm": "gasp",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "喘气；⚡~ at 惊讶",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "gaze",
+    "term": "gaze",
+    "normalizedTerm": "gaze",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "凝视",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "gear",
+    "term": "gear",
+    "normalizedTerm": "gear",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "齿轮；装备 v. 调整（~ to/towards）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "gender",
+    "term": "gender",
+    "normalizedTerm": "gender",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "性别",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "gene",
+    "term": "gene",
+    "normalizedTerm": "gene",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "基因；⚡genetic adj. 遗传的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "genius",
+    "term": "genius",
+    "normalizedTerm": "genius",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "天才；天赋",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "germ",
+    "term": "germ",
+    "normalizedTerm": "germ",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "细菌；⚡n. 萌芽（the ~ of）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "gesture",
+    "term": "gesture",
+    "normalizedTerm": "gesture",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "手势；姿态",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "glamour",
+    "term": "glamour",
+    "normalizedTerm": "glamour",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "魅力",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "glance",
+    "term": "glance",
+    "normalizedTerm": "glance",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "一瞥；⚡at first ~ 乍看之下",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "glimpse",
+    "term": "glimpse",
+    "normalizedTerm": "glimpse",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "一瞥，瞥见",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "glitter",
+    "term": "glitter",
+    "normalizedTerm": "glitter",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "闪耀 n. 光彩",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "gloomy",
+    "term": "gloomy",
+    "normalizedTerm": "gloomy",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "阴暗的；悲观的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "glory",
+    "term": "glory",
+    "normalizedTerm": "glory",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "荣誉；壮丽",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "grace",
+    "term": "grace",
+    "normalizedTerm": "grace",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "优雅；⚡~ period 宽限期；graceful adj. 得体的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "grade",
+    "term": "grade",
+    "normalizedTerm": "grade",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "年级；等级；成绩 v. 评分",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "gradient",
+    "term": "gradient",
+    "normalizedTerm": "gradient",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "梯度；坡度",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "graphics",
+    "term": "graphics",
+    "normalizedTerm": "graphics",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "图形",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "greedy",
+    "term": "greedy",
+    "normalizedTerm": "greedy",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "贪婪的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "grief",
+    "term": "grief",
+    "normalizedTerm": "grief",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "悲伤",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "grim",
+    "term": "grim",
+    "normalizedTerm": "grim",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "严峻的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "grip",
+    "term": "grip",
+    "normalizedTerm": "grip",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "紧握；控制；⚡come to ~s with 着手解决",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "grope",
+    "term": "grope",
+    "normalizedTerm": "grope",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "摸索；⚡~ for words 措辞",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "gross",
+    "term": "gross",
+    "normalizedTerm": "gross",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "总的；严重的 n. 总额",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "guidance",
+    "term": "guidance",
+    "normalizedTerm": "guidance",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "指导",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "guideline",
+    "term": "guideline",
+    "normalizedTerm": "guideline",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "指导方针",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "gulf",
+    "term": "gulf",
+    "normalizedTerm": "gulf",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "海湾；⚡n. 鸿沟，隔阂",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "halt",
+    "term": "halt",
+    "normalizedTerm": "halt",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "停止",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "hamper",
+    "term": "hamper",
+    "normalizedTerm": "hamper",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "阻碍",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "handicap",
+    "term": "handicap",
+    "normalizedTerm": "handicap",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "障碍；残疾 v. 妨碍",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "handle",
+    "term": "handle",
+    "normalizedTerm": "handle",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "处理 n. 把手",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "harbo(u)r",
+    "term": "harbo(u)r",
+    "normalizedTerm": "harbo(u)r",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "怀有（恶意、想法）；庇护 n. 港口",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "hardly",
+    "term": "hardly",
+    "normalizedTerm": "hardly",
+    "partOfSpeech": "adv.",
+    "meanings": [
+      {
+        "text": "几乎不",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "harmony",
+    "term": "harmony",
+    "normalizedTerm": "harmony",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "和谐；⚡harmonious adj. 和谐的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "harsh",
+    "term": "harsh",
+    "normalizedTerm": "harsh",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "严厉的；恶劣的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "haul",
+    "term": "haul",
+    "normalizedTerm": "haul",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "拖运 n. 大批赃物；成绩",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "haunt",
+    "term": "haunt",
+    "normalizedTerm": "haunt",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "萦绕；常去；⚡haunting adj. 挥之不去的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "heal",
+    "term": "heal",
+    "normalizedTerm": "heal",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "治愈；愈合",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "heave",
+    "term": "heave",
+    "normalizedTerm": "heave",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "举起；起伏",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "hedge",
+    "term": "hedge",
+    "normalizedTerm": "hedge",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "树篱；对冲 v. 回避",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "heed",
+    "term": "heed",
+    "normalizedTerm": "heed",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "注意，留心",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "hemisphere",
+    "term": "hemisphere",
+    "normalizedTerm": "hemisphere",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "半球",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "herald",
+    "term": "herald",
+    "normalizedTerm": "herald",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "预示",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "heritage",
+    "term": "heritage",
+    "normalizedTerm": "heritage",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "遗产，传统",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "hesitate",
+    "term": "hesitate",
+    "normalizedTerm": "hesitate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "犹豫",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "hidden",
+    "term": "hidden",
+    "normalizedTerm": "hidden",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "隐藏的；⚡~ costs 隐性成本",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "hierarchy",
+    "term": "hierarchy",
+    "normalizedTerm": "hierarchy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "等级制度",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "hint",
+    "term": "hint",
+    "normalizedTerm": "hint",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "提示；暗示 v. 暗示",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "hire",
+    "term": "hire",
+    "normalizedTerm": "hire",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "雇用 n. 租借",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "hoard",
+    "term": "hoard",
+    "normalizedTerm": "hoard",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "囤积",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "hollow",
+    "term": "hollow",
+    "normalizedTerm": "hollow",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "空心的；空洞的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "homogeneous",
+    "term": "homogeneous",
+    "normalizedTerm": "homogeneous",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "同质的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "horizon",
+    "term": "horizon",
+    "normalizedTerm": "horizon",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "地平线；⚡（复数）眼界；on the ~ 即将出现",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "hostile",
+    "term": "hostile",
+    "normalizedTerm": "hostile",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "敌意的；⚡hostility n. 敌意；对抗",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "household",
+    "term": "household",
+    "normalizedTerm": "household",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "家庭 adj. 家喻户晓的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "hover",
+    "term": "hover",
+    "normalizedTerm": "hover",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "盘旋；徘徊",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "humble",
+    "term": "humble",
+    "normalizedTerm": "humble",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "谦逊的；简陋的；⚡v. 使谦卑",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "hurdle",
+    "term": "hurdle",
+    "normalizedTerm": "hurdle",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "障碍 v. 跨越",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "hypothesis",
+    "term": "hypothesis",
+    "normalizedTerm": "hypothesis",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "假说（复数 hypotheses）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "identical",
+    "term": "identical",
+    "normalizedTerm": "identical",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "完全相同的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "idle",
+    "term": "idle",
+    "normalizedTerm": "idle",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "空闲的；闲置的 v. 空转",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ignite",
+    "term": "ignite",
+    "normalizedTerm": "ignite",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "点燃；激起",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ignorance",
+    "term": "ignorance",
+    "normalizedTerm": "ignorance",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "无知；⚡be ignorant of 不知情",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "illusion",
+    "term": "illusion",
+    "normalizedTerm": "illusion",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "幻觉；错觉",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "immense",
+    "term": "immense",
+    "normalizedTerm": "immense",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "巨大的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "imminent",
+    "term": "imminent",
+    "normalizedTerm": "imminent",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "迫近的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "immune",
+    "term": "immune",
+    "normalizedTerm": "immune",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "免疫的；不受影响的（~ to/from）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "impartial",
+    "term": "impartial",
+    "normalizedTerm": "impartial",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "公正的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "implicit",
+    "term": "implicit",
+    "normalizedTerm": "implicit",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "含蓄的；内含的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "impressive",
+    "term": "impressive",
+    "normalizedTerm": "impressive",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "令人印象深刻的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "improve",
+    "term": "improve",
+    "normalizedTerm": "improve",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "改善；⚡improvement n. 改进；好转",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "incline",
+    "term": "incline",
+    "normalizedTerm": "incline",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "倾向于；倾斜；⚡be inclined to do",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "incorporate",
+    "term": "incorporate",
+    "normalizedTerm": "incorporate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "纳入，合并",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "incur",
+    "term": "incur",
+    "normalizedTerm": "incur",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "招致，承担（费用）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "indicative",
+    "term": "indicative",
+    "normalizedTerm": "indicative",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "表明的（~ of）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "indifference",
+    "term": "indifference",
+    "normalizedTerm": "indifference",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "冷漠；⚡indifferent adj. 漠不关心的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "indigenous",
+    "term": "indigenous",
+    "normalizedTerm": "indigenous",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "本土的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "indispensable",
+    "term": "indispensable",
+    "normalizedTerm": "indispensable",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "不可或缺的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "induce",
+    "term": "induce",
+    "normalizedTerm": "induce",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "引起；劝诱",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "indulge",
+    "term": "indulge",
+    "normalizedTerm": "indulge",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "放纵（~ in）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "infancy",
+    "term": "infancy",
+    "normalizedTerm": "infancy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "婴儿期；⚡n. 初期（in its ~）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "infect",
+    "term": "infect",
+    "normalizedTerm": "infect",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "感染",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "inferior",
+    "term": "inferior",
+    "normalizedTerm": "inferior",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "较差的；下级的（~ to）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "inflict",
+    "term": "inflict",
+    "normalizedTerm": "inflict",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使遭受（~ on）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "inform",
+    "term": "inform",
+    "normalizedTerm": "inform",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "告知；⚡v. 影响；informative adj. 增长知识的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "inherit",
+    "term": "inherit",
+    "normalizedTerm": "inherit",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "继承；经遗传获得",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "inhibit",
+    "term": "inhibit",
+    "normalizedTerm": "inhibit",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "抑制",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "initiative",
+    "term": "initiative",
+    "normalizedTerm": "initiative",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "倡议；主动权；⚡take the ~ 带头",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "inject",
+    "term": "inject",
+    "normalizedTerm": "inject",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "注入；⚡~ capital into 注资",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "innate",
+    "term": "innate",
+    "normalizedTerm": "innate",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "天生的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "innocent",
+    "term": "innocent",
+    "normalizedTerm": "innocent",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "天真的；无罪的；⚡innocence n. 清白",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "innovative",
+    "term": "innovative",
+    "normalizedTerm": "innovative",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "创新的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "input",
+    "term": "input",
+    "normalizedTerm": "input",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "投入；输入；⚡n. 意见（one's ~）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "insane",
+    "term": "insane",
+    "normalizedTerm": "insane",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "精神失常的；荒唐的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "inspire",
+    "term": "inspire",
+    "normalizedTerm": "inspire",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "激励；启发；⚡v. 引发（情绪）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "installment",
+    "term": "installment",
+    "normalizedTerm": "installment",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "分期付款；⚡in ~s 分期地",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "instant",
+    "term": "instant",
+    "normalizedTerm": "instant",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "立即的 n. 片刻；⚡instantly adv. 立刻",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "instinct",
+    "term": "instinct",
+    "normalizedTerm": "instinct",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "本能",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "insult",
+    "term": "insult",
+    "normalizedTerm": "insult",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "侮辱",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "insure",
+    "term": "insure",
+    "normalizedTerm": "insure",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "投保；⚡insurance n. 保险；保障",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "integral",
+    "term": "integral",
+    "normalizedTerm": "integral",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "不可或缺的（~ to）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "intensify",
+    "term": "intensify",
+    "normalizedTerm": "intensify",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "加剧",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "intent",
+    "term": "intent",
+    "normalizedTerm": "intent",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "意图 adj. 专注的；⚡to all ~s and purposes 几乎等于",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "interfere",
+    "term": "interfere",
+    "normalizedTerm": "interfere",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "干涉；干扰",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "interior",
+    "term": "interior",
+    "normalizedTerm": "interior",
+    "partOfSpeech": "n./adj.",
+    "meanings": [
+      {
+        "text": "内部（的）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "intermediate",
+    "term": "intermediate",
+    "normalizedTerm": "intermediate",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "中间的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "intimate",
+    "term": "intimate",
+    "normalizedTerm": "intimate",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "亲密的；⚡v. 暗示；n. 知己",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "intrigue",
+    "term": "intrigue",
+    "normalizedTerm": "intrigue",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "激起兴趣 n. 阴谋；⚡intriguing adj. 有趣的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "intrinsic",
+    "term": "intrinsic",
+    "normalizedTerm": "intrinsic",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "内在的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "invade",
+    "term": "invade",
+    "normalizedTerm": "invade",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "侵入；⚡v. 侵扰；invasion n. 入侵",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "invaluable",
+    "term": "invaluable",
+    "normalizedTerm": "invaluable",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "极宝贵的；⚡≠valueless",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "irrational",
+    "term": "irrational",
+    "normalizedTerm": "irrational",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "不理性的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "irrelevant",
+    "term": "irrelevant",
+    "normalizedTerm": "irrelevant",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "不相关的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "isolate",
+    "term": "isolate",
+    "normalizedTerm": "isolate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "隔离；使孤立；⚡isolated adj. 孤立的；偏远的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "jail",
+    "term": "jail",
+    "normalizedTerm": "jail",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "监狱 v. 监禁",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "jealous",
+    "term": "jealous",
+    "normalizedTerm": "jealous",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "嫉妒的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "jeopardize",
+    "term": "jeopardize",
+    "normalizedTerm": "jeopardize",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "危及",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "joint",
+    "term": "joint",
+    "normalizedTerm": "joint",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "联合的 n. 关节；接头",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "judge",
+    "term": "judge",
+    "normalizedTerm": "judge",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "法官 v. 判断；⚡judgment n. 判断力；裁决",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "juggle",
+    "term": "juggle",
+    "normalizedTerm": "juggle",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "兼顾；耍弄",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "junction",
+    "term": "junction",
+    "normalizedTerm": "junction",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "交叉点；枢纽",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "jury",
+    "term": "jury",
+    "normalizedTerm": "jury",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "陪审团；评审团",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "keen",
+    "term": "keen",
+    "normalizedTerm": "keen",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "热衷的；敏锐的（~ on）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "kin",
+    "term": "kin",
+    "normalizedTerm": "kin",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "家属，亲属",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "label",
+    "term": "label",
+    "normalizedTerm": "label",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "标签 v. 贴标签；⚡v. 把…称为",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "largely",
+    "term": "largely",
+    "normalizedTerm": "largely",
+    "partOfSpeech": "adv.",
+    "meanings": [
+      {
+        "text": "主要地",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "lateral",
+    "term": "lateral",
+    "normalizedTerm": "lateral",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "侧面的；横向的；⚡lateral thinking 横向思维",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "latitude",
+    "term": "latitude",
+    "normalizedTerm": "latitude",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "纬度；⚡n. 自由度",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "lawsuit",
+    "term": "lawsuit",
+    "normalizedTerm": "lawsuit",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "诉讼",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "lay",
+    "term": "lay",
+    "normalizedTerm": "lay",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "放置；⚡~ off 裁员；~ out 布置；~ claim to 主张",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "layman",
+    "term": "layman",
+    "normalizedTerm": "layman",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "外行",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "leak",
+    "term": "leak",
+    "normalizedTerm": "leak",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "泄漏 n. 漏洞",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "lease",
+    "term": "lease",
+    "normalizedTerm": "lease",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "租约；出租",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "legend",
+    "term": "legend",
+    "normalizedTerm": "legend",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "传说；⚡n. 传奇人物",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "legislature",
+    "term": "legislature",
+    "normalizedTerm": "legislature",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "立法机关",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "liable",
+    "term": "liable",
+    "normalizedTerm": "liable",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "易于…的；有责任的（~ to/for）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "liberal",
+    "term": "liberal",
+    "normalizedTerm": "liberal",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "自由的；开明的；⚡n. 自由主义者；liberal arts 文科",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "liberty",
+    "term": "liberty",
+    "normalizedTerm": "liberty",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "自由",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "limb",
+    "term": "limb",
+    "normalizedTerm": "limb",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "肢体；树枝",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "limitation",
+    "term": "limitation",
+    "normalizedTerm": "limitation",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "限制；局限",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "line",
+    "term": "line",
+    "normalizedTerm": "line",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "线；⚡in ~ with 符合；~ of work 职业行当",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "linger",
+    "term": "linger",
+    "normalizedTerm": "linger",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "徘徊；延续",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "literacy",
+    "term": "literacy",
+    "normalizedTerm": "literacy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "读写能力；素养",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "litigation",
+    "term": "litigation",
+    "normalizedTerm": "litigation",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "诉讼",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "lobby",
+    "term": "lobby",
+    "normalizedTerm": "lobby",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "大厅 v. 游说；⚡lobbyist n. 游说者",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "locality",
+    "term": "locality",
+    "normalizedTerm": "locality",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "地区",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "lodge",
+    "term": "lodge",
+    "normalizedTerm": "lodge",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "寄住；正式提出（抗议）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "loose",
+    "term": "loose",
+    "normalizedTerm": "loose",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "松的；⚡~ly adv. 大致地；~ change 零钱",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "lounge",
+    "term": "lounge",
+    "normalizedTerm": "lounge",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "休息室",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "loyal",
+    "term": "loyal",
+    "normalizedTerm": "loyal",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "忠诚的；⚡loyalty n. 忠诚度",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "magnitude",
+    "term": "magnitude",
+    "normalizedTerm": "magnitude",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "大小；重要性",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "mainstream",
+    "term": "mainstream",
+    "normalizedTerm": "mainstream",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "主流 adj. 主流的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "malfunction",
+    "term": "malfunction",
+    "normalizedTerm": "malfunction",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "故障",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "malignant",
+    "term": "malignant",
+    "normalizedTerm": "malignant",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "恶性的；恶意的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "manage",
+    "term": "manage",
+    "normalizedTerm": "manage",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "管理；⚡manage to do 设法做到；~ on 靠…度日",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "manifest",
+    "term": "manifest",
+    "normalizedTerm": "manifest",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "表明 adj. 明显的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "manual",
+    "term": "manual",
+    "normalizedTerm": "manual",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "手工的 n. 手册；⚡manual labor 体力劳动",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "manufacture",
+    "term": "manufacture",
+    "normalizedTerm": "manufacture",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "制造 n.（复数）产品；⚡manufacturer n. 制造商",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "margin",
+    "term": "margin",
+    "normalizedTerm": "margin",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "边缘；利润空间；⚡~al adj. 微小的；边缘的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "marine",
+    "term": "marine",
+    "normalizedTerm": "marine",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "海洋的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "market",
+    "term": "market",
+    "normalizedTerm": "market",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "市场 v. 营销；⚡marketing n. 市场营销",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "massive",
+    "term": "massive",
+    "normalizedTerm": "massive",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "大规模的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "master",
+    "term": "master",
+    "normalizedTerm": "master",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "主人；硕士 v. 精通；⚡masterpiece n. 杰作",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "maternal",
+    "term": "maternal",
+    "normalizedTerm": "maternal",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "母亲的；母系的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "mature",
+    "term": "mature",
+    "normalizedTerm": "mature",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "成熟的 v. 成熟",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "maximize",
+    "term": "maximize",
+    "normalizedTerm": "maximize",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "最大化",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "mean",
+    "term": "mean",
+    "normalizedTerm": "mean",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "意味 adj. 吝啬的；平均的 n. 平均值；⚡by no ~s 绝不；means n. 手段（by ~ of）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "mechanism",
+    "term": "mechanism",
+    "normalizedTerm": "mechanism",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "机制；机械装置",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "mediate",
+    "term": "mediate",
+    "normalizedTerm": "mediate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "调解",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "medieval",
+    "term": "medieval",
+    "normalizedTerm": "medieval",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "中世纪的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "meltdown",
+    "term": "meltdown",
+    "normalizedTerm": "meltdown",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "熔毁；崩溃",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "memorize",
+    "term": "memorize",
+    "normalizedTerm": "memorize",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "记忆",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "menace",
+    "term": "menace",
+    "normalizedTerm": "menace",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "威胁 v. 威胁",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "mention",
+    "term": "mention",
+    "normalizedTerm": "mention",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "提及；⚡not to ~ 更不用说",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "merge",
+    "term": "merge",
+    "normalizedTerm": "merge",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "合并；⚡merger n.（企业）并购",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "merit",
+    "term": "merit",
+    "normalizedTerm": "merit",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "优点；功绩 v. 值得；⚡on one's ~s 凭本身实力",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "metaphor",
+    "term": "metaphor",
+    "normalizedTerm": "metaphor",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "隐喻；⚡metaphorical adj. 比喻的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "militant",
+    "term": "militant",
+    "normalizedTerm": "militant",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "好战的 n. 激进分子",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "minimize",
+    "term": "minimize",
+    "normalizedTerm": "minimize",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "最小化；⚡v. 轻视",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "minute",
+    "term": "minute",
+    "normalizedTerm": "minute",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "分钟；⚡adj. 微小的（maɪˈnjuːt）；minutes n. 会议记录",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "miracle",
+    "term": "miracle",
+    "normalizedTerm": "miracle",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "奇迹",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "misconduct",
+    "term": "misconduct",
+    "normalizedTerm": "misconduct",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "不当行为",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "mission",
+    "term": "mission",
+    "normalizedTerm": "mission",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "使命；代表团",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "mobilize",
+    "term": "mobilize",
+    "normalizedTerm": "mobilize",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "动员",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "moderate",
+    "term": "moderate",
+    "normalizedTerm": "moderate",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "适度的；温和的 v. 缓和",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "modify",
+    "term": "modify",
+    "normalizedTerm": "modify",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "修改；调整",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "monetary",
+    "term": "monetary",
+    "normalizedTerm": "monetary",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "货币的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "monitor",
+    "term": "monitor",
+    "normalizedTerm": "monitor",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "监测 n. 监视器；班长",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "mood",
+    "term": "mood",
+    "normalizedTerm": "mood",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "心情；氛围",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "morality",
+    "term": "morality",
+    "normalizedTerm": "morality",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "道德",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "mortgage",
+    "term": "mortgage",
+    "normalizedTerm": "mortgage",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "抵押贷款",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "mount",
+    "term": "mount",
+    "normalizedTerm": "mount",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "增加；登上；⚡n. 山；~ a challenge 发起挑战",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "multiply",
+    "term": "multiply",
+    "normalizedTerm": "multiply",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "繁殖；乘；倍增",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "narrative",
+    "term": "narrative",
+    "normalizedTerm": "narrative",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "叙述；叙事（方式）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "necessity",
+    "term": "necessity",
+    "normalizedTerm": "necessity",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "必要性；必需品",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "negative",
+    "term": "negative",
+    "normalizedTerm": "negative",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "消极的；否定的；⚡negative feedback 负反馈",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "neglect",
+    "term": "neglect",
+    "normalizedTerm": "neglect",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "忽视",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "negligible",
+    "term": "negligible",
+    "normalizedTerm": "negligible",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "微不足道的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "nerve",
+    "term": "nerve",
+    "normalizedTerm": "nerve",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "神经；⚡n. 勇气（lose one's ~）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "net",
+    "term": "net",
+    "normalizedTerm": "net",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "网 adj. 净的；⚡net income 净收入",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "neutral",
+    "term": "neutral",
+    "normalizedTerm": "neutral",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "中立的；中性的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "nominal",
+    "term": "nominal",
+    "normalizedTerm": "nominal",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "名义上的；微不足道的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "nonetheless",
+    "term": "nonetheless",
+    "normalizedTerm": "nonetheless",
+    "partOfSpeech": "adv.",
+    "meanings": [
+      {
+        "text": "尽管如此",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "notable",
+    "term": "notable",
+    "normalizedTerm": "notable",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "值得注意的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "noteworthy",
+    "term": "noteworthy",
+    "normalizedTerm": "noteworthy",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "显著的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "notify",
+    "term": "notify",
+    "normalizedTerm": "notify",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "通知",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "nourish",
+    "term": "nourish",
+    "normalizedTerm": "nourish",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "滋养；培养",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "novel",
+    "term": "novel",
+    "normalizedTerm": "novel",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "新颖的；⚡novelty n. 新奇（事物）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "nowhere",
+    "term": "nowhere",
+    "normalizedTerm": "nowhere",
+    "partOfSpeech": "adv.",
+    "meanings": [
+      {
+        "text": "无处；⚡~ near 远非",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "nuisance",
+    "term": "nuisance",
+    "normalizedTerm": "nuisance",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "讨厌的事物",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "numb",
+    "term": "numb",
+    "normalizedTerm": "numb",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "麻木的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "nutrient",
+    "term": "nutrient",
+    "normalizedTerm": "nutrient",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "营养物质",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "nutrition",
+    "term": "nutrition",
+    "normalizedTerm": "nutrition",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "营养",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "obedient",
+    "term": "obedient",
+    "normalizedTerm": "obedient",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "顺从的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "obscure",
+    "term": "obscure",
+    "normalizedTerm": "obscure",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "晦涩的；不出名的 v. 使模糊",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "occasional",
+    "term": "occasional",
+    "normalizedTerm": "occasional",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "偶尔的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "occupation",
+    "term": "occupation",
+    "normalizedTerm": "occupation",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "职业；占领",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "offset",
+    "term": "offset",
+    "normalizedTerm": "offset",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "抵消 n. 抵消物",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "offspring",
+    "term": "offspring",
+    "normalizedTerm": "offspring",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "后代",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "omit",
+    "term": "omit",
+    "normalizedTerm": "omit",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "省略；遗漏",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ongoing",
+    "term": "ongoing",
+    "normalizedTerm": "ongoing",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "进行中的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "onset",
+    "term": "onset",
+    "normalizedTerm": "onset",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "开始，发作",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "opaque",
+    "term": "opaque",
+    "normalizedTerm": "opaque",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "不透明的；晦涩的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "opt",
+    "term": "opt",
+    "normalizedTerm": "opt",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "选择（~ for/out）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "optimal",
+    "term": "optimal",
+    "normalizedTerm": "optimal",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "最优的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "orient",
+    "term": "orient",
+    "normalizedTerm": "orient",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "朝向；⚡oriented adj. 以…为导向的；orientation n. 定位；迎新",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "originally",
+    "term": "originally",
+    "normalizedTerm": "originally",
+    "partOfSpeech": "adv.",
+    "meanings": [
+      {
+        "text": "起初；独创地",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "orthodox",
+    "term": "orthodox",
+    "normalizedTerm": "orthodox",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "正统的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "outbreak",
+    "term": "outbreak",
+    "normalizedTerm": "outbreak",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "爆发",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "outcast",
+    "term": "outcast",
+    "normalizedTerm": "outcast",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "被排斥者",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "outlet",
+    "term": "outlet",
+    "normalizedTerm": "outlet",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "出口；渠道；⚡n. 发泄途径；销售门店",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "outlook",
+    "term": "outlook",
+    "normalizedTerm": "outlook",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "前景；观点",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "outrage",
+    "term": "outrage",
+    "normalizedTerm": "outrage",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "愤怒 v. 激怒；⚡outrageous adj. 荒唐的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "outset",
+    "term": "outset",
+    "normalizedTerm": "outset",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "开端；⚡at/from the ~ 从一开始",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "outward",
+    "term": "outward",
+    "normalizedTerm": "outward",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "向外的；⚡~ly adv. 表面上",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "overall",
+    "term": "overall",
+    "normalizedTerm": "overall",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "总体的 adv. 总体上",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "overhead",
+    "term": "overhead",
+    "normalizedTerm": "overhead",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "头顶上的；⚡n.（复数）管理费用",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "overlook",
+    "term": "overlook",
+    "normalizedTerm": "overlook",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "忽视；俯瞰；⚡区别 oversee（监督）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "overnight",
+    "term": "overnight",
+    "normalizedTerm": "overnight",
+    "partOfSpeech": "adv.",
+    "meanings": [
+      {
+        "text": "一夜之间 adj. 突然的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "override",
+    "term": "override",
+    "normalizedTerm": "override",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "推翻；优先于",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "overwhelm",
+    "term": "overwhelm",
+    "normalizedTerm": "overwhelm",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "压倒；⚡be ~ing majority 占绝对多数",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pace",
+    "term": "pace",
+    "normalizedTerm": "pace",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "速度；步伐 v. 踱步；⚡keep ~ with 跟上",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "parallel",
+    "term": "parallel",
+    "normalizedTerm": "parallel",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "平行的 n. 相似之处；⚡draw a ~ between 类比",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "paralyze",
+    "term": "paralyze",
+    "normalizedTerm": "paralyze",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使瘫痪；使停摆",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "paramount",
+    "term": "paramount",
+    "normalizedTerm": "paramount",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "至高无上的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "parcel",
+    "term": "parcel",
+    "normalizedTerm": "parcel",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "包裹；一块（地）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "parliament",
+    "term": "parliament",
+    "normalizedTerm": "parliament",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "议会",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "partial",
+    "term": "partial",
+    "normalizedTerm": "partial",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "部分的；偏袒的；⚡impartial adj. 公正的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "particle",
+    "term": "particle",
+    "normalizedTerm": "particle",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "粒子；微粒",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "particular",
+    "term": "particular",
+    "normalizedTerm": "particular",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "特别的；特定的；⚡in ~ 尤其；particularly adv. 显著地",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "passion",
+    "term": "passion",
+    "normalizedTerm": "passion",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "激情；⚡passionate adj. 热忱的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "passive",
+    "term": "passive",
+    "normalizedTerm": "passive",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "被动的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "passport",
+    "term": "passport",
+    "normalizedTerm": "passport",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "护照；⚡n. 途径，保障",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pastime",
+    "term": "pastime",
+    "normalizedTerm": "pastime",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "消遣",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pathetic",
+    "term": "pathetic",
+    "normalizedTerm": "pathetic",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "可悲的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "patient",
+    "term": "patient",
+    "normalizedTerm": "patient",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "病人 adj. 耐心的；⚡patience n. 耐心",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "patriot",
+    "term": "patriot",
+    "normalizedTerm": "patriot",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "爱国者",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "patrol",
+    "term": "patrol",
+    "normalizedTerm": "patrol",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "巡逻",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "patron",
+    "term": "patron",
+    "normalizedTerm": "patron",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "赞助人；老主顾",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pause",
+    "term": "pause",
+    "normalizedTerm": "pause",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "暂停",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "peculiar",
+    "term": "peculiar",
+    "normalizedTerm": "peculiar",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "奇怪的；特有的（~ to）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pedestrian",
+    "term": "pedestrian",
+    "normalizedTerm": "pedestrian",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "行人；⚡adj. 平淡乏味的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "penalize",
+    "term": "penalize",
+    "normalizedTerm": "penalize",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "处罚",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pending",
+    "term": "pending",
+    "normalizedTerm": "pending",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "未决的 prep. 直到",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pension",
+    "term": "pension",
+    "normalizedTerm": "pension",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "养老金",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "perfectionist",
+    "term": "perfectionist",
+    "normalizedTerm": "perfectionist",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "完美主义者",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "perform",
+    "term": "perform",
+    "normalizedTerm": "perform",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "表现；执行；⚡~ brain surgery 做脑部手术",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "peril",
+    "term": "peril",
+    "normalizedTerm": "peril",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "危险",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "periodical",
+    "term": "periodical",
+    "normalizedTerm": "periodical",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "期刊 adj. 周期的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "perish",
+    "term": "perish",
+    "normalizedTerm": "perish",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "死亡；消亡",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "permeate",
+    "term": "permeate",
+    "normalizedTerm": "permeate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "渗透，弥漫",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "permit",
+    "term": "permit",
+    "normalizedTerm": "permit",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "允许 n. 许可证；⚡weather permitting 天气允许的话",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "perpetual",
+    "term": "perpetual",
+    "normalizedTerm": "perpetual",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "永久的；无休止的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "perplex",
+    "term": "perplex",
+    "normalizedTerm": "perplex",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使困惑",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "persevere",
+    "term": "persevere",
+    "normalizedTerm": "persevere",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "坚持",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "persist",
+    "term": "persist",
+    "normalizedTerm": "persist",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "坚持；持续；⚡persistent adj. 持续的；顽固的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "personality",
+    "term": "personality",
+    "normalizedTerm": "personality",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "个性；名人",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "persuade",
+    "term": "persuade",
+    "normalizedTerm": "persuade",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "说服；⚡persuasive adj. 有说服力的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pessimistic",
+    "term": "pessimistic",
+    "normalizedTerm": "pessimistic",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "悲观的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "petty",
+    "term": "petty",
+    "normalizedTerm": "petty",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "琐碎的；小气的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "phase",
+    "term": "phase",
+    "normalizedTerm": "phase",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "阶段 v. 分阶段（~ in/out）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "philosophy",
+    "term": "philosophy",
+    "normalizedTerm": "philosophy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "哲学；⚡n. 人生哲学；理念",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "physician",
+    "term": "physician",
+    "normalizedTerm": "physician",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "内科医生",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pinpoint",
+    "term": "pinpoint",
+    "normalizedTerm": "pinpoint",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "精准定位",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pioneer",
+    "term": "pioneer",
+    "normalizedTerm": "pioneer",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "先驱 v. 开创",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pipeline",
+    "term": "pipeline",
+    "normalizedTerm": "pipeline",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "管道；⚡n. 渠道；储备（in the ~）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "plague",
+    "term": "plague",
+    "normalizedTerm": "plague",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "瘟疫 v. 困扰",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "plain",
+    "term": "plain",
+    "normalizedTerm": "plain",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "简单的；朴素的；⚡adv. 完全地；~ly adv. 显然",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "plaintiff",
+    "term": "plaintiff",
+    "normalizedTerm": "plaintiff",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "原告",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "platform",
+    "term": "platform",
+    "normalizedTerm": "platform",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "平台；站台；政纲",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "plausible",
+    "term": "plausible",
+    "normalizedTerm": "plausible",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "貌似合理的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pledge",
+    "term": "pledge",
+    "normalizedTerm": "pledge",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "承诺；保证",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "plenty",
+    "term": "plenty",
+    "normalizedTerm": "plenty",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "大量；⚡plentiful adj. 丰富的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "plunge",
+    "term": "plunge",
+    "normalizedTerm": "plunge",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "骤降；投入 n. 猛跌；⚡take the ~ 决定一试",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "poise",
+    "term": "poise",
+    "normalizedTerm": "poise",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "沉着 v. 使平衡",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pollute",
+    "term": "pollute",
+    "normalizedTerm": "pollute",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "污染；⚡pollutant n. 污染物",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ponder",
+    "term": "ponder",
+    "normalizedTerm": "ponder",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "思考",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pop",
+    "term": "pop",
+    "normalizedTerm": "pop",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "突然出现；流行；⚡pop up 涌现；populace n. 大众",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "portfolio",
+    "term": "portfolio",
+    "normalizedTerm": "portfolio",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "投资组合；作品集",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pose",
+    "term": "pose",
+    "normalizedTerm": "pose",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "造成（~ a threat）；提出 n. 姿势",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "positive",
+    "term": "positive",
+    "normalizedTerm": "positive",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "积极的；确定的；阳性的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "possess",
+    "term": "possess",
+    "normalizedTerm": "possess",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "拥有；⚡possession n. 财物（复数）；占有",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "postulate",
+    "term": "postulate",
+    "normalizedTerm": "postulate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "假定 n. 假设",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "posture",
+    "term": "posture",
+    "normalizedTerm": "posture",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "姿势；⚡n. 态度；v. 装腔作势",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "potent",
+    "term": "potent",
+    "normalizedTerm": "potent",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "强有力的；有效的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "practitioner",
+    "term": "practitioner",
+    "normalizedTerm": "practitioner",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "从业者",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "praise",
+    "term": "praise",
+    "normalizedTerm": "praise",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "表扬；⚡praiseworthy adj. 值得称道的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "precaution",
+    "term": "precaution",
+    "normalizedTerm": "precaution",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "预防措施",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "precede",
+    "term": "precede",
+    "normalizedTerm": "precede",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "先于；⚡precedent n. 先例；unprecedented adj. 空前的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "precious",
+    "term": "precious",
+    "normalizedTerm": "precious",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "珍贵的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "precise",
+    "term": "precise",
+    "normalizedTerm": "precise",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "精确的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "predator",
+    "term": "predator",
+    "normalizedTerm": "predator",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "捕食者；⚡predatory adj. 掠夺性的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "predecessor",
+    "term": "predecessor",
+    "normalizedTerm": "predecessor",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "前任；前身",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "predictable",
+    "term": "predictable",
+    "normalizedTerm": "predictable",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "可预测的；⚡adj. 老套的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "predominant",
+    "term": "predominant",
+    "normalizedTerm": "predominant",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "主要的，占优势的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "prevail",
+    "term": "prevail",
+    "normalizedTerm": "prevail",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "盛行；获胜；⚡prevalent adj. 普遍的；prevalence n. 流行程度",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "prey",
+    "term": "prey",
+    "normalizedTerm": "prey",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "猎物 v. 捕食（~ on）；受害者",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pride",
+    "term": "pride",
+    "normalizedTerm": "pride",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "自豪；⚡~ oneself on 引以为豪",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "primarily",
+    "term": "primarily",
+    "normalizedTerm": "primarily",
+    "partOfSpeech": "adv.",
+    "meanings": [
+      {
+        "text": "主要地",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "proceed",
+    "term": "proceed",
+    "normalizedTerm": "proceed",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "继续；进行",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "proclaim",
+    "term": "proclaim",
+    "normalizedTerm": "proclaim",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "宣布",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "prodigy",
+    "term": "prodigy",
+    "normalizedTerm": "prodigy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "神童",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "proficiency",
+    "term": "proficiency",
+    "normalizedTerm": "proficiency",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "熟练",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "profit",
+    "term": "profit",
+    "normalizedTerm": "profit",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "利润 v. 获益；⚡profitable adj. 有利可图的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "profound",
+    "term": "profound",
+    "normalizedTerm": "profound",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "深刻的；深远的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "progressive",
+    "term": "progressive",
+    "normalizedTerm": "progressive",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "进步的；递进的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "prohibit",
+    "term": "prohibit",
+    "normalizedTerm": "prohibit",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "禁止",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "prolong",
+    "term": "prolong",
+    "normalizedTerm": "prolong",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "延长",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "prone",
+    "term": "prone",
+    "normalizedTerm": "prone",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "倾向于…的（~ to）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pronounce",
+    "term": "pronounce",
+    "normalizedTerm": "pronounce",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "发音；⚡v. 宣布；pronounced adj. 显著的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "propaganda",
+    "term": "propaganda",
+    "normalizedTerm": "propaganda",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "宣传（贬义）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "propel",
+    "term": "propel",
+    "normalizedTerm": "propel",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "推进；驱使",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "proper",
+    "term": "proper",
+    "normalizedTerm": "proper",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "恰当的；⚡~ly adv. 完全地；适当地",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "prophet",
+    "term": "prophet",
+    "normalizedTerm": "prophet",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "预言家",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "proposition",
+    "term": "proposition",
+    "normalizedTerm": "proposition",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "主张；命题；提议",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "proverb",
+    "term": "proverb",
+    "normalizedTerm": "proverb",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "谚语",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "provoke",
+    "term": "provoke",
+    "normalizedTerm": "provoke",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "激怒；引发",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "publication",
+    "term": "publication",
+    "normalizedTerm": "publication",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "出版物；发表",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "publicize",
+    "term": "publicize",
+    "normalizedTerm": "publicize",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "宣传",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "punish",
+    "term": "punish",
+    "normalizedTerm": "punish",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "惩罚；⚡punishment n. 惩罚；penalty n. 处罚",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "pursuit",
+    "term": "pursuit",
+    "normalizedTerm": "pursuit",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "追求；消遣",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "puzzle",
+    "term": "puzzle",
+    "normalizedTerm": "puzzle",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "谜 v. 使困惑；⚡~ over 苦思",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "qualitative",
+    "term": "qualitative",
+    "normalizedTerm": "qualitative",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "定性的，质的；⚡区别 quantitative（定量的）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "quarter",
+    "term": "quarter",
+    "normalizedTerm": "quarter",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "四分之一；季度；地区；⚡n.（复数）住所；quarterly adj. 季度的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "query",
+    "term": "query",
+    "normalizedTerm": "query",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "疑问 v. 质询",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "quest",
+    "term": "quest",
+    "normalizedTerm": "quest",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "探索，追求",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "questionnaire",
+    "term": "questionnaire",
+    "normalizedTerm": "questionnaire",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "调查问卷",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "quotation",
+    "term": "quotation",
+    "normalizedTerm": "quotation",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "引语；报价",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "race",
+    "term": "race",
+    "normalizedTerm": "race",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "种族；竞赛 v. 竞速；⚡arms race 军备竞赛；rat race 无谓的竞争",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "radiant",
+    "term": "radiant",
+    "normalizedTerm": "radiant",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "容光焕发的；辐射的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "radiate",
+    "term": "radiate",
+    "normalizedTerm": "radiate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "辐射；散发（气质）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "random",
+    "term": "random",
+    "normalizedTerm": "random",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "随机的；⚡at ~ 随机地",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ratify",
+    "term": "ratify",
+    "normalizedTerm": "ratify",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "批准（条约）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ratio",
+    "term": "ratio",
+    "normalizedTerm": "ratio",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "比率",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ration",
+    "term": "ration",
+    "normalizedTerm": "ration",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "配给量 v. 限量供应",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "rattle",
+    "term": "rattle",
+    "normalizedTerm": "rattle",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使慌乱；发出咔嗒声",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "realm",
+    "term": "realm",
+    "normalizedTerm": "realm",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "领域；王国",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reassure",
+    "term": "reassure",
+    "normalizedTerm": "reassure",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "安抚",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "rebel",
+    "term": "rebel",
+    "normalizedTerm": "rebel",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "叛逆者 v. 反叛",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "recede",
+    "term": "recede",
+    "normalizedTerm": "recede",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "后退；减弱",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "recipe",
+    "term": "recipe",
+    "normalizedTerm": "recipe",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "食谱；⚡n. 方法，诀窍（a ~ for success）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reciprocal",
+    "term": "reciprocal",
+    "normalizedTerm": "reciprocal",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "互惠的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reclaim",
+    "term": "reclaim",
+    "normalizedTerm": "reclaim",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "收回；开垦",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "recruit",
+    "term": "recruit",
+    "normalizedTerm": "recruit",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "招募 n. 新成员",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "recycle",
+    "term": "recycle",
+    "normalizedTerm": "recycle",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "回收",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "refine",
+    "term": "refine",
+    "normalizedTerm": "refine",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "提炼；改进；⚡refined adj. 精炼的；有教养的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reflect",
+    "term": "reflect",
+    "normalizedTerm": "reflect",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "反映；反思；⚡~ on 思考；reflection n. 反射；沉思",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "refute",
+    "term": "refute",
+    "normalizedTerm": "refute",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "驳斥",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "regime",
+    "term": "regime",
+    "normalizedTerm": "regime",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "政权；制度",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "register",
+    "term": "register",
+    "normalizedTerm": "register",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "登记；流露（情绪）n. 登记表",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "regret",
+    "term": "regret",
+    "normalizedTerm": "regret",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "后悔；⚡to one's ~ 令人遗憾的是",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reign",
+    "term": "reign",
+    "normalizedTerm": "reign",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "统治；盛行",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "rein",
+    "term": "rein",
+    "normalizedTerm": "rein",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "缰绳；⚡give free ~ to 放任；keep a tight ~ on 严加控制",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "rejuvenate",
+    "term": "rejuvenate",
+    "normalizedTerm": "rejuvenate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使恢复活力",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "relate",
+    "term": "relate",
+    "normalizedTerm": "relate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "有关；讲述；⚡related to 与…相关；relativity n. 相对性",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "relay",
+    "term": "relay",
+    "normalizedTerm": "relay",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "转播；转达 n. 接力",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "release",
+    "term": "release",
+    "normalizedTerm": "release",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "释放；发布；⚡press ~ 新闻稿",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reluctant",
+    "term": "reluctant",
+    "normalizedTerm": "reluctant",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "不情愿的；⚡reluctance n. 勉强",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "remainder",
+    "term": "remainder",
+    "normalizedTerm": "remainder",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "剩余部分",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "remedy",
+    "term": "remedy",
+    "normalizedTerm": "remedy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "补救办法；药物 v. 补救",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "remind",
+    "term": "remind",
+    "normalizedTerm": "remind",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "提醒；⚡~ sb. of 使想起；reminder n. 提示",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "remote",
+    "term": "remote",
+    "normalizedTerm": "remote",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "遥远的；偏远的；⚡adj. 微小的（a ~ chance）；remote control 遥控",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "renaissance",
+    "term": "renaissance",
+    "normalizedTerm": "renaissance",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "复兴",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "renew",
+    "term": "renew",
+    "normalizedTerm": "renew",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "续期；更新；⚡renewable adj. 可再生的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "renowned",
+    "term": "renowned",
+    "normalizedTerm": "renowned",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "著名的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "repay",
+    "term": "repay",
+    "normalizedTerm": "repay",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "偿还；报答",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "repel",
+    "term": "repel",
+    "normalizedTerm": "repel",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "击退；排斥",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "replace",
+    "term": "replace",
+    "normalizedTerm": "replace",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "取代；⚡replacement n. 替代品",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "report",
+    "term": "report",
+    "normalizedTerm": "report",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "报告；⚡~ing n.（新闻）报道；reportedly adv. 据报道",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "repress",
+    "term": "repress",
+    "normalizedTerm": "repress",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "压抑；镇压",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reproach",
+    "term": "reproach",
+    "normalizedTerm": "reproach",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "责备",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "resemble",
+    "term": "resemble",
+    "normalizedTerm": "resemble",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "像；⚡resemblance n. 相似之处",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "resent",
+    "term": "resent",
+    "normalizedTerm": "resent",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "怨恨",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reserve",
+    "term": "reserve",
+    "normalizedTerm": "reserve",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "预订；保留 n. 储备；⚡n. 務持；reserved adj. 预订的；矜持的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "resign",
+    "term": "resign",
+    "normalizedTerm": "resign",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "辞职；听任（~ to）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "resistant",
+    "term": "resistant",
+    "normalizedTerm": "resistant",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "抵抗的（~ to）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "resonate",
+    "term": "resonate",
+    "normalizedTerm": "resonate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "共鸣；⚡~ with 与…产生共鸣",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "respect",
+    "term": "respect",
+    "normalizedTerm": "respect",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "尊重；方面；⚡in this ~ 在这方面；respective adj. 各自的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "response",
+    "term": "response",
+    "normalizedTerm": "response",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "回应；⚡~ rate 响应率",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "responsible",
+    "term": "responsible",
+    "normalizedTerm": "responsible",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "负责的；⚡~ for 是…的原因；responsibility n. 责任",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "restrain",
+    "term": "restrain",
+    "normalizedTerm": "restrain",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "抑制；⚡restraint n. 克制；约束因素",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "resume",
+    "term": "resume",
+    "normalizedTerm": "resume",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "恢复（rɪˈzjuːm）n. 简历（ˈrezjʊmeɪ）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "retail",
+    "term": "retail",
+    "normalizedTerm": "retail",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "零售；⚡retailer n. 零售商",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "retaliate",
+    "term": "retaliate",
+    "normalizedTerm": "retaliate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "报复",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "retire",
+    "term": "retire",
+    "normalizedTerm": "retire",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "退休；⚡retirement n. 退休；~ age 退休年龄",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "retort",
+    "term": "retort",
+    "normalizedTerm": "retort",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "反驳",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "retrieve",
+    "term": "retrieve",
+    "normalizedTerm": "retrieve",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "取回；检索",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reunion",
+    "term": "reunion",
+    "normalizedTerm": "reunion",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "团聚",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "revenge",
+    "term": "revenge",
+    "normalizedTerm": "revenge",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "报复；⚡take ~ on 向…报复",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "revolve",
+    "term": "revolve",
+    "normalizedTerm": "revolve",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "旋转；⚡~ around 围绕",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "reward",
+    "term": "reward",
+    "normalizedTerm": "reward",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "报酬 v. 奖励；⚡rewarding adj. 值得的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "rid",
+    "term": "rid",
+    "normalizedTerm": "rid",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "摆脱；⚡get ~ of 去除；ridicule n./v. 嘲笑",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ridge",
+    "term": "ridge",
+    "normalizedTerm": "ridge",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "山脊",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "riot",
+    "term": "riot",
+    "normalizedTerm": "riot",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "暴乱",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "rip",
+    "term": "rip",
+    "normalizedTerm": "rip",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "撕裂 n. 裂口",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "rival",
+    "term": "rival",
+    "normalizedTerm": "rival",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "对手 adj. 竞争的 v. 与…匹敌",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "robust",
+    "term": "robust",
+    "normalizedTerm": "robust",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "强健的；稳健的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "romance",
+    "term": "romance",
+    "normalizedTerm": "romance",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "浪漫；爱情故事",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "root",
+    "term": "root",
+    "normalizedTerm": "root",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "根；根源；⚡be rooted in 根植于；take ~ 扎根",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "rot",
+    "term": "rot",
+    "normalizedTerm": "rot",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "腐烂",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "rough",
+    "term": "rough",
+    "normalizedTerm": "rough",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "粗糙的；大致的；⚡~ly adv. 大约；~ it 过艰苦生活",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "royal",
+    "term": "royal",
+    "normalizedTerm": "royal",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "王室的；⚡royalty n. 王室成员；版税",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ruin",
+    "term": "ruin",
+    "normalizedTerm": "ruin",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "毁坏 n. 废墟；⚡in ~s 成为废墟",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "rumor",
+    "term": "rumor",
+    "normalizedTerm": "rumor",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "谣言",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "rupture",
+    "term": "rupture",
+    "normalizedTerm": "rupture",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "破裂",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "rural",
+    "term": "rural",
+    "normalizedTerm": "rural",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "农村的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sacred",
+    "term": "sacred",
+    "normalizedTerm": "sacred",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "神圣的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sake",
+    "term": "sake",
+    "normalizedTerm": "sake",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "缘故；⚡for the ~ of 为了",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "salary",
+    "term": "salary",
+    "normalizedTerm": "salary",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "薪水",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sample",
+    "term": "sample",
+    "normalizedTerm": "sample",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "样本 v. 抽样；体验",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sanction",
+    "term": "sanction",
+    "normalizedTerm": "sanction",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "制裁；批准 v. 批准",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sanity",
+    "term": "sanity",
+    "normalizedTerm": "sanity",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "神志正常；理智",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "satellite",
+    "term": "satellite",
+    "normalizedTerm": "satellite",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "卫星；⚡satellite city 卫星城",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "saturate",
+    "term": "saturate",
+    "normalizedTerm": "saturate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使饱和",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "savage",
+    "term": "savage",
+    "normalizedTerm": "savage",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "野蛮的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "scandal",
+    "term": "scandal",
+    "normalizedTerm": "scandal",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "丑闻",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "scatter",
+    "term": "scatter",
+    "normalizedTerm": "scatter",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "散布",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sceptical",
+    "term": "sceptical",
+    "normalizedTerm": "sceptical",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "怀疑的（=skeptical）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "scope",
+    "term": "scope",
+    "normalizedTerm": "scope",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "范围；机会",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "scout",
+    "term": "scout",
+    "normalizedTerm": "scout",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "侦察员；球探 v. 寻觅",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "scramble",
+    "term": "scramble",
+    "normalizedTerm": "scramble",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "争夺；爬 n. 抢夺",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "scratch",
+    "term": "scratch",
+    "normalizedTerm": "scratch",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "抓挠 n. 划痕；⚡from ~ 从零开始；~ the surface 触及表面",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "script",
+    "term": "script",
+    "normalizedTerm": "script",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "剧本；文字体系",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "scrutiny",
+    "term": "scrutiny",
+    "normalizedTerm": "scrutiny",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "仔细审查",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "seal",
+    "term": "seal",
+    "normalizedTerm": "seal",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "海豹；印章 v. 密封；⚡~ the deal 敲定协议",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "secondary",
+    "term": "secondary",
+    "normalizedTerm": "secondary",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "次要的；中等的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sector",
+    "term": "sector",
+    "normalizedTerm": "sector",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "部门；领域",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sediment",
+    "term": "sediment",
+    "normalizedTerm": "sediment",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "沉积物",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "seemingly",
+    "term": "seemingly",
+    "normalizedTerm": "seemingly",
+    "partOfSpeech": "adv.",
+    "meanings": [
+      {
+        "text": "表面上；看似",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "segregate",
+    "term": "segregate",
+    "normalizedTerm": "segregate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "隔离",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "seize",
+    "term": "seize",
+    "normalizedTerm": "seize",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "抓住；没收；⚡~ the opportunity 抓住机会",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sensation",
+    "term": "sensation",
+    "normalizedTerm": "sensation",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "感觉；轰动；⚡sensational adj. 轰动的；耸人听闻的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sentiment",
+    "term": "sentiment",
+    "normalizedTerm": "sentiment",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "情绪；观点；⚡sentimental adj. 感伤的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sequence",
+    "term": "sequence",
+    "normalizedTerm": "sequence",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "顺序；连续；⚡a ~ of 一系列",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "settle",
+    "term": "settle",
+    "normalizedTerm": "settle",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "解决；定居；安顿；⚡~ for 勉强接受；settlement n. 协议；定居点",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "severe",
+    "term": "severe",
+    "normalizedTerm": "severe",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "严重的；严厉的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "shabby",
+    "term": "shabby",
+    "normalizedTerm": "shabby",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "破旧的；不公平的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "shadow",
+    "term": "shadow",
+    "normalizedTerm": "shadow",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "影子；⚡cast a ~ on 给…蒙上阴影",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "shallow",
+    "term": "shallow",
+    "normalizedTerm": "shallow",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "浅的；肤浅的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "shatter",
+    "term": "shatter",
+    "normalizedTerm": "shatter",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "粉碎；使破灭",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "shed",
+    "term": "shed",
+    "normalizedTerm": "shed",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "流出；去除；脱落；⚡~ light on 阐明；n. 棚屋",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sheer",
+    "term": "sheer",
+    "normalizedTerm": "sheer",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "纯粹的；陡峭的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "shelter",
+    "term": "shelter",
+    "normalizedTerm": "shelter",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "避难所 v. 庇护",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "shrink",
+    "term": "shrink",
+    "normalizedTerm": "shrink",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "收缩；退缩（shrank/shrunk）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "shrug",
+    "term": "shrug",
+    "normalizedTerm": "shrug",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "耸肩；⚡~ off 对…不予理会",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "shuttle",
+    "term": "shuttle",
+    "normalizedTerm": "shuttle",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "穿梭巴士；航天飞机 v. 往返",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sibling",
+    "term": "sibling",
+    "normalizedTerm": "sibling",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "兄弟姐妹",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "siege",
+    "term": "siege",
+    "normalizedTerm": "siege",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "围困；⚡under ~ 处于围攻中",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sift",
+    "term": "sift",
+    "normalizedTerm": "sift",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "筛查；细查",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "signify",
+    "term": "signify",
+    "normalizedTerm": "signify",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "表示；意味着",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "silence",
+    "term": "silence",
+    "normalizedTerm": "silence",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "沉默；⚡v. 使缄默；~nth n. 缄默；keep ~ on 保持沉默",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "simulate",
+    "term": "simulate",
+    "normalizedTerm": "simulate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "模拟；⚡simulation n. 模拟；simultaneously adv. 同时",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "site",
+    "term": "site",
+    "normalizedTerm": "site",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "地点；网站；⚡on ~ 在现场",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "situate",
+    "term": "situate",
+    "normalizedTerm": "situate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "位于；⚡situated adj. 坐落于；处于（境地）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "skeptical",
+    "term": "skeptical",
+    "normalizedTerm": "skeptical",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "怀疑的；⚡skepticism n. 怀疑（态度）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "slack",
+    "term": "slack",
+    "normalizedTerm": "slack",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "松弛的；萧条的 n. 松弛部分；⚡pick up the ~ 接手别人不管的事",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "slaughter",
+    "term": "slaughter",
+    "normalizedTerm": "slaughter",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "屠宰；杀戮",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "slender",
+    "term": "slender",
+    "normalizedTerm": "slender",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "苗条的；微薄的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "slice",
+    "term": "slice",
+    "normalizedTerm": "slice",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "薄片；部分；⚡a ~ of the market 市场份额",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "slight",
+    "term": "slight",
+    "normalizedTerm": "slight",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "轻微的 v. 怠慢；⚡slightly adv. 略微；not in the ~ 一点也不",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "slim",
+    "term": "slim",
+    "normalizedTerm": "slim",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "苗条的；微小的 v. 削减（~ down）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "slot",
+    "term": "slot",
+    "normalizedTerm": "slot",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "时段；插槽",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "slum",
+    "term": "slum",
+    "normalizedTerm": "slum",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "贫民窟",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "smart",
+    "term": "smart",
+    "normalizedTerm": "smart",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "聪明的；⚡v. 感到刺痛；~ing adj. 智能的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "smash",
+    "term": "smash",
+    "normalizedTerm": "smash",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "粉碎；猛击；⚡~ hit 轰动一时的作品",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "smooth",
+    "term": "smooth",
+    "normalizedTerm": "smooth",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "光滑的；顺利的；⚡smooth out 消除（困难）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "soak",
+    "term": "soak",
+    "normalizedTerm": "soak",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "浸泡；吸收",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "solemn",
+    "term": "solemn",
+    "normalizedTerm": "solemn",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "庄严的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "solidarity",
+    "term": "solidarity",
+    "normalizedTerm": "solidarity",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "团结",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "solitary",
+    "term": "solitary",
+    "normalizedTerm": "solitary",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "独自的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "soluble",
+    "term": "soluble",
+    "normalizedTerm": "soluble",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "可溶的；⚡（问题）可解决的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sovereign",
+    "term": "sovereign",
+    "normalizedTerm": "sovereign",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "主权的 n. 君主",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "spacious",
+    "term": "spacious",
+    "normalizedTerm": "spacious",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "宽敞的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "span",
+    "term": "span",
+    "normalizedTerm": "span",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "跨度；时间段 v. 持续；横跨；⚡~ning adj. 跨越的（long-~ing 长期的）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "spark",
+    "term": "spark",
+    "normalizedTerm": "spark",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "火花 v. 引发；⚡~ debate 引发争论",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sparkle",
+    "term": "sparkle",
+    "normalizedTerm": "sparkle",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "闪耀 n. 光芒",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "specialize",
+    "term": "specialize",
+    "normalizedTerm": "specialize",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "专攻（~ in）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "specimen",
+    "term": "specimen",
+    "normalizedTerm": "specimen",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "样本；标本",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "spectacle",
+    "term": "spectacle",
+    "normalizedTerm": "spectacle",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "景象；壮观；⚡spectacles n. 眼镜；spectator n. 观众",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sphere",
+    "term": "sphere",
+    "normalizedTerm": "sphere",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "球体；领域",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "spill",
+    "term": "spill",
+    "normalizedTerm": "spill",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "溢出；⚡~ over 蔓延；spill the beans 泄密",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "spiral",
+    "term": "spiral",
+    "normalizedTerm": "spiral",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "螺旋 v. 盘旋；⚡（价格）不断恶化",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "spirit",
+    "term": "spirit",
+    "normalizedTerm": "spirit",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "精神；⚡（复数）情绪（in high ~s）；烈酒",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "splash",
+    "term": "splash",
+    "normalizedTerm": "splash",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "溅 n. 溅洒声；⚡make a ~ 引起轰动",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "split",
+    "term": "split",
+    "normalizedTerm": "split",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "分裂；分担 n. 分歧；⚡~ up 分手；split second 一瞬间",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "spokesman",
+    "term": "spokesman",
+    "normalizedTerm": "spokesman",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "发言人",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "spontaneous",
+    "term": "spontaneous",
+    "normalizedTerm": "spontaneous",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "自发的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "spot",
+    "term": "spot",
+    "normalizedTerm": "spot",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "地点；斑点 v. 发现；⚡on the ~ 当场；spot check 抽查",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "spouse",
+    "term": "spouse",
+    "normalizedTerm": "spouse",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "配偶",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sprawl",
+    "term": "sprawl",
+    "normalizedTerm": "sprawl",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "蔓延 n. 杂乱扩张；⚡urban ~ 城市无序扩张",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "spray",
+    "term": "spray",
+    "normalizedTerm": "spray",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "喷洒 n. 喷雾",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "spur",
+    "term": "spur",
+    "normalizedTerm": "spur",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "激励，促进 n. 刺激（因素）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "squeeze",
+    "term": "squeeze",
+    "normalizedTerm": "squeeze",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "挤压 n. 挤压；⚡~ profits 挤压利润；put the ~ on 施压",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stability",
+    "term": "stability",
+    "normalizedTerm": "stability",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "稳定性；⚡stable adj. 稳定的；（人）沉稳的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stack",
+    "term": "stack",
+    "normalizedTerm": "stack",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "一摞 v. 堆放",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "staff",
+    "term": "staff",
+    "normalizedTerm": "staff",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "全体员工 v. 配备员工",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stagger",
+    "term": "stagger",
+    "normalizedTerm": "stagger",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使震惊；蹒跚；⚡staggering adj. 惊人的；~ed adj. 错开的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stagnant",
+    "term": "stagnant",
+    "normalizedTerm": "stagnant",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "停滞的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stain",
+    "term": "stain",
+    "normalizedTerm": "stain",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "污渍 v. 玷污；⚡stainless adj. 无瑕疵的；不锈的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stakeholder",
+    "term": "stakeholder",
+    "normalizedTerm": "stakeholder",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "利益相关者",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stall",
+    "term": "stall",
+    "normalizedTerm": "stall",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "拖延；熄火 n. 摊位",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stamp",
+    "term": "stamp",
+    "normalizedTerm": "stamp",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "邮票；印章 v. 盖章；踩踏",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "standpoint",
+    "term": "standpoint",
+    "normalizedTerm": "standpoint",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "立场",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "staple",
+    "term": "staple",
+    "normalizedTerm": "staple",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "主食；订书钉 adj. 主要的；⚡~ food 主食",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "startle",
+    "term": "startle",
+    "normalizedTerm": "startle",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使惊吓；⚡startling adj. 令人震惊的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "starve",
+    "term": "starve",
+    "normalizedTerm": "starve",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "挨饿；⚡be starved of 匮乏；starvation n. 饥饿",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "statistic",
+    "term": "statistic",
+    "normalizedTerm": "statistic",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "统计数据；⚡statistical adj. 统计的；statistics n. 统计学",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "statute",
+    "term": "statute",
+    "normalizedTerm": "statute",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "法令；章程",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "steady",
+    "term": "steady",
+    "normalizedTerm": "steady",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "稳定的；稳步的 v. 使平稳",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "steer",
+    "term": "steer",
+    "normalizedTerm": "steer",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "驾驶；引导",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stem",
+    "term": "stem",
+    "normalizedTerm": "stem",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "茎；词干；⚡v.（~ from）起源于；~ the tide 遏制",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stern",
+    "term": "stern",
+    "normalizedTerm": "stern",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "严厉的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stimulate",
+    "term": "stimulate",
+    "normalizedTerm": "stimulate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "刺激；激励；⚡stimulus n.（复数 stimuli）刺激（物）；经济刺激",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sting",
+    "term": "sting",
+    "normalizedTerm": "sting",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "刺；蜇；刺痛",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stir",
+    "term": "stir",
+    "normalizedTerm": "stir",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "搅动；激起 n. 轰动",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stock",
+    "term": "stock",
+    "normalizedTerm": "stock",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "库存；股票；家畜；⚡take ~ of 评估形势",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "strain",
+    "term": "strain",
+    "normalizedTerm": "strain",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "压力；菌株 v. 使紧张；拉伤；⚡~ of... 某种类型",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "strap",
+    "term": "strap",
+    "normalizedTerm": "strap",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "带子 v. 捆绑",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "strategic",
+    "term": "strategic",
+    "normalizedTerm": "strategic",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "战略的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stray",
+    "term": "stray",
+    "normalizedTerm": "stray",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "偏离；走失 adj. 走失的；⚡~ from the point 跑题",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stream",
+    "term": "stream",
+    "normalizedTerm": "stream",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "溪流；数据流 v. 流动；在线播放",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "striking",
+    "term": "striking",
+    "normalizedTerm": "striking",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "显著的，惊人的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "string",
+    "term": "string",
+    "normalizedTerm": "string",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "细绳；一串；⚡a ~ of 一系列；strings n. 附带条件（no strings attached）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "strip",
+    "term": "strip",
+    "normalizedTerm": "strip",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "剥夺（~ of）；拆除 n. 条带",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "strive",
+    "term": "strive",
+    "normalizedTerm": "strive",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "努力，奋斗（~ for）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stroke",
+    "term": "stroke",
+    "normalizedTerm": "stroke",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "中风；击打；笔画；⚡a ~ of luck 好运",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stubborn",
+    "term": "stubborn",
+    "normalizedTerm": "stubborn",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "固执的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stumble",
+    "term": "stumble",
+    "normalizedTerm": "stumble",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "绊倒；⚡~ across/upon 偶然发现",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "stun",
+    "term": "stun",
+    "normalizedTerm": "stun",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使震惊；⚡stunning adj. 惊艳的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "subjective",
+    "term": "subjective",
+    "normalizedTerm": "subjective",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "主观的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "submit",
+    "term": "submit",
+    "normalizedTerm": "submit",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "提交；服从（~ to）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "subscribe",
+    "term": "subscribe",
+    "normalizedTerm": "subscribe",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "订阅；赞同（~ to）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "subside",
+    "term": "subside",
+    "normalizedTerm": "subside",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "减弱；平息",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "subsidiary",
+    "term": "subsidiary",
+    "normalizedTerm": "subsidiary",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "子公司 adj. 次要的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "substantiate",
+    "term": "substantiate",
+    "normalizedTerm": "substantiate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "证实",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "suburb",
+    "term": "suburb",
+    "normalizedTerm": "suburb",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "郊区；⚡suburban adj. 郊区的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "successor",
+    "term": "successor",
+    "normalizedTerm": "successor",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "继任者",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sue",
+    "term": "sue",
+    "normalizedTerm": "sue",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "起诉",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "suicide",
+    "term": "suicide",
+    "normalizedTerm": "suicide",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "自杀；⚡economic ~ 经济自杀行为",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "suite",
+    "term": "suite",
+    "normalizedTerm": "suite",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "套房；套装软件",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sulfur",
+    "term": "sulfur",
+    "normalizedTerm": "sulfur",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "硫",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "summon",
+    "term": "summon",
+    "normalizedTerm": "summon",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "召唤；传唤",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "superb",
+    "term": "superb",
+    "normalizedTerm": "superb",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "极好的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "superficial",
+    "term": "superficial",
+    "normalizedTerm": "superficial",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "肤浅的；表面的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "superfluous",
+    "term": "superfluous",
+    "normalizedTerm": "superfluous",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "多余的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "superintendent",
+    "term": "superintendent",
+    "normalizedTerm": "superintendent",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "主管；警长",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "surge",
+    "term": "surge",
+    "normalizedTerm": "surge",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "激增；⚡power ~ 电压骤增",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "surgeon",
+    "term": "surgeon",
+    "normalizedTerm": "surgeon",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "外科医生",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "surpass",
+    "term": "surpass",
+    "normalizedTerm": "surpass",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "超过",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "surplus",
+    "term": "surplus",
+    "normalizedTerm": "surplus",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "盈余；过剩 adj. 过剩的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "surrender",
+    "term": "surrender",
+    "normalizedTerm": "surrender",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "投降；放弃",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "survive",
+    "term": "survive",
+    "normalizedTerm": "survive",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "幸存；比…活得长；⚡survival n. 生存；幸存物",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "suspect",
+    "term": "suspect",
+    "normalizedTerm": "suspect",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "怀疑 n. 嫌疑犯；⚡suspected adj. 疑似的；suspicious adj. 可疑的；怀疑的（~ of）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "suspend",
+    "term": "suspend",
+    "normalizedTerm": "suspend",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "暂停；悬挂；⚡suspension n. 暂停；suspension bridge 吊桥",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "suspicion",
+    "term": "suspicion",
+    "normalizedTerm": "suspicion",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "怀疑",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "swallow",
+    "term": "swallow",
+    "normalizedTerm": "swallow",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "吞下；⚡v. 掩饰；轻信",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "swamp",
+    "term": "swamp",
+    "normalizedTerm": "swamp",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "沼泽 v. 淹没；使应接不暇",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "swap",
+    "term": "swap",
+    "normalizedTerm": "swap",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "交换",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "swear",
+    "term": "swear",
+    "normalizedTerm": "swear",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "发誓；咒骂",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "sweep",
+    "term": "sweep",
+    "normalizedTerm": "sweep",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "扫；席卷；⚡sweeping adj. 影响深远的；彻底的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "swell",
+    "term": "swell",
+    "normalizedTerm": "swell",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "膨胀；增加",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "switch",
+    "term": "switch",
+    "normalizedTerm": "switch",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "转换；开关；⚡~ to 转向；switch off 关掉",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "symptom",
+    "term": "symptom",
+    "normalizedTerm": "symptom",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "症状；⚡n. 征兆（~ of）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "synthesis",
+    "term": "synthesis",
+    "normalizedTerm": "synthesis",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "综合；合成（复数 syntheses）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "synthesize",
+    "term": "synthesize",
+    "normalizedTerm": "synthesize",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "合成；综合",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "systematic",
+    "term": "systematic",
+    "normalizedTerm": "systematic",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "系统的；⚡~ally adv. 有条理地",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tablet",
+    "term": "tablet",
+    "normalizedTerm": "tablet",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "药片；平板电脑；石碑",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tackle",
+    "term": "tackle",
+    "normalizedTerm": "tackle",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "处理，应对；⚡n.（运动）抢断；装备",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tailor",
+    "term": "tailor",
+    "normalizedTerm": "tailor",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "裁剪；⚡v.（~ to）量身定制；n. 裁缝",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "takeover",
+    "term": "takeover",
+    "normalizedTerm": "takeover",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "收购；接管",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "talent",
+    "term": "talent",
+    "normalizedTerm": "talent",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "才能；人才",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tame",
+    "term": "tame",
+    "normalizedTerm": "tame",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "驯服的 v. 驯化；制服",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tap",
+    "term": "tap",
+    "normalizedTerm": "tap",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "轻拍；⚡~ the potential 挖掘潜力；n. 水龙头",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tariff",
+    "term": "tariff",
+    "normalizedTerm": "tariff",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "关税",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tease",
+    "term": "tease",
+    "normalizedTerm": "tease",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "取笑；梳理；⚡~ out 梳理出",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tedious",
+    "term": "tedious",
+    "normalizedTerm": "tedious",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "乏味的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tempt",
+    "term": "tempt",
+    "normalizedTerm": "tempt",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "诱使；⚡tempting adj. 诱人的；temptation n. 诱惑",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tenant",
+    "term": "tenant",
+    "normalizedTerm": "tenant",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "房客，租户",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tender",
+    "term": "tender",
+    "normalizedTerm": "tender",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "温柔的；嫩的 v.（正式）提出 n. 投标",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tentative",
+    "term": "tentative",
+    "normalizedTerm": "tentative",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "试探性的；不确定的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "terminate",
+    "term": "terminate",
+    "normalizedTerm": "terminate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "终止",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "terrific",
+    "term": "terrific",
+    "normalizedTerm": "terrific",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "极好的；巨大的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "terrify",
+    "term": "terrify",
+    "normalizedTerm": "terrify",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使恐惧；⚡terrifying adj. 可怕的；terror n. 恐惧；恐怖行为",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "testify",
+    "term": "testify",
+    "normalizedTerm": "testify",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "作证；证明",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "thankful",
+    "term": "thankful",
+    "normalizedTerm": "thankful",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "感激的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "theft",
+    "term": "theft",
+    "normalizedTerm": "theft",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "盗窃",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "thereby",
+    "term": "thereby",
+    "normalizedTerm": "thereby",
+    "partOfSpeech": "adv.",
+    "meanings": [
+      {
+        "text": "从而",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "thorough",
+    "term": "thorough",
+    "normalizedTerm": "thorough",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "彻底的；⚡thoroughly adv. 完全地",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "thoughtful",
+    "term": "thoughtful",
+    "normalizedTerm": "thoughtful",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "体贴的；深思熟虑的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "threaten",
+    "term": "threaten",
+    "normalizedTerm": "threaten",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "威胁；⚡~ to do 有…的危险",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tilt",
+    "term": "tilt",
+    "normalizedTerm": "tilt",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "倾斜；偏向",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "timely",
+    "term": "timely",
+    "normalizedTerm": "timely",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "及时的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "timid",
+    "term": "timid",
+    "normalizedTerm": "timid",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "胆怯的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tissue",
+    "term": "tissue",
+    "normalizedTerm": "tissue",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "组织；纸巾",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "token",
+    "term": "token",
+    "normalizedTerm": "token",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "象征；代币；⚡~ gesture 象征性姿态；by the same ~ 同样地",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tolerate",
+    "term": "tolerate",
+    "normalizedTerm": "tolerate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "容忍；耐受；⚡tolerance n. 宽容；耐受度",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "torment",
+    "term": "torment",
+    "normalizedTerm": "torment",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "痛苦；折磨",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "toss",
+    "term": "toss",
+    "normalizedTerm": "toss",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "扔；摇摆；⚡~ and turn 辗转反侧",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "total",
+    "term": "total",
+    "normalizedTerm": "total",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "总的；⚡~ly adv. 完全；a ~ of 总计",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "toxic",
+    "term": "toxic",
+    "normalizedTerm": "toxic",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "有毒的；⚡adj.（关系）有害的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "trace",
+    "term": "trace",
+    "normalizedTerm": "trace",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "痕迹 v. 追溯（~ back to）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "trademark",
+    "term": "trademark",
+    "normalizedTerm": "trademark",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "商标；标志性的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tragic",
+    "term": "tragic",
+    "normalizedTerm": "tragic",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "悲剧的；⚡tragedy n. 悲剧；惨事",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "trait",
+    "term": "trait",
+    "normalizedTerm": "trait",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "特征，特质",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "transaction",
+    "term": "transaction",
+    "normalizedTerm": "transaction",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "交易",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "transcript",
+    "term": "transcript",
+    "normalizedTerm": "transcript",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "成绩单；文字记录",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "transparency",
+    "term": "transparency",
+    "normalizedTerm": "transparency",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "透明度",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "transplant",
+    "term": "transplant",
+    "normalizedTerm": "transplant",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "移植；n. 移植（手术）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "traverse",
+    "term": "traverse",
+    "normalizedTerm": "traverse",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "横穿",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "treaty",
+    "term": "treaty",
+    "normalizedTerm": "treaty",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "条约",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tremble",
+    "term": "tremble",
+    "normalizedTerm": "tremble",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "颤抖",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tremendous",
+    "term": "tremendous",
+    "normalizedTerm": "tremendous",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "巨大的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tribute",
+    "term": "tribute",
+    "normalizedTerm": "tribute",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "贡品；致敬（pay ~ to）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "trifle",
+    "term": "trifle",
+    "normalizedTerm": "trifle",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "小事；稍微；⚡a ~ 有点儿",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "triple",
+    "term": "triple",
+    "normalizedTerm": "triple",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "三倍的 v. 增至三倍",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "trivial",
+    "term": "trivial",
+    "normalizedTerm": "trivial",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "琐碎的，不重要的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "trophy",
+    "term": "trophy",
+    "normalizedTerm": "trophy",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "奖杯",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "truck",
+    "term": "truck",
+    "normalizedTerm": "truck",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "卡车；⚡have no ~ with 不与…往来",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "trust",
+    "term": "trust",
+    "normalizedTerm": "trust",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "信任；⚡n. 托拉斯；信托机构",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tunnel",
+    "term": "tunnel",
+    "normalizedTerm": "tunnel",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "隧道",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "turbulent",
+    "term": "turbulent",
+    "normalizedTerm": "turbulent",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "动荡的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "turn",
+    "term": "turn",
+    "normalizedTerm": "turn",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "转动；⚡~ out 结果是；~ to 求助于；~ down 拒绝；~ up 出现",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "tutor",
+    "term": "tutor",
+    "normalizedTerm": "tutor",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "家教；导师 v. 辅导",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "twist",
+    "term": "twist",
+    "normalizedTerm": "twist",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "转折；扭 v. 扭曲；⚡a ~ of fate 命运的捉弄",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ubiquitous",
+    "term": "ubiquitous",
+    "normalizedTerm": "ubiquitous",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "无处不在的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "ugly",
+    "term": "ugly",
+    "normalizedTerm": "ugly",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "丑陋的；⚡adj. 险恶的（an ~ incident）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "unanimous",
+    "term": "unanimous",
+    "normalizedTerm": "unanimous",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "全体一致的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "unaware",
+    "term": "unaware",
+    "normalizedTerm": "unaware",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "不知道的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "uncertainty",
+    "term": "uncertainty",
+    "normalizedTerm": "uncertainty",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "不确定性",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "uncover",
+    "term": "uncover",
+    "normalizedTerm": "uncover",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "揭露；发现",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "underestimate",
+    "term": "underestimate",
+    "normalizedTerm": "underestimate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "低估",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "undermine",
+    "term": "undermine",
+    "normalizedTerm": "undermine",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "削弱，暗中破坏",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "underneath",
+    "term": "underneath",
+    "normalizedTerm": "underneath",
+    "partOfSpeech": "prep.",
+    "meanings": [
+      {
+        "text": "在…下面",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "underpin",
+    "term": "underpin",
+    "normalizedTerm": "underpin",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "支撑；巩固",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "underscore",
+    "term": "underscore",
+    "normalizedTerm": "underscore",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "强调",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "undesirable",
+    "term": "undesirable",
+    "normalizedTerm": "undesirable",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "不受欢迎的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "undo",
+    "term": "undo",
+    "normalizedTerm": "undo",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "撤销；⚡~ the damage 消除损害",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "undoubtedly",
+    "term": "undoubtedly",
+    "normalizedTerm": "undoubtedly",
+    "partOfSpeech": "adv.",
+    "meanings": [
+      {
+        "text": "无疑",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "uneasy",
+    "term": "uneasy",
+    "normalizedTerm": "uneasy",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "不安的；⚡unease n. 忧虑",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "unemployment",
+    "term": "unemployment",
+    "normalizedTerm": "unemployment",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "失业（率）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "unequal",
+    "term": "unequal",
+    "normalizedTerm": "unequal",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "不平等的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "unexpected",
+    "term": "unexpected",
+    "normalizedTerm": "unexpected",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "意外的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "unfold",
+    "term": "unfold",
+    "normalizedTerm": "unfold",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "展开；显露",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "unjust",
+    "term": "unjust",
+    "normalizedTerm": "unjust",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "不公正的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "unknowingly",
+    "term": "unknowingly",
+    "normalizedTerm": "unknowingly",
+    "partOfSpeech": "adv.",
+    "meanings": [
+      {
+        "text": "不知不觉地",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "unlikely",
+    "term": "unlikely",
+    "normalizedTerm": "unlikely",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "不太可能的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "unnecessary",
+    "term": "unnecessary",
+    "normalizedTerm": "unnecessary",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "不必要的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "unprecedented",
+    "term": "unprecedented",
+    "normalizedTerm": "unprecedented",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "前所未有的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "unpredictable",
+    "term": "unpredictable",
+    "normalizedTerm": "unpredictable",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "不可预测的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "unrealistic",
+    "term": "unrealistic",
+    "normalizedTerm": "unrealistic",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "不现实的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "unravel",
+    "term": "unravel",
+    "normalizedTerm": "unravel",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "解开；（谜团）解开；（体系）瓦解",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "unveil",
+    "term": "unveil",
+    "normalizedTerm": "unveil",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "揭幕；公布",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "upcoming",
+    "term": "upcoming",
+    "normalizedTerm": "upcoming",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "即将到来的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "upheaval",
+    "term": "upheaval",
+    "normalizedTerm": "upheaval",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "剧变",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "uphold",
+    "term": "uphold",
+    "normalizedTerm": "uphold",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "支持；维持（原判）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "upon",
+    "term": "upon",
+    "normalizedTerm": "upon",
+    "partOfSpeech": "prep.",
+    "meanings": [
+      {
+        "text": "在…之上；⚡~ reflection 仔细考虑后",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "upper",
+    "term": "upper",
+    "normalizedTerm": "upper",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "较高的；⚡upper hand 上风",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "uprising",
+    "term": "uprising",
+    "normalizedTerm": "uprising",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "起义",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "upset",
+    "term": "upset",
+    "normalizedTerm": "upset",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "心烦的 v. 使不安；打乱；⚡~ the balance 打破平衡",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "upsurge",
+    "term": "upsurge",
+    "normalizedTerm": "upsurge",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "高涨",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "urbanization",
+    "term": "urbanization",
+    "normalizedTerm": "urbanization",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "城市化",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "utilize",
+    "term": "utilize",
+    "normalizedTerm": "utilize",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "利用；⚡utility n. 效用；公用事业（公司）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "utter",
+    "term": "utter",
+    "normalizedTerm": "utter",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "完全的 v. 说；⚡utterly adv. 彻底地",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "vacant",
+    "term": "vacant",
+    "normalizedTerm": "vacant",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "空着的；（职位）空缺的；⚡vacancy n. 空缺职位",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "vague",
+    "term": "vague",
+    "normalizedTerm": "vague",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "模糊的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "vain",
+    "term": "vain",
+    "normalizedTerm": "vain",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "徒劳的；自负的；⚡in ~ 徒劳",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "validity",
+    "term": "validity",
+    "normalizedTerm": "validity",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "有效性；合理性",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "vanish",
+    "term": "vanish",
+    "normalizedTerm": "vanish",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "消失",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "vanity",
+    "term": "vanity",
+    "normalizedTerm": "vanity",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "虚荣",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "vegetation",
+    "term": "vegetation",
+    "normalizedTerm": "vegetation",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "植被",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "veil",
+    "term": "veil",
+    "normalizedTerm": "veil",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "面纱；⚡draw a ~ over 掩饰",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "velocity",
+    "term": "velocity",
+    "normalizedTerm": "velocity",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "速度",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "vendor",
+    "term": "vendor",
+    "normalizedTerm": "vendor",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "小贩；供应商",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "venue",
+    "term": "venue",
+    "normalizedTerm": "venue",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "场所",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "versatile",
+    "term": "versatile",
+    "normalizedTerm": "versatile",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "多才多艺的；多用途的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "verse",
+    "term": "verse",
+    "normalizedTerm": "verse",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "诗句",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "versus",
+    "term": "versus",
+    "normalizedTerm": "versus",
+    "partOfSpeech": "prep.",
+    "meanings": [
+      {
+        "text": "对抗（vs.）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "vertical",
+    "term": "vertical",
+    "normalizedTerm": "vertical",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "垂直的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "veto",
+    "term": "veto",
+    "normalizedTerm": "veto",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "否决",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "viable",
+    "term": "viable",
+    "normalizedTerm": "viable",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "可行的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "vice",
+    "term": "vice",
+    "normalizedTerm": "vice",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "恶习 adj. 副的；⚡vice versa 反之亦然",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "victimize",
+    "term": "victimize",
+    "normalizedTerm": "victimize",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "使受害；⚡victim n. 受害者",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "vigorous",
+    "term": "vigorous",
+    "normalizedTerm": "vigorous",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "有力的；⚡vigor n. 活力",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "vilify",
+    "term": "vilify",
+    "normalizedTerm": "vilify",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "诋毁",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "vindicate",
+    "term": "vindicate",
+    "normalizedTerm": "vindicate",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "证明…无辜；维护",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "violation",
+    "term": "violation",
+    "normalizedTerm": "violation",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "违反；侵犯",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "vision",
+    "term": "vision",
+    "normalizedTerm": "vision",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "视力；愿景；⚡adj. visionary 有远见的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "visual",
+    "term": "visual",
+    "normalizedTerm": "visual",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "视觉的；⚡visualize v. 想象；使可视化",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "vitamin",
+    "term": "vitamin",
+    "normalizedTerm": "vitamin",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "维生素",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "vocational",
+    "term": "vocational",
+    "normalizedTerm": "vocational",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "职业的（教育的）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "void",
+    "term": "void",
+    "normalizedTerm": "void",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "空虚 adj. 无效的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "volatile",
+    "term": "volatile",
+    "normalizedTerm": "volatile",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "易挥发的；（形势）不稳定的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "volunteer",
+    "term": "volunteer",
+    "normalizedTerm": "volunteer",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "志愿者 v. 自愿做",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "vote",
+    "term": "vote",
+    "normalizedTerm": "vote",
+    "partOfSpeech": "v./n.",
+    "meanings": [
+      {
+        "text": "投票；⚡vote in 选出；ballot n. 选票",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "vulnerable",
+    "term": "vulnerable",
+    "normalizedTerm": "vulnerable",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "脆弱的；易受伤害的（~ to）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "wage",
+    "term": "wage",
+    "normalizedTerm": "wage",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "工资 v. 发动（战争、运动）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "warehouse",
+    "term": "warehouse",
+    "normalizedTerm": "warehouse",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "仓库",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "warrant",
+    "term": "warrant",
+    "normalizedTerm": "warrant",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "保证；使有必要 n. 授权令；⚡unwarranted adj. 无根据的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "weave",
+    "term": "weave",
+    "normalizedTerm": "weave",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "编织；⚡~ through 穿行；be woven into 融入",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "weird",
+    "term": "weird",
+    "normalizedTerm": "weird",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "怪异的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "wholesale",
+    "term": "wholesale",
+    "normalizedTerm": "wholesale",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "批发；⚡adj. 大规模的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "wipe",
+    "term": "wipe",
+    "normalizedTerm": "wipe",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "擦；⚡~ out 彻底消灭",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "wisdom",
+    "term": "wisdom",
+    "normalizedTerm": "wisdom",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "智慧；⚡conventional wisdom 普遍看法",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "wit",
+    "term": "wit",
+    "normalizedTerm": "wit",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "智力；机智；⚡at one's wits' end 不知所措",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "withdraw",
+    "term": "withdraw",
+    "normalizedTerm": "withdraw",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "撤回；取款；退出；⚡withdrawal n. 撤军；戒断",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "withstand",
+    "term": "withstand",
+    "normalizedTerm": "withstand",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "承受，抵御",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "workshop",
+    "term": "workshop",
+    "normalizedTerm": "workshop",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "车间；研讨会",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "worship",
+    "term": "worship",
+    "normalizedTerm": "worship",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "崇拜",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "worthwhile",
+    "term": "worthwhile",
+    "normalizedTerm": "worthwhile",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "值得的",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "worthy",
+    "term": "worthy",
+    "normalizedTerm": "worthy",
+    "partOfSpeech": "adj.",
+    "meanings": [
+      {
+        "text": "值得的（~ of）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "wound",
+    "term": "wound",
+    "normalizedTerm": "wound",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "伤口 v. 使受伤；⚡v.（情感）伤害",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "wrap",
+    "term": "wrap",
+    "normalizedTerm": "wrap",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "包裹；⚡~ up 完成，收尾",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "wrath",
+    "term": "wrath",
+    "normalizedTerm": "wrath",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "愤怒",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "wreck",
+    "term": "wreck",
+    "normalizedTerm": "wreck",
+    "partOfSpeech": "v.",
+    "meanings": [
+      {
+        "text": "破坏 n. 残骸；⚡wreckage n. 残骸；a nervous ~ 精神崩溃的人",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "zeal",
+    "term": "zeal",
+    "normalizedTerm": "zeal",
+    "partOfSpeech": "n.",
+    "meanings": [
+      {
+        "text": "热情",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
+  },
+  {
+    "key": "zigzag",
+    "term": "zigzag",
+    "normalizedTerm": "zigzag",
+    "partOfSpeech": "n./v.",
+    "meanings": [
+      {
+        "text": "之字形（移动）",
+        "source": "curated"
+      }
+    ],
+    "category": "高频词",
+    "source": "legacy-data.js"
   }
 ] satisfies PublicVocabEntry[]
