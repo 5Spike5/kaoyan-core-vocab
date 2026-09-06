@@ -19580,7 +19580,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "放弃，抛弃；⚡n. 尽兴，放纵（with ~）",
+        "text": "放弃，抛弃",
         "source": "curated"
       }
     ],
@@ -19594,7 +19594,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "抽象的 n. 摘要；⚡v. 提取，抽取",
+        "text": "抽象的",
         "source": "curated"
       }
     ],
@@ -19622,7 +19622,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "通道；使用权 v. 获取；⚡have ~ to sth. 有机会使用",
+        "text": "通道；使用权",
         "source": "curated"
       }
     ],
@@ -19636,7 +19636,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "账户；描述；解释；⚡v.（~ for）解释；占比；take ~ of 考虑到",
+        "text": "账户；描述；解释",
         "source": "curated"
       }
     ],
@@ -19706,7 +19706,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "管理；施行；⚡v. 执行（法律、测试）",
+        "text": "管理；施行",
         "source": "curated"
       }
     ],
@@ -19734,7 +19734,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "提倡（后接 doing）n. 提倡者",
+        "text": "提倡（后接 doing）",
         "source": "curated"
       }
     ],
@@ -19748,7 +19748,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "影响；感动；⚡v. 假装",
+        "text": "影响；感动",
         "source": "curated"
       }
     ],
@@ -19762,7 +19762,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "替代方案 adj. 可替代的",
+        "text": "替代方案",
         "source": "curated"
       }
     ],
@@ -19846,7 +19846,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "显然的；⚡adj. 表面上的",
+        "text": "显然的",
         "source": "curated"
       }
     ],
@@ -19874,7 +19874,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "感激；欣赏；升值；⚡v. 理解，意识到",
+        "text": "感激；欣赏；升值",
         "source": "curated"
       }
     ],
@@ -19888,7 +19888,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "方法 v. 接近；⚡v. 处理，着手",
+        "text": "方法",
         "source": "curated"
       }
     ],
@@ -19902,7 +19902,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "恰当的；⚡v. 挪用；拨款",
+        "text": "恰当的",
         "source": "curated"
       }
     ],
@@ -19958,7 +19958,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "清晰表达 adj. 口齿清楚的",
+        "text": "清晰表达",
         "source": "curated"
       }
     ],
@@ -19986,7 +19986,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "资产；⚡n.（人的）优势，宝贵之处",
+        "text": "资产",
         "source": "curated"
       }
     ],
@@ -20014,7 +20014,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "假定；承担；呈现；⚡n. assumption 假设（真题高频）",
+        "text": "假定；承担；呈现",
         "source": "curated"
       }
     ],
@@ -20056,7 +20056,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "出席；照料；⚡~ to 专心于，处理",
+        "text": "出席；照料",
         "source": "curated"
       }
     ],
@@ -20081,9 +20081,10 @@ export const publicVocab = [
     "key": "attribute",
     "term": "attribute",
     "normalizedTerm": "attribute",
+    "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "v.（~ to）归因于 n. 属性",
+        "text": "（~ to）归因于",
         "source": "curated"
       }
     ],
@@ -20097,7 +20098,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "权威；当局；⚡复数 authorities = 官方",
+        "text": "权威；当局",
         "source": "curated"
       }
     ],
@@ -20181,7 +20182,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "基础 v. 以…为基础；⚡n. 基地；本垒",
+        "text": "基础",
         "source": "curated"
       }
     ],
@@ -20209,7 +20210,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "好处 v. 有益于；⚡n.（复数）补贴，救济金",
+        "text": "好处",
         "source": "curated"
       }
     ],
@@ -20223,7 +20224,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "偏见；⚡v. 使有偏见",
+        "text": "偏见",
         "source": "curated"
       }
     ],
@@ -20251,7 +20252,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "品牌 v. 打烙印于",
+        "text": "品牌",
         "source": "curated"
       }
     ],
@@ -20265,7 +20266,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "预算 v. 编制预算 adj. 廉价的",
+        "text": "预算",
         "source": "curated"
       }
     ],
@@ -20279,7 +20280,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "负担 v. 使负重",
+        "text": "负担",
         "source": "curated"
       }
     ],
@@ -20307,7 +20308,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "运动；竞选活动 v. 发起运动",
+        "text": "运动；竞选活动",
         "source": "curated"
       }
     ],
@@ -20335,7 +20336,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "首都；资本；大写字母；⚡adj. 死刑的（capital punishment）",
+        "text": "首都；资本；大写字母",
         "source": "curated"
       }
     ],
@@ -20349,7 +20350,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "捕获；吸引；⚡v. 抢占（市场）；记录",
+        "text": "捕获；吸引",
         "source": "curated"
       }
     ],
@@ -20377,7 +20378,7 @@ export const publicVocab = [
     "partOfSpeech": "n./v.",
     "meanings": [
       {
-        "text": "挑战；⚡v. 质疑，反驳",
+        "text": "挑战",
         "source": "curated"
       }
     ],
@@ -20391,7 +20392,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "频道；渠道；海峡；⚡v. 引导，输送",
+        "text": "频道；渠道；海峡",
         "source": "curated"
       }
     ],
@@ -20405,7 +20406,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "性格；角色；汉字；⚡n. 人物塑造；品质",
+        "text": "性格；角色；汉字",
         "source": "curated"
       }
     ],
@@ -20419,7 +20420,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "特征 adj. 典型的",
+        "text": "特征",
         "source": "curated"
       }
     ],
@@ -20433,7 +20434,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "费用；指控 v. 收费；充电；⚡in ~ of 负责；free of ~ 免费",
+        "text": "费用；指控",
         "source": "curated"
       }
     ],
@@ -20461,7 +20462,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "引用；⚡v. 举例；传唤",
+        "text": "引用",
         "source": "curated"
       }
     ],
@@ -20489,7 +20490,7 @@ export const publicVocab = [
     "partOfSpeech": "v./n.",
     "meanings": [
       {
-        "text": "声称；索赔；⚡n. 权利主张；断言（真题常考\"观点\"）",
+        "text": "声称；索赔",
         "source": "curated"
       }
     ],
@@ -20517,7 +20518,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "经典的；⚡adj. 典型的（a ~ mistake）",
+        "text": "经典的",
         "source": "curated"
       }
     ],
@@ -20545,7 +20546,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "气候；⚡n. 风气，氛围（investment ~）",
+        "text": "气候",
         "source": "curated"
       }
     ],
@@ -20559,7 +20560,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "法典；代码；⚡n. 道德准则，行为规范",
+        "text": "法典；代码",
         "source": "curated"
       }
     ],
@@ -20601,7 +20602,7 @@ export const publicVocab = [
     "partOfSpeech": "v./n.",
     "meanings": [
       {
-        "text": "倒塌；崩溃；⚡v.（价格）暴跌；（体制）瓦解",
+        "text": "倒塌；崩溃",
         "source": "curated"
       }
     ],
@@ -20629,7 +20630,7 @@ export const publicVocab = [
     "partOfSpeech": "v./n.",
     "meanings": [
       {
-        "text": "命令；指挥；⚡n. 掌握（a good ~ of English）",
+        "text": "命令；指挥",
         "source": "curated"
       }
     ],
@@ -20685,7 +20686,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "社区；⚡n. 界，群体（the scientific ~）",
+        "text": "社区",
         "source": "curated"
       }
     ],
@@ -20699,7 +20700,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "紧凑的 n. 协议",
+        "text": "紧凑的",
         "source": "curated"
       }
     ],
@@ -20713,7 +20714,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "公司；⚡n. 陪伴；同伴（in the ~ of）",
+        "text": "公司",
         "source": "curated"
       }
     ],
@@ -20783,7 +20784,7 @@ export const publicVocab = [
     "partOfSpeech": "v./n.",
     "meanings": [
       {
-        "text": "补充；⚡与 compliment（恭维）区分",
+        "text": "补充",
         "source": "curated"
       }
     ],
@@ -20797,7 +20798,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "复杂的；⚡n. 综合体；情结",
+        "text": "复杂的",
         "source": "curated"
       }
     ],
@@ -20808,9 +20809,10 @@ export const publicVocab = [
     "key": "comply",
     "term": "comply",
     "normalizedTerm": "comply",
+    "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "v.（~ with）遵守",
+        "text": "（~ with）遵守",
         "source": "curated"
       }
     ],
@@ -20838,7 +20840,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "组成；创作；⚡be composed of 由…构成",
+        "text": "组成；创作",
         "source": "curated"
       }
     ],
@@ -20922,7 +20924,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "担忧；关切 v. 涉及；⚡be concerned with 与…有关；as far as…be concerned 就…而言",
+        "text": "担忧；关切",
         "source": "curated"
       }
     ],
@@ -20936,7 +20938,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "得出结论；缔结；⚡v. 结束",
+        "text": "得出结论；缔结",
         "source": "curated"
       }
     ],
@@ -20950,7 +20952,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "条件；状况；⚡on ~ that 条件是；（复数）环境",
+        "text": "条件；状况",
         "source": "curated"
       }
     ],
@@ -20964,7 +20966,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "进行；指挥 n. 行为；⚡n. 举止，品行",
+        "text": "进行；指挥",
         "source": "curated"
       }
     ],
@@ -20978,7 +20980,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "授予；⚡~ with sb. 商讨，交换意见",
+        "text": "授予",
         "source": "curated"
       }
     ],
@@ -20992,7 +20994,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "信心；⚡n. 秘密（in ~）",
+        "text": "信心",
         "source": "curated"
       }
     ],
@@ -21045,9 +21047,10 @@ export const publicVocab = [
     "key": "conform",
     "term": "conform",
     "normalizedTerm": "conform",
+    "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "v.（~ to）符合；遵从",
+        "text": "（~ to）符合；遵从",
         "source": "curated"
       }
     ],
@@ -21103,7 +21106,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "有意识的；⚡adj. 故意的",
+        "text": "有意识的",
         "source": "curated"
       }
     ],
@@ -21131,7 +21134,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "后果；⚡n. 重要性（of no ~ 不重要）",
+        "text": "后果",
         "source": "curated"
       }
     ],
@@ -21145,7 +21148,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "保守的 n. 保守派",
+        "text": "保守的",
         "source": "curated"
       }
     ],
@@ -21159,7 +21162,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "相当大的；⚡区别 considerate（体贴的）",
+        "text": "相当大的",
         "source": "curated"
       }
     ],
@@ -21257,7 +21260,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "建造；⚡n. 构想，概念",
+        "text": "建造",
         "source": "curated"
       }
     ],
@@ -21285,7 +21288,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "消耗；消费；⚡be consumed with 被…吞噬，满心是",
+        "text": "消耗；消费",
         "source": "curated"
       }
     ],
@@ -21327,7 +21330,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "主张；竞争；⚡v. 争辩，声称",
+        "text": "主张；竞争",
         "source": "curated"
       }
     ],
@@ -21341,7 +21344,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "比赛；⚡v. 质疑，争辩",
+        "text": "比赛",
         "source": "curated"
       }
     ],
@@ -21355,7 +21358,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "合同 v. 收缩；⚡v. 感染（疾病）；订约",
+        "text": "合同",
         "source": "curated"
       }
     ],
@@ -21383,7 +21386,7 @@ export const publicVocab = [
     "partOfSpeech": "n./v.",
     "meanings": [
       {
-        "text": "对比；⚡by contrast 相比之下",
+        "text": "对比",
         "source": "curated"
       }
     ],
@@ -21397,7 +21400,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "贡献；⚡~ to 导致；有助于；投稿",
+        "text": "贡献",
         "source": "curated"
       }
     ],
@@ -21481,7 +21484,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "协调 n. 坐标",
+        "text": "协调",
         "source": "curated"
       }
     ],
@@ -21509,7 +21512,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "公司的；⚡adj. 整体的，共同的",
+        "text": "公司的",
         "source": "curated"
       }
     ],
@@ -21537,7 +21540,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "成本 v. 花费；⚡at the ~ of 以…为代价",
+        "text": "成本",
         "source": "curated"
       }
     ],
@@ -21579,7 +21582,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "法院；球场；⚡v. 讨好；追求；招致",
+        "text": "法院；球场",
         "source": "curated"
       }
     ],
@@ -21621,7 +21624,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "信用；学分；⚡v. 归功于（~ sb. with）；n. 赞扬",
+        "text": "信用；学分",
         "source": "curated"
       }
     ],
@@ -21649,7 +21652,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "批评家；⚡critical adj. 关键的；批判的；挑剔的",
+        "text": "批评家",
         "source": "curated"
       }
     ],
@@ -21677,7 +21680,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "货币；⚡n. 流传，通用",
+        "text": "货币",
         "source": "curated"
       }
     ],
@@ -21691,7 +21694,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "当前的 n. 水流；⚡n. 思潮，趋势",
+        "text": "当前的",
         "source": "curated"
       }
     ],
@@ -21705,7 +21708,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "习俗；⚡n. 海关；顾客惠顾",
+        "text": "习俗",
         "source": "curated"
       }
     ],
@@ -21733,7 +21736,7 @@ export const publicVocab = [
     "partOfSpeech": "n./v.",
     "meanings": [
       {
-        "text": "下降；衰退；⚡v. 婉拒，谢绝",
+        "text": "下降；衰退",
         "source": "curated"
       }
     ],
@@ -21775,7 +21778,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "证明；演示；⚡v. 游行示威",
+        "text": "证明；演示",
         "source": "curated"
       }
     ],
@@ -21789,7 +21792,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "否认；⚡v. 拒绝给予",
+        "text": "否认",
         "source": "curated"
       }
     ],
@@ -21800,9 +21803,10 @@ export const publicVocab = [
     "key": "derive",
     "term": "derive",
     "normalizedTerm": "derive",
+    "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "v.（~ from）源自；⚡v. 推论出",
+        "text": "（~ from）源自",
         "source": "curated"
       }
     ],
@@ -21816,7 +21820,7 @@ export const publicVocab = [
     "partOfSpeech": "n./v.",
     "meanings": [
       {
-        "text": "设计；⚡n. 意图，图谋（by design 故意）",
+        "text": "设计",
         "source": "curated"
       }
     ],
@@ -21844,7 +21848,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "设备；⚡n. 手段，策略（rhetorical ~）",
+        "text": "设备",
         "source": "curated"
       }
     ],
@@ -21872,7 +21876,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "尺寸；⚡n. 方面；维度",
+        "text": "尺寸",
         "source": "curated"
       }
     ],
@@ -21886,7 +21890,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "纪律；学科；⚡v. 惩戒，训练",
+        "text": "纪律；学科",
         "source": "curated"
       }
     ],
@@ -21900,7 +21904,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "折扣；⚡v. 不全信，低估",
+        "text": "折扣",
         "source": "curated"
       }
     ],
@@ -21928,7 +21932,7 @@ export const publicVocab = [
     "partOfSpeech": "n./v.",
     "meanings": [
       {
-        "text": "争论；⚡v. 质疑（真实性）",
+        "text": "争论",
         "source": "curated"
       }
     ],
@@ -21998,7 +22002,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "文件；⚡v. 记录，用文件证明",
+        "text": "文件",
         "source": "curated"
       }
     ],
@@ -22026,7 +22030,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "国内的；家庭的；⚡adj. 驯养的",
+        "text": "国内的；家庭的",
         "source": "curated"
       }
     ],
@@ -22040,7 +22044,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "草案 v. 起草；⚡n. 征兵；汇票",
+        "text": "草案",
         "source": "curated"
       }
     ],
@@ -22054,7 +22058,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "动态的；⚡adj. 有活力的；n. 动力（复数）",
+        "text": "动态的",
         "source": "curated"
       }
     ],
@@ -22068,7 +22072,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "经济；节约；⚡adj. economical 经济实惠的",
+        "text": "经济；节约",
         "source": "curated"
       }
     ],
@@ -22124,7 +22128,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "参与；吸引；雇用；⚡be engaged in 从事；~ sb. to do 使承诺",
+        "text": "参与；吸引；雇用",
         "source": "curated"
       }
     ],
@@ -22194,7 +22198,7 @@ export const publicVocab = [
     "partOfSpeech": "v./n.",
     "meanings": [
       {
-        "text": "估计；⚡n. 估算书",
+        "text": "估计",
         "source": "curated"
       }
     ],
@@ -22236,7 +22240,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "证据；⚡in ~ of 作为…的证据",
+        "text": "证据",
         "source": "curated"
       }
     ],
@@ -22306,7 +22310,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "执行；实施；⚡v. 处死",
+        "text": "执行；实施",
         "source": "curated"
       }
     ],
@@ -22320,7 +22324,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "展出；表现；⚡v. 显示出（特征）",
+        "text": "展出；表现",
         "source": "curated"
       }
     ],
@@ -22376,7 +22380,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "暴露；使接触；⚡be exposed to 接触到；揭露",
+        "text": "暴露；使接触",
         "source": "curated"
       }
     ],
@@ -22404,7 +22408,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "提取；榨取 n. 摘录",
+        "text": "提取；榨取",
         "source": "curated"
       }
     ],
@@ -22418,7 +22422,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "才能；全体教员；⚡n. 学院，系",
+        "text": "才能；全体教员",
         "source": "curated"
       }
     ],
@@ -22432,7 +22436,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "设施；⚡n. 熟练（with ~）",
+        "text": "设施",
         "source": "curated"
       }
     ],
@@ -22460,7 +22464,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "特征；⚡v. 以…为特色；n.（报纸）特写",
+        "text": "特征",
         "source": "curated"
       }
     ],
@@ -22488,7 +22492,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "财政；资金 v. 资助",
+        "text": "财政；资金",
         "source": "curated"
       }
     ],
@@ -22502,7 +22506,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "焦点 v. 集中",
+        "text": "焦点",
         "source": "curated"
       }
     ],
@@ -22544,7 +22548,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "公式；配方；⚡n. 惯例，方案（复数 formulae）",
+        "text": "公式；配方",
         "source": "curated"
       }
     ],
@@ -22558,7 +22562,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "财富；⚡n. 运气；make a ~ 发财",
+        "text": "财富",
         "source": "curated"
       }
     ],
@@ -22572,7 +22576,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "基础；基金会；⚡n. 建立",
+        "text": "基础；基金会",
         "source": "curated"
       }
     ],
@@ -22586,7 +22590,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "功能 v. 运行；⚡v. 起作用（~ as）",
+        "text": "功能",
         "source": "curated"
       }
     ],
@@ -22600,7 +22604,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "基金 v. 资助",
+        "text": "基金",
         "source": "curated"
       }
     ],
@@ -22642,7 +22646,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "授予；承认 n. 拨款；⚡take for ~ed 认为…理所当然",
+        "text": "授予；承认",
         "source": "curated"
       }
     ],
@@ -22656,7 +22660,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "利用（自然力）n. 马具",
+        "text": "利用（自然力）",
         "source": "curated"
       }
     ],
@@ -22698,7 +22702,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "强调，突出 n. 亮点",
+        "text": "强调，突出",
         "source": "curated"
       }
     ],
@@ -22712,7 +22716,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "主人；主持人 v. 主办；⚡n.（生物）寄主；a ~ of 大量",
+        "text": "主人；主持人",
         "source": "curated"
       }
     ],
@@ -22726,7 +22730,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "识别；确认；⚡~ with 认同",
+        "text": "识别；确认",
         "source": "curated"
       }
     ],
@@ -22768,7 +22772,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "实施 n. 工具",
+        "text": "实施",
         "source": "curated"
       }
     ],
@@ -22838,7 +22842,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "个人 adj. 个别的",
+        "text": "个人",
         "source": "curated"
       }
     ],
@@ -22852,7 +22856,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "工业的；⚡industrialized 工业化的",
+        "text": "工业的",
         "source": "curated"
       }
     ],
@@ -22936,7 +22940,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "智力的 n. 知识分子",
+        "text": "智力的",
         "source": "curated"
       }
     ],
@@ -23006,7 +23010,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "解释；口译；⚡interpretation n. 解读",
+        "text": "解释；口译",
         "source": "curated"
       }
     ],
@@ -23034,7 +23038,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "投资；⚡n. 值得投入的事物",
+        "text": "投资",
         "source": "curated"
       }
     ],
@@ -23062,7 +23066,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "问题；期号 v. 发布；⚡v. 发放；n. 发行物",
+        "text": "问题；期号",
         "source": "curated"
       }
     ],
@@ -23090,7 +23094,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "期刊；日记；⚡journalist n. 新闻记者",
+        "text": "期刊；日记",
         "source": "curated"
       }
     ],
@@ -23104,7 +23108,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "保持；⚡~ pace with 跟上；~ track of 跟踪",
+        "text": "保持",
         "source": "curated"
       }
     ],
@@ -23118,7 +23122,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "敲；⚡~ off 打折；~ out 淘汰",
+        "text": "敲",
         "source": "curated"
       }
     ],
@@ -23132,7 +23136,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "劳动；劳动力 v. 劳作；⚡v. 苦干；Labor Party 工党",
+        "text": "劳动；劳动力",
         "source": "curated"
       }
     ],
@@ -23160,7 +23164,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "合法的；正当的；⚡v. 使合法化",
+        "text": "合法的；正当的",
         "source": "curated"
       }
     ],
@@ -23174,7 +23178,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "执照 v. 许可",
+        "text": "执照",
         "source": "curated"
       }
     ],
@@ -23188,7 +23192,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "可能的 adv. 很可能",
+        "text": "可能的",
         "source": "curated"
       }
     ],
@@ -23202,7 +23206,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "逻辑；⚡logical adj. 合理的",
+        "text": "逻辑",
         "source": "curated"
       }
     ],
@@ -23216,7 +23220,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "彩票；⚡n. 靠运气的事",
+        "text": "彩票",
         "source": "curated"
       }
     ],
@@ -23230,7 +23234,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "维持；坚持认为；保养；⚡v. 主张（观点）",
+        "text": "维持；坚持认为；保养",
         "source": "curated"
       }
     ],
@@ -23244,7 +23248,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "主要的 n. 专业 v.（~ in）主修；⚡n. 少校",
+        "text": "主要的",
         "source": "curated"
       }
     ],
@@ -23258,7 +23262,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "措施；测量 v. 测量；⚡n.（复数）办法；in some ~ 在某种程度上",
+        "text": "措施；测量",
         "source": "curated"
       }
     ],
@@ -23328,7 +23332,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "迁移；移居；⚡migrant n. 移民；候鸟",
+        "text": "迁移；移居",
         "source": "curated"
       }
     ],
@@ -23342,7 +23346,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "道德的 n. 寓意；⚡morale n. 士气",
+        "text": "道德的",
         "source": "curated"
       }
     ],
@@ -23356,7 +23360,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "动机；⚡motivate v. 激励",
+        "text": "动机",
         "source": "curated"
       }
     ],
@@ -23384,7 +23388,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "谈判；协商；⚡v. 顺利通过（negotiate a turn）",
+        "text": "谈判；协商",
         "source": "curated"
       }
     ],
@@ -23426,7 +23430,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "目标 adj. 客观的",
+        "text": "目标",
         "source": "curated"
       }
     ],
@@ -23454,7 +23458,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "观察；遵守；⚡v. 评论，评述；庆祝",
+        "text": "观察；遵守",
         "source": "curated"
       }
     ],
@@ -23482,7 +23486,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "占据；⚡~ oneself with 忙于",
+        "text": "占据",
         "source": "curated"
       }
     ],
@@ -23496,7 +23500,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "发生；出现；⚡~ to sb. 想到",
+        "text": "发生；出现",
         "source": "curated"
       }
     ],
@@ -23524,7 +23528,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "意见；⚡opinion poll 民意调查",
+        "text": "意见",
         "source": "curated"
       }
     ],
@@ -23552,7 +23556,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "反对；⚡as opposed to 与…相对",
+        "text": "反对",
         "source": "curated"
       }
     ],
@@ -23566,7 +23570,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "选项；选择权；⚡n.（金融）期权",
+        "text": "选项；选择权",
         "source": "curated"
       }
     ],
@@ -23594,7 +23598,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "起源；⚡original adj. 独创的；originality n. 独创性",
+        "text": "起源",
         "source": "curated"
       }
     ],
@@ -23664,7 +23668,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "专家组；面板；⚡n. 专门小组",
+        "text": "专家组；面板",
         "source": "curated"
       }
     ],
@@ -23692,7 +23696,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "合伙人；搭档 v. 合作",
+        "text": "合伙人；搭档",
         "source": "curated"
       }
     ],
@@ -23748,7 +23752,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "时期；⚡n. 句号；周期",
+        "text": "时期",
         "source": "curated"
       }
     ],
@@ -23790,7 +23794,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "身体的；物质的；⚡adj. 物理的；实物的",
+        "text": "身体的；物质的",
         "source": "curated"
       }
     ],
@@ -23818,7 +23822,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "潜在的 n. 潜力",
+        "text": "潜在的",
         "source": "curated"
       }
     ],
@@ -23846,7 +23850,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "实践；惯例；⚡n. 惯常做法（common ~）；v. 执业",
+        "text": "实践；惯例",
         "source": "curated"
       }
     ],
@@ -23874,7 +23878,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "保费；溢价 adj. 优质的",
+        "text": "保费；溢价",
         "source": "curated"
       }
     ],
@@ -23888,7 +23892,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "开处方；⚡v. 规定，指定",
+        "text": "开处方",
         "source": "curated"
       }
     ],
@@ -23902,7 +23906,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "存在；⚡n. 出席；影响力",
+        "text": "存在",
         "source": "curated"
       }
     ],
@@ -23916,7 +23920,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "保存；保护；⚡n. 禁猎地；专属领域",
+        "text": "保存；保护",
         "source": "curated"
       }
     ],
@@ -23930,7 +23934,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "压力；压强；⚡v. 施压",
+        "text": "压力；压强",
         "source": "curated"
       }
     ],
@@ -23972,7 +23976,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "原则；原理；⚡区别 principal（校长；主要的）",
+        "text": "原则；原理",
         "source": "curated"
       }
     ],
@@ -23986,7 +23990,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "在先的；⚡~ to 在…之前；priority n. 优先事项",
+        "text": "在先的",
         "source": "curated"
       }
     ],
@@ -24028,7 +24032,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "过程 v. 处理；加工",
+        "text": "过程",
         "source": "curated"
       }
     ],
@@ -24042,7 +24046,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "生产 n. 产品；⚡n.（集合名词）农产品",
+        "text": "生产",
         "source": "curated"
       }
     ],
@@ -24056,7 +24060,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "简况；轮廓；⚡v. 概述；n. 姿态（high ~）",
+        "text": "简况；轮廓",
         "source": "curated"
       }
     ],
@@ -24070,7 +24074,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "项目 v. 预测；⚡v. 投射；放映",
+        "text": "项目",
         "source": "curated"
       }
     ],
@@ -24098,7 +24102,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "证据；⚡adj. 防…的（water-~）",
+        "text": "证据",
         "source": "curated"
       }
     ],
@@ -24112,7 +24116,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "财产；房产；⚡n. 特性",
+        "text": "财产；房产",
         "source": "curated"
       }
     ],
@@ -24154,7 +24158,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "前景（复数）；⚡n. 可能性；潜在客户",
+        "text": "前景（复数）",
         "source": "curated"
       }
     ],
@@ -24168,7 +24172,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "协议；规程；⚡n. 礼仪；治疗方案",
+        "text": "协议；规程",
         "source": "curated"
       }
     ],
@@ -24182,7 +24186,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "提供；⚡~ for 为…做准备；规定",
+        "text": "提供",
         "source": "curated"
       }
     ],
@@ -24196,7 +24200,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "出版；发表；⚡publishing n. 出版业",
+        "text": "出版；发表",
         "source": "curated"
       }
     ],
@@ -24210,7 +24214,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "追求；从事；⚡pursuit n. 追求（in ~ of）",
+        "text": "追求；从事",
         "source": "curated"
       }
     ],
@@ -24224,7 +24228,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "使合格；⚡qualifier n. 限定词；qualified adj. 有资格的；有保留的",
+        "text": "使合格",
         "source": "curated"
       }
     ],
@@ -24238,7 +24242,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "问题 v. 质疑；⚡v. 审问；questionnaire n. 问卷",
+        "text": "问题",
         "source": "curated"
       }
     ],
@@ -24252,7 +24256,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "引用 n. 报价",
+        "text": "引用",
         "source": "curated"
       }
     ],
@@ -24322,7 +24326,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "现实；⚡in ~ 实际上",
+        "text": "现实",
         "source": "curated"
       }
     ],
@@ -24336,7 +24340,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "原因；理性 v. 推理；⚡reasonable adj. 合理的；不错的",
+        "text": "原因；理性",
         "source": "curated"
       }
     ],
@@ -24392,7 +24396,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "减少；使陷入；⚡~ to 沦为；简化为",
+        "text": "减少；使陷入",
         "source": "curated"
       }
     ],
@@ -24448,7 +24452,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "可靠的；⚡reliance n. 依赖（~ on）",
+        "text": "可靠的",
         "source": "curated"
       }
     ],
@@ -24459,9 +24463,10 @@ export const publicVocab = [
     "key": "rely",
     "term": "rely",
     "normalizedTerm": "rely",
+    "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "v.（~ on）依赖",
+        "text": "（~ on）依赖",
         "source": "curated"
       }
     ],
@@ -24545,7 +24550,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "居住；⚡~ in 存在于；resident n. 居民",
+        "text": "居住",
         "source": "curated"
       }
     ],
@@ -24559,7 +24564,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "解决；决定；⚡n. 决心",
+        "text": "解决；决定",
         "source": "curated"
       }
     ],
@@ -24587,7 +24592,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "回应；⚡response n. 反应（in ~ to）",
+        "text": "回应",
         "source": "curated"
       }
     ],
@@ -24643,7 +24648,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "逆转 adj. 相反的 n. 反面；⚡n. 挫折；in ~ 相反地",
+        "text": "逆转",
         "source": "curated"
       }
     ],
@@ -24699,7 +24704,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "规则；统治 v. 统治；⚡v. 裁决（~ that）；out of the ~ 排除",
+        "text": "规则；统治",
         "source": "curated"
       }
     ],
@@ -24713,7 +24718,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "裁决 adj. 统治的",
+        "text": "裁决",
         "source": "curated"
       }
     ],
@@ -24727,7 +24732,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "满足；⚡satisfaction n. 赔偿；令人满足的事",
+        "text": "满足",
         "source": "curated"
       }
     ],
@@ -24741,7 +24746,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "规模；等级 v. 攀登；⚡v. 缩放；on a large ~ 大规模地",
+        "text": "规模；等级",
         "source": "curated"
       }
     ],
@@ -24769,7 +24774,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "计划表 v. 安排",
+        "text": "计划表",
         "source": "curated"
       }
     ],
@@ -24783,7 +24788,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "计划；方案；⚡n.（英）体系；阴谋",
+        "text": "计划；方案",
         "source": "curated"
       }
     ],
@@ -24797,7 +24802,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "分数；二十 v. 得分；⚡n. 配乐；scores of 许多",
+        "text": "分数；二十",
         "source": "curated"
       }
     ],
@@ -24811,7 +24816,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "屏幕 v. 筛查；⚡v. 放映；遮挡",
+        "text": "屏幕",
         "source": "curated"
       }
     ],
@@ -24825,7 +24830,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "安全的 v. 获得；保护；⚡v. 拿到（资源、职位）",
+        "text": "安全的",
         "source": "curated"
       }
     ],
@@ -24839,7 +24844,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "寻求；⚡seek to do 试图做",
+        "text": "寻求",
         "source": "curated"
       }
     ],
@@ -24853,7 +24858,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "选择；⚡selective adj. 挑剔的；选择性的",
+        "text": "选择",
         "source": "curated"
       }
     ],
@@ -24881,7 +24886,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "重要的；显著的；⚡significance n. 意义",
+        "text": "重要的；显著的",
         "source": "curated"
       }
     ],
@@ -24923,7 +24928,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "来源；⚡v. 采购（~ from）",
+        "text": "来源",
         "source": "curated"
       }
     ],
@@ -24979,7 +24984,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "赞助商 v. 赞助；⚡v. 提案支持",
+        "text": "赞助商",
         "source": "curated"
       }
     ],
@@ -24993,7 +24998,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "股份；赌注；⚡at ~ 处于危险中；stakeholder n. 利益相关方",
+        "text": "股份；赌注",
         "source": "curated"
       }
     ],
@@ -25007,7 +25012,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "标准 adj. 标准的",
+        "text": "标准",
         "source": "curated"
       }
     ],
@@ -25035,7 +25040,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "压力；重音 v. 强调；⚡v. 强调（观点）",
+        "text": "压力；重音",
         "source": "curated"
       }
     ],
@@ -25049,7 +25054,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "结构 v. 构筑",
+        "text": "结构",
         "source": "curated"
       }
     ],
@@ -25063,7 +25068,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "主题；学科；受试者 v. 使遭受；⚡adj.（~ to）易受…影响的；取决于",
+        "text": "主题；学科；受试者",
         "source": "curated"
       }
     ],
@@ -25105,7 +25110,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "替代品 v. 替换；⚡~ A for B 用 A 替换 B",
+        "text": "替代品",
         "source": "curated"
       }
     ],
@@ -25119,7 +25124,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "成功；继任；⚡succession n. 连续；继承",
+        "text": "成功；继任",
         "source": "curated"
       }
     ],
@@ -25161,7 +25166,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "总数；金额；⚡~ up 总结；in ~ 总之",
+        "text": "总数；金额",
         "source": "curated"
       }
     ],
@@ -25189,7 +25194,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "维持；承受；⚡sustainable adj. 可持续的",
+        "text": "维持；承受",
         "source": "curated"
       }
     ],
@@ -25203,7 +25208,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "目标 v. 瞄准",
+        "text": "目标",
         "source": "curated"
       }
     ],
@@ -25259,7 +25264,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "倾向于；⚡v. 照管；tendency n. 趋势",
+        "text": "倾向于",
         "source": "curated"
       }
     ],
@@ -25273,7 +25278,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "术语；学期；条款 v. 称为；⚡in ~s of 就…而言；in the long ~ 长期",
+        "text": "术语；学期；条款",
         "source": "curated"
       }
     ],
@@ -25287,7 +25292,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "领土；⚡n. 领域",
+        "text": "领土",
         "source": "curated"
       }
     ],
@@ -25315,7 +25320,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "理论；⚡in theory 理论上；theoretical adj. 空谈的",
+        "text": "理论",
         "source": "curated"
       }
     ],
@@ -25385,7 +25390,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "轨道；踪迹 v. 追踪；⚡~ record 业绩记录；keep ~ of 掌握动态",
+        "text": "轨道；踪迹",
         "source": "curated"
       }
     ],
@@ -25399,7 +25404,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "贸易；行业 v. 交易；⚡trade off 权衡（trade-off）",
+        "text": "贸易；行业",
         "source": "curated"
       }
     ],
@@ -25413,7 +25418,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "传统；⚡traditional/traditionally 派生",
+        "text": "传统",
         "source": "curated"
       }
     ],
@@ -25469,7 +25474,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "传输；传播；⚡transmission n. 传播；变速器",
+        "text": "传输；传播",
         "source": "curated"
       }
     ],
@@ -25483,7 +25488,7 @@ export const publicVocab = [
     "partOfSpeech": "n./v.",
     "meanings": [
       {
-        "text": "运输；⚡transportation n. 运输业",
+        "text": "运输",
         "source": "curated"
       }
     ],
@@ -25511,7 +25516,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "引发 n. 扳机；诱因",
+        "text": "引发",
         "source": "curated"
       }
     ],
@@ -25525,7 +25530,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "典型的；⚡typically adv. 通常",
+        "text": "典型的",
         "source": "curated"
       }
     ],
@@ -25539,7 +25544,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "最终的；⚡n. 最好的事物（the ~ in sth.）",
+        "text": "最终的",
         "source": "curated"
       }
     ],
@@ -25581,7 +25586,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "制服；⚡adj. 统一的，一致的",
+        "text": "制服",
         "source": "curated"
       }
     ],
@@ -25637,7 +25642,7 @@ export const publicVocab = [
     "partOfSpeech": "v./n.",
     "meanings": [
       {
-        "text": "更新；⚡news update 最新消息",
+        "text": "更新",
         "source": "curated"
       }
     ],
@@ -25679,7 +25684,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "敦促 n. 强烈欲望",
+        "text": "敦促",
         "source": "curated"
       }
     ],
@@ -25721,7 +25726,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "价值 v. 重视；⚡values n. 价值观；valuable adj. 宝贵的",
+        "text": "价值",
         "source": "curated"
       }
     ],
@@ -25735,7 +25740,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "变化；⚡~ from...to... 各不相同；various adj. 各种各样的",
+        "text": "变化",
         "source": "curated"
       }
     ],
@@ -25749,7 +25754,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "风险投资 v. 冒险；⚡joint ~ 合资企业",
+        "text": "风险投资",
         "source": "curated"
       }
     ],
@@ -25791,7 +25796,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "船；容器；⚡n. 血管",
+        "text": "船；容器",
         "source": "curated"
       }
     ],
@@ -25805,7 +25810,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "老兵；⚡n. 资深人士",
+        "text": "老兵",
         "source": "curated"
       }
     ],
@@ -25861,7 +25866,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "体积；音量；⚡n. 销售量；卷，册",
+        "text": "体积；音量",
         "source": "curated"
       }
     ],
@@ -25903,7 +25908,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "目击；见证 n. 证人；⚡v.（时期）经历；n. 证据",
+        "text": "目击；见证",
         "source": "curated"
       }
     ],
@@ -25931,7 +25936,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "产出；让步 n. 产量；⚡~ to 屈服；n. 收益率",
+        "text": "产出；让步",
         "source": "curated"
       }
     ],
@@ -25942,9 +25947,10 @@ export const publicVocab = [
     "key": "abide",
     "term": "abide",
     "normalizedTerm": "abide",
+    "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "v.（~ by）遵守；忍受",
+        "text": "（~ by）遵守；忍受",
         "source": "curated"
       }
     ],
@@ -25972,7 +25978,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "缺席；缺乏；⚡in the ~ of 缺少",
+        "text": "缺席；缺乏",
         "source": "curated"
       }
     ],
@@ -26168,7 +26174,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "青少年 adj. 青春期的",
+        "text": "青少年",
         "source": "curated"
       }
     ],
@@ -26210,7 +26216,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "建议；⚡advisable adj. 明智的",
+        "text": "建议",
         "source": "curated"
       }
     ],
@@ -26364,7 +26370,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "同盟 v. 结盟",
+        "text": "同盟",
         "source": "curated"
       }
     ],
@@ -26462,7 +26468,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "每年的；⚡n. 年刊，年报",
+        "text": "每年的",
         "source": "curated"
       }
     ],
@@ -26490,7 +26496,7 @@ export const publicVocab = [
     "partOfSpeech": "adv.",
     "meanings": [
       {
-        "text": "分开；⚡~ from 除…之外",
+        "text": "分开",
         "source": "curated"
       }
     ],
@@ -26644,7 +26650,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "恰当的；易于…的；⚡be ~ to do 往往会",
+        "text": "恰当的；易于…的",
         "source": "curated"
       }
     ],
@@ -26686,7 +26692,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "一系列；⚡an ~ of 大量",
+        "text": "一系列",
         "source": "curated"
       }
     ],
@@ -26739,9 +26745,10 @@ export const publicVocab = [
     "key": "ascribe",
     "term": "ascribe",
     "normalizedTerm": "ascribe",
+    "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "v.（~ to）归因于",
+        "text": "（~ to）归因于",
         "source": "curated"
       }
     ],
@@ -26839,7 +26846,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "吸引；⚡attraction n. 吸引力；景点",
+        "text": "吸引",
         "source": "curated"
       }
     ],
@@ -26937,7 +26944,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "保释金；⚡bail out 救助（企业）",
+        "text": "保释金",
         "source": "curated"
       }
     ],
@@ -26979,7 +26986,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "光束；横梁；⚡v. 满面笑容",
+        "text": "光束；横梁",
         "source": "curated"
       }
     ],
@@ -26993,7 +27000,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "方位；⚡have a ~ on 与…有关",
+        "text": "方位",
         "source": "curated"
       }
     ],
@@ -27007,7 +27014,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "表现；⚡behaviorist n. 行为主义者",
+        "text": "表现",
         "source": "curated"
       }
     ],
@@ -27035,7 +27042,7 @@ export const publicVocab = [
     "partOfSpeech": "v./n.",
     "meanings": [
       {
-        "text": "打赌；⚡n. 预测，判断",
+        "text": "打赌",
         "source": "curated"
       }
     ],
@@ -27049,7 +27056,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "背叛；⚡v. 泄露；暴露",
+        "text": "背叛",
         "source": "curated"
       }
     ],
@@ -27063,7 +27070,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "捆绑；约束；⚡be bound to 必然",
+        "text": "捆绑；约束",
         "source": "curated"
       }
     ],
@@ -27105,7 +27112,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "盲的；⚡v. 使失明；~ spot 盲区",
+        "text": "盲的",
         "source": "curated"
       }
     ],
@@ -27133,7 +27140,7 @@ export const publicVocab = [
     "partOfSpeech": "n./v.",
     "meanings": [
       {
-        "text": "繁荣；激增；⚡baby boom 婴儿潮",
+        "text": "繁荣；激增",
         "source": "curated"
       }
     ],
@@ -27161,7 +27168,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "借入；⚡~ 借用（观点）",
+        "text": "借入",
         "source": "curated"
       }
     ],
@@ -27259,7 +27266,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "繁殖；引发 n. 品种",
+        "text": "繁殖；引发",
         "source": "curated"
       }
     ],
@@ -27329,7 +27336,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "主体；大量；⚡in ~ 散装；大批",
+        "text": "主体；大量",
         "source": "curated"
       }
     ],
@@ -27343,7 +27350,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "碰撞 n. 碰撞；⚡~ into 偶遇",
+        "text": "碰撞",
         "source": "curated"
       }
     ],
@@ -27399,7 +27406,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "计算；估算；⚡v. 打算",
+        "text": "计算；估算",
         "source": "curated"
       }
     ],
@@ -27413,7 +27420,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "呼叫；⚡~ for 需要；~ off 取消；~ up 召集",
+        "text": "呼叫",
         "source": "curated"
       }
     ],
@@ -27455,7 +27462,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "有能力的；⚡capable of 也指\"可能做出（坏事）\"",
+        "text": "有能力的",
         "source": "curated"
       }
     ],
@@ -27469,7 +27476,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "谨慎 v. 警告",
+        "text": "谨慎",
         "source": "curated"
       }
     ],
@@ -27497,7 +27504,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "庆祝；歌颂；⚡celebrity n. 名人",
+        "text": "庆祝；歌颂",
         "source": "curated"
       }
     ],
@@ -27581,7 +27588,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "宪章 v. 特许；包租",
+        "text": "宪章",
         "source": "curated"
       }
     ],
@@ -27609,7 +27616,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "合唱；⚡a ~ of 齐声",
+        "text": "合唱",
         "source": "curated"
       }
     ],
@@ -27679,7 +27686,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "分类；⚡classified adj. 机密的；分类的",
+        "text": "分类",
         "source": "curated"
       }
     ],
@@ -27721,7 +27728,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "群；簇 v. 聚集",
+        "text": "群；簇",
         "source": "curated"
       }
     ],
@@ -27735,7 +27742,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "教练；长途汽车 v. 指导",
+        "text": "教练；长途汽车",
         "source": "curated"
       }
     ],
@@ -27777,7 +27784,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "合作；⚡in ~ with 与…合作",
+        "text": "合作",
         "source": "curated"
       }
     ],
@@ -27833,7 +27840,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "专栏；柱；⚡columnist n. 专栏作家",
+        "text": "专栏；柱",
         "source": "curated"
       }
     ],
@@ -28015,7 +28022,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "视条件而定的 n. 代表团",
+        "text": "视条件而定的",
         "source": "curated"
       }
     ],
@@ -28029,7 +28036,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "相反的 n. 相反；⚡on the ~ 恰恰相反",
+        "text": "相反的",
         "source": "curated"
       }
     ],
@@ -28054,9 +28061,10 @@ export const publicVocab = [
     "key": "cope",
     "term": "cope",
     "normalizedTerm": "cope",
+    "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "v.（~ with）应对",
+        "text": "（~ with）应对",
         "source": "curated"
       }
     ],
@@ -28098,7 +28106,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "腐败的 v. 使腐化",
+        "text": "腐败的",
         "source": "curated"
       }
     ],
@@ -28126,7 +28134,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "计数；重要；⚡~ on 依靠；count in 把…算入",
+        "text": "计数；重要",
         "source": "curated"
       }
     ],
@@ -28140,7 +28148,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "柜台 v. 反驳；⚡counter- 前缀\"相反\"（counteract 抵制）",
+        "text": "柜台",
         "source": "curated"
       }
     ],
@@ -28168,7 +28176,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "破裂 n. 裂缝；⚡~ down on 镇压；~ the code 破解",
+        "text": "破裂",
         "source": "curated"
       }
     ],
@@ -28252,7 +28260,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "人群 v. 拥挤",
+        "text": "人群",
         "source": "curated"
       }
     ],
@@ -28280,7 +28288,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "削减；⚡cut back 削减；cut in 插话",
+        "text": "削减",
         "source": "curated"
       }
     ],
@@ -28336,7 +28344,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "失聪的；⚡turn a deaf ear to 置若罔闻",
+        "text": "失聪的",
         "source": "curated"
       }
     ],
@@ -28406,7 +28414,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "缺陷；⚡v. 叛逃",
+        "text": "缺陷",
         "source": "curated"
       }
     ],
@@ -28420,7 +28428,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "保卫；辩护；⚡defendant n. 被告",
+        "text": "保卫；辩护",
         "source": "curated"
       }
     ],
@@ -28462,7 +28470,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "代表 v. 授权，委派",
+        "text": "代表",
         "source": "curated"
       }
     ],
@@ -28476,7 +28484,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "故意的 v. 深思",
+        "text": "故意的",
         "source": "curated"
       }
     ],
@@ -28518,7 +28526,7 @@ export const publicVocab = [
     "partOfSpeech": "v./n.",
     "meanings": [
       {
-        "text": "要求；需求；⚡demanding adj. 要求苛刻的",
+        "text": "要求；需求",
         "source": "curated"
       }
     ],
@@ -28588,7 +28596,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "存款；定金；沉积物 v. 存放",
+        "text": "存款；定金；沉积物",
         "source": "curated"
       }
     ],
@@ -28602,7 +28610,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "使沮丧；使萧条；⚡depression n. 抑郁；萧条；洼地",
+        "text": "使沮丧；使萧条",
         "source": "curated"
       }
     ],
@@ -28613,9 +28621,10 @@ export const publicVocab = [
     "key": "deprive",
     "term": "deprive",
     "normalizedTerm": "deprive",
+    "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "v.（~ of）剥夺",
+        "text": "（~ of）剥夺",
         "source": "curated"
       }
     ],
@@ -28643,7 +28652,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "下降；传下；⚡be descended from 是…的后裔",
+        "text": "下降；传下",
         "source": "curated"
       }
     ],
@@ -28825,7 +28834,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "稀释；⚡v. 削弱",
+        "text": "稀释",
         "source": "curated"
       }
     ],
@@ -28923,7 +28932,7 @@ export const publicVocab = [
     "partOfSpeech": "n./v.",
     "meanings": [
       {
-        "text": "伪装；⚡in ~ 伪装",
+        "text": "伪装",
         "source": "curated"
       }
     ],
@@ -28951,7 +28960,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "派遣 n. 急件",
+        "text": "派遣",
         "source": "curated"
       }
     ],
@@ -28993,7 +29002,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "处理（~ of）；⚡be disposed to 倾向于；disposal n. 处置",
+        "text": "处理（~ of）",
         "source": "curated"
       }
     ],
@@ -29049,7 +29058,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "痛苦；贫困 v. 使痛苦",
+        "text": "痛苦；贫困",
         "source": "curated"
       }
     ],
@@ -29091,7 +29100,7 @@ export const publicVocab = [
     "partOfSpeech": "n./v.",
     "meanings": [
       {
-        "text": "离婚；⚡n. 分离（~ between...and...）",
+        "text": "离婚",
         "source": "curated"
       }
     ],
@@ -29203,7 +29212,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "排水；耗尽 n. 消耗",
+        "text": "排水；耗尽",
         "source": "curated"
       }
     ],
@@ -29217,7 +29226,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "画；拉；⚡~ on 利用；~ up 起草；drawing n. 绘画；抽奖",
+        "text": "画；拉",
         "source": "curated"
       }
     ],
@@ -29231,7 +29240,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "漂流；漂移；⚡n. 趋势；大意",
+        "text": "漂流；漂移",
         "source": "curated"
       }
     ],
@@ -29259,7 +29268,7 @@ export const publicVocab = [
     "partOfSpeech": "n./adj.",
     "meanings": [
       {
-        "text": "复制的 v. 复制",
+        "text": "复制的",
         "source": "curated"
       }
     ],
@@ -29301,7 +29310,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "居住；⚡~ on 老是想着",
+        "text": "居住",
         "source": "curated"
       }
     ],
@@ -29329,7 +29338,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "容易；轻松 v. 缓解；⚡with ~ 轻松地；at ~ 舒适自在",
+        "text": "容易；轻松",
         "source": "curated"
       }
     ],
@@ -29371,7 +29380,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "精心制作的 v. 详述（~ on）",
+        "text": "精心制作的",
         "source": "curated"
       }
     ],
@@ -29410,9 +29419,10 @@ export const publicVocab = [
     "key": "embark",
     "term": "embark",
     "normalizedTerm": "embark",
+    "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "v.（~ on/upon）着手，从事",
+        "text": "（~ on/upon）着手，从事",
         "source": "curated"
       }
     ],
@@ -29426,7 +29436,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "使尴尬；⚡embarrassment n. 困窘；令人尴尬的事",
+        "text": "使尴尬",
         "source": "curated"
       }
     ],
@@ -29538,7 +29548,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "背书；⚡v. 赞同，支持；（名人）代言",
+        "text": "背书",
         "source": "curated"
       }
     ],
@@ -29650,7 +29660,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "娱乐；⚡v. 怀抱（想法）；entertainer n. 表演艺人",
+        "text": "娱乐",
         "source": "curated"
       }
     ],
@@ -29706,7 +29716,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "等价的 n. 等价物",
+        "text": "等价的",
         "source": "curated"
       }
     ],
@@ -29720,7 +29730,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "侵蚀；⚡v.（信心、价值）逐渐削弱",
+        "text": "侵蚀",
         "source": "curated"
       }
     ],
@@ -29818,7 +29828,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "蒸发；⚡v.（希望）化为泡影",
+        "text": "蒸发",
         "source": "curated"
       }
     ],
@@ -29888,7 +29898,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "例外；⚡with the ~ of 除…之外",
+        "text": "例外",
         "source": "curated"
       }
     ],
@@ -29930,7 +29940,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "耗尽；使精疲力竭 n. 废气",
+        "text": "耗尽；使精疲力竭",
         "source": "curated"
       }
     ],
@@ -30014,7 +30024,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "利用；开发；⚡v. 剥削；n. 英勇事迹",
+        "text": "利用；开发",
         "source": "curated"
       }
     ],
@@ -30028,7 +30038,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "爆炸性的；⚡adj.（增长）急剧的",
+        "text": "爆炸性的",
         "source": "curated"
       }
     ],
@@ -30056,7 +30066,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "延伸；扩展；给予；⚡~ an invitation 发出邀请",
+        "text": "延伸；扩展；给予",
         "source": "curated"
       }
     ],
@@ -30070,7 +30080,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "程度；范围；⚡to the ~ of 到…程度",
+        "text": "程度；范围",
         "source": "curated"
       }
     ],
@@ -30098,7 +30108,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "极端的 n. 极端；⚡in the ~s 极端情况下",
+        "text": "极端的",
         "source": "curated"
       }
     ],
@@ -30168,7 +30178,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "微弱的 v. 昏倒",
+        "text": "微弱的",
         "source": "curated"
       }
     ],
@@ -30182,7 +30192,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "公平的 n. 集市；博览会；⚡adv. 公正地；fairly adv. 相当地；公平地",
+        "text": "公平的",
         "source": "curated"
       }
     ],
@@ -30210,7 +30220,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "想象力；喜好 adj. 花哨的 v. 想要；⚡take a ~ to 喜欢上",
+        "text": "想象力；喜好",
         "source": "curated"
       }
     ],
@@ -30238,7 +30248,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "过错；故障；⚡faulty adj. 有缺陷的；find ~ with 挑剔",
+        "text": "过错；故障",
         "source": "curated"
       }
     ],
@@ -30252,7 +30262,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "支持；恩惠 v. 赞成；偏爱；⚡in ~ of 赞成；favorable adj. 有利的",
+        "text": "支持；恩惠",
         "source": "curated"
       }
     ],
@@ -30308,7 +30318,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "同伴；研究员 adj. 同伴的",
+        "text": "同伴；研究员",
         "source": "curated"
       }
     ],
@@ -30350,7 +30360,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "数字；人物；身材 v. 认为；⚡~ out 弄明白；key ~ 关键人物",
+        "text": "数字；人物；身材",
         "source": "curated"
       }
     ],
@@ -30364,7 +30374,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "过滤；⚡n. 滤镜",
+        "text": "过滤",
         "source": "curated"
       }
     ],
@@ -30392,7 +30402,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "公司 adj. 坚定的",
+        "text": "公司",
         "source": "curated"
       }
     ],
@@ -30406,7 +30416,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "适合的 v. 适合；⚡~ in 融入；fitting adj. 恰当的",
+        "text": "适合的",
         "source": "curated"
       }
     ],
@@ -30420,7 +30430,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "缺陷；⚡flawed adj. 有缺陷的",
+        "text": "缺陷",
         "source": "curated"
       }
     ],
@@ -30476,7 +30486,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "流动的；不稳定的 n. 液体",
+        "text": "流动的；不稳定的",
         "source": "curated"
       }
     ],
@@ -30490,7 +30500,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "冲洗；脸红；⚡be flushed with 因…而脸红",
+        "text": "冲洗；脸红",
         "source": "curated"
       }
     ],
@@ -30504,7 +30514,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "折叠；⚡v.（企业）倒闭",
+        "text": "折叠",
         "source": "curated"
       }
     ],
@@ -30518,7 +30528,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "民众 adj. 民间的",
+        "text": "民众",
         "source": "curated"
       }
     ],
@@ -30546,7 +30556,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "最重要的；⚡first and ~ 首要的是",
+        "text": "最重要的",
         "source": "curated"
       }
     ],
@@ -30560,7 +30570,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "锻造；⚡v. 建立（关系）；伪造",
+        "text": "锻造",
         "source": "curated"
       }
     ],
@@ -30700,7 +30710,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "使沮丧；挫败；⚡frustrating adj. 令人泄气的",
+        "text": "使沮丧；挫败",
         "source": "curated"
       }
     ],
@@ -30728,7 +30738,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "布置家具；⚡v. 提供（~ sb. with）",
+        "text": "布置家具",
         "source": "curated"
       }
     ],
@@ -30742,7 +30752,7 @@ export const publicVocab = [
     "partOfSpeech": "v./n.",
     "meanings": [
       {
-        "text": "获得；收益；⚡n. 增值；gains from 红利",
+        "text": "获得；收益",
         "source": "curated"
       }
     ],
@@ -30756,7 +30766,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "飞驰；⚡（价格）飞涨",
+        "text": "飞驰",
         "source": "curated"
       }
     ],
@@ -30798,7 +30808,7 @@ export const publicVocab = [
     "partOfSpeech": "v./n.",
     "meanings": [
       {
-        "text": "喘气；⚡~ at 惊讶",
+        "text": "喘气",
         "source": "curated"
       }
     ],
@@ -30826,7 +30836,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "齿轮；装备 v. 调整（~ to/towards）",
+        "text": "齿轮；装备",
         "source": "curated"
       }
     ],
@@ -30854,7 +30864,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "基因；⚡genetic adj. 遗传的",
+        "text": "基因",
         "source": "curated"
       }
     ],
@@ -30882,7 +30892,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "细菌；⚡n. 萌芽（the ~ of）",
+        "text": "细菌",
         "source": "curated"
       }
     ],
@@ -30924,7 +30934,7 @@ export const publicVocab = [
     "partOfSpeech": "v./n.",
     "meanings": [
       {
-        "text": "一瞥；⚡at first ~ 乍看之下",
+        "text": "一瞥",
         "source": "curated"
       }
     ],
@@ -30952,7 +30962,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "闪耀 n. 光彩",
+        "text": "闪耀",
         "source": "curated"
       }
     ],
@@ -30994,7 +31004,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "优雅；⚡~ period 宽限期；graceful adj. 得体的",
+        "text": "优雅",
         "source": "curated"
       }
     ],
@@ -31008,7 +31018,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "年级；等级；成绩 v. 评分",
+        "text": "年级；等级；成绩",
         "source": "curated"
       }
     ],
@@ -31092,7 +31102,7 @@ export const publicVocab = [
     "partOfSpeech": "n./v.",
     "meanings": [
       {
-        "text": "紧握；控制；⚡come to ~s with 着手解决",
+        "text": "紧握；控制",
         "source": "curated"
       }
     ],
@@ -31106,7 +31116,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "摸索；⚡~ for words 措辞",
+        "text": "摸索",
         "source": "curated"
       }
     ],
@@ -31120,7 +31130,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "总的；严重的 n. 总额",
+        "text": "总的；严重的",
         "source": "curated"
       }
     ],
@@ -31162,7 +31172,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "海湾；⚡n. 鸿沟，隔阂",
+        "text": "海湾",
         "source": "curated"
       }
     ],
@@ -31204,7 +31214,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "障碍；残疾 v. 妨碍",
+        "text": "障碍；残疾",
         "source": "curated"
       }
     ],
@@ -31218,7 +31228,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "处理 n. 把手",
+        "text": "处理",
         "source": "curated"
       }
     ],
@@ -31232,7 +31242,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "怀有（恶意、想法）；庇护 n. 港口",
+        "text": "怀有（恶意、想法）；庇护",
         "source": "curated"
       }
     ],
@@ -31260,7 +31270,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "和谐；⚡harmonious adj. 和谐的",
+        "text": "和谐",
         "source": "curated"
       }
     ],
@@ -31288,7 +31298,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "拖运 n. 大批赃物；成绩",
+        "text": "拖运",
         "source": "curated"
       }
     ],
@@ -31302,7 +31312,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "萦绕；常去；⚡haunting adj. 挥之不去的",
+        "text": "萦绕；常去",
         "source": "curated"
       }
     ],
@@ -31344,7 +31354,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "树篱；对冲 v. 回避",
+        "text": "树篱；对冲",
         "source": "curated"
       }
     ],
@@ -31428,7 +31438,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "隐藏的；⚡~ costs 隐性成本",
+        "text": "隐藏的",
         "source": "curated"
       }
     ],
@@ -31456,7 +31466,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "提示；暗示 v. 暗示",
+        "text": "提示；暗示",
         "source": "curated"
       }
     ],
@@ -31470,7 +31480,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "雇用 n. 租借",
+        "text": "雇用",
         "source": "curated"
       }
     ],
@@ -31526,7 +31536,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "地平线；⚡（复数）眼界；on the ~ 即将出现",
+        "text": "地平线",
         "source": "curated"
       }
     ],
@@ -31540,7 +31550,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "敌意的；⚡hostility n. 敌意；对抗",
+        "text": "敌意的",
         "source": "curated"
       }
     ],
@@ -31554,7 +31564,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "家庭 adj. 家喻户晓的",
+        "text": "家庭",
         "source": "curated"
       }
     ],
@@ -31582,7 +31592,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "谦逊的；简陋的；⚡v. 使谦卑",
+        "text": "谦逊的；简陋的",
         "source": "curated"
       }
     ],
@@ -31596,7 +31606,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "障碍 v. 跨越",
+        "text": "障碍",
         "source": "curated"
       }
     ],
@@ -31638,7 +31648,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "空闲的；闲置的 v. 空转",
+        "text": "空闲的；闲置的",
         "source": "curated"
       }
     ],
@@ -31666,7 +31676,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "无知；⚡be ignorant of 不知情",
+        "text": "无知",
         "source": "curated"
       }
     ],
@@ -31778,7 +31788,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "改善；⚡improvement n. 改进；好转",
+        "text": "改善",
         "source": "curated"
       }
     ],
@@ -31792,7 +31802,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "倾向于；倾斜；⚡be inclined to do",
+        "text": "倾向于；倾斜",
         "source": "curated"
       }
     ],
@@ -31848,7 +31858,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "冷漠；⚡indifferent adj. 漠不关心的",
+        "text": "冷漠",
         "source": "curated"
       }
     ],
@@ -31918,7 +31928,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "婴儿期；⚡n. 初期（in its ~）",
+        "text": "婴儿期",
         "source": "curated"
       }
     ],
@@ -31974,7 +31984,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "告知；⚡v. 影响；informative adj. 增长知识的",
+        "text": "告知",
         "source": "curated"
       }
     ],
@@ -32016,7 +32026,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "倡议；主动权；⚡take the ~ 带头",
+        "text": "倡议；主动权",
         "source": "curated"
       }
     ],
@@ -32030,7 +32040,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "注入；⚡~ capital into 注资",
+        "text": "注入",
         "source": "curated"
       }
     ],
@@ -32058,7 +32068,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "天真的；无罪的；⚡innocence n. 清白",
+        "text": "天真的；无罪的",
         "source": "curated"
       }
     ],
@@ -32086,7 +32096,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "投入；输入；⚡n. 意见（one's ~）",
+        "text": "投入；输入",
         "source": "curated"
       }
     ],
@@ -32114,7 +32124,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "激励；启发；⚡v. 引发（情绪）",
+        "text": "激励；启发",
         "source": "curated"
       }
     ],
@@ -32128,7 +32138,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "分期付款；⚡in ~s 分期地",
+        "text": "分期付款",
         "source": "curated"
       }
     ],
@@ -32142,7 +32152,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "立即的 n. 片刻；⚡instantly adv. 立刻",
+        "text": "立即的",
         "source": "curated"
       }
     ],
@@ -32184,7 +32194,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "投保；⚡insurance n. 保险；保障",
+        "text": "投保",
         "source": "curated"
       }
     ],
@@ -32226,7 +32236,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "意图 adj. 专注的；⚡to all ~s and purposes 几乎等于",
+        "text": "意图",
         "source": "curated"
       }
     ],
@@ -32282,7 +32292,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "亲密的；⚡v. 暗示；n. 知己",
+        "text": "亲密的",
         "source": "curated"
       }
     ],
@@ -32296,7 +32306,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "激起兴趣 n. 阴谋；⚡intriguing adj. 有趣的",
+        "text": "激起兴趣",
         "source": "curated"
       }
     ],
@@ -32324,7 +32334,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "侵入；⚡v. 侵扰；invasion n. 入侵",
+        "text": "侵入",
         "source": "curated"
       }
     ],
@@ -32338,7 +32348,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "极宝贵的；⚡≠valueless",
+        "text": "极宝贵的",
         "source": "curated"
       }
     ],
@@ -32380,7 +32390,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "隔离；使孤立；⚡isolated adj. 孤立的；偏远的",
+        "text": "隔离；使孤立",
         "source": "curated"
       }
     ],
@@ -32394,7 +32404,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "监狱 v. 监禁",
+        "text": "监狱",
         "source": "curated"
       }
     ],
@@ -32436,7 +32446,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "联合的 n. 关节；接头",
+        "text": "联合的",
         "source": "curated"
       }
     ],
@@ -32450,7 +32460,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "法官 v. 判断；⚡judgment n. 判断力；裁决",
+        "text": "法官",
         "source": "curated"
       }
     ],
@@ -32534,7 +32544,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "标签 v. 贴标签；⚡v. 把…称为",
+        "text": "标签",
         "source": "curated"
       }
     ],
@@ -32562,7 +32572,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "侧面的；横向的；⚡lateral thinking 横向思维",
+        "text": "侧面的；横向的",
         "source": "curated"
       }
     ],
@@ -32576,7 +32586,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "纬度；⚡n. 自由度",
+        "text": "纬度",
         "source": "curated"
       }
     ],
@@ -32604,7 +32614,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "放置；⚡~ off 裁员；~ out 布置；~ claim to 主张",
+        "text": "放置",
         "source": "curated"
       }
     ],
@@ -32632,7 +32642,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "泄漏 n. 漏洞",
+        "text": "泄漏",
         "source": "curated"
       }
     ],
@@ -32660,7 +32670,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "传说；⚡n. 传奇人物",
+        "text": "传说",
         "source": "curated"
       }
     ],
@@ -32702,7 +32712,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "自由的；开明的；⚡n. 自由主义者；liberal arts 文科",
+        "text": "自由的；开明的",
         "source": "curated"
       }
     ],
@@ -32758,7 +32768,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "线；⚡in ~ with 符合；~ of work 职业行当",
+        "text": "线",
         "source": "curated"
       }
     ],
@@ -32814,7 +32824,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "大厅 v. 游说；⚡lobbyist n. 游说者",
+        "text": "大厅",
         "source": "curated"
       }
     ],
@@ -32856,7 +32866,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "松的；⚡~ly adv. 大致地；~ change 零钱",
+        "text": "松的",
         "source": "curated"
       }
     ],
@@ -32884,7 +32894,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "忠诚的；⚡loyalty n. 忠诚度",
+        "text": "忠诚的",
         "source": "curated"
       }
     ],
@@ -32912,7 +32922,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "主流 adj. 主流的",
+        "text": "主流",
         "source": "curated"
       }
     ],
@@ -32954,7 +32964,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "管理；⚡manage to do 设法做到；~ on 靠…度日",
+        "text": "管理",
         "source": "curated"
       }
     ],
@@ -32968,7 +32978,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "表明 adj. 明显的",
+        "text": "表明",
         "source": "curated"
       }
     ],
@@ -32982,7 +32992,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "手工的 n. 手册；⚡manual labor 体力劳动",
+        "text": "手工的",
         "source": "curated"
       }
     ],
@@ -32996,7 +33006,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "制造 n.（复数）产品；⚡manufacturer n. 制造商",
+        "text": "制造 n.（复数）产品",
         "source": "curated"
       }
     ],
@@ -33010,7 +33020,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "边缘；利润空间；⚡~al adj. 微小的；边缘的",
+        "text": "边缘；利润空间",
         "source": "curated"
       }
     ],
@@ -33038,7 +33048,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "市场 v. 营销；⚡marketing n. 市场营销",
+        "text": "市场",
         "source": "curated"
       }
     ],
@@ -33066,7 +33076,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "主人；硕士 v. 精通；⚡masterpiece n. 杰作",
+        "text": "主人；硕士",
         "source": "curated"
       }
     ],
@@ -33094,7 +33104,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "成熟的 v. 成熟",
+        "text": "成熟的",
         "source": "curated"
       }
     ],
@@ -33122,7 +33132,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "意味 adj. 吝啬的；平均的 n. 平均值；⚡by no ~s 绝不；means n. 手段（by ~ of）",
+        "text": "意味",
         "source": "curated"
       }
     ],
@@ -33206,7 +33216,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "威胁 v. 威胁",
+        "text": "威胁",
         "source": "curated"
       }
     ],
@@ -33220,7 +33230,7 @@ export const publicVocab = [
     "partOfSpeech": "v./n.",
     "meanings": [
       {
-        "text": "提及；⚡not to ~ 更不用说",
+        "text": "提及",
         "source": "curated"
       }
     ],
@@ -33234,7 +33244,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "合并；⚡merger n.（企业）并购",
+        "text": "合并",
         "source": "curated"
       }
     ],
@@ -33248,7 +33258,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "优点；功绩 v. 值得；⚡on one's ~s 凭本身实力",
+        "text": "优点；功绩",
         "source": "curated"
       }
     ],
@@ -33262,7 +33272,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "隐喻；⚡metaphorical adj. 比喻的",
+        "text": "隐喻",
         "source": "curated"
       }
     ],
@@ -33276,7 +33286,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "好战的 n. 激进分子",
+        "text": "好战的",
         "source": "curated"
       }
     ],
@@ -33290,7 +33300,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "最小化；⚡v. 轻视",
+        "text": "最小化",
         "source": "curated"
       }
     ],
@@ -33304,7 +33314,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "分钟；⚡adj. 微小的（maɪˈnjuːt）；minutes n. 会议记录",
+        "text": "分钟",
         "source": "curated"
       }
     ],
@@ -33374,7 +33384,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "适度的；温和的 v. 缓和",
+        "text": "适度的；温和的",
         "source": "curated"
       }
     ],
@@ -33416,7 +33426,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "监测 n. 监视器；班长",
+        "text": "监测",
         "source": "curated"
       }
     ],
@@ -33472,7 +33482,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "增加；登上；⚡n. 山；~ a challenge 发起挑战",
+        "text": "增加；登上",
         "source": "curated"
       }
     ],
@@ -33528,7 +33538,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "消极的；否定的；⚡negative feedback 负反馈",
+        "text": "消极的；否定的",
         "source": "curated"
       }
     ],
@@ -33570,7 +33580,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "神经；⚡n. 勇气（lose one's ~）",
+        "text": "神经",
         "source": "curated"
       }
     ],
@@ -33584,7 +33594,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "网 adj. 净的；⚡net income 净收入",
+        "text": "网",
         "source": "curated"
       }
     ],
@@ -33696,7 +33706,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "新颖的；⚡novelty n. 新奇（事物）",
+        "text": "新颖的",
         "source": "curated"
       }
     ],
@@ -33710,7 +33720,7 @@ export const publicVocab = [
     "partOfSpeech": "adv.",
     "meanings": [
       {
-        "text": "无处；⚡~ near 远非",
+        "text": "无处",
         "source": "curated"
       }
     ],
@@ -33794,7 +33804,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "晦涩的；不出名的 v. 使模糊",
+        "text": "晦涩的；不出名的",
         "source": "curated"
       }
     ],
@@ -33836,7 +33846,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "抵消 n. 抵消物",
+        "text": "抵消",
         "source": "curated"
       }
     ],
@@ -33948,7 +33958,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "朝向；⚡oriented adj. 以…为导向的；orientation n. 定位；迎新",
+        "text": "朝向",
         "source": "curated"
       }
     ],
@@ -34018,7 +34028,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "出口；渠道；⚡n. 发泄途径；销售门店",
+        "text": "出口；渠道",
         "source": "curated"
       }
     ],
@@ -34046,7 +34056,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "愤怒 v. 激怒；⚡outrageous adj. 荒唐的",
+        "text": "愤怒",
         "source": "curated"
       }
     ],
@@ -34060,7 +34070,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "开端；⚡at/from the ~ 从一开始",
+        "text": "开端",
         "source": "curated"
       }
     ],
@@ -34074,7 +34084,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "向外的；⚡~ly adv. 表面上",
+        "text": "向外的",
         "source": "curated"
       }
     ],
@@ -34088,7 +34098,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "总体的 adv. 总体上",
+        "text": "总体的",
         "source": "curated"
       }
     ],
@@ -34102,7 +34112,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "头顶上的；⚡n.（复数）管理费用",
+        "text": "头顶上的",
         "source": "curated"
       }
     ],
@@ -34116,7 +34126,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "忽视；俯瞰；⚡区别 oversee（监督）",
+        "text": "忽视；俯瞰",
         "source": "curated"
       }
     ],
@@ -34130,7 +34140,7 @@ export const publicVocab = [
     "partOfSpeech": "adv.",
     "meanings": [
       {
-        "text": "一夜之间 adj. 突然的",
+        "text": "一夜之间",
         "source": "curated"
       }
     ],
@@ -34158,7 +34168,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "压倒；⚡be ~ing majority 占绝对多数",
+        "text": "压倒",
         "source": "curated"
       }
     ],
@@ -34172,7 +34182,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "速度；步伐 v. 踱步；⚡keep ~ with 跟上",
+        "text": "速度；步伐",
         "source": "curated"
       }
     ],
@@ -34186,7 +34196,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "平行的 n. 相似之处；⚡draw a ~ between 类比",
+        "text": "平行的",
         "source": "curated"
       }
     ],
@@ -34256,7 +34266,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "部分的；偏袒的；⚡impartial adj. 公正的",
+        "text": "部分的；偏袒的",
         "source": "curated"
       }
     ],
@@ -34284,7 +34294,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "特别的；特定的；⚡in ~ 尤其；particularly adv. 显著地",
+        "text": "特别的；特定的",
         "source": "curated"
       }
     ],
@@ -34298,7 +34308,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "激情；⚡passionate adj. 热忱的",
+        "text": "激情",
         "source": "curated"
       }
     ],
@@ -34326,7 +34336,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "护照；⚡n. 途径，保障",
+        "text": "护照",
         "source": "curated"
       }
     ],
@@ -34368,7 +34378,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "病人 adj. 耐心的；⚡patience n. 耐心",
+        "text": "病人",
         "source": "curated"
       }
     ],
@@ -34452,7 +34462,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "行人；⚡adj. 平淡乏味的",
+        "text": "行人",
         "source": "curated"
       }
     ],
@@ -34480,7 +34490,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "未决的 prep. 直到",
+        "text": "未决的",
         "source": "curated"
       }
     ],
@@ -34522,7 +34532,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "表现；执行；⚡~ brain surgery 做脑部手术",
+        "text": "表现；执行",
         "source": "curated"
       }
     ],
@@ -34550,7 +34560,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "期刊 adj. 周期的",
+        "text": "期刊",
         "source": "curated"
       }
     ],
@@ -34592,7 +34602,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "允许 n. 许可证；⚡weather permitting 天气允许的话",
+        "text": "允许",
         "source": "curated"
       }
     ],
@@ -34648,7 +34658,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "坚持；持续；⚡persistent adj. 持续的；顽固的",
+        "text": "坚持；持续",
         "source": "curated"
       }
     ],
@@ -34676,7 +34686,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "说服；⚡persuasive adj. 有说服力的",
+        "text": "说服",
         "source": "curated"
       }
     ],
@@ -34718,7 +34728,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "阶段 v. 分阶段（~ in/out）",
+        "text": "阶段",
         "source": "curated"
       }
     ],
@@ -34732,7 +34742,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "哲学；⚡n. 人生哲学；理念",
+        "text": "哲学",
         "source": "curated"
       }
     ],
@@ -34774,7 +34784,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "先驱 v. 开创",
+        "text": "先驱",
         "source": "curated"
       }
     ],
@@ -34788,7 +34798,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "管道；⚡n. 渠道；储备（in the ~）",
+        "text": "管道",
         "source": "curated"
       }
     ],
@@ -34802,7 +34812,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "瘟疫 v. 困扰",
+        "text": "瘟疫",
         "source": "curated"
       }
     ],
@@ -34816,7 +34826,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "简单的；朴素的；⚡adv. 完全地；~ly adv. 显然",
+        "text": "简单的；朴素的",
         "source": "curated"
       }
     ],
@@ -34886,7 +34896,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "大量；⚡plentiful adj. 丰富的",
+        "text": "大量",
         "source": "curated"
       }
     ],
@@ -34900,7 +34910,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "骤降；投入 n. 猛跌；⚡take the ~ 决定一试",
+        "text": "骤降；投入",
         "source": "curated"
       }
     ],
@@ -34914,7 +34924,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "沉着 v. 使平衡",
+        "text": "沉着",
         "source": "curated"
       }
     ],
@@ -34928,7 +34938,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "污染；⚡pollutant n. 污染物",
+        "text": "污染",
         "source": "curated"
       }
     ],
@@ -34956,7 +34966,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "突然出现；流行；⚡pop up 涌现；populace n. 大众",
+        "text": "突然出现；流行",
         "source": "curated"
       }
     ],
@@ -34984,7 +34994,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "造成（~ a threat）；提出 n. 姿势",
+        "text": "造成（~ a threat）；提出",
         "source": "curated"
       }
     ],
@@ -35012,7 +35022,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "拥有；⚡possession n. 财物（复数）；占有",
+        "text": "拥有",
         "source": "curated"
       }
     ],
@@ -35026,7 +35036,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "假定 n. 假设",
+        "text": "假定",
         "source": "curated"
       }
     ],
@@ -35040,7 +35050,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "姿势；⚡n. 态度；v. 装腔作势",
+        "text": "姿势",
         "source": "curated"
       }
     ],
@@ -35082,7 +35092,7 @@ export const publicVocab = [
     "partOfSpeech": "v./n.",
     "meanings": [
       {
-        "text": "表扬；⚡praiseworthy adj. 值得称道的",
+        "text": "表扬",
         "source": "curated"
       }
     ],
@@ -35110,7 +35120,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "先于；⚡precedent n. 先例；unprecedented adj. 空前的",
+        "text": "先于",
         "source": "curated"
       }
     ],
@@ -35152,7 +35162,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "捕食者；⚡predatory adj. 掠夺性的",
+        "text": "捕食者",
         "source": "curated"
       }
     ],
@@ -35180,7 +35190,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "可预测的；⚡adj. 老套的",
+        "text": "可预测的",
         "source": "curated"
       }
     ],
@@ -35208,7 +35218,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "盛行；获胜；⚡prevalent adj. 普遍的；prevalence n. 流行程度",
+        "text": "盛行；获胜",
         "source": "curated"
       }
     ],
@@ -35222,7 +35232,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "猎物 v. 捕食（~ on）；受害者",
+        "text": "猎物",
         "source": "curated"
       }
     ],
@@ -35236,7 +35246,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "自豪；⚡~ oneself on 引以为豪",
+        "text": "自豪",
         "source": "curated"
       }
     ],
@@ -35320,7 +35330,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "利润 v. 获益；⚡profitable adj. 有利可图的",
+        "text": "利润",
         "source": "curated"
       }
     ],
@@ -35404,7 +35414,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "发音；⚡v. 宣布；pronounced adj. 显著的",
+        "text": "发音",
         "source": "curated"
       }
     ],
@@ -35446,7 +35456,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "恰当的；⚡~ly adv. 完全地；适当地",
+        "text": "恰当的",
         "source": "curated"
       }
     ],
@@ -35544,7 +35554,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "惩罚；⚡punishment n. 惩罚；penalty n. 处罚",
+        "text": "惩罚",
         "source": "curated"
       }
     ],
@@ -35572,7 +35582,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "谜 v. 使困惑；⚡~ over 苦思",
+        "text": "谜",
         "source": "curated"
       }
     ],
@@ -35586,7 +35596,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "定性的，质的；⚡区别 quantitative（定量的）",
+        "text": "定性的，质的",
         "source": "curated"
       }
     ],
@@ -35600,7 +35610,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "四分之一；季度；地区；⚡n.（复数）住所；quarterly adj. 季度的",
+        "text": "四分之一；季度；地区",
         "source": "curated"
       }
     ],
@@ -35614,7 +35624,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "疑问 v. 质询",
+        "text": "疑问",
         "source": "curated"
       }
     ],
@@ -35670,7 +35680,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "种族；竞赛 v. 竞速；⚡arms race 军备竞赛；rat race 无谓的竞争",
+        "text": "种族；竞赛",
         "source": "curated"
       }
     ],
@@ -35712,7 +35722,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "随机的；⚡at ~ 随机地",
+        "text": "随机的",
         "source": "curated"
       }
     ],
@@ -35754,7 +35764,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "配给量 v. 限量供应",
+        "text": "配给量",
         "source": "curated"
       }
     ],
@@ -35810,7 +35820,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "叛逆者 v. 反叛",
+        "text": "叛逆者",
         "source": "curated"
       }
     ],
@@ -35838,7 +35848,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "食谱；⚡n. 方法，诀窍（a ~ for success）",
+        "text": "食谱",
         "source": "curated"
       }
     ],
@@ -35880,7 +35890,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "招募 n. 新成员",
+        "text": "招募",
         "source": "curated"
       }
     ],
@@ -35908,7 +35918,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "提炼；改进；⚡refined adj. 精炼的；有教养的",
+        "text": "提炼；改进",
         "source": "curated"
       }
     ],
@@ -35922,7 +35932,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "反映；反思；⚡~ on 思考；reflection n. 反射；沉思",
+        "text": "反映；反思",
         "source": "curated"
       }
     ],
@@ -35964,7 +35974,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "登记；流露（情绪）n. 登记表",
+        "text": "登记；流露（情绪）",
         "source": "curated"
       }
     ],
@@ -35978,7 +35988,7 @@ export const publicVocab = [
     "partOfSpeech": "v./n.",
     "meanings": [
       {
-        "text": "后悔；⚡to one's ~ 令人遗憾的是",
+        "text": "后悔",
         "source": "curated"
       }
     ],
@@ -36006,7 +36016,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "缰绳；⚡give free ~ to 放任；keep a tight ~ on 严加控制",
+        "text": "缰绳",
         "source": "curated"
       }
     ],
@@ -36034,7 +36044,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "有关；讲述；⚡related to 与…相关；relativity n. 相对性",
+        "text": "有关；讲述",
         "source": "curated"
       }
     ],
@@ -36048,7 +36058,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "转播；转达 n. 接力",
+        "text": "转播；转达",
         "source": "curated"
       }
     ],
@@ -36062,7 +36072,7 @@ export const publicVocab = [
     "partOfSpeech": "v./n.",
     "meanings": [
       {
-        "text": "释放；发布；⚡press ~ 新闻稿",
+        "text": "释放；发布",
         "source": "curated"
       }
     ],
@@ -36076,7 +36086,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "不情愿的；⚡reluctance n. 勉强",
+        "text": "不情愿的",
         "source": "curated"
       }
     ],
@@ -36104,7 +36114,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "补救办法；药物 v. 补救",
+        "text": "补救办法；药物",
         "source": "curated"
       }
     ],
@@ -36118,7 +36128,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "提醒；⚡~ sb. of 使想起；reminder n. 提示",
+        "text": "提醒",
         "source": "curated"
       }
     ],
@@ -36132,7 +36142,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "遥远的；偏远的；⚡adj. 微小的（a ~ chance）；remote control 遥控",
+        "text": "遥远的；偏远的",
         "source": "curated"
       }
     ],
@@ -36160,7 +36170,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "续期；更新；⚡renewable adj. 可再生的",
+        "text": "续期；更新",
         "source": "curated"
       }
     ],
@@ -36216,7 +36226,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "取代；⚡replacement n. 替代品",
+        "text": "取代",
         "source": "curated"
       }
     ],
@@ -36230,7 +36240,7 @@ export const publicVocab = [
     "partOfSpeech": "n./v.",
     "meanings": [
       {
-        "text": "报告；⚡~ing n.（新闻）报道；reportedly adv. 据报道",
+        "text": "报告",
         "source": "curated"
       }
     ],
@@ -36272,7 +36282,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "像；⚡resemblance n. 相似之处",
+        "text": "像",
         "source": "curated"
       }
     ],
@@ -36300,7 +36310,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "预订；保留 n. 储备；⚡n. 務持；reserved adj. 预订的；矜持的",
+        "text": "预订；保留",
         "source": "curated"
       }
     ],
@@ -36342,7 +36352,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "共鸣；⚡~ with 与…产生共鸣",
+        "text": "共鸣",
         "source": "curated"
       }
     ],
@@ -36356,7 +36366,7 @@ export const publicVocab = [
     "partOfSpeech": "n./v.",
     "meanings": [
       {
-        "text": "尊重；方面；⚡in this ~ 在这方面；respective adj. 各自的",
+        "text": "尊重；方面",
         "source": "curated"
       }
     ],
@@ -36370,7 +36380,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "回应；⚡~ rate 响应率",
+        "text": "回应",
         "source": "curated"
       }
     ],
@@ -36384,7 +36394,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "负责的；⚡~ for 是…的原因；responsibility n. 责任",
+        "text": "负责的",
         "source": "curated"
       }
     ],
@@ -36398,7 +36408,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "抑制；⚡restraint n. 克制；约束因素",
+        "text": "抑制",
         "source": "curated"
       }
     ],
@@ -36412,7 +36422,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "恢复（rɪˈzjuːm）n. 简历（ˈrezjʊmeɪ）",
+        "text": "恢复（rɪˈzjuːm）",
         "source": "curated"
       }
     ],
@@ -36426,7 +36436,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "零售；⚡retailer n. 零售商",
+        "text": "零售",
         "source": "curated"
       }
     ],
@@ -36454,7 +36464,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "退休；⚡retirement n. 退休；~ age 退休年龄",
+        "text": "退休",
         "source": "curated"
       }
     ],
@@ -36510,7 +36520,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "报复；⚡take ~ on 向…报复",
+        "text": "报复",
         "source": "curated"
       }
     ],
@@ -36524,7 +36534,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "旋转；⚡~ around 围绕",
+        "text": "旋转",
         "source": "curated"
       }
     ],
@@ -36538,7 +36548,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "报酬 v. 奖励；⚡rewarding adj. 值得的",
+        "text": "报酬",
         "source": "curated"
       }
     ],
@@ -36552,7 +36562,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "摆脱；⚡get ~ of 去除；ridicule n./v. 嘲笑",
+        "text": "摆脱",
         "source": "curated"
       }
     ],
@@ -36594,7 +36604,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "撕裂 n. 裂口",
+        "text": "撕裂",
         "source": "curated"
       }
     ],
@@ -36608,7 +36618,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "对手 adj. 竞争的 v. 与…匹敌",
+        "text": "对手",
         "source": "curated"
       }
     ],
@@ -36650,7 +36660,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "根；根源；⚡be rooted in 根植于；take ~ 扎根",
+        "text": "根；根源",
         "source": "curated"
       }
     ],
@@ -36678,7 +36688,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "粗糙的；大致的；⚡~ly adv. 大约；~ it 过艰苦生活",
+        "text": "粗糙的；大致的",
         "source": "curated"
       }
     ],
@@ -36692,7 +36702,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "王室的；⚡royalty n. 王室成员；版税",
+        "text": "王室的",
         "source": "curated"
       }
     ],
@@ -36706,7 +36716,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "毁坏 n. 废墟；⚡in ~s 成为废墟",
+        "text": "毁坏",
         "source": "curated"
       }
     ],
@@ -36776,7 +36786,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "缘故；⚡for the ~ of 为了",
+        "text": "缘故",
         "source": "curated"
       }
     ],
@@ -36804,7 +36814,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "样本 v. 抽样；体验",
+        "text": "样本",
         "source": "curated"
       }
     ],
@@ -36818,7 +36828,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "制裁；批准 v. 批准",
+        "text": "制裁；批准",
         "source": "curated"
       }
     ],
@@ -36846,7 +36856,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "卫星；⚡satellite city 卫星城",
+        "text": "卫星",
         "source": "curated"
       }
     ],
@@ -36944,7 +36954,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "侦察员；球探 v. 寻觅",
+        "text": "侦察员；球探",
         "source": "curated"
       }
     ],
@@ -36958,7 +36968,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "争夺；爬 n. 抢夺",
+        "text": "争夺；爬",
         "source": "curated"
       }
     ],
@@ -36972,7 +36982,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "抓挠 n. 划痕；⚡from ~ 从零开始；~ the surface 触及表面",
+        "text": "抓挠",
         "source": "curated"
       }
     ],
@@ -37014,7 +37024,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "海豹；印章 v. 密封；⚡~ the deal 敲定协议",
+        "text": "海豹；印章",
         "source": "curated"
       }
     ],
@@ -37098,7 +37108,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "抓住；没收；⚡~ the opportunity 抓住机会",
+        "text": "抓住；没收",
         "source": "curated"
       }
     ],
@@ -37112,7 +37122,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "感觉；轰动；⚡sensational adj. 轰动的；耸人听闻的",
+        "text": "感觉；轰动",
         "source": "curated"
       }
     ],
@@ -37126,7 +37136,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "情绪；观点；⚡sentimental adj. 感伤的",
+        "text": "情绪；观点",
         "source": "curated"
       }
     ],
@@ -37140,7 +37150,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "顺序；连续；⚡a ~ of 一系列",
+        "text": "顺序；连续",
         "source": "curated"
       }
     ],
@@ -37154,7 +37164,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "解决；定居；安顿；⚡~ for 勉强接受；settlement n. 协议；定居点",
+        "text": "解决；定居；安顿",
         "source": "curated"
       }
     ],
@@ -37196,7 +37206,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "影子；⚡cast a ~ on 给…蒙上阴影",
+        "text": "影子",
         "source": "curated"
       }
     ],
@@ -37238,7 +37248,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "流出；去除；脱落；⚡~ light on 阐明；n. 棚屋",
+        "text": "流出；去除；脱落",
         "source": "curated"
       }
     ],
@@ -37266,7 +37276,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "避难所 v. 庇护",
+        "text": "避难所",
         "source": "curated"
       }
     ],
@@ -37294,7 +37304,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "耸肩；⚡~ off 对…不予理会",
+        "text": "耸肩",
         "source": "curated"
       }
     ],
@@ -37308,7 +37318,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "穿梭巴士；航天飞机 v. 往返",
+        "text": "穿梭巴士；航天飞机",
         "source": "curated"
       }
     ],
@@ -37336,7 +37346,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "围困；⚡under ~ 处于围攻中",
+        "text": "围困",
         "source": "curated"
       }
     ],
@@ -37378,7 +37388,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "沉默；⚡v. 使缄默；~nth n. 缄默；keep ~ on 保持沉默",
+        "text": "沉默",
         "source": "curated"
       }
     ],
@@ -37392,7 +37402,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "模拟；⚡simulation n. 模拟；simultaneously adv. 同时",
+        "text": "模拟",
         "source": "curated"
       }
     ],
@@ -37406,7 +37416,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "地点；网站；⚡on ~ 在现场",
+        "text": "地点；网站",
         "source": "curated"
       }
     ],
@@ -37420,7 +37430,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "位于；⚡situated adj. 坐落于；处于（境地）",
+        "text": "位于",
         "source": "curated"
       }
     ],
@@ -37434,7 +37444,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "怀疑的；⚡skepticism n. 怀疑（态度）",
+        "text": "怀疑的",
         "source": "curated"
       }
     ],
@@ -37448,7 +37458,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "松弛的；萧条的 n. 松弛部分；⚡pick up the ~ 接手别人不管的事",
+        "text": "松弛的；萧条的",
         "source": "curated"
       }
     ],
@@ -37490,7 +37500,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "薄片；部分；⚡a ~ of the market 市场份额",
+        "text": "薄片；部分",
         "source": "curated"
       }
     ],
@@ -37504,7 +37514,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "轻微的 v. 怠慢；⚡slightly adv. 略微；not in the ~ 一点也不",
+        "text": "轻微的",
         "source": "curated"
       }
     ],
@@ -37518,7 +37528,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "苗条的；微小的 v. 削减（~ down）",
+        "text": "苗条的；微小的",
         "source": "curated"
       }
     ],
@@ -37560,7 +37570,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "聪明的；⚡v. 感到刺痛；~ing adj. 智能的",
+        "text": "聪明的",
         "source": "curated"
       }
     ],
@@ -37574,7 +37584,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "粉碎；猛击；⚡~ hit 轰动一时的作品",
+        "text": "粉碎；猛击",
         "source": "curated"
       }
     ],
@@ -37588,7 +37598,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "光滑的；顺利的；⚡smooth out 消除（困难）",
+        "text": "光滑的；顺利的",
         "source": "curated"
       }
     ],
@@ -37658,7 +37668,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "可溶的；⚡（问题）可解决的",
+        "text": "可溶的",
         "source": "curated"
       }
     ],
@@ -37672,7 +37682,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "主权的 n. 君主",
+        "text": "主权的",
         "source": "curated"
       }
     ],
@@ -37700,7 +37710,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "跨度；时间段 v. 持续；横跨；⚡~ning adj. 跨越的（long-~ing 长期的）",
+        "text": "跨度；时间段",
         "source": "curated"
       }
     ],
@@ -37714,7 +37724,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "火花 v. 引发；⚡~ debate 引发争论",
+        "text": "火花",
         "source": "curated"
       }
     ],
@@ -37728,7 +37738,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "闪耀 n. 光芒",
+        "text": "闪耀",
         "source": "curated"
       }
     ],
@@ -37770,7 +37780,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "景象；壮观；⚡spectacles n. 眼镜；spectator n. 观众",
+        "text": "景象；壮观",
         "source": "curated"
       }
     ],
@@ -37798,7 +37808,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "溢出；⚡~ over 蔓延；spill the beans 泄密",
+        "text": "溢出",
         "source": "curated"
       }
     ],
@@ -37812,7 +37822,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "螺旋 v. 盘旋；⚡（价格）不断恶化",
+        "text": "螺旋",
         "source": "curated"
       }
     ],
@@ -37826,7 +37836,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "精神；⚡（复数）情绪（in high ~s）；烈酒",
+        "text": "精神",
         "source": "curated"
       }
     ],
@@ -37840,7 +37850,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "溅 n. 溅洒声；⚡make a ~ 引起轰动",
+        "text": "溅",
         "source": "curated"
       }
     ],
@@ -37854,7 +37864,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "分裂；分担 n. 分歧；⚡~ up 分手；split second 一瞬间",
+        "text": "分裂；分担",
         "source": "curated"
       }
     ],
@@ -37896,7 +37906,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "地点；斑点 v. 发现；⚡on the ~ 当场；spot check 抽查",
+        "text": "地点；斑点",
         "source": "curated"
       }
     ],
@@ -37924,7 +37934,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "蔓延 n. 杂乱扩张；⚡urban ~ 城市无序扩张",
+        "text": "蔓延",
         "source": "curated"
       }
     ],
@@ -37938,7 +37948,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "喷洒 n. 喷雾",
+        "text": "喷洒",
         "source": "curated"
       }
     ],
@@ -37952,7 +37962,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "激励，促进 n. 刺激（因素）",
+        "text": "激励，促进",
         "source": "curated"
       }
     ],
@@ -37966,7 +37976,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "挤压 n. 挤压；⚡~ profits 挤压利润；put the ~ on 施压",
+        "text": "挤压",
         "source": "curated"
       }
     ],
@@ -37980,7 +37990,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "稳定性；⚡stable adj. 稳定的；（人）沉稳的",
+        "text": "稳定性",
         "source": "curated"
       }
     ],
@@ -37994,7 +38004,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "一摞 v. 堆放",
+        "text": "一摞",
         "source": "curated"
       }
     ],
@@ -38008,7 +38018,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "全体员工 v. 配备员工",
+        "text": "全体员工",
         "source": "curated"
       }
     ],
@@ -38022,7 +38032,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "使震惊；蹒跚；⚡staggering adj. 惊人的；~ed adj. 错开的",
+        "text": "使震惊；蹒跚",
         "source": "curated"
       }
     ],
@@ -38050,7 +38060,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "污渍 v. 玷污；⚡stainless adj. 无瑕疵的；不锈的",
+        "text": "污渍",
         "source": "curated"
       }
     ],
@@ -38078,7 +38088,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "拖延；熄火 n. 摊位",
+        "text": "拖延；熄火",
         "source": "curated"
       }
     ],
@@ -38092,7 +38102,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "邮票；印章 v. 盖章；踩踏",
+        "text": "邮票；印章",
         "source": "curated"
       }
     ],
@@ -38120,7 +38130,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "主食；订书钉 adj. 主要的；⚡~ food 主食",
+        "text": "主食；订书钉",
         "source": "curated"
       }
     ],
@@ -38134,7 +38144,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "使惊吓；⚡startling adj. 令人震惊的",
+        "text": "使惊吓",
         "source": "curated"
       }
     ],
@@ -38148,7 +38158,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "挨饿；⚡be starved of 匮乏；starvation n. 饥饿",
+        "text": "挨饿",
         "source": "curated"
       }
     ],
@@ -38162,7 +38172,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "统计数据；⚡statistical adj. 统计的；statistics n. 统计学",
+        "text": "统计数据",
         "source": "curated"
       }
     ],
@@ -38190,7 +38200,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "稳定的；稳步的 v. 使平稳",
+        "text": "稳定的；稳步的",
         "source": "curated"
       }
     ],
@@ -38218,7 +38228,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "茎；词干；⚡v.（~ from）起源于；~ the tide 遏制",
+        "text": "茎；词干",
         "source": "curated"
       }
     ],
@@ -38246,7 +38256,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "刺激；激励；⚡stimulus n.（复数 stimuli）刺激（物）；经济刺激",
+        "text": "刺激；激励",
         "source": "curated"
       }
     ],
@@ -38274,7 +38284,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "搅动；激起 n. 轰动",
+        "text": "搅动；激起",
         "source": "curated"
       }
     ],
@@ -38288,7 +38298,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "库存；股票；家畜；⚡take ~ of 评估形势",
+        "text": "库存；股票；家畜",
         "source": "curated"
       }
     ],
@@ -38302,7 +38312,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "压力；菌株 v. 使紧张；拉伤；⚡~ of... 某种类型",
+        "text": "压力；菌株",
         "source": "curated"
       }
     ],
@@ -38316,7 +38326,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "带子 v. 捆绑",
+        "text": "带子",
         "source": "curated"
       }
     ],
@@ -38344,7 +38354,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "偏离；走失 adj. 走失的；⚡~ from the point 跑题",
+        "text": "偏离；走失",
         "source": "curated"
       }
     ],
@@ -38358,7 +38368,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "溪流；数据流 v. 流动；在线播放",
+        "text": "溪流；数据流",
         "source": "curated"
       }
     ],
@@ -38386,7 +38396,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "细绳；一串；⚡a ~ of 一系列；strings n. 附带条件（no strings attached）",
+        "text": "细绳；一串",
         "source": "curated"
       }
     ],
@@ -38400,7 +38410,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "剥夺（~ of）；拆除 n. 条带",
+        "text": "剥夺（~ of）；拆除",
         "source": "curated"
       }
     ],
@@ -38428,7 +38438,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "中风；击打；笔画；⚡a ~ of luck 好运",
+        "text": "中风；击打；笔画",
         "source": "curated"
       }
     ],
@@ -38456,7 +38466,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "绊倒；⚡~ across/upon 偶然发现",
+        "text": "绊倒",
         "source": "curated"
       }
     ],
@@ -38470,7 +38480,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "使震惊；⚡stunning adj. 惊艳的",
+        "text": "使震惊",
         "source": "curated"
       }
     ],
@@ -38540,7 +38550,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "子公司 adj. 次要的",
+        "text": "子公司",
         "source": "curated"
       }
     ],
@@ -38568,7 +38578,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "郊区；⚡suburban adj. 郊区的",
+        "text": "郊区",
         "source": "curated"
       }
     ],
@@ -38610,7 +38620,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "自杀；⚡economic ~ 经济自杀行为",
+        "text": "自杀",
         "source": "curated"
       }
     ],
@@ -38722,7 +38732,7 @@ export const publicVocab = [
     "partOfSpeech": "n./v.",
     "meanings": [
       {
-        "text": "激增；⚡power ~ 电压骤增",
+        "text": "激增",
         "source": "curated"
       }
     ],
@@ -38764,7 +38774,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "盈余；过剩 adj. 过剩的",
+        "text": "盈余；过剩",
         "source": "curated"
       }
     ],
@@ -38792,7 +38802,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "幸存；比…活得长；⚡survival n. 生存；幸存物",
+        "text": "幸存；比…活得长",
         "source": "curated"
       }
     ],
@@ -38806,7 +38816,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "怀疑 n. 嫌疑犯；⚡suspected adj. 疑似的；suspicious adj. 可疑的；怀疑的（~ of）",
+        "text": "怀疑",
         "source": "curated"
       }
     ],
@@ -38820,7 +38830,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "暂停；悬挂；⚡suspension n. 暂停；suspension bridge 吊桥",
+        "text": "暂停；悬挂",
         "source": "curated"
       }
     ],
@@ -38848,7 +38858,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "吞下；⚡v. 掩饰；轻信",
+        "text": "吞下",
         "source": "curated"
       }
     ],
@@ -38862,7 +38872,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "沼泽 v. 淹没；使应接不暇",
+        "text": "沼泽",
         "source": "curated"
       }
     ],
@@ -38904,7 +38914,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "扫；席卷；⚡sweeping adj. 影响深远的；彻底的",
+        "text": "扫；席卷",
         "source": "curated"
       }
     ],
@@ -38932,7 +38942,7 @@ export const publicVocab = [
     "partOfSpeech": "v./n.",
     "meanings": [
       {
-        "text": "转换；开关；⚡~ to 转向；switch off 关掉",
+        "text": "转换；开关",
         "source": "curated"
       }
     ],
@@ -38946,7 +38956,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "症状；⚡n. 征兆（~ of）",
+        "text": "症状",
         "source": "curated"
       }
     ],
@@ -38988,7 +38998,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "系统的；⚡~ally adv. 有条理地",
+        "text": "系统的",
         "source": "curated"
       }
     ],
@@ -39016,7 +39026,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "处理，应对；⚡n.（运动）抢断；装备",
+        "text": "处理，应对",
         "source": "curated"
       }
     ],
@@ -39030,7 +39040,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "裁剪；⚡v.（~ to）量身定制；n. 裁缝",
+        "text": "裁剪",
         "source": "curated"
       }
     ],
@@ -39072,7 +39082,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "驯服的 v. 驯化；制服",
+        "text": "驯服的",
         "source": "curated"
       }
     ],
@@ -39086,7 +39096,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "轻拍；⚡~ the potential 挖掘潜力；n. 水龙头",
+        "text": "轻拍",
         "source": "curated"
       }
     ],
@@ -39114,7 +39124,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "取笑；梳理；⚡~ out 梳理出",
+        "text": "取笑；梳理",
         "source": "curated"
       }
     ],
@@ -39142,7 +39152,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "诱使；⚡tempting adj. 诱人的；temptation n. 诱惑",
+        "text": "诱使",
         "source": "curated"
       }
     ],
@@ -39170,7 +39180,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "温柔的；嫩的 v.（正式）提出 n. 投标",
+        "text": "温柔的；嫩的 v.（正式）提出",
         "source": "curated"
       }
     ],
@@ -39226,7 +39236,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "使恐惧；⚡terrifying adj. 可怕的；terror n. 恐惧；恐怖行为",
+        "text": "使恐惧",
         "source": "curated"
       }
     ],
@@ -39296,7 +39306,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "彻底的；⚡thoroughly adv. 完全地",
+        "text": "彻底的",
         "source": "curated"
       }
     ],
@@ -39324,7 +39334,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "威胁；⚡~ to do 有…的危险",
+        "text": "威胁",
         "source": "curated"
       }
     ],
@@ -39394,7 +39404,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "象征；代币；⚡~ gesture 象征性姿态；by the same ~ 同样地",
+        "text": "象征；代币",
         "source": "curated"
       }
     ],
@@ -39408,7 +39418,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "容忍；耐受；⚡tolerance n. 宽容；耐受度",
+        "text": "容忍；耐受",
         "source": "curated"
       }
     ],
@@ -39436,7 +39446,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "扔；摇摆；⚡~ and turn 辗转反侧",
+        "text": "扔；摇摆",
         "source": "curated"
       }
     ],
@@ -39450,7 +39460,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "总的；⚡~ly adv. 完全；a ~ of 总计",
+        "text": "总的",
         "source": "curated"
       }
     ],
@@ -39464,7 +39474,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "有毒的；⚡adj.（关系）有害的",
+        "text": "有毒的",
         "source": "curated"
       }
     ],
@@ -39478,7 +39488,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "痕迹 v. 追溯（~ back to）",
+        "text": "痕迹",
         "source": "curated"
       }
     ],
@@ -39506,7 +39516,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "悲剧的；⚡tragedy n. 悲剧；惨事",
+        "text": "悲剧的",
         "source": "curated"
       }
     ],
@@ -39576,7 +39586,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "移植；n. 移植（手术）",
+        "text": "移植",
         "source": "curated"
       }
     ],
@@ -39660,7 +39670,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "小事；稍微；⚡a ~ 有点儿",
+        "text": "小事；稍微",
         "source": "curated"
       }
     ],
@@ -39674,7 +39684,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "三倍的 v. 增至三倍",
+        "text": "三倍的",
         "source": "curated"
       }
     ],
@@ -39716,7 +39726,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "卡车；⚡have no ~ with 不与…往来",
+        "text": "卡车",
         "source": "curated"
       }
     ],
@@ -39730,7 +39740,7 @@ export const publicVocab = [
     "partOfSpeech": "n./v.",
     "meanings": [
       {
-        "text": "信任；⚡n. 托拉斯；信托机构",
+        "text": "信任",
         "source": "curated"
       }
     ],
@@ -39772,7 +39782,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "转动；⚡~ out 结果是；~ to 求助于；~ down 拒绝；~ up 出现",
+        "text": "转动",
         "source": "curated"
       }
     ],
@@ -39786,7 +39796,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "家教；导师 v. 辅导",
+        "text": "家教；导师",
         "source": "curated"
       }
     ],
@@ -39800,7 +39810,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "转折；扭 v. 扭曲；⚡a ~ of fate 命运的捉弄",
+        "text": "转折；扭",
         "source": "curated"
       }
     ],
@@ -39828,7 +39838,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "丑陋的；⚡adj. 险恶的（an ~ incident）",
+        "text": "丑陋的",
         "source": "curated"
       }
     ],
@@ -39982,7 +39992,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "撤销；⚡~ the damage 消除损害",
+        "text": "撤销",
         "source": "curated"
       }
     ],
@@ -40010,7 +40020,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "不安的；⚡unease n. 忧虑",
+        "text": "不安的",
         "source": "curated"
       }
     ],
@@ -40248,7 +40258,7 @@ export const publicVocab = [
     "partOfSpeech": "prep.",
     "meanings": [
       {
-        "text": "在…之上；⚡~ reflection 仔细考虑后",
+        "text": "在…之上",
         "source": "curated"
       }
     ],
@@ -40262,7 +40272,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "较高的；⚡upper hand 上风",
+        "text": "较高的",
         "source": "curated"
       }
     ],
@@ -40290,7 +40300,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "心烦的 v. 使不安；打乱；⚡~ the balance 打破平衡",
+        "text": "心烦的",
         "source": "curated"
       }
     ],
@@ -40332,7 +40342,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "利用；⚡utility n. 效用；公用事业（公司）",
+        "text": "利用",
         "source": "curated"
       }
     ],
@@ -40346,7 +40356,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "完全的 v. 说；⚡utterly adv. 彻底地",
+        "text": "完全的",
         "source": "curated"
       }
     ],
@@ -40360,7 +40370,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "空着的；（职位）空缺的；⚡vacancy n. 空缺职位",
+        "text": "空着的；（职位）空缺的",
         "source": "curated"
       }
     ],
@@ -40388,7 +40398,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "徒劳的；自负的；⚡in ~ 徒劳",
+        "text": "徒劳的；自负的",
         "source": "curated"
       }
     ],
@@ -40458,7 +40468,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "面纱；⚡draw a ~ over 掩饰",
+        "text": "面纱",
         "source": "curated"
       }
     ],
@@ -40598,7 +40608,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "恶习 adj. 副的；⚡vice versa 反之亦然",
+        "text": "恶习",
         "source": "curated"
       }
     ],
@@ -40612,7 +40622,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "使受害；⚡victim n. 受害者",
+        "text": "使受害",
         "source": "curated"
       }
     ],
@@ -40626,7 +40636,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "有力的；⚡vigor n. 活力",
+        "text": "有力的",
         "source": "curated"
       }
     ],
@@ -40682,7 +40692,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "视力；愿景；⚡adj. visionary 有远见的",
+        "text": "视力；愿景",
         "source": "curated"
       }
     ],
@@ -40696,7 +40706,7 @@ export const publicVocab = [
     "partOfSpeech": "adj.",
     "meanings": [
       {
-        "text": "视觉的；⚡visualize v. 想象；使可视化",
+        "text": "视觉的",
         "source": "curated"
       }
     ],
@@ -40738,7 +40748,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "空虚 adj. 无效的",
+        "text": "空虚",
         "source": "curated"
       }
     ],
@@ -40766,7 +40776,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "志愿者 v. 自愿做",
+        "text": "志愿者",
         "source": "curated"
       }
     ],
@@ -40780,7 +40790,7 @@ export const publicVocab = [
     "partOfSpeech": "v./n.",
     "meanings": [
       {
-        "text": "投票；⚡vote in 选出；ballot n. 选票",
+        "text": "投票",
         "source": "curated"
       }
     ],
@@ -40808,7 +40818,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "工资 v. 发动（战争、运动）",
+        "text": "工资",
         "source": "curated"
       }
     ],
@@ -40836,7 +40846,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "保证；使有必要 n. 授权令；⚡unwarranted adj. 无根据的",
+        "text": "保证；使有必要",
         "source": "curated"
       }
     ],
@@ -40850,7 +40860,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "编织；⚡~ through 穿行；be woven into 融入",
+        "text": "编织",
         "source": "curated"
       }
     ],
@@ -40878,7 +40888,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "批发；⚡adj. 大规模的",
+        "text": "批发",
         "source": "curated"
       }
     ],
@@ -40892,7 +40902,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "擦；⚡~ out 彻底消灭",
+        "text": "擦",
         "source": "curated"
       }
     ],
@@ -40906,7 +40916,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "智慧；⚡conventional wisdom 普遍看法",
+        "text": "智慧",
         "source": "curated"
       }
     ],
@@ -40920,7 +40930,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "智力；机智；⚡at one's wits' end 不知所措",
+        "text": "智力；机智",
         "source": "curated"
       }
     ],
@@ -40934,7 +40944,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "撤回；取款；退出；⚡withdrawal n. 撤军；戒断",
+        "text": "撤回；取款；退出",
         "source": "curated"
       }
     ],
@@ -41018,7 +41028,7 @@ export const publicVocab = [
     "partOfSpeech": "n.",
     "meanings": [
       {
-        "text": "伤口 v. 使受伤；⚡v.（情感）伤害",
+        "text": "伤口",
         "source": "curated"
       }
     ],
@@ -41032,7 +41042,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "包裹；⚡~ up 完成，收尾",
+        "text": "包裹",
         "source": "curated"
       }
     ],
@@ -41060,7 +41070,7 @@ export const publicVocab = [
     "partOfSpeech": "v.",
     "meanings": [
       {
-        "text": "破坏 n. 残骸；⚡wreckage n. 残骸；a nervous ~ 精神崩溃的人",
+        "text": "破坏",
         "source": "curated"
       }
     ],
