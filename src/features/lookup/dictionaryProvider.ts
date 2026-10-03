@@ -39,6 +39,9 @@ function stripTags(value: string) {
   return value.replace(/<[^>]*>/g, "").trim();
 }
 
+/** 有道词典尾部的专名段落（人名/地名），对背诵是噪声，遇到就停。 */
+const PROPER_NOUN_SECTION = /^【\s*(名|地名|人名)\s*】/;
+
 /** 解析有道的 explain（如 "n. 地址；网址；演讲；v. 解决，处理"）为词性分组。 */
 export function parseYoudaoSuggest(payload: unknown): DictionaryResult | null {
   const data = payload as YoudaoSuggestPayload;
@@ -55,10 +58,15 @@ export function parseYoudaoSuggest(payload: unknown): DictionaryResult | null {
   }
 
   const groups: PartOfSpeechGroup[] = [];
-  for (const rawSegment of explain.split("；")) {
+  // 半角/全角分号都可能是分隔符（有道的输出两种混用）
+  for (const rawSegment of explain.split(/[；;]/)) {
     const segment = stripTags(rawSegment);
     if (!segment) {
       continue;
+    }
+    // 专名段落（如 "【名】（Haste）（英）黑斯特…"）后面全是噪声，直接停
+    if (PROPER_NOUN_SECTION.test(segment)) {
+      break;
     }
     const posMatch = segment.match(/^([a-zA-Z]+\.)\s*(.+)$/);
     if (posMatch) {
@@ -68,6 +76,10 @@ export function parseYoudaoSuggest(payload: unknown): DictionaryResult | null {
     } else {
       groups.push({ label: "", meanings: [segment] });
     }
+  }
+
+  if (groups.length === 0) {
+    return null;
   }
 
   return {

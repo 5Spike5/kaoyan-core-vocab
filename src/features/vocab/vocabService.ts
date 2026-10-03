@@ -1,5 +1,5 @@
 import { normalizeTerm } from '../../lib/normalizeTerm'
-import type { PublicVocabEntry, UserWord } from '../../types/domain'
+import type { PublicVocabEntry, UserWord, WordMeaning } from '../../types/domain'
 
 const LOCAL_USER_ID = 'local'
 
@@ -9,6 +9,25 @@ function createId(prefix: string) {
 
 function primaryMeaning(entry: PublicVocabEntry) {
   return entry.meanings[0]?.text ?? ''
+}
+
+/**
+ * 清洗释义数组：历史数据/跨端同步可能带来非数组或空文本，直接丢给
+ * `meanings[0].text` 读取会抛错或让整页学习队列变空，统一在这里兜住。
+ */
+export function normalizeMeanings(meanings: WordMeaning[] | undefined | null): WordMeaning[] {
+  if (!Array.isArray(meanings)) {
+    return []
+  }
+
+  return meanings.filter(
+    (item) => item && typeof item.text === 'string' && item.text.trim().length > 0
+  )
+}
+
+/** 有可用释义的词才进得了学习队列（选项需要释义做干扰项）。 */
+export function hasWordMeaning(word: Pick<UserWord, 'meanings'>): boolean {
+  return normalizeMeanings(word.meanings).length > 0
 }
 
 function publicEntryToUserWord(entry: PublicVocabEntry): UserWord {
@@ -33,25 +52,47 @@ export function mergePublicAndUserWords(
 ): UserWord[] {
   const userByTerm = new Map(userWords.map((word) => [word.normalizedTerm, word]))
 
-  const merged = publicEntries.map((entry) => {
+  // 公共词表里有重复词条（同一个 normalizedTerm 出现多次，来自不同批次的导入）。
+  // 不去重会出现两个问题：同一个词在一次背诵里被发两次；首页「待学/词库」按
+  // 条目数统计，虚增出几十个并不存在的待学词。
+  const seenPublicTerms = new Set<string>()
+  const uniquePublicEntries = publicEntries.filter((entry) => {
+    if (seenPublicTerms.has(entry.normalizedTerm)) {
+      return false
+    }
+    seenPublicTerms.add(entry.normalizedTerm)
+    return true
+  })
+
+  const merged = uniquePublicEntries.map((entry) => {
     const userWord = userByTerm.get(entry.normalizedTerm)
 
     if (!userWord) {
       return publicEntryToUserWord(entry)
     }
 
+    // 用户记录里的释义为空（例如旧版查词写入的空释义词）时回退到核心词库释义，
+    // 否则这个词会因为「没有释义」被学习队列静默排除
+    const userMeanings = normalizeMeanings(userWord.meanings)
+
     return {
       ...userWord,
       sourceVocabKey: userWord.sourceVocabKey ?? entry.key,
-      meanings: userWord.meanings.length > 0 ? userWord.meanings : entry.meanings,
+      meanings: userMeanings.length > 0 ? userMeanings : entry.meanings,
       term: userWord.term || entry.term
     }
   })
 
-  const publicTerms = new Set(publicEntries.map((entry) => entry.normalizedTerm))
-  const customOnlyWords = userWords.filter((word) => !publicTerms.has(word.normalizedTerm))
+  const customOnlyWords = userWords
+    .filter((word) => !seenPublicTerms.has(word.normalizedTerm))
+    .map((word) => ({ ...word, meanings: normalizeMeanings(word.meanings) }))
 
   return [...merged, ...customOnlyWords]
+}
+
+/** 公共词表去重后的词条数（首页统计用，避免重复条目虚增待学数量）。 */
+export function countUniquePublicTerms(publicEntries: PublicVocabEntry[]): number {
+  return new Set(publicEntries.map((entry) => entry.normalizedTerm)).size
 }
 
 export function createUserWordFromLookup(input: {

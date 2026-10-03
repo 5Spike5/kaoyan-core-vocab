@@ -20,6 +20,7 @@ import {
   countNewWordsToday,
   countWordsByStatus,
 } from "../stats/statsSelectors";
+import { countUniquePublicTerms, hasWordMeaning } from "../vocab/vocabService";
 import { selectDashboardStats } from "./dashboardSelectors";
 
 const LOCAL_USER_ID = "local";
@@ -96,12 +97,16 @@ export default function DashboardPage() {
   const stats = selectDashboardStats(words, logs);
   const statusCounts = countWordsByStatus(words);
   const learned = countLearnedWords(words);
-  // 词库总数 = 核心词表 + 用户通过查词自建的词（不在核心词表内）
+  // 词库总数 = 核心词表（去重后）+ 用户通过查词自建的词（不在核心词表内）
   const publicTerms = new Set(publicVocab.map((entry) => entry.normalizedTerm));
-  const customWordCount = words.filter(
+  const customWords = words.filter(
     (word) => !publicTerms.has(word.normalizedTerm),
-  ).length;
-  const totalVocab = publicVocab.length + customWordCount;
+  );
+  // 没有释义的自建词进不了学习队列（选项需要释义），不计入待学，否则
+  // 会出现“待学还有一大堆，点进去却没内容”的矛盾
+  const studyableCustomWords = customWords.filter(hasWordMeaning);
+  const missingMeaningCount = customWords.length - studyableCustomWords.length;
+  const totalVocab = countUniquePublicTerms(publicVocab) + studyableCustomWords.length;
   // 待学 = 总词库 - 已学（查词添加的新词也会计入总词库和待学）
   const todoCount = Math.max(0, totalVocab - learned);
 
@@ -261,6 +266,13 @@ export default function DashboardPage() {
           </span>
         </div>
       </div>
+
+      {missingMeaningCount > 0 ? (
+        <p className="page-note">
+          有 {missingMeaningCount} 个自建词还没有释义，它们不会出现在背诵队列里。
+          去 <Link to="/vocab">单词表</Link> 页点「补全释义」即可一次性补齐。
+        </p>
+      ) : null}
 
       <div className="time-card" aria-label="学习时长">
         <div className="card-header">

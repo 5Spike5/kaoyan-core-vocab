@@ -2141,6 +2141,12 @@ h2 {
     color: var(--color-text-muted);
 }
 
+/* 没有释义的自建词：不进背诵队列，用警示色标出来 */
+.status-missing-meaning {
+    background: rgba(220, 38, 38, 0.12);
+    color: #b91c1c;
+}
+
 /* ===== Modal ===== */
 .modal-backdrop {
     position: fixed;

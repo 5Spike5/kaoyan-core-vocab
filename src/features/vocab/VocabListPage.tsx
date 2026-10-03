@@ -1,4 +1,4 @@
-import { Download, FileSpreadsheet, Upload, X } from "lucide-react";
+import { Download, FileSpreadsheet, Sparkles, Upload, X } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import EmptyState from "../../components/EmptyState";
 import { ListSkeleton } from "../../components/Skeleton";
@@ -11,8 +11,12 @@ import {
 } from "../../lib/csv";
 import { createLocalRepository } from "../../repositories/localRepository";
 import type { UserWord, UserWordStatus } from "../../types/domain";
+import { lookupWithCache } from "../lookup/dictionaryApi";
+import { createDictionaryProvider } from "../lookup/dictionaryProvider";
+import { meaningFromDictionary } from "../lookup/lookupService";
 import {
   createUserWordFromLookup,
+  hasWordMeaning,
   mergePublicAndUserWords,
 } from "./vocabService";
 
@@ -55,6 +59,11 @@ export default function VocabListPage() {
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(true);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const [repairing, setRepairing] = useState(false);
+  const [repairProgress, setRepairProgress] = useState<{
+    done: number;
+    total: number;
+  } | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const sentinelRef = useRef<HTMLDivElement>(null);
   const [modal, setModal] = useState<ImportModalState>({
@@ -198,6 +207,57 @@ export default function VocabListPage() {
   const previewRows = modal.result?.imported.slice(0, 6) ?? [];
   const previewMore = (modal.result?.imported.length ?? 0) - previewRows.length;
 
+  // 没有释义的自建词：进不了背诵队列，这里提供一次性补全
+  const missingMeaningWords = useMemo(
+    () => words.filter((word) => !hasWordMeaning(word)),
+    [words],
+  );
+
+  /** 逐个用公共词典补全缺失释义（顺序执行，避免并发打爆词典接口）。 */
+  const handleFillMissingMeanings = useCallback(async () => {
+    if (missingMeaningWords.length === 0 || repairing) {
+      return;
+    }
+
+    setRepairing(true);
+    setRepairProgress({ done: 0, total: missingMeaningWords.length });
+    const repository = createLocalRepository();
+    let filled = 0;
+    let missed = 0;
+    try {
+      const provider = createDictionaryProvider();
+      for (const [index, word] of missingMeaningWords.entries()) {
+        try {
+          const dictionary = await lookupWithCache(word.term, provider);
+          const meaning = meaningFromDictionary(dictionary);
+          if (meaning) {
+            await repository.upsertUserWord({
+              ...word,
+              meanings: [{ text: meaning, source: "dictionary" }],
+              updatedAt: Date.now(),
+            });
+            filled += 1;
+          } else {
+            missed += 1;
+          }
+        } catch {
+          // 词典查不到/请求失败：留着下次再补
+          missed += 1;
+        }
+        setRepairProgress({ done: index + 1, total: missingMeaningWords.length });
+      }
+      await loadWords();
+      toast(
+        `已补全 ${filled} 个释义${missed > 0 ? `，${missed} 个没查到` : ""}`,
+        filled > 0 ? "success" : "error",
+      );
+    } finally {
+      await repository.close();
+      setRepairing(false);
+      setRepairProgress(null);
+    }
+  }, [loadWords, missingMeaningWords, repairing]);
+
   return (
     <section className="page vocab-page" aria-labelledby="vocab-title">
       <div className="page-heading">
@@ -233,6 +293,19 @@ export default function VocabListPage() {
         </div>
 
         <div className="vocab-actions">
+          {missingMeaningWords.length > 0 ? (
+            <button
+              type="button"
+              className="button button-primary"
+              disabled={repairing}
+              onClick={() => void handleFillMissingMeanings()}
+            >
+              <Sparkles size={16} aria-hidden="true" />
+              {repairing && repairProgress
+                ? `补全中 ${repairProgress.done}/${repairProgress.total}`
+                : `补全释义 (${missingMeaningWords.length})`}
+            </button>
+          ) : null}
           <button
             type="button"
             className="button button-secondary"
@@ -254,6 +327,13 @@ export default function VocabListPage() {
         </div>
       </div>
 
+      {missingMeaningWords.length > 0 ? (
+        <p className="page-note" role="status">
+          有 {missingMeaningWords.length} 个自建词还没有释义，它们不会出现在背诵队列里。
+          点「补全释义」用公共词典一次性补齐，补完即可背诵。
+        </p>
+      ) : null}
+
       {!loading ? (
         <p className="vocab-count">
           显示 {visibleWords.length.toLocaleString()} /{" "}
@@ -274,6 +354,14 @@ export default function VocabListPage() {
                   {word.meanings.map((item) => item.text).join("；")}
                 </span>
               </div>
+              {!hasWordMeaning(word) ? (
+                <span
+                  className="status-badge status-missing-meaning"
+                  title="这个词没有释义，不会进入背诵队列；去查词页重新查一次即可补上"
+                >
+                  缺释义
+                </span>
+              ) : null}
               <span className={`status-badge status-${word.status}`}>
                 {STATUS_LABELS[word.status]}
               </span>

@@ -2,11 +2,18 @@ import { BookPlus, Check, Loader2, Search, Volume2 } from "lucide-react";
 import { useCallback, useState } from "react";
 import { toast } from "../../components/Toast";
 import { createLocalRepository } from "../../repositories/localRepository";
-import { createUserWordFromLookup } from "../vocab/vocabService";
+import {
+  createUserWordFromLookup,
+  hasWordMeaning,
+} from "../vocab/vocabService";
 import { lookupWithCache } from "./dictionaryApi";
 import { createDictionaryProvider } from "./dictionaryProvider";
 import { highlightTerm } from "../../lib/highlightTerm";
-import { enrichLookupWithDictionary, lookupLocalWord } from "./lookupService";
+import {
+  enrichLookupWithDictionary,
+  lookupLocalWord,
+  meaningFromLookupResult,
+} from "./lookupService";
 import type { WordLookupResult } from "./lookupTypes";
 
 const LOCAL_USER_ID = "local";
@@ -23,6 +30,12 @@ export default function LookupPage() {
   const [addedTerms, setAddedTerms] = useState<Set<string>>(new Set());
   // 本地生词库里已存在的词（查到了就不显示“加入生词库”按钮）
   const [knownTerms, setKnownTerms] = useState<Set<string>>(new Set());
+  // 已在生词库、但当初没有存下释义的词（旧版查词留下的脏数据）：允许重新补释义
+  const [meaninglessTerms, setMeaninglessTerms] = useState<Set<string>>(
+    new Set(),
+  );
+  // 字典结果还在路上时先别让用户点“加入生词库”，否则会存进空释义
+  const [enriching, setEnriching] = useState(false);
 
   const checkKnown = useCallback(async (result: WordLookupResult) => {
     const repository = createLocalRepository();
@@ -32,9 +45,15 @@ export default function LookupPage() {
         result.normalizedTerm,
       );
       if (existing) {
-        setKnownTerms((previous) =>
-          new Set(previous).add(result.normalizedTerm),
-        );
+        if (hasWordMeaning(existing)) {
+          setKnownTerms((previous) =>
+            new Set(previous).add(result.normalizedTerm),
+          );
+        } else {
+          setMeaninglessTerms((previous) =>
+            new Set(previous).add(result.normalizedTerm),
+          );
+        }
       }
     } finally {
       await repository.close();
@@ -43,6 +62,7 @@ export default function LookupPage() {
 
   const enrichWithDictionary = useCallback(
     async (localResult: WordLookupResult) => {
+      setEnriching(true);
       try {
         const provider = createDictionaryProvider();
         const dictionary = await lookupWithCache(
@@ -75,6 +95,8 @@ export default function LookupPage() {
               }
             : previous,
         );
+      } finally {
+        setEnriching(false);
       }
     },
     [],
@@ -100,19 +122,49 @@ export default function LookupPage() {
   );
 
   const handleAddToVocab = useCallback(async (result: WordLookupResult) => {
-    const meaning =
-      result.publicEntry?.meanings.map((item) => item.text).join("；") ?? "";
-    const word = createUserWordFromLookup({
-      term: result.term,
-      meaning,
-      sourceVocabKey: result.publicEntry?.key,
-    });
+    // 释义优先级：核心词库 → 公共词典 → 已解析分组。
+    // 不能只看核心词库：查文章里的生词时它在核心词库里通常没有条目，
+    // 存成空释义会让这个词永远进不了背诵队列（学习队列按“有释义”过滤）。
+    const meaning = meaningFromLookupResult(result);
+    if (!meaning) {
+      toast("暂时没拿到这个词的释义，稍后再试一次", "error");
+      return;
+    }
 
     const repository = createLocalRepository();
     try {
+      // 已有记录（多为旧版写入的空释义词）只补释义，状态 / 复习计划保持原样
+      const existing = await repository.getUserWord(
+        LOCAL_USER_ID,
+        result.normalizedTerm,
+      );
+      const word = existing
+        ? {
+            ...existing,
+            meanings: [{ text: meaning, source: "user" as const }],
+            sourceVocabKey: existing.sourceVocabKey ?? result.publicEntry?.key,
+            updatedAt: Date.now(),
+          }
+        : createUserWordFromLookup({
+            term: result.term,
+            meaning,
+            sourceVocabKey: result.publicEntry?.key,
+          });
+
       await repository.upsertUserWord({ ...word, userId: LOCAL_USER_ID });
       setAddedTerms((previous) => new Set(previous).add(result.normalizedTerm));
-      toast("已添加成功，可在首页词库查看", "success");
+      setMeaninglessTerms((previous) => {
+        if (!previous.has(result.normalizedTerm)) {
+          return previous;
+        }
+        const next = new Set(previous);
+        next.delete(result.normalizedTerm);
+        return next;
+      });
+      toast(
+        existing ? "已补充释义，可以去背诵了" : "已添加成功，可在首页词库查看",
+        "success",
+      );
     } finally {
       await repository.close();
     }
@@ -164,6 +216,8 @@ export default function LookupPage() {
           result={state.result}
           addedTerms={addedTerms}
           knownTerms={knownTerms}
+          meaninglessTerms={meaninglessTerms}
+          enriching={enriching}
           onAdd={handleAddToVocab}
         />
       ) : null}
@@ -175,11 +229,15 @@ function LookupResultView({
   result,
   addedTerms,
   knownTerms,
+  meaninglessTerms,
+  enriching,
   onAdd,
 }: {
   result: WordLookupResult;
   addedTerms: Set<string>;
   knownTerms: Set<string>;
+  meaninglessTerms: Set<string>;
+  enriching: boolean;
   onAdd(result: WordLookupResult): void;
 }) {
   const hasLocalData =
@@ -187,6 +245,39 @@ function LookupResultView({
   const alreadyAdded = addedTerms.has(result.normalizedTerm);
   const alreadyInVocab = alreadyAdded || knownTerms.has(result.normalizedTerm);
   const vocabBadgeText = alreadyAdded ? "已加入生词库" : "已在生词库";
+  // 生词库里存在、但没有释义（旧版查词留下的）：允许重新补一次释义
+  const needsMeaning = meaninglessTerms.has(result.normalizedTerm);
+  // 没有核心词库释义、词典结果又还没回来时先禁用按钮，避免又存进空释义
+  const waitingForMeaning =
+    enriching && !result.publicEntry && !result.dictionary;
+
+  const addAction = alreadyInVocab ? (
+    <span className="added-badge" role="status">
+      <Check size={14} aria-hidden="true" />
+      {vocabBadgeText}
+    </span>
+  ) : (
+    <>
+      {needsMeaning ? (
+        <p className="dictionary-note" role="status">
+          这个词在生词库里还没有释义，补充释义后即可进入背诵。
+        </p>
+      ) : null}
+      <button
+        type="button"
+        className="button button-primary"
+        disabled={waitingForMeaning}
+        onClick={() => onAdd(result)}
+      >
+        <BookPlus size={16} aria-hidden="true" />
+        {needsMeaning
+          ? "补充释义"
+          : waitingForMeaning
+            ? "正在获取释义…"
+            : "加入生词库"}
+      </button>
+    </>
+  );
 
   if (!hasLocalData) {
     return (
@@ -201,21 +292,7 @@ function LookupResultView({
         ) : (
           <p className="dictionary-note">正在查询公共词典…</p>
         )}
-        {alreadyInVocab ? (
-          <span className="added-badge" role="status">
-            <Check size={14} aria-hidden="true" />
-            {vocabBadgeText}
-          </span>
-        ) : (
-          <button
-            type="button"
-            className="button button-primary"
-            onClick={() => onAdd(result)}
-          >
-            <BookPlus size={16} aria-hidden="true" />
-            加入生词库
-          </button>
-        )}
+        {addAction}
       </div>
     );
   }
@@ -235,21 +312,7 @@ function LookupResultView({
           ) : null}
         </div>
 
-        {alreadyInVocab ? (
-          <span className="added-badge" role="status">
-            <Check size={14} aria-hidden="true" />
-            {vocabBadgeText}
-          </span>
-        ) : (
-          <button
-            type="button"
-            className="button button-primary"
-            onClick={() => onAdd(result)}
-          >
-            <BookPlus size={16} aria-hidden="true" />
-            加入生词库
-          </button>
-        )}
+        {addAction}
       </div>
 
       {result.publicEntry ? (

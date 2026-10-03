@@ -36,6 +36,37 @@ describe("youdao suggest parser", () => {
     expect(parseYoudaoSuggest({})).toBeNull();
     expect(parseYoudaoSuggest(null)).toBeNull();
   });
+
+  it("splits half-width semicolons and drops the trailing proper-noun section", () => {
+    // 真实返回：haste 的 explain 里分号半角全角混用，末尾还挂了【名】人名段落
+    const result = parseYoudaoSuggest({
+      data: {
+        entries: [
+          {
+            entry: "haste",
+            explain:
+              "n. 仓促，急忙; v. <古>赶紧，匆忙；<古>催促; 【名】  （Haste）（英）黑斯特，（法）阿斯特",
+          },
+        ],
+      },
+    });
+
+    expect(result).not.toBeNull();
+    // 注意 <古> 这类标记会被 stripTags 当作标签去掉
+    expect(result!.partsOfSpeech).toEqual([
+      { label: "n.", meanings: ["仓促，急忙"] },
+      { label: "v.", meanings: ["赶紧，匆忙", "催促"] },
+    ]);
+    expect(JSON.stringify(result!.partsOfSpeech)).not.toContain("黑斯特");
+  });
+
+  it("returns null when only a proper-noun section is present", () => {
+    const result = parseYoudaoSuggest({
+      data: { entries: [{ entry: "haste", explain: "【名】（Haste）（英）黑斯特" }] },
+    });
+
+    expect(result).toBeNull();
+  });
 });
 
 describe("dictionary provider", () => {
