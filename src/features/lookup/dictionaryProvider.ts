@@ -1,3 +1,4 @@
+import { normalizeTerm } from "../../lib/normalizeTerm";
 import type {
   DictionaryProvider,
   DictionaryResult,
@@ -41,6 +42,15 @@ function stripTags(value: string) {
 
 /** 有道词典尾部的专名段落（人名/地名），对背诵是噪声，遇到就停。 */
 const PROPER_NOUN_SECTION = /^【\s*(名|地名|人名)\s*】/;
+
+/** 词典返回的词形必须和查询词一致（大小写/空格归一后）。
+ *  有道的 suggest 对拼错的词会返回「改正后」的词条（explod → explode、
+ *  enormorusly → enormously），不加这道校验就会把别的词的中文释义存到错词下面。 */
+export function isSameTerm(returned: string | undefined, query: string): boolean {
+  const left = normalizeTerm(returned ?? "");
+  const right = normalizeTerm(query);
+  return left.length > 0 && left === right;
+}
 
 /** 解析有道的 explain（如 "n. 地址；网址；演讲；v. 解决，处理"）为词性分组。 */
 export function parseYoudaoSuggest(payload: unknown): DictionaryResult | null {
@@ -138,7 +148,7 @@ export function createYoudaoProvider(): DictionaryProvider {
         `${YOUDAO_SUGGEST}${encodeURIComponent(query)}`,
       );
       const result = parseYoudaoSuggest(payload);
-      if (!result) {
+      if (!result || !isSameTerm(result.term, query)) {
         throw new DictionaryNotFoundError(query);
       }
       return result;
@@ -247,7 +257,13 @@ export function createFreeDictionaryProvider(
         return { term: "", partsOfSpeech: [], source: "dictionaryapi.dev" };
       }
 
-      return mapEntry(entry);
+      const result = mapEntry(entry);
+      // 同有道：词形对不上（拼写错误/返回别的词条）就当作没查到
+      if (!isSameTerm(result.term, term)) {
+        throw new DictionaryNotFoundError(term);
+      }
+
+      return result;
     },
   };
 }

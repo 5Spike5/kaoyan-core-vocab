@@ -4,7 +4,8 @@ import {
   createUserWordFromLookup,
   hasWordMeaning,
   mergePublicAndUserWords,
-  normalizeMeanings
+  normalizeMeanings,
+  withUpdatedMeaning
 } from '../../../src/features/vocab/vocabService'
 import type { PublicVocabEntry, UserWord } from '../../../src/types/domain'
 
@@ -151,6 +152,49 @@ describe('vocab service', () => {
     it('counts unique public terms instead of raw entries', () => {
       expect(countUniquePublicTerms(fixtureEntries)).toBe(1)
       expect(countUniquePublicTerms([])).toBe(0)
+    })
+  })
+
+  describe('withUpdatedMeaning（导入 / 补释义只动释义）', () => {
+    const learnedWord = userWord({
+      id: 'word-learned',
+      term: 'clap',
+      normalizedTerm: 'clap',
+      meanings: [],
+      status: 'reviewing',
+      nextReviewAt: 1790000000000,
+      createdAt: 111,
+      updatedAt: 222,
+      fsrs: {
+        due: '2026-10-10T00:00:00.000Z',
+        stability: 5,
+        difficulty: 6,
+        elapsed_days: 1,
+        scheduled_days: 3,
+        learning_steps: 0,
+        reps: 4,
+        lapses: 0,
+        state: 2
+      }
+    })
+
+    it('fills the meaning without resetting study progress', () => {
+      const updated = withUpdatedMeaning(learnedWord, '  拍手，鼓掌  ', 'dictionary')
+
+      expect(updated.meanings).toEqual([{ text: '拍手，鼓掌', source: 'dictionary' }])
+      expect(updated.status).toBe('reviewing')
+      expect(updated.nextReviewAt).toBe(1790000000000)
+      expect(updated.fsrs).toEqual(learnedWord.fsrs)
+      expect(updated.id).toBe('word-learned')
+      expect(updated.createdAt).toBe(111)
+      expect(updated.updatedAt).toBeGreaterThan(222)
+    })
+
+    it('keeps the existing meanings when the incoming meaning is blank', () => {
+      const withMeaning = userWord({ meanings: [{ text: '旧释义', source: 'user' }] })
+      const updated = withUpdatedMeaning(withMeaning, '   ')
+
+      expect(updated.meanings).toEqual([{ text: '旧释义', source: 'user' }])
     })
   })
 })

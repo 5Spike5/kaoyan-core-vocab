@@ -95,6 +95,24 @@ export function countUniquePublicTerms(publicEntries: PublicVocabEntry[]): numbe
   return new Set(publicEntries.map((entry) => entry.normalizedTerm)).size
 }
 
+/**
+ * 只替换释义，保留 id / status / FSRS / 下次复习时间。
+ * 导入词表、补全释义、补充释义都必须走这里：直接从零构造词对象会把已学词
+ * 打回「未学」，抹掉复习进度（导入一份含已学词的表就中招）。
+ */
+export function withUpdatedMeaning(
+  word: UserWord,
+  meaning: string,
+  source: WordMeaning['source'] = 'user'
+): UserWord {
+  const text = meaning.trim()
+  return {
+    ...word,
+    meanings: text ? [{ text, source }] : normalizeMeanings(word.meanings),
+    updatedAt: Date.now()
+  }
+}
+
 export function createUserWordFromLookup(input: {
   term: string
   meaning: string

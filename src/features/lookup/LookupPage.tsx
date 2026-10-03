@@ -5,6 +5,7 @@ import { createLocalRepository } from "../../repositories/localRepository";
 import {
   createUserWordFromLookup,
   hasWordMeaning,
+  withUpdatedMeaning,
 } from "../vocab/vocabService";
 import { lookupWithCache } from "./dictionaryApi";
 import { createDictionaryProvider } from "./dictionaryProvider";
@@ -127,7 +128,13 @@ export default function LookupPage() {
     // 存成空释义会让这个词永远进不了背诵队列（学习队列按“有释义”过滤）。
     const meaning = meaningFromLookupResult(result);
     if (!meaning) {
-      toast("暂时没拿到这个词的释义，稍后再试一次", "error");
+      // 区分「查不到（多半拼错）」和「词典暂时不可用」，否则用户会一直重试一个错词
+      toast(
+        result.sourceStatus.dictionary === "miss"
+          ? "词典里没查到这个词，检查一下拼写"
+          : "词典暂时不可用，稍后再试一次",
+        "error",
+      );
       return;
     }
 
@@ -139,12 +146,7 @@ export default function LookupPage() {
         result.normalizedTerm,
       );
       const word = existing
-        ? {
-            ...existing,
-            meanings: [{ text: meaning, source: "user" as const }],
-            sourceVocabKey: existing.sourceVocabKey ?? result.publicEntry?.key,
-            updatedAt: Date.now(),
-          }
+        ? withUpdatedMeaning(existing, meaning)
         : createUserWordFromLookup({
             term: result.term,
             meaning,

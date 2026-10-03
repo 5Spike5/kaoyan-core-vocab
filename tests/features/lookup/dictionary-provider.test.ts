@@ -3,6 +3,7 @@ import {
   createDictionaryProvider,
   DictionaryNotFoundError,
   DictionaryServiceError,
+  isSameTerm,
   parseYoudaoSuggest,
 } from "../../../src/features/lookup/dictionaryProvider";
 
@@ -69,6 +70,20 @@ describe("youdao suggest parser", () => {
   });
 });
 
+describe("isSameTerm（防止把别的词的释义存到拼错的词下面）", () => {
+  it("matches after normalization", () => {
+    expect(isSameTerm("Address ", "address")).toBe(true);
+    expect(isSameTerm("accepted   wisdom", "Accepted Wisdom")).toBe(true);
+  });
+
+  it("rejects a corrected spelling returned for a typo", () => {
+    expect(isSameTerm("explode", "explod")).toBe(false);
+    expect(isSameTerm("enormously", "enormorusly")).toBe(false);
+    expect(isSameTerm("gaseous", "gase")).toBe(false);
+    expect(isSameTerm(undefined, "gase")).toBe(false);
+  });
+});
+
 describe("dictionary provider", () => {
   it("maps provider response into stable application fields", async () => {
     const fetcher = vi.fn().mockResolvedValue({
@@ -117,6 +132,23 @@ describe("dictionary provider", () => {
     const result = await provider.lookup("fetch");
     expect(result.partsOfSpeech[0]).toMatchObject({ label: "verb" });
     expect(result.partsOfSpeech[0].meanings).toContain("to sell for a price");
+  });
+
+  it("rejects a definition returned for a different word (misspelled query)", async () => {
+    const fetcher = vi.fn().mockResolvedValue({
+      ok: true,
+      json: async () => ({
+        word: "explode",
+        meanings: [
+          { partOfSpeech: "verb", definitions: [{ definition: "to burst" }] },
+        ],
+      }),
+    });
+
+    const provider = createDictionaryProvider({ fetcher });
+    await expect(provider.lookup("explod")).rejects.toBeInstanceOf(
+      DictionaryNotFoundError,
+    );
   });
 
   it("maps a 404 response to a not-found error", async () => {

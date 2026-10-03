@@ -9,6 +9,7 @@ import {
   readVocabWorkbookFile,
   type VocabImportResult,
 } from "../../lib/csv";
+import { normalizeTerm } from "../../lib/normalizeTerm";
 import { createLocalRepository } from "../../repositories/localRepository";
 import type { UserWord, UserWordStatus } from "../../types/domain";
 import { lookupWithCache } from "../lookup/dictionaryApi";
@@ -18,19 +19,22 @@ import {
   createUserWordFromLookup,
   hasWordMeaning,
   mergePublicAndUserWords,
+  withUpdatedMeaning,
 } from "./vocabService";
 
 const LOCAL_USER_ID = "local";
 
-const STATUS_FILTERS: Array<{ value: UserWordStatus | "all"; label: string }> =
-  [
-    { value: "all", label: "全部" },
-    { value: "new", label: "新词" },
-    { value: "learning", label: "学习中" },
-    { value: "reviewing", label: "复习中" },
-    { value: "mastered", label: "已掌握" },
-    { value: "suspended", label: "暂停" },
-  ];
+type StatusFilter = UserWordStatus | "all" | "missing-meaning";
+
+const STATUS_FILTERS: Array<{ value: StatusFilter; label: string }> = [
+  { value: "all", label: "全部" },
+  { value: "missing-meaning", label: "缺释义" },
+  { value: "new", label: "新词" },
+  { value: "learning", label: "学习中" },
+  { value: "reviewing", label: "复习中" },
+  { value: "mastered", label: "已掌握" },
+  { value: "suspended", label: "暂停" },
+];
 
 const STATUS_LABELS: Record<UserWordStatus, string> = {
   new: "新词",
@@ -53,9 +57,7 @@ const PAGE_SIZE = 10;
 
 export default function VocabListPage() {
   const [words, setWords] = useState<UserWord[]>([]);
-  const [statusFilter, setStatusFilter] = useState<UserWordStatus | "all">(
-    "all",
-  );
+  const [statusFilter, setStatusFilter] = useState<StatusFilter>("all");
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(true);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
@@ -64,6 +66,12 @@ export default function VocabListPage() {
     done: number;
     total: number;
   } | null>(null);
+  const filterLabel =
+    statusFilter === "missing-meaning"
+      ? "缺释义"
+      : statusFilter === "all"
+        ? ""
+        : STATUS_LABELS[statusFilter];
   const fileInputRef = useRef<HTMLInputElement>(null);
   const sentinelRef = useRef<HTMLDivElement>(null);
   const [modal, setModal] = useState<ImportModalState>({
@@ -94,7 +102,10 @@ export default function VocabListPage() {
     const query = search.trim().toLowerCase();
     return words.filter((word) => {
       const matchesStatus =
-        statusFilter === "all" || word.status === statusFilter;
+        statusFilter === "all" ||
+        (statusFilter === "missing-meaning"
+          ? !hasWordMeaning(word)
+          : word.status === statusFilter);
       if (!matchesStatus) {
         return false;
       }
@@ -178,9 +189,17 @@ export default function VocabListPage() {
     const repository = createLocalRepository();
     try {
       for (const row of modal.result.imported) {
-        await repository.upsertUserWord(
-          createUserWordFromLookup({ term: row.term, meaning: row.meaning }),
+        // 已存在的词只更新释义：直接 createUserWordFromLookup 会把 status 重置成
+        // new、清掉 FSRS 和下次复习时间 —— 导入一份含已学词的表就会抹掉学习进度
+        const existing = await repository.getUserWord(
+          LOCAL_USER_ID,
+          normalizeTerm(row.term),
         );
+        const next = existing
+          ? withUpdatedMeaning(existing, row.meaning)
+          : createUserWordFromLookup({ term: row.term, meaning: row.meaning });
+
+        await repository.upsertUserWord({ ...next, userId: LOCAL_USER_ID });
       }
       await loadWords();
       const { imported, skipped, duplicates, failed } = modal.result;
@@ -231,11 +250,9 @@ export default function VocabListPage() {
           const dictionary = await lookupWithCache(word.term, provider);
           const meaning = meaningFromDictionary(dictionary);
           if (meaning) {
-            await repository.upsertUserWord({
-              ...word,
-              meanings: [{ text: meaning, source: "dictionary" }],
-              updatedAt: Date.now(),
-            });
+            await repository.upsertUserWord(
+              withUpdatedMeaning(word, meaning, "dictionary"),
+            );
             filled += 1;
           } else {
             missed += 1;
@@ -338,7 +355,7 @@ export default function VocabListPage() {
         <p className="vocab-count">
           显示 {visibleWords.length.toLocaleString()} /{" "}
           {filteredWords.length.toLocaleString()} 词
-          {statusFilter !== "all" ? ` · ${STATUS_LABELS[statusFilter]}` : ""}
+          {filterLabel ? ` · ${filterLabel}` : ""}
         </p>
       ) : null}
 
